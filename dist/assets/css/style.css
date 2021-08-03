@@ -14864,6 +14864,10 @@ a {
     text-decoration: none;
 }
 
+a:focus {
+    border: 1px solid red;
+}
+
 /* Blocks */
 .header__inner {
     display: -ms-flexbox;
@@ -14930,6 +14934,8 @@ a {
 
 .btn-blue:hover {
     box-shadow: 0 23px 55px 12px rgba(55, 124, 253, 0.2);
+    color: #fff;
+    text-decoration: none;
 }
 
 .btn-orange {
@@ -14967,6 +14973,19 @@ a {
     box-shadow: 0 23px 55px 12px rgba(55, 124, 253, 0.2);
 }
 
+.btn-form {
+    background: linear-gradient(180deg, #FFB178 -38.1%, #FF6759 125.4%), #FBC304;
+    border: 0.68616px solid rgba(255, 255, 255, 0.13);
+    box-shadow: 0px 5.48929px 22.6433px rgba(0, 0, 0, 0.07);
+    border-radius: 7px;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.btn-form:hover {
+    box-shadow: 0 23px 55px 12px rgba(221, 113, 25, 0.2);
+}
+
 /* home */
 .home {
     margin-bottom: 450px;
@@ -14980,16 +14999,15 @@ a {
 
 .home__content {
     position: relative;
-    min-height: 1050px;
-    background: url("../images/bg.webp") no-repeat;
+    min-height: 1200px;
+    background: url("../images/home-bg.webp") center no-repeat;
     background-size: cover;
     border-radius: 45px;
-    margin-bottom: 65px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 220px 250px;
+    padding: 105px 250px;
 }
 
 .home__content::before {
@@ -15004,6 +15022,7 @@ a {
 }
 
 .home__left {
+    padding-top: 130px;
     width: 58%;
     color: #fff;
 }
@@ -15037,6 +15056,10 @@ a {
 }
 
 /* home__footer */
+.home__footer {
+    margin-top: -40px;
+}
+
 .home__footer-row {
     display: -ms-flexbox;
     display: flex;
@@ -15152,7 +15175,7 @@ a {
     border-radius: 26px;
     resize: none;
     height: 134px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .footer {
@@ -15235,18 +15258,14 @@ a {
     max-width: 210px;
 }
 
-.footer__item-end {
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
-
-.footer__app {
+.footer__app-text {
     font-family: "Nunito";
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 132%;
-    color: #2e2e46;
-    margin-bottom: 18px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 22px;
+    color: #1B8ECE;
+    margin-bottom: 17px;
 }
 
 .footer__app-btn {
@@ -15257,7 +15276,7 @@ a {
 .footer__app-socials {
     display: -ms-flexbox;
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .footer__app-social {
@@ -15306,6 +15325,68 @@ a {
     line-height: 1.6;
     letter-spacing: 0.004em;
     color: rgba(46, 46, 70, 0.8);
+}
+
+.footer__form-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.footer__form-inner input {
+    width: 240px;
+    background: #FFFFFF;
+    border: 0.686161px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 8.23393px;
+    padding: 9px 15px;
+    margin-bottom: 10px;
+}
+
+.footer__form-inner input::-webkit-input-placeholder {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+}
+
+.footer__form-inner input::-moz-placeholder {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+}
+
+.footer__form-inner input:-ms-input-placeholder {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+}
+
+.footer__form-inner input::-ms-input-placeholder {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+}
+
+.footer__form-inner input::placeholder {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
 }
 
 .logo__panda .btn {
@@ -15382,12 +15463,14 @@ a {
 }
 
 .products__title {
-    font-size: 37px;
+    font-family: "Nunito";
     font-weight: 800;
-    color: #1F3256;
+    font-size: 35px;
+    line-height: 62px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    color: #1F3256;
+    margin-bottom: 25px;
 }
 
 .product__descr {
@@ -15469,7 +15552,8 @@ a {
 /* scheme */
 .scheme__title {
     font-size: 35px;
-    font-weight: 700;
+    font-family: "Nunito";
+    font-weight: 800;
     text-transform: uppercase;
     color: #000;
     text-align: center;
@@ -15481,11 +15565,6 @@ a {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-}
-
-.scheme__wrapper {
-    position: relative;
-    z-index: 10;
 }
 
 .scheme__items {
@@ -15510,6 +15589,15 @@ a {
     background: rgba(255, 255, 255, 0.6);
     border-radius: 0 0 76px 76px;
     box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05);
+}
+
+.scheme__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 42px;
+    background: #fff;
+    z-index: 10;
 }
 
 .scheme__items:first-child::after {
@@ -15630,6 +15718,7 @@ a {
     font-weight: 800;
     font-size: 35px;
     color: #092853;
+    font-family: "Nunito";
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: center;
@@ -15639,6 +15728,7 @@ a {
     font-size: 23px;
     line-height: 1.5;
     color: #000;
+    font-family: "Nunito";
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
@@ -15695,6 +15785,7 @@ a {
     font-weight: 600;
     font-size: 25px;
     color: #000;
+    font-family: "Poppins";
 }
 
 .news {
@@ -15753,12 +15844,13 @@ a {
 .news__item {
     display: -ms-flexbox;
     display: flex;
-    margin-right: -705px;
     opacity: 0.5;
+    max-width: 1251px;
 }
 
 .news__item .uk-card {
     position: relative;
+    width: 32%;
     padding: 32px;
     padding-bottom: 65px;
     border-radius: 43px;
@@ -15829,10 +15921,6 @@ a {
     color: #7d7e86;
 }
 
-.news__item.uk-active {
-    opacity: 1;
-}
-
 /* перебивание стилей dots */
 .news__arrow > .uk-active > * {
     background-color: #f97d5f;
@@ -15844,6 +15932,20 @@ a {
     background-color: #f97d5f;
     outline: none;
     border-color: transparent;
+}
+
+.news .uk-slider-container {
+    overflow: visible;
+}
+
+@media (min-width: 1200px) {
+    .uk-grid > * {
+        padding-left: 0;
+    }
+
+    .news__item.uk-active {
+        opacity: 1;
+    }
 }
 
 .contact {
@@ -15947,18 +16049,61 @@ a {
 }
 
 /* sliders */
-.partners__sliders {
-    position: relative;
-    margin: 0 100px;
-    background: rgba(255, 255, 255, 0.7);
-    border: 1.52734px solid #FFFFFF;
-    box-sizing: border-box;
-    box-shadow: 45.8202px 106.914px 183.281px rgba(27, 49, 66, 0.05);
-    border-radius: 76.367px;
+.partners__wrapper {
+    width: 1440px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.61);
+    border-radius: 76px;
+    box-shadow: 45px 43px 183px rgba(27, 49, 66, 0.13);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  /*     .uk-slider {
+        padding: 0 15px;
+    } */
 }
 
-.partners__sliders .new__wrapper {
-    padding: 65px 0;
+.partners__sliders {
+    position: relative;
+    margin: 0 112px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 45.8202px 106.914px 183.281px rgba(27, 49, 66, 0.05);
+    border-radius: 76px;
+}
+
+.partners__sliders .partners__list {
+    padding: 50px 15px;
+}
+
+.partners__sliders .uk-position-relative {
+    border-radius: 76px;
+}
+
+.partners__arrows {
+    position: relative;
+    top: -50%;
+}
+
+.partners__arrows a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    background: red;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 18.6636px 17.1706px 41.8066px rgba(27, 49, 66, 0.15);
+    border-radius: 67.1891px;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.partners__arrows .prev__arrow {
+    left: -100px;
 }
 
 /* .company__prev {
@@ -15979,7 +16124,6 @@ a {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0 100px;
 }
 
 .partners__list li {
@@ -16068,6 +16212,36 @@ a {
     overflow: hidden;
     margin-bottom: 64px;
     box-shadow: 50.9034px 118.775px 203.613px rgba(27, 49, 66, 0.13);
+    border-radius: 50px;
+}
+
+.map-cube {
+    position: relative;
+}
+
+.map-cube::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 24px;
+    border: 40px solid #FECF07;
+    box-shadow: -8px 36px 62px rgba(249, 204, 10, 0.35);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.map-cube::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 10;
     border-radius: 50px;
 }
 

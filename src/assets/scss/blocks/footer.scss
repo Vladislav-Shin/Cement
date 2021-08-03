@@ -55,6 +55,7 @@
 
 .footer__logo {
     margin-top: -15px;
+
     a {
         display: inline-block;
         color: #000;
@@ -73,17 +74,14 @@
     max-width: 210px;
 }
 
-.footer__item-end {
-    justify-content: flex-end;
-}
-
-.footer__app {
+.footer__app-text {
     font-family: "Nunito";
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 132%;
-    color: #2e2e46;
-    margin-bottom: 18px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 22px;
+    color: #1B8ECE;
+    margin-bottom: 17px;
 }
 
 .footer__app-btn {
@@ -93,7 +91,7 @@
 
 .footer__app-socials {
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .footer__app-social {
@@ -138,12 +136,36 @@
     color: rgba(46, 46, 70, 0.8);
 }
 
+.footer__form-inner {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        width: 240px;
+        background: #FFFFFF;
+        border: 0.686161px solid #DADADA;
+        box-sizing: border-box;
+        border-radius: 8.23393px;
+        padding: 9px 15px;
+        margin-bottom: 10px;
+
+        &::placeholder {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000;
+        }
+    }
+}
+
 .logo__panda {
     .btn {
         width: 180px;
         height: 60px;
         cursor: pointer;
-        background: linear-gradient(180deg,#000, #8d8d99);
+        background: linear-gradient(180deg, #000, #8d8d99);
         outline: none;
         transition: 1s ease-in-out;
         border-radius: 5px;

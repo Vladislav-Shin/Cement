@@ -32,23 +32,40 @@
 
 /* sliders */
 
+.partners__wrapper {
+    width: 1440px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.61);
+    border-radius: 76px;
+    box-shadow: 45px 43px 183px rgba(27, 49, 66, 0.13);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+/*     .uk-slider {
+        padding: 0 15px;
+    } */
+}
+
 .partners__sliders {
     position: relative;
-    margin: 0 100px;
-    border: 1.52734px solid #FFFFFF;
+    margin: 0 112px;
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 45.8202px 106.914px 183.281px rgba(27, 49, 66, 0.05);
-    border-radius: 76.367px;
-    /*   overflow: hidden; */
+    border-radius: 76px;
 
     .partners__list {
-        padding: 50px 0;
+        padding: 50px 15px;
+    }
+
+    .uk-position-relative {
+        border-radius: 76px;
     }
 }
 
 .partners__arrows {
     position: relative;
     top: -50%;
+
     a {
         display: flex;
         align-items: center;

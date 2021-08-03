@@ -92,6 +92,10 @@ video {
     vertical-align: baseline;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 /* make sure to set some focus styles for accessibility */
 :focus {
     outline: 0;

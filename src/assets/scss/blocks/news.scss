@@ -54,11 +54,12 @@
 
 .news__item {
 	display: flex;
-	margin-right: -705px;
 	opacity: 0.5;
+	max-width: 1251px;
 
 	.uk-card {
 		position: relative;
+		width: 32%;
 		padding: 32px;
 		padding-bottom: 65px;
 		border-radius: 43px;
@@ -130,10 +131,6 @@
 	}
 }
 
-.news__item.uk-active {
-	opacity: 1;
-}
-
 /* перебивание стилей dots */
 .news__arrow > .uk-active > * {
 	background-color: #f97d5f;
@@ -145,4 +142,17 @@
 	background-color: #f97d5f;
 	outline: none;
 	border-color: transparent;
+}
+
+.news .uk-slider-container {
+	overflow: visible;
+}
+
+@media (min-width: 1200px) {
+	.uk-grid > * {
+		padding-left: 0; 
+	}
+	 .news__item.uk-active {
+		 opacity: 1;
+	 }
 }

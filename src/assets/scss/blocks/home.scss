@@ -11,14 +11,13 @@
 
 .home__content {
 	position: relative;
-	min-height: 1050px;
-	background: url("../images/bg.webp") no-repeat;
+	min-height: 1200px;
+	background: url("../images/home-bg.webp") center no-repeat;
 	background-size: cover;
 	border-radius: 45px;
-	margin-bottom: 65px;
 	display: flex;
 	justify-content: space-between;
-	padding: 220px 250px;
+	padding: 105px 250px;
 
 	&::before {
 		content: "";
@@ -33,6 +32,7 @@
 }
 
 .home__left {
+	padding-top: 130px;
 	width: 58%;
 	color: #fff;
 }
@@ -66,6 +66,10 @@
 }
 
 /* home__footer */
+
+.home__footer {
+	margin-top: -40px;
+}
 
 .home__footer-row {
 	display: flex;

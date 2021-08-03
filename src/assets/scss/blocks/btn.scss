@@ -36,6 +36,8 @@
 
     &:hover {
         box-shadow: 0 23px 55px 12px rgba(55, 124, 253, 0.2);
+        color: #fff;
+        text-decoration: none;
     }
 }
 
@@ -77,5 +79,18 @@
 
     &:hover {
         box-shadow: 0 23px 55px 12px rgba(55, 124, 253, 0.2);
+    }
+}
+
+.btn-form {
+    background: linear-gradient(180deg, #FFB178 -38.1%, #FF6759 125.4%), #FBC304;
+    border: 0.686161px solid rgba(255, 255, 255, 0.13);
+    box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.07);
+    border-radius: 7px;
+    padding: 15px 20px;
+    font-size: 16px;
+
+    &:hover {
+        box-shadow: 0 5px 20px 8px rgba(221, 113, 25, 0.2);
     }
 }

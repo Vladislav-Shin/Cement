@@ -1,6 +1,6 @@
 @import "vars";
-@import "vendor/reset";
 @import "blocks/uikit";
+@import "vendor/reset";
 
 *,
 *::after,
@@ -34,7 +34,11 @@ body {
 
 a {
     text-decoration: none;
+    &:focus {
+        border: 1px solid red
+    }
 }
+
 
 /* Blocks */
 

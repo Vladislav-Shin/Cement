@@ -24,7 +24,9 @@
         	<div class="container">
         		<div class="header__inner">
         			<div class="header__logo">
-        				<img class="header__logo-img" src="assets/images/Logo.png" alt="Logo">
+        				<a href="#">
+        					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
+        				</a>
         			</div>
         
         			<nav class="nav">
@@ -77,7 +79,7 @@
                                     <input class="form__modal-input" type="number" placeholder="Phone Number">
                                     <textarea class="form__modal-textarea" name="" id="" cols="30" rows="10"
                                         placeholder="Comment"></textarea>
-                                    <div class="btn  btn-orange">Contact Us</div>
+                                    <button type="button" class="btn  btn-orange">Contact Us</div>
                                 </form>
                             </div>
                         </div>
@@ -146,22 +148,24 @@
                             <h3 class="scheme__title">СХЕМА ЗАКУПКИ ЦЕМЕНТА</h3>
                             <div class="scheme__row">
                                 <div class="scheme__items">
-                                    <div class="scheme__header">
-                                        <img src="assets/images/time.png" alt="">
-                                    </div>
-                                    <div class="scheme__content">
-                                        <h4 class="scheme__content-title">Менее 60 тонн</h4>
-                                        <ul class="scheme__list">
-                                            <li class="scheme__list-items">
-                                                <a>Оплата наличными в кассу или перечисление</a>
-                                            </li>
-                                            <li class="scheme__list-items">
-                                                <a>Получение товара</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="scheme__footer">
-                                        <div class="btn  btn-scheme">Скачать образец PDF</div>
+                                    <div class="scheme__wrapper">
+                                        <div class="scheme__header">
+                                            <img src="assets/images/time.png" alt="">
+                                        </div>
+                                        <div class="scheme__content">
+                                            <h4 class="scheme__content-title">Менее 60 тонн</h4>
+                                            <ul class="scheme__list">
+                                                <li class="scheme__list-items">
+                                                    <a>Оплата наличными в кассу или перечисление</a>
+                                                </li>
+                                                <li class="scheme__list-items">
+                                                    <a>Получение товара</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="scheme__footer">
+                                            <div class="btn  btn-scheme">Скачать образец PDF</div>
+                                        </div>
                                     </div>
                                 </div> <!-- scheme__items -->
             
@@ -251,7 +255,7 @@
                                 <li class="news__item">
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-media-top">
-                                            <img src="http://placehold.it/339x361" alt="">
+                                            <img src="assets/images/new-slider-1.jpg" alt="">
                                         </div>
                                         <div class="uk-card-body  padding-zero">
                                             <time datetime="2020-12-01">01.12.20</time>
@@ -261,7 +265,7 @@
                                     </div>
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-media-top">
-                                            <img src="http://placehold.it/339x361" alt="">
+                                            <img src="assets/images/new-slider-2.jpg" alt="">
                                         </div>
                                         <div class="uk-card-body  padding-zero">
                                             <time datetime="2020-12-01">01.12.20</time>
@@ -271,39 +275,7 @@
                                     </div>
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-media-top">
-                                            <img src="http://placehold.it/339x361" alt="">
-                                        </div>
-                                        <div class="uk-card-body  padding-zero">
-                                            <time datetime="2020-12-01">01.12.20</time>
-                                            <h3 class="uk-card-title">MASS RECRUITMENT OF LINE PERSONNEL</h3>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="news__item">
-                                    <div class="uk-card uk-card-default">
-                                        <div class="uk-card-media-top">
-                                            <img src="http://placehold.it/339x361" alt="">
-                                        </div>
-                                        <div class="uk-card-body  padding-zero">
-                                            <time datetime="2020-12-01">01.12.20</time>
-                                            <h3 class="uk-card-title">MASS RECRUITMENT OF LINE PERSONNEL</h3>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        </div>
-                                    </div>
-                                    <div class="uk-card uk-card-default">
-                                        <div class="uk-card-media-top">
-                                            <img src="http://placehold.it/339x361" alt="">
-                                        </div>
-                                        <div class="uk-card-body  padding-zero">
-                                            <time datetime="2020-12-01">01.12.20</time>
-                                            <h3 class="uk-card-title">MASS RECRUITMENT OF LINE PERSONNEL</h3>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        </div>
-                                    </div>
-                                    <div class="uk-card uk-card-default">
-                                        <div class="uk-card-media-top">
-                                            <img src="http://placehold.it/339x361" alt="">
+                                            <img src="assets/images/new-slider-3.jpg" alt="">
                                         </div>
                                         <div class="uk-card-body  padding-zero">
                                             <time datetime="2020-12-01">01.12.20</time>
@@ -398,50 +370,52 @@
                                 <h5 class="partners__title">НАШИ ПАРТНЕРЫ</h5>
                                 <p class="partners__subtitle">You're in good hands!</p>
             
-                                <div class="partners__sliders">
-                                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-                                        <ul
-                                            class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-5@m  partners__list">
-                                            <li>
-                                                <img src="assets/images/partners-1.png" alt="">
-                                            </li>
-                                            <li>
-                                                <img src="assets/images/partners-2.png" alt="">
-                                            </li>
-                                            <li>
-                                                <img src="assets/images/partners-3.png" alt="">
-                                            </li>
-                                            <li>
-                                                <img src="assets/images/partners-4.png" alt="">
-                                            </li>
-                                            <li>
-                                                <img src="assets/images/partners-5.png" alt="">
-                                            </li>
-                                            <li>
-                                                <img src="assets/images/partners-1.png" alt="">
-                                            </li>
-                                            <li>
-                                                <img src="assets/images/partners-2.png" alt="">
-                                            </li>
-                                            <li>
-                                                <img src="assets/images/partners-2.png" alt="">
-                                            </li>
-                                            <li>
-                                                <img src="assets/images/partners-2.png" alt="">
-                                            </li>
-                                            <li>
-                                                <img src="assets/images/partners-2.png" alt="">
-                                            </li>
-                                        </ul>
-            
-                                        <div class="partners__arrows">
-                                            <a class="uk-position-center-left uk-position-small uk-hidden-hover prev__arrow" href="#"
-                                                uk-slidenav-previous uk-slider-item="previous"></a>
-                                            <a class="uk-position-center-right uk-position-small uk-hidden-hover next__arrow" href="#"
-                                                uk-slidenav-next uk-slider-item="next"></a>
+                                <div class="partners__wrapper">
+                                    <div class="partners__sliders">
+                                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+                                            <ul
+                                                class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-5@m  partners__list">
+                                                <li>
+                                                    <img src="assets/images/partners-1.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/images/partners-2.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/images/partners-3.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/images/partners-4.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/images/partners-5.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/images/partners-1.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/images/partners-2.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/images/partners-2.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/images/partners-2.png" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/images/partners-2.png" alt="">
+                                                </li>
+                                            </ul>
+                
+                                           
+                                                <a class="uk-position-center-left uk-position-small uk-hidden-hover prev__arrow" href="#"
+                                                    uk-slidenav-previous uk-slider-item="previous"></a>
+                                                <a class="uk-position-center-right uk-position-small uk-hidden-hover next__arrow" href="#"
+                                                    uk-slidenav-next uk-slider-item="next"></a>
+                                            
                                         </div>
-                                    </div>
-                                </div> <!-- partners__sliders -->
+                                    </div> <!-- partners__sliders -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -452,11 +426,13 @@
             
             <div class="map">
                 <div class="container">
-                    <div class="map__inner">
-                        <div class="map__wrapper">
-                            <iframe class="map__iframe"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47951.94456380261!2d69.2497987218396!3d41.30893898628785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2931f41f23%3A0x81095e06b654b845!2z0KHQutCy0LXRgCDQuNC8LiDQkNC80LjRgNCwINCi0LXQvNGD0YDQsA!5e0!3m2!1sru!2s!4v1626100537474!5m2!1sru!2s"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="map-cube">
+                        <div class="map__inner">
+                            <div class="map__wrapper">
+                                <iframe class="map__iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47951.94456380261!2d69.2497987218396!3d41.30893898628785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2931f41f23%3A0x81095e06b654b845!2z0KHQutCy0LXRgCDQuNC8LiDQkNC80LjRgNCwINCi0LXQvNGD0YDQsA!5e0!3m2!1sru!2s!4v1626100537474!5m2!1sru!2s"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -541,22 +517,22 @@
         					</ul>
         				</div> <!-- footer__item -->
         
-        				<div class="footer__item  footer__item-end">
-        					<h5 class="footer__app">Discover Our App</h5>
-        					<div class="footer__app-btns">
-        						<button class="btn  footer__app-btn">
-        							<img src="assets/images/google-play.png" alt="">
-        						</button>
-        						<button class="btn  footer__app-btn">
-        							<img src="assets/images/app-store.png" alt="">
-        						</button>
-        					</div>
+        				<div class="footer__item">
+        					<h5 class="footer__app-text">Подписаться</h5>
+        					<form class="footer__form" action="/">
+        						<div class="footer__form-inner">
+        							<input type="email" placeholder="Ваш Email">
+        							<div class="footer__form-btn">
+        								<button class="btn  btn-form">Подписаться</button>
+        							</div>
+        						</div>
+        					</form>
         					<div class="footer__app-socials">
         						<a class="footer__app-social" href="">
         							<img src="assets/images/facebook.svg" alt="">
         						</a>
         						<a class="footer__app-social" href="">
-        							<img src="assets./images/instagram.svg" alt="">
+        							<img src="assets/images/instagram.svg" alt="">
         						</a>
         						<a class="footer__app-social" href="">
         							<img src="assets/images/twitter.svg" alt="">
@@ -566,6 +542,9 @@
         			</div> <!-- footer__row -->
         
         			<div class="footer__bottom">
+        				<div class="copyright">
+        					<h6 class="footer__buttom-text">All rights reserved @ofspace.co</h6>
+        				</div>
         				<div class="logo__panda">
         					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
         						<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
@@ -574,9 +553,6 @@
         						</svg>
         						<img src="assets/images/logo-white.svg" alt="https://digitalpanda.uz/">
         					</a>
-        				</div>
-        				<div class="copyright">
-        					<h6 class="footer__buttom-text">All rights reserved @ofspace.co</h6>
         				</div>
         			</div>
         		</div> <!-- footer__inner -->
