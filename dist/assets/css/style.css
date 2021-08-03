@@ -15261,6 +15261,12 @@ a {
 }
 
 .footer__app-social {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 49px;
     height: 49px;
     border-radius: 50%;
@@ -15273,18 +15279,69 @@ a {
     background: #ff7468;
 }
 
-.footer__botton {
+.footer__app-social img {
+    width: 22px;
+    height: 22px;
+}
+
+.footer__app-social img:hover {
+    fill: #fff;
+}
+
+.footer__bottom {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 35px 0;
     text-align: center;
 }
 
-.footer__button {
+.footer__buttom-text {
     font-family: "Nunito";
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.004em;
     color: rgba(46, 46, 70, 0.8);
+}
+
+.logo__panda .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: linear-gradient(180deg, #000, #8d8d99);
+    outline: none;
+    transition: 1s ease-in-out;
+    border-radius: 5px;
+}
+
+.logo__panda svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+    border-radius: 5px;
+}
+
+.logo__panda .btn:hover {
+    transition: 1s ease-in-out;
+}
+
+.logo__panda .btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.logo__panda .btn a {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
 }
 
 /* products */
@@ -15886,6 +15943,74 @@ a {
     line-height: 1.6;
     text-align: center;
     color: #ffffff;
+    margin-bottom: 60px;
+}
+
+/* sliders */
+.partners__sliders {
+    position: relative;
+    margin: 0 100px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1.52734px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 45.8202px 106.914px 183.281px rgba(27, 49, 66, 0.05);
+    border-radius: 76.367px;
+}
+
+.partners__sliders .new__wrapper {
+    padding: 65px 0;
+}
+
+/* .company__prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 18.6636px 17.1706px 41.8066px rgba(27, 49, 66, 0.15);
+    border-radius: 67.1891px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+} */
+.partners__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.partners__list li {
+    position: relative;
+    max-width: 190px;
+    height: 190px;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 50%;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 26px;
+    background: #FFFFFF;
+    box-shadow: 0px 66.5407px 94.6125px rgba(0, 0, 0, 0.08);
+}
+
+.partners__list li::before {
+    content: "";
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: #FFFFFF;
+    border-radius: 50%;
+    opacity: 0.4;
+    box-shadow: 0px 66.5407px 94.6125px rgba(0, 0, 0, 0.08);
 }
 
 .map {
@@ -16386,7 +16511,7 @@ a {
 }
 
 .history {
-    padding-bottom: 175px;
+    padding-bottom: 120px;
 }
 
 .history__row {
@@ -16489,18 +16614,166 @@ a {
     margin-top: 150px;
 }
 
-.history__footer-row .history__left {
-    width: 55%;
+.history__footer-row .history__left,
+  .history__footer-row .history__right {
+    width: 48%;
 }
 
-.history__footer-row .history__right {
-    width: 42%;
-}
-
-.history__footer-row .history__right .hisroy__right-img {
+.history__footer-row .hisroy__right-img {
     height: 100%;
 }
 
-.history__footer-row .history__right .hisroy__right-img img {
+.history__footer-row .hisroy__right-img img {
     height: 100%;
+}
+
+.history__left-title {
+    position: relative;
+    max-width: 465px;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.history__left-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -26px;
+    width: 30%;
+    height: 1px;
+    background: #f23e60;
+}
+
+.company li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.company li .uk-card {
+    position: relative;
+    width: 49%;
+    margin-bottom: 45px;
+    border-radius: 16px;
+    box-shadow: 17.1185px 39.9432px 68.474px rgba(27, 49, 66, 0.09);
+}
+
+.company li .uk-card::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 80%;
+    height: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 0 0 76px 76px;
+    box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05);
+}
+
+.company .uk-card-media-top {
+    height: 209px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.company__inner {
+    padding-bottom: 80px;
+}
+
+/* перебевание стилей uk-h3 */
+.company__card-title {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    color: #000B33;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.company-img {
+    width: 100%;
+    height: 100%;
+}
+
+.company__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.company__item {
+    width: 49%;
+}
+
+.company__arrow a {
+    width: 35px;
+    height: 6px;
+    background: #e5e5e5;
+    border-radius: 5px;
+    border: none;
+}
+
+.company__arrow > .uk-active > * {
+    background-color: #f97d5f;
+    border-color: transparent;
+}
+
+.company__arrow > * > :hover,
+.company__arrow > * > :focus {
+    background-color: #f97d5f;
+    outline: none;
+    border-color: transparent;
+}
+
+.company .uk-card-body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+}
+
+/* arrows */
+.company__arrows {
+    position: relative;
+    top: -26px;
+}
+
+.company__arrows a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 18.6636px 17.1706px 41.8066px rgba(27, 49, 66, 0.15);
+    border-radius: 67.1891px;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+@media (min-width: 1200px) {
+    .company .uk-card-body {
+        padding: 12px 32px 32px 32px;
+    }
 }

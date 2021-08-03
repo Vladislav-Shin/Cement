@@ -240,7 +240,6 @@ const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
 const watch = gulp.parallel(build, watchFiles, serve);
 
 
-
 /* Exports Tasks */
 exports.html = html;
 exports.css = css;

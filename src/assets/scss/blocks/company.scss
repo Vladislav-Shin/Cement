@@ -1,0 +1,124 @@
+.company {
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .uk-card {
+            position: relative;
+            width: 49%;
+            margin-bottom: 45px;
+            border-radius: 16px;
+            box-shadow: 17.1185px 39.9432px 68.474px rgba(27, 49, 66, 0.09);
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -25px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                height: 25px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                background: rgba(255, 255, 255, 0.6);
+                border-radius: 0 0 76px 76px;
+                box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05);
+            }
+        }
+
+    }
+
+    .uk-card-media-top {
+        height: 209px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+}
+
+.company__inner {
+    padding-bottom: 80px;
+}
+
+/* перебевание стилей uk-h3 */
+.company__card-title {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    color: #000B33;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.company-img {
+    width: 100%;
+    height: 100%;
+}
+
+.company__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company__item {
+    width: 49%;
+}
+
+.company__arrow a {
+    width: 35px;
+    height: 6px;
+    background: #e5e5e5;
+    border-radius: 5px;
+    border: none;
+}
+
+.company__arrow>.uk-active>* {
+    background-color: #f97d5f;
+    border-color: transparent;
+}
+
+.company__arrow>*> :hover,
+.company__arrow>*> :focus {
+    background-color: #f97d5f;
+    outline: none;
+    border-color: transparent;
+}
+
+.company {
+    .uk-card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+
+/* arrows */
+.company__arrows {
+    position: relative;
+    top: -26px;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background: #fff;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 18.6636px 17.1706px 41.8066px rgba(27, 49, 66, 0.15);
+        border-radius: 67.1891px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+}
+
+@media (min-width: 1200px) {
+    .company {
+        .uk-card-body {
+            padding: 12px 32px 32px 32px;
+        }
+    }
+}
