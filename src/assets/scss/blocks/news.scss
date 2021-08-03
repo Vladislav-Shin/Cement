@@ -1,0 +1,148 @@
+.news {
+	background: #fff;
+	padding: 45px 0 65px;
+
+	.uk-slider-items {
+		transform: translate3d(703px, 0px, 0px);
+		margin-bottom: 80px;
+	}
+}
+
+.news__header {
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+.news__title {
+	font-family: "Nunito";
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 55px;
+	letter-spacing: 0.01em;
+	color: #2c2e31;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.news__subtitle {
+	font-family: "Nunito";
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 1.5;
+	color: #7d7e86;
+}
+
+.news-margin-auto {
+	margin: 0 auto;
+}
+
+.news__container {
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.news__arrow {
+	a {
+		width: 35px;
+		height: 6px;
+		background: #e5e5e5;
+		border-radius: 5px;
+		border: none;
+	}
+}
+
+.news__item {
+	display: flex;
+	margin-right: -705px;
+	opacity: 0.5;
+
+	.uk-card {
+		position: relative;
+		padding: 32px;
+		padding-bottom: 65px;
+		border-radius: 43px;
+		font-family: "Nunito", sans-serif;
+		width: 402px;
+		background: #ffffff;
+		margin-right: 15px;
+		text-align: center;
+
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: -20px;
+			left: 50%;
+			z-index: -10;
+			transform: translateX(-50%);
+			width: 100%;
+			height: 60px;
+			border: 1px solid rgba(255, 255, 255, 0.5);
+			background: rgba(242, 242, 242, 0.8);
+			border-radius: 0 0 76px 76px;
+			box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05);
+		}
+
+		&::after {
+			bottom: -40px;
+			width: 80%;
+			z-index: -20;
+		}
+	}
+
+	.uk-card-media-top {
+		border-radius: 15px;
+		overflow: hidden;
+	}
+
+	time {
+		display: block;
+		font-family: "Nunito", sans-serif;
+		font-weight: 700;
+		font-size: 17px;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		color: #171717;
+		margin: 15px 0;
+	}
+
+	h3 {
+		font-family: "Nunito", sans-serif;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 1.5;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+
+	.padding-zero {
+		padding: 0;
+	}
+
+	p {
+		font-size: 18px;
+		font-family: "Nunito", sans-serif;
+		text-align: center;
+		line-height: 1.5;
+		color: #7d7e86;
+	}
+}
+
+.news__item.uk-active {
+	opacity: 1;
+}
+
+/* перебивание стилей dots */
+.news__arrow > .uk-active > * {
+	background-color: #f97d5f;
+	border-color: transparent;
+}
+
+.news__arrow > * > :hover,
+.news__arrow > * > :focus {
+	background-color: #f97d5f;
+	outline: none;
+	border-color: transparent;
+}

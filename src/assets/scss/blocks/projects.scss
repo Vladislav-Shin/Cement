@@ -1,0 +1,75 @@
+.projects__title {
+    font-family: "Nunito";
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 62px;
+    text-transform: uppercase;
+    color: #1f3256;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.projects__item {
+    position: relative;
+    width: 32%;
+    background: #ffffff;
+    border: 1.27824px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 38px 89px 153px rgba(27, 49, 66, 0.1);
+    border-radius: 37px;
+    padding: 50px 24px;
+    margin-bottom: 65px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.94);
+        border-radius: 0 0 76px 76px;
+        box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05);
+    }
+}
+
+.project__header {
+    margin-bottom: 35px;
+}
+
+.project__contnent-title {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 23px;
+    color: #000b33;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.project__content-descr {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    text-align: center;
+    color: #64626a;
+}
+
+.project__title {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 62px;
+    text-transform: uppercase;
+    color: #1f3256;
+}

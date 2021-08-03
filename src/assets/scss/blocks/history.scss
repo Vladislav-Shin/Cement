@@ -1,0 +1,132 @@
+.history {
+    padding-bottom: 120px;
+}
+
+.history__row {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    border: 1.52734px solid #ffffff;
+    box-shadow: 45.8202px 43px 183.281px rgba(27, 49, 66, 0.13);
+    border-radius: 55px;
+    padding: 24px;
+}
+
+.history__title {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 62px;
+    text-transform: uppercase;
+    color: #1f3256;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.history__row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -36px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 36px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 0 0 76px 76px;
+        box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05);
+    }
+
+    &::before {
+        bottom: -72px;
+        width: 60%;
+    }
+}
+
+.history__left {
+    width: 42%;
+}
+
+.history__right {
+    width: 55%;
+}
+
+.history__left-img {
+    border-radius: 24px;
+    overflow: hidden;
+    height: 100%;
+
+    img {
+        height: 100%;
+    }
+}
+
+.history__right-title {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.history__right-descr {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    color: #64626a;
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.history__footer-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+
+    .history__left,
+    .history__right {
+        width: 48%;
+    }
+
+    .hisroy__right-img {
+        height: 100%;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.history__left-title {
+    position: relative;
+    max-width: 465px;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 60px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -26px;
+        width: 30%;
+        height: 1px;
+        background: #f23e60;
+    }
+}

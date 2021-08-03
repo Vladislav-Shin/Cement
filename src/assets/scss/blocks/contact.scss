@@ -1,0 +1,66 @@
+.contact {
+    transform: translateY(-386px);
+}
+
+.contact__inner {
+    position: relative;
+    padding: 90px 100px;
+    margin: 0 60px;
+    box-shadow: 45px 43px 183px rgba(27, 49, 66, 0.13);
+    background: #fff;
+    border-radius: 55px;
+    margin-bottom: -250px;
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        z-index: 20;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 0 0 76px 76px;
+        box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05);
+    }
+
+    &::before {
+        bottom: -60px;
+        width: 60%;
+        z-index: 5;
+    }
+}
+
+.contact__title {
+    color: #08104f;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact__subtitle {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    color: #08104f;
+    line-height: 1.5;
+    font-size: 22px;
+    padding: 0 20px;
+    margin-bottom: 70px;
+}
+
+.contact__footer {
+    text-align: center;
+}
+
+.btn-contact {
+    font-size: 30px;
+    font-weight: 600;
+}

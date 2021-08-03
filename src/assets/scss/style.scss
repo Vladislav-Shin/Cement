@@ -1,0 +1,56 @@
+@import "vars";
+@import "vendor/reset";
+@import "blocks/uikit";
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, dl, pre, address, fieldset, figure {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, pre, address, fieldset, figure {
+    margin: 0 0 0 0;
+}
+
+body {
+    background-color: #fff;
+    font-size: 21px;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 240px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Blocks */
+
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/home";
+@import "blocks/form";
+@import "blocks/footer";
+@import "blocks/products";
+@import "blocks/offer";
+@import "blocks/news";
+@import "blocks/contact";
+@import "blocks/partners";
+@import "blocks/map";
+@import "blocks/advantage";
+@import "blocks/projects";
+@import "blocks/questions";
+@import "blocks/history"

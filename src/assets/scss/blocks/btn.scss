@@ -1,0 +1,81 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 18px 43px;
+    font-family: 'Nunito', sans-serif;
+
+    background: rgba(55, 124, 253, 1);
+    border: none;
+    border-radius: 76px;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-blue {
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        width: 107%;
+        height: 127%;
+        border-radius: 76px;
+        background: transparent;
+        border: 1px solid #6985E7;
+    }
+
+    &:hover {
+        box-shadow: 0 23px 55px 12px rgba(55, 124, 253, 0.2);
+    }
+}
+
+.btn-orange {
+    background: linear-gradient(306.64deg, rgba(255, 41, 105, 0.45) 27.07%, rgba(247, 122, 28, 0.45) 71.29%), #FBB040;
+    font-size: 16px;
+    padding-left: 69px;
+    padding-right: 69px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+
+    &:hover {
+        box-shadow:
+            0px 0px 1px 6px #FBB040,
+            0px 0px 1px 12px rgba(251, 176, 64, 0.4),
+            0 23px 44px 0 rgba(243, 62, 96, 0.36);
+        transition: all 0.3s ease;
+    }
+}
+
+.btn-mt {
+    margin-top: 25px;
+
+    &:hover {
+
+        box-shadow:
+            0px 0px 1px 6px #FBB040,
+            0px 0px 1px 12px rgba(251, 176, 64, 0.4),
+            0 23px 44px 0 rgba(243, 62, 96, 0.36);
+    }
+}
+
+.btn-scheme {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+
+    &:hover {
+        box-shadow: 0 23px 55px 12px rgba(55, 124, 253, 0.2);
+    }
+}
