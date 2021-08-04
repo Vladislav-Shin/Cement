@@ -3,63 +3,114 @@ layout: default
 title: calculator
 ---
 
+<div class="calculator">
+    <div class="container">
+        <div class="calculator__inner">
+            <h2 class="calculator__title">Калькулятор цен</h2>
+            <div class="calculator__subtitle">для удобного расчета стоимости вы можете воспользоватьсякалькулятором цен.
+            </div>
+            <div class="calculator__row uk-flex">
+                <div class="calculator__item">
+                    <img src="assets/images/cement.png" alt="">
+                </div>
 
-<div class="container">
-    <div class="goods__inner">
-        <h1 class="goods__text">Товары</h1>
+                <div class="calculator__item">
+                    <h3 class="calculator__item-title">Тип упаковки</h3>
+                    <ul class="calculator__list">
+                        <li class="calculator__list-item">
+                            <input type="radio" name="type" value="type-1" checked id="chechox-1">
+                            <label for="chechox-1">Тип 2</label>
+                        </li>
+                        <li class="calculator__list-item">
+                            <input type="radio" name="type" value="type-2" id="chechox-2">
+                            <label for="chechox-1">Тип 2</label>
+                        </li>
+                        <li class="calculator__list-item">
+                            <input type="radio" name="type" value="type-3" id="chechox-3">
+                            <label for="chechox-1">Тип 3</label>
+                        </li>
+                        <li class="calculator__list-item">
+                            <input type="radio" name="type" value="type-4" id="chechox-4">
+                            <label for="chechox-1">Тип 4</label>
+                        </li>
+                    </ul>
+                    <div class="calculator__box">
+                        <label for="">Марка цемента</label>
+                        <input type="text">
+                    </div>
+                    <div class="calculator__box">
+                        <label for="">Цена</label>
+                        <input type="range" min="0" max="100" step="1" value="0" id="price"> 
+                        <span id="price-span">0</span>
+                    </div>
+                    <div class="calculator__box">
+                        <label for="quantity">Количество цемента (тонны)</label>
+                        <input type="range" min="0" max="100" step="1" value="0" id="quantity"> 
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <ul class="goods__list">
-        <li class="goods__item">
-            <div class="goods__header">
-                <img class="goods-img" src="assets/images/productsPage-1.jpg" alt="">
-            </div>
-            <div class="goods__content">
-                <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                    (ПЦ 400 Д20)</div>
-                <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-            </div>
-            <div class="goods__footer">
-                <button class="btn  btn-orange">Заказать</button>
-            </div>
-        </li>
-        <li class="goods__item">
-            <div class="goods__header">
-                <img class="productsPage__item-img" src="assets/images/productsPage-1.jpg" alt="">
-            </div>
-            <div class="goods__content">
-                <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                    (ПЦ 400 Д20)</div>
-                <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-            </div>
-            <div class="goods__footer">
-                <button class="btn  btn-orange">Заказать</button>
-            </div>
-        </li>
-        <li class="goods__item">
-            <div class="goods__header">
-                <img class="productsPage__item-img" src="assets/images/productsPage-1.jpg" alt="">
-            </div>
-            <div class="goods__content">
-                <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                    (ПЦ 400 Д20)</div>
-                <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-            </div>
-            <div class="goods__footer">
-                <button class="btn  btn-orange">Заказать</button>
-            </div>
-        </li>
-        <li class="goods__item">
-            <div class="goods__header">
-                <img class="productsPage__item-img" src="assets/images/productsPage-1.jpg" alt="">
-            </div>
-            <div class="goods__content">
-                <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                    (ПЦ 400 Д20)</div>
-                <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-            </div>
-            <div class="goods__footer">
-                <button class="btn  btn-orange">Заказать</button>
-            </div>
-        </li>
-    </ul>
+</div>
+
+<div class="goods">
+    <div class="container">
+        <div class="goods__inner">
+            <h1 class="goods__text">Товары</h1>
+            <ul class="goods__list">
+                <li class="goods__item">
+                    <div class="goods__header">
+                        <img class="goods-img" src="assets/images/productsPage-1.jpg" alt="">
+                    </div>
+                    <div class="goods__content">
+                        <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                            (ПЦ 400 Д20)</div>
+                        <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                    </div>
+                    <div class="goods__footer">
+                        <button class="btn  btn-orange">Заказать</button>
+                    </div>
+                </li>
+                <li class="goods__item">
+                    <div class="goods__header">
+                        <img class="productsPage__item-img" src="assets/images/productsPage-1.jpg" alt="">
+                    </div>
+                    <div class="goods__content">
+                        <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                            (ПЦ 400 Д20)</div>
+                        <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                    </div>
+                    <div class="goods__footer">
+                        <button class="btn  btn-orange">Заказать</button>
+                    </div>
+                </li>
+                <li class="goods__item">
+                    <div class="goods__header">
+                        <img class="productsPage__item-img" src="assets/images/productsPage-1.jpg" alt="">
+                    </div>
+                    <div class="goods__content">
+                        <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                            (ПЦ 400 Д20)</div>
+                        <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                    </div>
+                    <div class="goods__footer">
+                        <button class="btn  btn-orange">Заказать</button>
+                    </div>
+                </li>
+                <li class="goods__item">
+                    <div class="goods__header">
+                        <img class="productsPage__item-img" src="assets/images/productsPage-1.jpg" alt="">
+                    </div>
+                    <div class="goods__content">
+                        <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                            (ПЦ 400 Д20)</div>
+                        <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                    </div>
+                    <div class="goods__footer">
+                        <button class="btn  btn-orange">Заказать</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>

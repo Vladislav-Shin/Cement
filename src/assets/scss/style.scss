@@ -8,39 +8,6 @@
     box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-dl,
-pre,
-address,
-fieldset,
-figure {
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-dl,
-pre,
-address,
-fieldset,
-figure {
-    margin: 0 0 0 0;
-}
-
 body {
     background-color: #fff;
     font-size: 21px;
@@ -80,7 +47,9 @@ input:focus {
     margin-left: 0;
 }
 
-.uk-grid + .uk-grid, .uk-grid > .uk-grid-margin, * + .uk-grid-margin {
+.uk-grid+.uk-grid,
+.uk-grid>.uk-grid-margin,
+*+.uk-grid-margin {
     margin-top: 0;
 }
 
@@ -107,17 +76,17 @@ input:focus {
 /* Blocks */
 
 @import "blocks/header";
+@import "blocks/_home";
+@import "blocks/_products";
+@import "blocks/_offer";
+@import "blocks/_news";
+@import "blocks/_partners";
+@import "blocks/_map";
 @import "blocks/nav";
 @import "blocks/btn";
-@import "blocks/home";
 @import "blocks/form";
 @import "blocks/footer";
-@import "blocks/products";
-@import "blocks/offer";
-@import "blocks/news";
 @import "blocks/contact";
-@import "blocks/partners";
-@import "blocks/map";
 @import "blocks/advantage";
 @import "blocks/projects";
 @import "blocks/questions";
