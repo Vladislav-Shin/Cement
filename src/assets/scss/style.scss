@@ -8,11 +8,36 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, ul, ol, dl, pre, address, fieldset, figure {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+pre,
+address,
+fieldset,
+figure {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl, pre, address, fieldset, figure {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+pre,
+address,
+fieldset,
+figure {
     margin: 0 0 0 0;
 }
 
@@ -36,7 +61,9 @@ a {
     text-decoration: none;
 }
 
-a:focus {
+a:focus,
+textarea:focus-visible,
+input:focus {
     outline: none;
     border: none;
 }
@@ -47,6 +74,27 @@ a:focus {
 .uk-slider-container-offset {
     margin: 0;
     padding: 0;
+}
+
+.uk-grid {
+    margin-left: 0;
+}
+
+.uk-grid + .uk-grid, .uk-grid > .uk-grid-margin, * + .uk-grid-margin {
+    margin-top: 0;
+}
+
+.uk-margin {
+    margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+
+    .uk-grid+.uk-grid,
+    .uk-grid>.uk-grid-margin,
+    *+.uk-grid-margin {
+        margin-top: 0;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -75,6 +123,7 @@ a:focus {
 @import "blocks/questions";
 @import "blocks/history";
 @import "blocks/company";
-@import "blocks/productsPage";
 @import "blocks/goods";
-
+@import "blocks/productsPage";
+@import "blocks/newsPage";
+@import "blocks/newsDayPage";

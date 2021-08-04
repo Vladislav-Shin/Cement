@@ -161,6 +161,10 @@
         border-radius: 95px;
         border: none;
         padding: 15px 25px;
+
+        &:focus {
+            border: 1px solid #000;
+        }
     }
 
     &:last-child {
