@@ -1,25 +1,26 @@
 .company {
 
-    li {
+    .company__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
 
-        .uk-card {
+        .company__item {
             position: relative;
-            width: 49%;
+            width: 24%;
             margin-bottom: 45px;
+            padding: 14px;
             border-radius: 16px;
             box-shadow: 17.1185px 39.9432px 68.474px rgba(27, 49, 66, 0.09);
 
             &::after {
                 content: "";
                 position: absolute;
-                bottom: -25px;
+                bottom: -20px;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 80%;
-                height: 25px;
+                height: 20px;
                 border: 1px solid rgba(255, 255, 255, 0.5);
                 background: rgba(255, 255, 255, 0.6);
                 border-radius: 0 0 76px 76px;
@@ -29,28 +30,44 @@
 
     }
 
-    .uk-card-media-top {
-        height: 209px;
-        padding: 10px;
-        border-radius: 10px;
+    .company__header {
+        margin-bottom: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 
+    .company__contnet {
+        padding: 0 10px;
+    }
+
+    .company__title {
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 16px;
+        color: #000B33;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .company__subtitle {
+        font-family: "Nunito";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 21px;
+        text-align: center;
+        color: #64626A;
+    }
 }
 
 .company__inner {
     padding-bottom: 80px;
 }
 
-/* перебевание стилей uk-h3 */
-.company__card-title {
-    font-family: "Poppins";
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 16px;
-    color: #000B33;
-    text-align: center;
-    margin-bottom: 10px;
-}
+
 
 .company-img {
     width: 100%;

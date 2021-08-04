@@ -1,10 +1,10 @@
-/* news */
-.news__row {
+/* addressPage */
+.addressPage__row {
     display: flex;
     justify-content: space-between;
 }
 
-.news__item-header {
+.addressPage__item-header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     margin-bottom: 25px;
 }
 
-.news__item-header-title {
+.addressPage__item-header-title {
     position: relative;
     font-family: "Nunito";
     font-weight: 800;
@@ -41,13 +41,13 @@
     }
 }
 
-.news__item-content {
+.addressPage__item-content {
     background: #f2faff;
     border-radius: 7px;
     padding: 15px;
 }
 
-.news__item-text {
+.addressPage__item-text {
     font-family: "Nunito";
     font-weight: normal;
     font-size: 14px;
@@ -56,13 +56,13 @@
     color: #08104f;
 }
 
-.news__items-list {
+.addressPage__items-list {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
 }
 
-.news__list-item {
+.addressPage__list-item {
     width: 31%;
 
     a {
@@ -75,12 +75,12 @@
     }
 }
 
-.news__row-footer {
-    .news__item-header {
+.addressPage__row-footer {
+    .addressPage__item-header {
         width: 24%;
     }
 
-    .news__item-footer {
+    .addressPage__item-footer {
         font-family: "Nunito";
         font-weight: 600;
         font-size: 16px;

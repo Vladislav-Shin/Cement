@@ -12361,8 +12361,9 @@ a:hover {
   text-decoration: none; }
 
 /* make sure to set some focus styles for accessibility */
-:focus {
-  outline: 0; }
+a:focus {
+  outline: none;
+  border: none; }
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -12702,8 +12703,19 @@ body {
 
 a {
   text-decoration: none; }
-  a:focus {
-    border: 1px solid red; }
+
+a:focus {
+  outline: none;
+  border: none; }
+
+/* ui-kit сброс некоторых настроек */
+.uk-slider-container-offset {
+  margin: 0;
+  padding: 0; }
+
+@media (min-width: 1200px) {
+  .uk-card-body {
+    padding: 0; } }
 
 /* Blocks */
 .header__inner {
@@ -13932,12 +13944,12 @@ a {
   text-transform: uppercase;
   color: #1f3256; }
 
-/* news */
-.news__row {
+/* addressPage */
+.addressPage__row {
   display: flex;
   justify-content: space-between; }
 
-.news__item-header {
+.addressPage__item-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13949,7 +13961,7 @@ a {
   padding: 27px;
   margin-bottom: 25px; }
 
-.news__item-header-title {
+.addressPage__item-header-title {
   position: relative;
   font-family: "Nunito";
   font-weight: 800;
@@ -13959,7 +13971,7 @@ a {
   color: #106ca3;
   padding-left: 25px;
   margin-bottom: 15px; }
-  .news__item-header-title::before {
+  .addressPage__item-header-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -13970,12 +13982,12 @@ a {
     background: #1180c1;
     border-radius: 50%; }
 
-.news__item-content {
+.addressPage__item-content {
   background: #f2faff;
   border-radius: 7px;
   padding: 15px; }
 
-.news__item-text {
+.addressPage__item-text {
   font-family: "Nunito";
   font-weight: normal;
   font-size: 14px;
@@ -13983,14 +13995,14 @@ a {
   letter-spacing: 1px;
   color: #08104f; }
 
-.news__items-list {
+.addressPage__items-list {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0; }
 
-.news__list-item {
+.addressPage__list-item {
   width: 31%; }
-  .news__list-item a {
+  .addressPage__list-item a {
     font-family: "Nunito";
     font-weight: 600;
     font-size: 16px;
@@ -13998,10 +14010,10 @@ a {
     text-transform: uppercase;
     color: #000000; }
 
-.news__row-footer .news__item-header {
+.addressPage__row-footer .addressPage__item-header {
   width: 24%; }
 
-.news__row-footer .news__item-footer {
+.addressPage__row-footer .addressPage__item-footer {
   font-family: "Nunito";
   font-weight: 600;
   font-size: 16px;
@@ -14009,7 +14021,7 @@ a {
   text-transform: uppercase;
   color: #000000; }
 
-.news__row-footer address {
+.addressPage__row-footer address {
   font-family: "Nunito";
   font-weight: 600;
   font-size: 16px;
@@ -14205,39 +14217,40 @@ a {
     height: 1px;
     background: #f23e60; }
 
-.company li {
+.company .company__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
-  .company li .uk-card {
+  .company .company__list .company__item {
     position: relative;
-    width: 49%;
+    width: 24%;
     margin-bottom: 45px;
+    padding: 14px;
     border-radius: 16px;
     box-shadow: 17.1185px 39.9432px 68.474px rgba(27, 49, 66, 0.09); }
-    .company li .uk-card::after {
+    .company .company__list .company__item::after {
       content: "";
       position: absolute;
-      bottom: -25px;
+      bottom: -20px;
       left: 50%;
       transform: translateX(-50%);
       width: 80%;
-      height: 25px;
+      height: 20px;
       border: 1px solid rgba(255, 255, 255, 0.5);
       background: rgba(255, 255, 255, 0.6);
       border-radius: 0 0 76px 76px;
       box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05); }
 
-.company .uk-card-media-top {
-  height: 209px;
-  padding: 10px;
-  border-radius: 10px; }
+.company .company__header {
+  margin-bottom: 20px; }
+  .company .company__header img {
+    width: 100%;
+    height: 100%; }
 
-.company__inner {
-  padding-bottom: 80px; }
+.company .company__contnet {
+  padding: 0 10px; }
 
-/* перебевание стилей uk-h3 */
-.company__card-title {
+.company .company__title {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 20px;
@@ -14245,6 +14258,17 @@ a {
   color: #000B33;
   text-align: center;
   margin-bottom: 10px; }
+
+.company .company__subtitle {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+  color: #64626A; }
+
+.company__inner {
+  padding-bottom: 80px; }
 
 .company-img {
   width: 100%;
@@ -14300,3 +14324,110 @@ a {
 @media (min-width: 1200px) {
   .company .uk-card-body {
     padding: 12px 32px 32px 32px; } }
+
+.productsPage .uk-slider-items {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.productsPage li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 20px; }
+
+.productsPage .uk-card {
+  width: 24%;
+  margin-bottom: 83px;
+  border-radius: 21px; }
+
+.productsPage .uk-card-body {
+  padding: 24px; }
+
+.productsPage .uk-slider-container-offset {
+  padding-bottom: 40px; }
+
+.productsPage .productsPage__footer {
+  text-align: center;
+  margin-bottom: -20px; }
+
+.productsPage__item {
+  width: 100%;
+  height: 100%; }
+
+.productsPage__card-title {
+  max-width: 236px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #3B3A40;
+  margin-bottom: 15px; }
+
+.productPage__card-subtitle {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #64626A; }
+
+.productsPage__arrows {
+  position: relative;
+  top: -26px;
+  width: 98%;
+  margin: 0 auto; }
+  .productsPage__arrows a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px 10px rgba(34, 60, 80, 0.2); }
+
+.goods__text {
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 62px;
+  text-transform: uppercase;
+  color: #1F3256;
+  text-align: center;
+  margin-bottom: 25px; }
+
+.goods__list {
+  display: flex;
+  justify-content: space-between; }
+
+.goods__item {
+  width: 24%;
+  margin-bottom: 83px;
+  border-radius: 21px;
+  box-shadow: 0px 10.6069px 31.8206px rgba(59, 58, 64, 0.08); }
+  .goods__item .goods-img {
+    width: 100%;
+    height: 100%; }
+
+.goods__title {
+  max-width: 236px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #3B3A40;
+  margin-bottom: 15px; }
+
+.goods__subtitle {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #64626A; }
+
+.goods__content {
+  padding: 24px; }
+
+.goods__footer {
+  text-align: center;
+  margin-bottom: -20px; }

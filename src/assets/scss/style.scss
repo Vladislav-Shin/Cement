@@ -34,8 +34,24 @@ body {
 
 a {
     text-decoration: none;
-    &:focus {
-        border: 1px solid red
+}
+
+a:focus {
+    outline: none;
+    border: none;
+}
+
+
+/* ui-kit сброс некоторых настроек */
+
+.uk-slider-container-offset {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1200px) {
+    .uk-card-body {
+        padding: 0;
     }
 }
 
@@ -59,3 +75,6 @@ a {
 @import "blocks/questions";
 @import "blocks/history";
 @import "blocks/company";
+@import "blocks/productsPage";
+@import "blocks/goods";
+

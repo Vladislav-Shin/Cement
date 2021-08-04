@@ -97,8 +97,9 @@ a:hover {
 }
 
 /* make sure to set some focus styles for accessibility */
-:focus {
-    outline: 0;
+a:focus {
+    outline: none;
+    border: none;
 }
 
 /* HTML5 display-role reset for older browsers */
