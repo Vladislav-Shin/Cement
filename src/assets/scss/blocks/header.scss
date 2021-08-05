@@ -1,6 +1,28 @@
 .header__inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	min-height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 170px;
+}
+
+/* Фон для других страниц */
+.header__footer {
+    text-align: center;
+	max-width: 1900px;
+    background: url("../images/123.png") center no-repeat;
+	background-size: cover;
+	height: 398px;
+	padding-top: 50px;
+	transform: translatey(-70px);
+}
+
+.header__footer-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #fff;
 }

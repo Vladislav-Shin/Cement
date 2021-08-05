@@ -242,6 +242,68 @@
             </div> <!-- offer -->
             
             
+            <div class="calculator">
+                <div class="container">
+                    <div class="calculator__inner">
+                        <h2 class="calculator__title">Калькулятор цен</h2>
+                        <div class="calculator__subtitle">Для удобного расчета стоимости вы можете воспользоватьсякалькулятором цен.
+                        </div>
+                        <div class="calculator__row uk-flex">
+                            <div class="calculator__item">
+                                <img src="assets/images/cement.png" alt="">
+                            </div>
+            
+                            <div class="calculator__item">
+                                <h3 class="calculator__item-title">Тип упаковки</h3>
+                                <ul class="calculator__list">
+                                    <li class="calculator__list-item">
+                                        <input type="radio" name="type" value="type-1" checked id="chechox-1">
+                                        <label for="chechox-1">Тип 1</label>
+                                    </li>
+                                    <li class="calculator__list-item">
+                                        <input type="radio" name="type" value="type-2" id="chechox-2">
+                                        <label for="chechox-1">Тип 2</label>
+                                    </li>
+                                    <li class="calculator__list-item">
+                                        <input type="radio" name="type" value="type-3" id="chechox-3">
+                                        <label for="chechox-1">Тип 3</label>
+                                    </li>
+                                    <li class="calculator__list-item">
+                                        <input type="radio" name="type" value="type-4" id="chechox-4">
+                                        <label for="chechox-1">Тип 4</label>
+                                    </li>
+                                </ul>
+                                <div class="calculator__box">
+                                    <label for="brand">Марка цемента</label>
+                                    <select class="calculator-select">
+                                        <option class="calculator-option" value="1500">Пункт 1</option>
+                                        <option class="calculator-option" value="3000">Пункт 2</option>
+                                        <option class="calculator-option" value="4500">Пункт 3</option>
+                                        <option class="calculator-option" value="6000">Пункт 4</option>
+                                      </select>
+                                </div>
+                                <div class="calculator__box">
+                                    <label for="">Цена</label>
+                                    <span class="calculator__price"></span>
+                                </div>
+                                <div class="calculator__box">
+                                    <label for="quantity">Количество цемента (кг)</label>
+                                    <div class="calculator__wrapper-input">
+                                        <input type="range" min="0" max="1000" step="1" value="0" id="quantity">
+                                        <span id="amount-span">0</span>
+                                    </div>
+                                </div>
+                                <div class="calculator__footer">
+                                    <button class="btn  btn-blue" id="calculate">Рассчитать</button>
+                                    <span class="calcutor__footer-price">Итоговая цена: <span id="total-price">0</span> сум</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
             <div class="news">
                 <div class="news__container">
             

@@ -93,7 +93,18 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const price = document.querySelector(\"#price\");\r\nconst priceSpan = document.querySelector(\"#price-span\");\r\n\r\nprice.addEventListener(\"input\", (e) => {\r\n\tconsole.log(price.value);\r\n\tpriceSpan.textContent = price.value\t\r\n})\r\n\r\n\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+eval("console.log(123);\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/calculator.js":
+/*!*************************************!*\
+  !*** ./src/assets/js/calculator.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("function calc() {\r\n\tconst price = document.querySelector(\"#quantity\");\r\n\tconst priceSpan = document.querySelector(\"#amount-span\");\r\n\tconst selectBtn = document.querySelector(\".calculator-select\");\r\n\tconst calculate = document.querySelector(\"#calculate\");\r\n\tconst calcPrice = document.querySelector(\".calculator__price\")\r\n\r\n\tlet priceA = 0;\r\n\tlet col = 0\r\n\r\n\tprice.addEventListener(\"input\", (e) => {\r\n\t\tpriceSpan.textContent = price.value;\r\n\t\tpriceA = price.value\r\n\t})\r\n\r\n\tselectBtn.addEventListener(\"change\", function () {\r\n\t\tdocument.querySelector(\".calculator__price\").textContent = this.value\r\n\t\tcol = this.value\r\n\t})\r\n\r\n\tcalculate.addEventListener(\"click\", () => {\r\n\t\tconst price = priceA * col;\r\n\t\tdocument.querySelector(\"#total-price\").textContent = price\r\n\t})\r\n}\r\n\r\ncalc()\n\n//# sourceURL=webpack:///./src/assets/js/calculator.js?");
 
 /***/ }),
 
@@ -120,13 +131,13 @@ eval("/*! UIkit 3.7.1 | https://www.getuikit.com | (c) 2014 - 2021 YOOtheme | MI
 /***/ }),
 
 /***/ 0:
-/*!********************************************************************************************!*\
-  !*** multi ./src/assets/js/app.js ./src/assets/js/uikit-icons.js ./src/assets/js/uikit.js ***!
-  \********************************************************************************************/
+/*!**************************************************************************************************************************!*\
+  !*** multi ./src/assets/js/app.js ./src/assets/js/calculator.js ./src/assets/js/uikit-icons.js ./src/assets/js/uikit.js ***!
+  \**************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! C:\\Users\\Administrator\\Desktop\\cement\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\n__webpack_require__(/*! C:\\Users\\Administrator\\Desktop\\cement\\src\\assets\\js\\uikit-icons.js */\"./src/assets/js/uikit-icons.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Administrator\\Desktop\\cement\\src\\assets\\js\\uikit.js */\"./src/assets/js/uikit.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/uikit-icons.js_./src/assets/js/uikit.js?");
+eval("__webpack_require__(/*! D:\\Projects\\cement\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\n__webpack_require__(/*! D:\\Projects\\cement\\src\\assets\\js\\calculator.js */\"./src/assets/js/calculator.js\");\n__webpack_require__(/*! D:\\Projects\\cement\\src\\assets\\js\\uikit-icons.js */\"./src/assets/js/uikit-icons.js\");\nmodule.exports = __webpack_require__(/*! D:\\Projects\\cement\\src\\assets\\js\\uikit.js */\"./src/assets/js/uikit.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/calculator.js_./src/assets/js/uikit-icons.js_./src/assets/js/uikit.js?");
 
 /***/ })
 
