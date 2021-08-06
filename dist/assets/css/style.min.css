@@ -12372,6 +12372,9 @@ fieldset,
 figure {
   margin: 0; }
 
+button:focus-visible {
+  border: none; }
+
 a:hover {
   text-decoration: none; }
 
@@ -14524,8 +14527,16 @@ input:focus {
     box-shadow: 0px 28px 30px rgba(0, 0, 0, 0.01);
     border-radius: 44px;
     padding: 15px; }
+    .calculator__wrapper-input input {
+      cursor: pointer; }
     .calculator__wrapper-input span {
-      margin: 0 10px; }
+      margin: 0 10px;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 30px;
+      color: #000; }
   .calculator__footer {
     display: flex;
     align-items: center;

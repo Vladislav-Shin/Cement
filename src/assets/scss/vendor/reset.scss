@@ -108,6 +108,10 @@ figure {
     margin: 0;
 }
 
+button:focus-visible {
+    border: none;
+}
+
 a:hover {
     text-decoration: none;
 }
