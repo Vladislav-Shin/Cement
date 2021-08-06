@@ -12811,6 +12811,10 @@ input:focus {
   width: 58%;
   color: #fff; }
 
+.home__right {
+  width: 40%;
+  overflow: hidden; }
+
 .home__title {
   color: #fff;
   font-size: 50px;
@@ -13552,9 +13556,10 @@ input:focus {
 
 .form__modal {
   position: relative;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   background: rgba(28, 56, 99, 0.8);
-  border-radius: 15px 15px 15px 0;
+  border-radius: 15px 15px 0 0;
   padding: 45px; }
   .form__modal::after {
     content: "";
@@ -14454,10 +14459,6 @@ input:focus {
     margin-top: 50px; }
   .calculator__item {
     width: 48%; }
-    .calculator__item:first-child {
-      background: #FFFFFF;
-      border-radius: 24px;
-      overflow: hidden; }
     .calculator__item-title {
       font-family: "Nunito";
       font-style: normal;
@@ -14466,6 +14467,10 @@ input:focus {
       line-height: 30px;
       color: #000000;
       margin-bottom: 20px; }
+  .calculator__item-img {
+    background: #FFFFFF;
+    border-radius: 24px;
+    overflow: hidden; }
   .calculator__list {
     display: flex;
     margin-bottom: 35px; }
@@ -14572,23 +14577,53 @@ input:focus {
     color: #000000;
     cursor: pointer; }
 
-/* order */
+/* orders */
 /* charact */
-.order__row {
+.orders__row {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 50px; }
+
+.orders__left {
+  width: 45%;
+  border-radius: 21px;
+  box-shadow: 0px 10px 31.8206px rgba(59, 58, 64, 0.08);
+  overflow: hidden; }
+
+.orders__right {
+  padding: 20px 0;
+  width: 50%; }
+
+.order__title {
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 62px;
+  text-transform: uppercase;
+  color: #1F3256;
+  margin-bottom: 20px; }
+
+.orders__right-descr {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #666666;
+  margin-bottom: 20px;
+  padding-bottom: 20px; }
+
+.orders__btn {
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 /* charact */
 .charact__row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px; }
-
-.order__left {
-  width: 45%; }
-
-.order__right {
-  width: 50%; }
 
 .charact__item {
   position: relative;
@@ -14913,3 +14948,287 @@ input:focus {
   line-height: 26px;
   color: #696871;
   margin-bottom: 40px; }
+
+/* breakpoint 1830
+@media (max-width: 1830px) {
+    .container {
+        padding: 0 100px;
+    }
+
+    .home__content {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+} */
+/* Breakpoints 1600 */
+@media (max-width: 1600px) {
+  .container {
+    padding: 0 40px; }
+  .header__telephone {
+    padding: 14px 16px; }
+  .home__content {
+    padding-left: 70px;
+    padding-right: 70px; }
+  .home__left {
+    width: 55%; }
+  .nav__link {
+    margin: 0 14px; } }
+
+/* Landscape tablets and medium desktops - 1199px */
+@media (max-width: 1199px) {
+  /* scheme */
+  .scheme .scheme__list-items {
+    padding: 0 15px; }
+    .scheme .scheme__list-items span {
+      font-size: 17px; }
+  /* calculator */
+  .calculator .calculator__row {
+    flex-wrap: wrap; }
+  .calculator .calculator__item {
+    width: 100%;
+    margin-bottom: 25px; }
+  .calculator .calculator__list-item {
+    margin-right: 20px; }
+  .calculator .calculator__list {
+    flex-wrap: wrap; }
+  .calculator .calculator__list-item {
+    margin-bottom: 10px; } }
+
+/* Portrait tablets and small desktops - 991px */
+@media (max-width: 991px) {
+  /* home */
+  .home .home__content {
+    min-height: 920px; }
+  .home .home__title {
+    font-size: 30px;
+    margin-bottom: 20px; }
+  .home .home__subtitle {
+    font-size: 18px; }
+  .home .home__footer-img {
+    height: auto; }
+  .home .home__footer-left {
+    width: 60%;
+    padding-top: 0; }
+  .home .home__footer-right {
+    flex: 1; }
+  .form__modal {
+    padding: 20px; }
+    .form__modal .form__modal-input,
+    .form__modal .form__modal-textarea {
+      padding: 12px 16px; }
+    .form__modal .form__title {
+      font-size: 26px;
+      margin-bottom: 20px; }
+    .form__modal .btn-orange {
+      padding-left: 30px;
+      padding-right: 30px; }
+  .form__modal-input,
+  .form__modal-textarea {
+    padding: 12px 16px; }
+  /* products */
+  .products {
+    /* scheme */ }
+    .products .products__content {
+      border-radius: 32px;
+      padding: 25px 15px 15px; }
+      .products .products__content::after {
+        height: 20px;
+        bottom: -20px; }
+      .products .products__content::before {
+        height: 20px;
+        bottom: -40px; }
+    .products .products__title {
+      font-size: 31px;
+      margin-bottom: 20px; }
+    .products .product__descr {
+      font-size: 16px;
+      padding: 15px; }
+    .products .scheme__list-items span {
+      font-size: 20px; }
+      .products .scheme__list-items span::before {
+        display: none; }
+    .products .scheme__title {
+      margin-bottom: 130px; }
+    .products .btn-scheme {
+      padding: 10px 20px; }
+  .scheme__items:first-child::after {
+    left: 50px;
+    bottom: 30px; }
+  /* offer */
+  .offer .offer__inner {
+    padding: 40px 0; }
+  .offer .offer__row {
+    flex-wrap: wrap; }
+  .offer .offer__title {
+    font-size: 30px; }
+  .offer .offer__items {
+    width: 49%;
+    margin-bottom: 30px; }
+  .offer .offer__subtitle {
+    font-size: 20px; } }
+
+/* Landscape phones and portrait tablets - 767px*/
+@media (max-width: 767px) {
+  /* home */
+  .home .home__content {
+    min-height: 880px; }
+  .home .home__footer-title {
+    font-size: 32px; }
+  .home .home__footer-subtitle {
+    font-size: 20px; }
+  .home .home__footer-descr {
+    font-size: 16px; }
+  .home .home__content {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .home .home__footer-btn .btn {
+    padding: 10px 50px; }
+  /* products */
+  .products {
+    padding-bottom: 50px; }
+  .products__content {
+    margin-bottom: 40px; }
+  /* scheme */
+  .scheme .scheme__header {
+    width: 110px;
+    height: 110px; }
+  .scheme .scheme__title {
+    font-size: 30px;
+    margin-bottom: 95px; }
+  .scheme .scheme__list-items {
+    padding: 0 10px; }
+    .scheme .scheme__list-items span {
+      font-size: 16px; }
+  .scheme .scheme__footer .btn {
+    padding: 8px 22px;
+    font-size: 18px; } }
+
+/* Portrait phones and smaller - 480px */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 20px; }
+  /* home */
+  .home .home__content {
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 1200px;
+    padding: 15px; }
+    .home .home__content .home__left {
+      margin-bottom: 55px; }
+    .home .home__content .home__left,
+    .home .home__content .home__right {
+      width: 100%; }
+  .home .home__footer-row {
+    flex-direction: column; }
+  .home .home__footer-left,
+  .home .home__footer-right {
+    width: 100%; }
+  .home .home__footer-btn {
+    text-align: center; }
+    .home .home__footer-btn .btn {
+      padding: 10px 50px; }
+  .home .home__footer-right {
+    margin-top: 20px; }
+  /* form */
+  .form__modal {
+    border-radius: 15px; }
+  .form__modal .btn {
+    margin: 0 90px; }
+  /* products */
+  .products .products__row {
+    flex-wrap: wrap; }
+    .products .products__row .products__left,
+    .products .products__row .products__right {
+      width: 100%; }
+    .products .products__row .products__left {
+      margin-bottom: 15px; }
+  .products .products__title {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 15px; }
+  .products .products__content::after {
+    height: 15px;
+    bottom: -15px; }
+  .products .products__content::before {
+    height: 15px;
+    bottom: -30px; }
+  .products .products__footer {
+    margin-top: -390px; }
+  /* scheme */
+  .scheme .scheme__title {
+    font-size: 26px; }
+  .scheme .scheme__row {
+    flex-wrap: wrap; }
+  .scheme .scheme__items {
+    width: 100%;
+    margin-bottom: 120px; }
+    .scheme .scheme__items::after {
+      display: none; }
+  .scheme .scheme__wrapper {
+    position: static; }
+  /* offer */
+  .offer .offer__item-header {
+    margin-bottom: 20px; }
+  .offer .offer__item-content-text {
+    font-size: 20px; } }
+
+/* Iphone 5 - 320px*/
+@media (max-width: 320px) {
+  .container {
+    padding: 0 12px; }
+  /* home */
+  .home .home__content {
+    min-height: 1200px; }
+  .home .home__title {
+    font-size: 24px; }
+  .home .home__subtitle {
+    font-size: 16px;
+    padding-left: 0; }
+    .home .home__subtitle::before {
+      display: none; }
+  .home .home__footer-btn .btn {
+    padding: 12px 50px; }
+  .home .home__footer-title {
+    font-size: 20px;
+    font-weight: 900; }
+  .home .home__footer-subtitle {
+    font-size: 18px; }
+  .home .home__footer-subtitle {
+    font-size: 18px;
+    font-weight: 700; }
+  /* form */
+  .form__modal .form__title {
+    font-size: 24px; }
+  .form__modal .form__modal-input {
+    padding: 8px 12px; }
+  .form__modal .btn {
+    margin: 0 30px;
+    padding: 12px 12px; }
+  /* products */
+  .products .products__title {
+    font-size: 20px; }
+  .products .products__left .product__descr {
+    font-size: 16px;
+    padding: 14px; }
+  .products .product__descr {
+    font-size: 12px;
+    padding: 10px; }
+  .products .products__footer {
+    margin-top: -300px; }
+  .products .products__content {
+    margin-bottom: 70px; }
+  /* scheme */
+  .scheme .scheme__title {
+    font-size: 20px; }
+  .scheme .scheme__content-title {
+    font-size: 24px;
+    margin-bottom: 24px; }
+  .scheme .scheme__footer .btn {
+    padding: 10px 10px; }
+  /* offer */
+  .offer .offer__items {
+    width: 100%; }
+  .offer .offer__title {
+    font-size: 26px; }
+  .offer .offer__subtitle {
+    font-size: 15px; } }

@@ -3,12 +3,11 @@ function calc() {
 	const priceSpan = document.querySelector("#amount-span");
 	const selectBtn = document.querySelector(".calculator-select");
 	const calculate = document.querySelector("#calculate");
-	const calcPrice = document.querySelector(".calculator__price")
 
 	let priceA = 0;
 	let col = 0
 
-	price.addEventListener("input", (e) => {
+	price.addEventListener("input", () => {
 		priceSpan.textContent = price.value;
 		priceA = price.value
 	})
@@ -24,4 +23,6 @@ function calc() {
 	})
 }
 
-calc()
+if(document.querySelector("#quantity")) {
+	calc()
+}

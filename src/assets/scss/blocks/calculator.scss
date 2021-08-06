@@ -6,7 +6,7 @@
     &__inner {
         padding-top: 60px;
     }
-    
+
 
     &__title {
         font-family: "Nunito";
@@ -36,12 +36,6 @@
     &__item {
         width: 48%;
 
-        &:first-child {
-            background: #FFFFFF;
-            border-radius: 24px;
-            overflow: hidden;
-        }
-
         &-title {
             font-family: "Nunito";
             font-style: normal;
@@ -51,6 +45,12 @@
             color: #000000;
             margin-bottom: 20px;
         }
+    }
+
+    &__item-img {
+        background: #FFFFFF;
+        border-radius: 24px;
+        overflow: hidden;
     }
 
     &__list {
@@ -181,7 +181,7 @@
     }
 
     .uk-nav {
-        
+
         .calc__dropdown-item {
             border-bottom: 1px solid #000;
             padding: 15px 0;
