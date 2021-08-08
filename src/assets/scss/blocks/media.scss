@@ -1,0 +1,815 @@
+/* Breakpoints 1600 */
+@media (max-width: 1600px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .header {
+        .header__telephone {
+            padding: 14px 16px;
+        }
+
+        .home__content {
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+
+        .home__left {
+            width: 55%;
+        }
+    }
+
+    .nav__link {
+        margin: 0 14px;
+    }
+
+    .news {
+
+        .news__item.uk-active {
+            opacity: 1;
+        }
+
+    }
+
+}
+
+/* Breakpoints 1450 */
+@media (max-width: 1450px) {
+    .home__content {
+        padding: 100px 20px;
+    }
+}
+
+/* Landscape tablets and medium desktops - 1199px */
+@media (max-width: 1199px) {
+
+    /* scheme */
+    .scheme {
+
+        .scheme__list-items {
+            padding: 0 15px;
+
+            span {
+                font-size: 17px;
+            }
+        }
+    }
+
+    /* calculator */
+    .calculator {
+
+        .calculator__row {
+            flex-wrap: wrap;
+        }
+
+        .calculator__item {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .calculator__list-item {
+            margin-right: 20px;
+        }
+
+        .calculator__list {
+            flex-wrap: wrap;
+        }
+
+        .calculator__list-item {
+            margin-bottom: 10px;
+        }
+    }
+
+    .offer {
+
+        .offer__inner {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+/* Portrait tablets and small desktops - 991px */
+@media (max-width: 991px) {
+
+    /* home */
+    .home {
+
+        .home__content {
+            min-height: 920px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+
+        .home__title {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .home__subtitle {
+            font-size: 18px;
+        }
+
+        .home__footer-img {
+            height: auto;
+        }
+
+        .home__footer-left {
+            width: 60%;
+            padding-top: 0;
+        }
+
+        .home__footer-right {
+            flex: 1;
+        }
+    }
+
+
+    .form__modal {
+
+        padding: 20px;
+
+        .form__modal-input,
+        .form__modal-textarea {
+            padding: 12px 16px;
+        }
+
+        .form__title {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .btn-orange {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
+    .form__modal-input,
+    .form__modal-textarea {
+        padding: 12px 16px;
+    }
+
+    /* products */
+    .products {
+
+        .products__content {
+            border-radius: 32px;
+            padding: 25px 15px 15px;
+
+            &::after {
+                height: 20px;
+                bottom: -20px;
+            }
+
+            &::before {
+                height: 20px;
+                bottom: -40px;
+            }
+        }
+
+        .products__title {
+            font-size: 31px;
+            margin-bottom: 20px;
+        }
+
+        .product__descr {
+            font-size: 16px;
+            padding: 15px;
+        }
+
+    }
+
+    .news {
+
+        .uk-card-default {
+            padding: 16px;
+            border-radius: 25px;
+        }
+
+        .uk-card-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    /* scheme */
+    .scheme {
+
+        .scheme__title {
+            margin-bottom: 130px;
+        }
+
+        .btn-scheme {
+            padding: 10px 20px;
+        }
+
+        .scheme__list-items {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                width: 20%;
+                height: 1px;
+                background: #0068CF;
+                transform: translateX(-50%);
+            }
+
+            span {
+                font-size: 20px;
+                margin-bottom: 10px;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+
+    .scheme__items:first-child::after {
+        left: 55px;
+        bottom: 43px;
+    }
+
+    /* offer */
+    .offer {
+
+        .offer__inner {
+            padding: 40px 0;
+        }
+
+        .offer__row {
+            flex-wrap: wrap;
+        }
+
+        .offer__title {
+            font-size: 30px;
+        }
+
+        .offer__items {
+            width: 49%;
+            margin-bottom: 30px;
+        }
+
+        .offer__subtitle {
+            font-size: 20px;
+        }
+    }
+
+    /* news */
+    .news {
+
+        .news__title {
+            font-size: 35px;
+        }
+
+        .news__subtitle {
+            font-size: 20px;
+        }
+    }
+
+    .partners {
+
+        .partners__sliders {
+            margin: 0 25px;
+        }
+
+        .partners__title {
+            font-size: 35px;
+        }
+
+        .uk-slider-items {
+            padding: 0;
+
+            li {
+                height: 150px;
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets - 767px*/
+@media (max-width: 767px) {
+
+    /* home */
+    .home {
+        margin-bottom: 30px;
+
+        .home__content {
+            flex-wrap: wrap;
+            justify-content: center;
+            min-height: 880px;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+
+        .home__title {
+            text-align: center;
+        }
+
+        .home__left, 
+        .home__right {
+            width: 100%;
+        }
+
+        .home__footer-title {
+            font-size: 32px;
+        }
+
+        .home__footer-subtitle {
+            font-size: 20px;
+        }
+
+        .home__footer-descr {
+            font-size: 16px;
+        }
+
+        .home__content {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .home__footer-btn {
+
+            .btn {
+                padding: 10px 50px;
+            }
+        }
+
+        .form__modal {
+
+            margin: 0 auto;
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    /* products */
+    .products {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .product__descr {
+            font-size: 20px;
+        }
+    }
+
+    .products__row {
+        flex-wrap: wrap;
+    }
+
+    .products__left,
+    .products__right {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .products__content {
+        margin-bottom: 90px;
+        transform: translateY(0);
+    }
+
+    .products__footer {
+        margin-top: 0;
+    }
+
+    /* scheme */
+    .scheme {
+
+        .scheme__header {
+            width: 110px;
+            height: 110px;
+        }
+
+        .scheme__row {
+            flex-wrap: wrap;
+        }
+
+        .scheme__items {
+            width: 100%;
+            margin-bottom: 120px;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .scheme__wrapper {
+            position: static;
+        }
+
+        .scheme__title {
+            font-size: 30px;
+            margin-bottom: 120px;
+        }
+
+        .scheme__list-items {
+            padding: 0 10px;
+
+            span {
+                font-size: 20px;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        .scheme__footer {
+            .btn {
+                padding: 8px 22px;
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+
+/* Portrait phones and smaller - 480px */
+@media (max-width: 480px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    /* home */
+    .home {
+
+        .home__content {
+            flex-direction: column;
+            justify-content: flex-start;
+            min-height: 1200px;
+            padding: 15px;
+
+            .home__left {
+                margin-bottom: 55px;
+            }
+
+            .home__left,
+            .home__right {
+                width: 100%;
+            }
+        }
+
+        .home__footer-row {
+            flex-direction: column;
+        }
+
+        .home__footer-left,
+        .home__footer-right {
+            width: 100%;
+        }
+
+        .home__footer-btn {
+            text-align: center;
+
+            .btn {
+                padding: 10px 50px;
+            }
+        }
+
+        .home__footer-right {
+            margin-top: 20px;
+        }
+    }
+
+
+    /* form */
+    .form__modal {
+        border-radius: 15px;
+    }
+
+    .form__modal {
+
+        .btn {
+            margin: 0 90px;
+        }
+    }
+
+    /* products */
+    .products {
+
+        .products__row {
+            flex-wrap: wrap;
+
+            .products__left,
+            .products__right {
+                width: 100%;
+            }
+
+            .products__left {
+                margin-bottom: 15px;
+            }
+        }
+
+        .products__title {
+            font-size: 26px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .products__content::after {
+            height: 15px;
+            bottom: -15px;
+        }
+
+        .products__content::before {
+            height: 15px;
+            bottom: -30px;
+        }
+
+        .products__footer {
+            margin-top: 0;
+        }
+
+        .product__descr {
+            font-size: 14px;
+            padding: 10px;
+        }
+
+    }
+
+    /* scheme */
+    .scheme {
+
+        .scheme__title {
+            font-size: 26px;
+        }
+
+        .scheme__row {
+            flex-wrap: wrap;
+        }
+
+        .scheme__items {
+            width: 100%;
+            margin-bottom: 120px;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .scheme__wrapper {
+            position: static;
+        }
+    }
+
+    /* offer */
+    .offer {
+
+        .offer__item-header {
+            margin-bottom: 20px;
+        }
+
+        .offer__row {
+            flex-wrap: wrap;
+        }
+
+        .offer__items {
+            width: 100%;
+        }
+
+        .offer__item-content-text {
+            font-size: 20px;
+        }
+    }
+
+    /* calculator */
+    .calculator__footer-price {
+        text-align: center;
+    }
+
+    /* partners */
+    .partners {
+
+        .uk-slider-items li {
+            height: 140px;
+            max-width: 140px;
+        }
+    }
+}
+
+/* Iphone 5 - 320px*/
+@media (max-width: 320px) {
+
+    .container {
+        padding: 0 12px;
+    }
+
+    /* home */
+    .home {
+
+        .home__content {
+            min-height: 1200px;
+        }
+
+        .home__title {
+            font-size: 24px;
+        }
+
+        .home__subtitle {
+            font-size: 16px;
+            padding-left: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .home__footer {
+            margin-top: -125px;
+        }
+
+        .home__footer-btn {
+            .btn {
+                padding: 12px 50px;
+            }
+        }
+
+        .home__footer-title {
+            font-size: 26px;
+            font-weight: 900;
+        }
+
+        .home__footer-subtitle {
+            font-size: 18px;
+        }
+
+        .home__footer-subtitle {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    /* form */
+
+    .form__modal {
+        .form__title {
+            font-size: 24px;
+        }
+
+        .form__modal-input {
+            padding: 8px 12px;
+        }
+
+        .btn {
+            margin: 0 30px;
+            padding: 12px 12px;
+        }
+    }
+
+    /* products */
+    .products {
+
+        .products__title {
+            font-size: 20px;
+        }
+
+        .products__left {
+
+            .product__descr {
+                font-size: 16px;
+                padding: 14px;
+            }
+        }
+
+        .product__descr {
+            font-size: 12px;
+            padding: 10px;
+        }
+
+        .products__footer {
+            margin-top: 0;
+        }
+
+        .products__content {
+            margin-bottom: 70px;
+        }
+    }
+
+    /* scheme */
+    .scheme {
+
+        .scheme__header {
+            width: 80px;
+            height: 80px;
+        }
+
+        .scheme__title {
+            font-size: 26px;
+            margin-top: 100px;
+            margin-bottom: 85px;
+        }
+
+        .scheme__content-title {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .scheme__footer {
+
+            .btn {
+                padding: 10px 10px;
+            }
+        }
+
+        .scheme__list-items {
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: left;
+
+            &::after {
+                left: 15px;
+                transform: translateX(0);
+            }
+
+            span {
+                text-align: left;
+                line-height: 1.3;
+            }
+        }
+
+        .scheme__content-title {
+            margin-bottom: 45px;
+        }
+    }
+
+    /* offer */
+
+    .offer {
+
+        .offer__items {
+            width: 100%;
+        }
+
+        .offer__title {
+            font-size: 26px;
+        }
+
+        .offer__subtitle {
+            font-size: 15px;
+        }
+    }
+
+    .calculator {
+
+        .calculator__title {
+            font-size: 26px;
+        }
+
+        .calculator__subtitle {
+            font-size: 15px;
+        }
+
+        .calculator__footer {
+            flex-wrap: wrap;
+
+            .btn {
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+
+            .calcutor__footer-price {
+                margin: 0 auto;
+            }
+        }
+
+        .calculator__list-item {
+            align-items: center;
+            width: 100%;
+        }
+
+        .calculator__list {
+
+            input {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .calculator__footer-price {
+            text-align: center;
+        }
+    }
+
+    /* partners */
+    .partners {
+
+        .partners__title {
+            font-size: 24px;
+        }
+
+        .partners__subtitle {
+            font-size: 22px;
+        }
+    }
+}

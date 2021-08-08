@@ -37,6 +37,11 @@
 	color: #fff;
 }
 
+.home__right {
+	width: 40%;
+	overflow: hidden;
+}
+
 .home__title {
 	color: #fff;
 	font-size: 50px;
@@ -104,9 +109,7 @@
 	line-height: 1.5;
 }
 
-
-
-	.home__footer-img {
-		width: 100%;
-		height: 100%;
-	}
+.home__footer-img {
+	width: 100%;
+	height: 100%;
+}

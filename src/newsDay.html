@@ -1,9 +1,22 @@
 ---
 layout: default
-title: newsDayPage
+title: newsDay
 ---
 
 <div class="newsDayPage">
+
+    <div class="home__container">
+        <div class="header__footer">
+            <ul class="uk-breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Linked Category</a></li>
+                <li class="uk-disabled"><a>Disabled Category</a></li>
+            </ul>
+
+            <h1 class="header__footer-title">Новости дня</h1>
+        </div>
+    </div>
+
     <div class="container">
         <div class="newsDayPage__inner">
             <div class="newsDay__row  uk-flex">
@@ -12,24 +25,58 @@ title: newsDayPage
                         <img src="assets/images/advantage-2.jpg" alt="">
                     </div>
                     <div class="newsDayPage__left-content">
-                        <p class="newsDayPage__text">Doubling my 9–5 salary several times in my career is something I
-                            never thought would happen. My career went from startup
-                            land to call center operator in a short space of time.</p>
-                        <p class="newsDayPage__text">That meant going from six-figures down to the minimum wage in my
-                            home country of Australia. And to top it off, I have no
-                            degrees in anything business related — unless you count a sound engineering qualification.
-                        </p>
-                        <p class="newsDayPage__text">
-                            If an uneducated guy from the home of the Kangaroo can double their salary, there is
-                            definitely hope for you. Popular
-                            career websites like “Seek” suggest the typical advice about doing better in your
-                            performance review or getting more
-                            education from a university. This advice is out of date and I have watched many colleagues
-                            fall for this trap and only
-                            end up disappointed.</p>
-                        <p class="newsDayPage__text">Doubling your salary, or at the very least increasing it
-                            significantly, is about breaking the norm and trying a few
-                            things that are a bit more radical as you’re about to see with these simple tips below.</p>
+                        
+                        <div uk-filter="target: .js-filter">
+
+                            <ul class="uk-subnav uk-subnav-pill">
+                                <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                                <li uk-filter-control="[data-tags*='1']"><a href="#">Freelance</a></li>
+                                <li uk-filter-control="[data-tags*='2']"><a href="#">Earning</a></li>
+                                <li uk-filter-control="[data-tags*='3']"><a href="#">Design</a></li>
+                                <li uk-filter-control="[data-tags*='4']"><a href="#">Work</a></li>
+                                <li uk-filter-control="[data-tags*='5']"><a href="#">Marketing</a></li>
+                            </ul>
+
+                            <ul class="js-filter uk-child-width-1-2 uk-child-width-1-1@m uk-text-center" uk-grid>
+                                <li data-tags="1">
+                                    <div class="uk-card uk-card-default uk-card-body">Freelance</div>
+                                </li>
+                                <li data-tags="2">
+                                    <div class="uk-card uk-card-default uk-card-body">Earning</div>
+                                </li>
+                                <li data-tags="3">
+                                    <div class="uk-card uk-card-default uk-card-body">Design</div>
+                                </li>
+                                <li data-tags="4">
+                                    <div class="uk-card uk-card-default uk-card-body">Work</div>
+                                </li>
+                                <li data-tags="5">
+                                    <div class="uk-card uk-card-default uk-card-body">Marketing</div>
+                                </li>
+                                <li data-tags="2">
+                                    <div class="uk-card uk-card-default uk-card-body">Earning</div>
+                                </li>
+                                <li data-tags="3">
+                                    <div class="uk-card uk-card-default uk-card-body">Design</div>
+                                </li>
+                                <li data-tags="5">
+                                    <div class="uk-card uk-card-default uk-card-body">Marketing</div>
+                                </li>
+                                <li data-tags="1">
+                                    <div class="uk-card uk-card-default uk-card-body">Freelance</div>
+                                </li>
+                                <li data-tags="4">
+                                    <div class="uk-card uk-card-default uk-card-body">Work</div>
+                                </li>
+                                <li data-tags="3">
+                                    <div class="uk-card uk-card-default uk-card-body">Design</div>
+                                </li>
+                                <li data-tags="2">
+                                    <div class="uk-card uk-card-default uk-card-body">Earning</div>
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
 

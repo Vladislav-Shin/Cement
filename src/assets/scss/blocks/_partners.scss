@@ -5,7 +5,7 @@
 
 .partners__inner {
     background: blue;
-    background: url("../images/partners-bg.jpg") no-repeat;
+    background: url("../images/partners-bg.jpg") center no-repeat;
     min-height: 700px;
     padding: 100px 0;
 }
@@ -33,17 +33,12 @@
 /* sliders */
 
 .partners__wrapper {
-    width: 1440px;
     height: 100%;
     background: rgba(255, 255, 255, 0.61);
     border-radius: 76px;
     box-shadow: 45px 43px 183px rgba(27, 49, 66, 0.13);
     padding-top: 20px;
     padding-bottom: 20px;
-
-/*     .uk-slider {
-        padding: 0 15px;
-    } */
 }
 
 .partners__sliders {
@@ -85,22 +80,6 @@
         left: -100px;
     }
 }
-
-/* .company__prev {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    background: #fff;
-    border-radius: 50%;
-    background: #FFFFFF;
-    box-shadow: 18.6636px 17.1706px 41.8066px rgba(27, 49, 66, 0.15);
-    border-radius: 67.1891px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-} */
-
-
 
 .partners__list {
     display: flex;

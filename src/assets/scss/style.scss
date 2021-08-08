@@ -72,6 +72,33 @@ input:focus {
     }
 }
 
+.uk-breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+
+    a {
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+
+        &:hover {
+            color: #f23e60
+        }
+    }
+
+
+}
+
+.uk-breadcrumb > :last-child > span, .uk-breadcrumb > :last-child > a:not([href]) {
+    color: #f23e60;
+}
+
 
 /* Blocks */
 
@@ -94,7 +121,8 @@ input:focus {
 @import "blocks/company";
 @import "blocks/goods";
 @import "blocks/calculator";
-@import "blocks/order";
+@import "blocks/orders";
 @import "blocks/productsPage";
 @import "blocks/newsPage";
-@import "blocks/newsDayPage";
+@import "blocks/newsDay";
+@import "blocks/media";

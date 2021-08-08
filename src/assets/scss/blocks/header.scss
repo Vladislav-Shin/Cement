@@ -9,11 +9,12 @@
 .header__footer {
     text-align: center;
 	max-width: 1900px;
-    background: url("../images/123.png") center no-repeat;
+    background: url("../images/home-page.png") center no-repeat;
 	background-size: cover;
-	height: 398px;
+	height: 457px;
+
 	padding-top: 50px;
-	transform: translatey(-70px);
+	margin-bottom: -100px;
 }
 
 .header__footer-title {
@@ -25,4 +26,15 @@
     text-align: center;
     letter-spacing: -0.5px;
     color: #fff;
+    text-transform: uppercase;
+}
+
+.calculator {
+
+    .header__footer {
+        margin-top: 60px;
+        transform: translatey(-70px);
+        margin-bottom: -220px;
+    }
+
 }

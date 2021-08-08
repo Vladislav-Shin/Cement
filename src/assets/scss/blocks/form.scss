@@ -1,8 +1,9 @@
 .form__modal {
 	position: relative;
-	width: $width-btn-orange;
+	width: 100%;
+    max-width: 450px;
 	background: rgba(28, 56, 99, 0.8);
-	border-radius: 15px 15px 15px 0;
+	border-radius: 15px 15px 0 0;
 	padding: 45px;
 
 	&::after {
