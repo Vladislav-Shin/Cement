@@ -15,6 +15,7 @@
 }
 
 .goods__item {
+    position: relative;
     width: 24%;
     margin-bottom: 83px;
     border-radius: 21px;
@@ -45,10 +46,13 @@
 }
 
 .goods__content {
-    padding: 24px;
+    padding: 24px 24px 50px;
 }
 
 .goods__footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
     text-align: center;
-    margin-bottom: -20px;
 }

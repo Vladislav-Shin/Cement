@@ -30,13 +30,22 @@
         }
 
     }
-
 }
 
 /* Breakpoints 1450 */
 @media (max-width: 1450px) {
+
+    /* home */
     .home__content {
         padding: 100px 20px;
+    }
+
+    /* addressPage */
+    .addressPage {
+
+        .addressPage__list-item {
+            width: 48%;
+        }
     }
 }
 
@@ -80,11 +89,56 @@
         }
     }
 
+    /* offer */
     .offer {
 
         .offer__inner {
             padding-left: 0;
             padding-right: 0;
+        }
+    }
+
+    /* home */
+    .home {
+
+        .home__footer-right {
+            width: 45%;
+
+            img {
+                height: auto;
+            }
+        }
+    }
+
+    /* addressPage */
+    .addressPage {
+
+        .addressPage__item-header {
+            width: 49%;
+        }
+    }
+
+    /* advantage */
+    .advantage {
+
+        .container {
+            padding: 0 10px;
+        }
+
+        .advantage__footer-item-header {
+           height: 250px;
+        }
+
+    }
+
+    /* goods */
+    .goods {
+
+        .goods__footer {
+
+            .btn {
+                padding: 15px 30px;
+            }
         }
     }
 }
@@ -101,14 +155,24 @@
             padding-right: 10px;
         }
 
-
-
         .home__title {
             font-size: 30px;
             margin-bottom: 20px;
         }
 
         .home__subtitle {
+            font-size: 18px;
+        }
+
+        .home__footer-title {
+            font-size: 29px;
+        }
+
+        .home__footer-subtitle {
+            font-size: 20px;
+        }
+
+        .home__footer-descr {
             font-size: 18px;
         }
 
@@ -231,8 +295,6 @@
         }
     }
 
-
-
     .scheme__items:first-child::after {
         left: 55px;
         bottom: 43px;
@@ -293,6 +355,102 @@
             }
         }
     }
+
+    /* addressPage */
+    .addressPage {
+
+        .container {
+            padding: 0 10px;
+        }
+
+        .addressPage__list-item {
+            width: 100%
+        }
+
+        .addressPage__item-header {
+            padding: 10px;
+        }
+
+        .addressPage__item-content {
+            padding: 10px;
+        }
+    }
+
+    /* questions */
+    .questions {
+
+        .questions__inner {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .questions__row {
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .questions__left,
+        .questions__right {
+            width: 90%;
+        }
+
+        .questions__left {
+            margin-bottom: 15px;
+        }
+    }
+
+    /* adventage */
+    .advantage {
+        
+        .advantage__item {
+            padding: 0px 0px 50px;
+
+            &::after {
+                bottom: -15px;
+            }
+        }
+
+        .advantage__item-img {
+            height: 180px;
+        }
+
+        .advantage__content-title {
+            font-size: 18px;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+
+        .advantage__content-descr {
+            text-align: left;
+            font-size: 15px;
+
+            &::before {
+                top: -15px;
+            }
+        }
+        
+        .advantage__footer,
+        .advantage__content {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .advantage__footer-item {
+            border-radius: 30px;
+            padding: 10px 10px 30px;
+        }
+
+        .advantage__footer-item-content {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .advantage__footer-item-title {
+            font-size: 30px;
+            line-height: 1.2;
+        }
+    }
 }
 
 /* Landscape phones and portrait tablets - 767px*/
@@ -314,7 +472,7 @@
             text-align: center;
         }
 
-        .home__left, 
+        .home__left,
         .home__right {
             width: 100%;
         }
@@ -336,6 +494,25 @@
             padding-right: 20px;
         }
 
+        .home__footer-row {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .home__footer-right {
+            max-width: 360px;
+        }
+
+        .home__footer-left {
+            width: 100%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .home__footer-right {
+            flex: auto
+        }
+
         .home__footer-btn {
 
             .btn {
@@ -346,6 +523,7 @@
         .form__modal {
 
             margin: 0 auto;
+
             &::after {
                 display: none;
             }
@@ -425,14 +603,82 @@
 
         .scheme__footer {
             .btn {
-                padding: 8px 22px;
+                padding: 16px 22px;
                 font-size: 18px;
             }
         }
     }
 
+    .calculator__footer {
+        text-align: center;
+    }
+
+    /* advantage */
+    .advantage {
+
+        .advantage__row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .advantage__item {
+            border-radius: 30px;
+            width: 49%;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .advantage__footer-item {
+
+            &::after {
+                bottom: -15px;
+            }
+        }
+
+        .advantage__footer {
+            padding: 0;
+        }
+        
+        .advantage__footer-item-header {
+            height: 180px;
+            margin-bottom: 10px;
+        }
+
+        .advantage__footer-item-title {
+            font-size: 18px;
+        }
+
+        .advantage__footer-item-descr {
+            font-size: 16px;
+            line-height: 1.3;
+        }
+        
+        .advantage__footer-item-content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }
+
 }
 
+
+/* breakpoint 550 */
+@media (max-width: 550px) {
+    .addressPage {
+
+        .addressPage__row {
+            flex-wrap: wrap;
+
+            .addressPage__item-header {
+                width: 100%;
+            }
+        }
+    }
+}
 
 /* Portrait phones and smaller - 480px */
 @media (max-width: 480px) {
@@ -462,6 +708,7 @@
 
         .home__footer-row {
             flex-direction: column;
+            align-items: center;
         }
 
         .home__footer-left,
@@ -561,6 +808,10 @@
         .scheme__wrapper {
             position: static;
         }
+
+        .scheme__footer {
+            width: 65%;
+        }
     }
 
     /* offer */
@@ -588,6 +839,19 @@
         text-align: center;
     }
 
+    .calculator__footer {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .btn {
+            margin-bottom: 30px;
+        }
+
+        span {
+            width: 100%;
+        }
+    }
+
     /* partners */
     .partners {
 
@@ -596,6 +860,81 @@
             max-width: 140px;
         }
     }
+
+    /* questions */
+    .questions {
+
+        .questions__inner {
+            padding: 30px 10px 30px;
+        }
+
+        .questions__left-item {
+            margin-bottom: 10px;
+
+            input {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            label {
+                font-size: 18px;
+            }
+        }
+
+        .questions__left,
+        .questions__right {
+            width: 100%;
+        }
+
+        .questions__title {
+            font-weight: 700;
+            font-size: 26px;
+            margin-bottom: 0;
+            line-height: 1.2;
+        }
+
+        .questions__subtitle {
+            margin-bottom: 25px;
+        }
+
+        .questions__subtitle {
+            font-weight: 20;
+        }
+
+        .questions__footer {
+
+            .btn {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+    }
+    
+    /* advantage */
+    .advantage {
+
+        .advantage__row {
+            justify-content: center;
+        }
+
+        .advantage__item {
+            width: 90%;
+        }
+
+        .advantage__item-img {
+            height: 220px;
+        }
+
+        .advantage__footer-item {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .advantage__footer-item {
+            width: 90%;
+        }
+    }
+
 }
 
 /* Iphone 5 - 320px*/
@@ -734,6 +1073,7 @@
 
             span {
                 text-align: left;
+                font-size: 15px;
                 line-height: 1.3;
             }
         }

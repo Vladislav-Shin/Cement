@@ -265,5 +265,11 @@
 			background: #0068CF;
 		}
 	}
+}
 
+.scheme__footer {
+	position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
 }

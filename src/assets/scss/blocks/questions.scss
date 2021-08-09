@@ -57,6 +57,7 @@
 }
 
 .addressPage__items-list {
+    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
@@ -76,6 +77,8 @@
 }
 
 .addressPage__row-footer {
+    flex-wrap: wrap;
+
     .addressPage__item-header {
         width: 24%;
     }

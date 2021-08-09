@@ -23,7 +23,6 @@
 .advantage__item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     position: relative;
     width: 24%;
     background: #ffffff;
@@ -46,6 +45,12 @@
         border-radius: 0 0 76px 76px;
         box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05);
     }
+}
+
+.advantage__item-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .advantage__item-header {
