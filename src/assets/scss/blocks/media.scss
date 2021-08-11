@@ -126,7 +126,7 @@
         }
 
         .advantage__footer-item-header {
-           height: 250px;
+            height: 250px;
         }
 
     }
@@ -139,6 +139,38 @@
             .btn {
                 padding: 15px 30px;
             }
+        }
+    }
+
+    /* contact */
+    .contact {
+        .btn-orange {
+            font-size: 24px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    .footer {
+        .footer__row {
+            flex-wrap: wrap;
+        }
+
+        .footer__item {
+            margin-bottom: 15px;
+
+            &:first-child {
+                width: 30%;
+                margin-right: 20px;
+            }
+        }
+
+        .footer-width {
+            width: 100%;
+        }
+
+        .footer__logo a {
+            font-size: 36px;
         }
     }
 }
@@ -356,6 +388,24 @@
         }
     }
 
+    /* contact */
+    .contact {
+        .contact__inner {
+            padding: 45px;
+        }
+
+        .btn-orange {
+            font-size: 22px;
+            padding: 20px;
+        }
+    }
+
+    .footer {
+        .footer__logo  {
+            margin-top: 0;
+        }
+    }
+
     /* addressPage */
     .addressPage {
 
@@ -402,7 +452,7 @@
 
     /* adventage */
     .advantage {
-        
+
         .advantage__item {
             padding: 0px 0px 50px;
 
@@ -429,7 +479,7 @@
                 top: -15px;
             }
         }
-        
+
         .advantage__footer,
         .advantage__content {
             padding-left: 10px;
@@ -641,7 +691,7 @@
         .advantage__footer {
             padding: 0;
         }
-        
+
         .advantage__footer-item-header {
             height: 180px;
             margin-bottom: 10px;
@@ -655,12 +705,39 @@
             font-size: 16px;
             line-height: 1.3;
         }
-        
+
         .advantage__footer-item-content {
             padding-left: 0;
             padding-right: 0;
         }
+    }
 
+    /* contact */
+    .footer {
+        .contact {
+            transform: translateY(-300px);
+
+            .contact__inner {
+                padding: 20px 15px;
+                margin: 0;
+            }
+        }
+
+        .footer__item {
+            flex-direction: column;
+        }
+
+        [hidden], .uk-hidden {
+            display: none !important;
+        }
+
+        .uk-accordion-title {
+            pointer-events: auto;
+
+            &::before {
+                display: block;
+            }
+        }
     }
 
 }
@@ -909,33 +986,70 @@
             }
         }
     }
+
+    /* footer */
+    .footer {
+
+        .contact {
+            .contact__inner {
+                padding-left: 0;
+                padding-right: 0;
     
-    /* advantage */
-    .advantage {
-
-        .advantage__row {
-            justify-content: center;
+                &::after {
+                    bottom: -20px;
+                }
+    
+                &::before {
+                    bottom: -40px;
+                    height: 20px;
+                }
+            }
+    
+            .contact__title {
+                font-size: 30px;
+            }
+    
+            .contact__subtitle {
+                font-size: 18px;
+            }
+    
+            .btn-orange {
+                width: 190px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
         }
+      
+    }
+}
 
-        .advantage__item {
-            width: 90%;
-        }
 
-        .advantage__item-img {
-            height: 220px;
-        }
+/* advantage */
+.advantage {
 
-        .advantage__footer-item {
-            width: 100%;
-            margin-bottom: 25px;
-        }
-
-        .advantage__footer-item {
-            width: 90%;
-        }
+    .advantage__row {
+        justify-content: center;
     }
 
+    .advantage__item {
+        width: 90%;
+    }
+
+    .advantage__item-img {
+        height: 220px;
+    }
+
+    .advantage__footer-item {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .advantage__footer-item {
+        width: 90%;
+    }
 }
+
+
 
 /* Iphone 5 - 320px*/
 @media (max-width: 320px) {

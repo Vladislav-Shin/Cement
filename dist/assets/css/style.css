@@ -16383,8 +16383,6 @@ input:focus {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     position: relative;
     width: 24%;
     background: #ffffff;
@@ -16408,6 +16406,15 @@ input:focus {
     background: rgba(255, 255, 255, 0.6);
     border-radius: 0 0 76px 76px;
     box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05);
+}
+
+.advantage__item-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .advantage__item-header {
@@ -17126,6 +17133,7 @@ input:focus {
 }
 
 .goods__item {
+    position: relative;
     width: 24%;
     margin-bottom: 83px;
     border-radius: 21px;
@@ -17156,12 +17164,16 @@ input:focus {
 }
 
 .goods__content {
-    padding: 24px;
+    padding: 24px 24px 50px;
 }
 
 .goods__footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
     text-align: center;
-    margin-bottom: -20px;
 }
 
 .calculator {
@@ -18014,6 +18026,18 @@ input:focus {
     .addressPage .addressPage__item-header {
         width: 49%;
     }
+  /* advantage */
+    .advantage .container {
+        padding: 0 10px;
+    }
+
+    .advantage .advantage__footer-item-header {
+        height: 250px;
+    }
+  /* goods */
+    .goods .goods__footer .btn {
+        padding: 15px 30px;
+    }
 }
 
 /* Portrait tablets and small desktops - 991px */
@@ -18203,8 +18227,90 @@ input:focus {
         height: 150px;
     }
   /* addressPage */
+    .addressPage .container {
+        padding: 0 10px;
+    }
+
     .addressPage .addressPage__list-item {
         width: 100%;
+    }
+
+    .addressPage .addressPage__item-header {
+        padding: 10px;
+    }
+
+    .addressPage .addressPage__item-content {
+        padding: 10px;
+    }
+  /* questions */
+    .questions .questions__inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .questions .questions__row {
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .questions .questions__left,
+  .questions .questions__right {
+        width: 90%;
+    }
+
+    .questions .questions__left {
+        margin-bottom: 15px;
+    }
+  /* adventage */
+    .advantage .advantage__item {
+        padding: 0px 0px 50px;
+    }
+
+    .advantage .advantage__item::after {
+        bottom: -15px;
+    }
+
+    .advantage .advantage__item-img {
+        height: 180px;
+    }
+
+    .advantage .advantage__content-title {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .advantage .advantage__content-descr {
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .advantage .advantage__content-descr::before {
+        top: -15px;
+    }
+
+    .advantage .advantage__footer,
+  .advantage .advantage__content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .advantage .advantage__footer-item {
+        border-radius: 30px;
+        padding: 10px 10px 30px;
+    }
+
+    .advantage .advantage__footer-item-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .advantage .advantage__footer-item-title {
+        font-size: 30px;
+        line-height: 1.2;
     }
 }
 
@@ -18362,6 +18468,62 @@ input:focus {
 
     .calculator__footer {
         text-align: center;
+    }
+  /* advantage */
+    .advantage .advantage__row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .advantage .advantage__item {
+        border-radius: 30px;
+        width: 49%;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .advantage .advantage__footer-item::after {
+        bottom: -15px;
+    }
+
+    .advantage .advantage__footer {
+        padding: 0;
+    }
+
+    .advantage .advantage__footer-item-header {
+        height: 180px;
+        margin-bottom: 10px;
+    }
+
+    .advantage .advantage__footer-item-title {
+        font-size: 18px;
+    }
+
+    .advantage .advantage__footer-item-descr {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .advantage .advantage__footer-item-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* breakpoint 550 */
+@media (max-width: 550px) {
+    .addressPage .addressPage__row {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .addressPage .addressPage__row .addressPage__item-header {
+        width: 100%;
     }
 }
 
@@ -18525,6 +18687,70 @@ input:focus {
     .partners .uk-slider-items li {
         height: 140px;
         max-width: 140px;
+    }
+  /* questions */
+    .questions .questions__inner {
+        padding: 30px 10px 30px;
+    }
+
+    .questions .questions__left-item {
+        margin-bottom: 10px;
+    }
+
+    .questions .questions__left-item input {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .questions .questions__left-item label {
+        font-size: 18px;
+    }
+
+    .questions .questions__left,
+  .questions .questions__right {
+        width: 100%;
+    }
+
+    .questions .questions__title {
+        font-weight: 700;
+        font-size: 26px;
+        margin-bottom: 0;
+        line-height: 1.2;
+    }
+
+    .questions .questions__subtitle {
+        margin-bottom: 25px;
+    }
+
+    .questions .questions__subtitle {
+        font-weight: 20;
+    }
+
+    .questions .questions__footer .btn {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+  /* advantage */
+    .advantage .advantage__row {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .advantage .advantage__item {
+        width: 90%;
+    }
+
+    .advantage .advantage__item-img {
+        height: 220px;
+    }
+
+    .advantage .advantage__footer-item {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .advantage .advantage__footer-item {
+        width: 90%;
     }
 }
 
