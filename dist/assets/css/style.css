@@ -16058,11 +16058,23 @@ input:focus {
     padding-bottom: 40px;
 }
 
+.footer__item:first-child {
+    width: 20%;
+}
+
+.footer__item:last-child {
+    width: 20%;
+}
+
 .footer-flex {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .footer__list {
@@ -16073,15 +16085,6 @@ input:focus {
     flex-direction: column;
     margin-right: 35px;
     margin-left: 35px;
-}
-
-.footer__list-item h5 {
-    font-family: "Nunito";
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 1.3;
-    color: #2e2e46;
-    margin-bottom: 30px;
 }
 
 .footer__list-link {
@@ -16196,7 +16199,7 @@ input:focus {
 }
 
 .footer__form-inner input {
-    width: 240px;
+    max-width: 240px;
     background: #FFFFFF;
     border: 0.686161px solid #DADADA;
     box-sizing: border-box;
@@ -16286,6 +16289,26 @@ input:focus {
     font-weight: 100;
 }
 
+/* uikit */
+/* показывает аккардион по дефолту */
+[hidden], .uk-hidden {
+    display: block !important;
+}
+
+.footer .uk-accordion-title {
+    font-family: "Nunito";
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #2e2e46;
+    margin-bottom: 30px;
+    pointer-events: none;
+}
+
+.footer .uk-accordion-title::before {
+    display: none;
+}
+
 .contact {
     -webkit-transform: translateY(-386px);
     transform: translateY(-386px);
@@ -16352,6 +16375,8 @@ input:focus {
 .btn-contact {
     font-size: 30px;
     font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .advantage {
@@ -18038,6 +18063,34 @@ input:focus {
     .goods .goods__footer .btn {
         padding: 15px 30px;
     }
+  /* contact */
+    .contact .btn-orange {
+        font-size: 24px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .footer .footer__row {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .footer .footer__item {
+        margin-bottom: 15px;
+    }
+
+    .footer .footer__item:first-child {
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .footer .footer-width {
+        width: 100%;
+    }
+
+    .footer .footer__logo a {
+        font-size: 36px;
+    }
 }
 
 /* Portrait tablets and small desktops - 991px */
@@ -18225,6 +18278,19 @@ input:focus {
 
     .partners .uk-slider-items li {
         height: 150px;
+    }
+  /* contact */
+    .contact .contact__inner {
+        padding: 45px;
+    }
+
+    .contact .btn-orange {
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    .footer .footer__logo {
+        margin-top: 0;
     }
   /* addressPage */
     .addressPage .container {
@@ -18513,6 +18579,33 @@ input:focus {
         padding-left: 0;
         padding-right: 0;
     }
+  /* contact */
+    .footer .contact {
+        -webkit-transform: translateY(-300px);
+        transform: translateY(-300px);
+    }
+
+    .footer .contact .contact__inner {
+        padding: 20px 15px;
+        margin: 0;
+    }
+
+    .footer .footer__item {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .footer [hidden], .footer .uk-hidden {
+        display: none !important;
+    }
+
+    .footer .uk-accordion-title {
+        pointer-events: auto;
+    }
+
+    .footer .uk-accordion-title::before {
+        display: block;
+    }
 }
 
 /* breakpoint 550 */
@@ -18730,28 +18823,57 @@ input:focus {
         padding-left: 40px;
         padding-right: 40px;
     }
-  /* advantage */
-    .advantage .advantage__row {
-        -ms-flex-pack: center;
-        justify-content: center;
+  /* footer */
+    .footer .contact .contact__inner {
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    .advantage .advantage__item {
-        width: 90%;
+    .footer .contact .contact__inner::after {
+        bottom: -20px;
     }
 
-    .advantage .advantage__item-img {
-        height: 220px;
+    .footer .contact .contact__inner::before {
+        bottom: -40px;
+        height: 20px;
     }
 
-    .advantage .advantage__footer-item {
-        width: 100%;
-        margin-bottom: 25px;
+    .footer .contact .contact__title {
+        font-size: 30px;
     }
 
-    .advantage .advantage__footer-item {
-        width: 90%;
+    .footer .contact .contact__subtitle {
+        font-size: 18px;
     }
+
+    .footer .contact .btn-orange {
+        width: 190px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* advantage */
+.advantage .advantage__row {
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.advantage .advantage__item {
+    width: 90%;
+}
+
+.advantage .advantage__item-img {
+    height: 220px;
+}
+
+.advantage .advantage__footer-item {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.advantage .advantage__footer-item {
+    width: 90%;
 }
 
 /* Iphone 5 - 320px*/
