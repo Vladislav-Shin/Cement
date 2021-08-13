@@ -20,7 +20,7 @@
 <body>
     <div class="page">
         <!--  Header -->
-        <!-- <header class="header">
+        <header class="header">
         	<div class="container">
         		<div class="header__inner">
         			<div class="header__logo">
@@ -52,16 +52,64 @@
         				</ul>
         			</nav>
         
-        			<div class="header__tel">
-        				<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+        
+        
+        			<div class="header__wrap-btns">
+        
+        
+        				<div class="header__tel">
+        					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+        				</div>
+        
+        				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
+        					uk-toggle="target: #offcanvas-overlay">
+        					<span>Открыть навигацию</span>
+        				</button>
+        
+        				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+        					<div class="uk-offcanvas-bar">
+        
+        						<button class="uk-offcanvas-close" type="button" uk-close></button>
+        
+        
+        						<ul class="nav__list">
+        							<li class="nav__item">
+        								<a class="nav__link" href="#">Главная</a>
+        							</li>
+        							<li class="nav__item">
+        								<a class="nav__link" href="#">Продукция</a>
+        							</li>
+        							<li class="nav__item">
+        								<a class="nav__link" href="#">Калькулятор</a>
+        							</li>
+        							<li class="nav__item">
+        								<a class="nav__link" href="#">О компании</a>
+        							</li>
+        							<li class="nav__item">
+        								<a class="nav__link" href="#">Новости</a>
+        							</li>
+        							<li class="nav__item">
+        								<a class="nav__link" href="#">Контакты</a>
+        							</li>
+        						</ul>
+        
+        						<div class="header__burder-tel">
+        							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+        						</div>
+        
+        
+        					</div>
+        				</div>
         			</div>
+        
         		</div>
         	</div>
-        </header> -->
+        </header>
         <!-- Main -->
         <main class="main">
             
             <div class="calculator">
+            
                 <div class="home__container">
                     <div class="header__footer">
                         <ul class="uk-breadcrumb">
@@ -132,68 +180,70 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="goods">
-                <div class="container">
-                    <div class="goods__inner">
-                        <h1 class="goods__text">Товары</h1>
-                        <ul class="goods__list">
-                            <li class="goods__item">
-                                <div class="goods__header">
-                                    <img class="goods-img" src="assets/images/productsPage-1.jpg" alt="">
-                                </div>
-                                <div class="goods__content">
-                                    <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                                        (ПЦ 400 Д20)</div>
-                                    <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-                                </div>
-                                <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="goods__item">
-                                <div class="goods__header">
-                                    <img class="productsPage__item-img" src="assets/images/productsPage-1.jpg" alt="">
-                                </div>
-                                <div class="goods__content">
-                                    <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                                        (ПЦ 400 Д20)</div>
-                                    <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-                                </div>
-                                <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="goods__item">
-                                <div class="goods__header">
-                                    <img class="productsPage__item-img" src="assets/images/productsPage-1.jpg" alt="">
-                                </div>
-                                <div class="goods__content">
-                                    <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                                        (ПЦ 400 Д20)</div>
-                                    <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-                                </div>
-                                <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="goods__item">
-                                <div class="goods__header">
-                                    <img class="productsPage__item-img" src="assets/images/productsPage-1.jpg" alt="">
-                                </div>
-                                <div class="goods__content">
-                                    <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                                        (ПЦ 400 Д20)</div>
-                                    <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-                                </div>
-                                <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
-                                </div>
-                            </li>
-                        </ul>
+            
+                <div class="goods">
+                    <div class="container">
+                        <div class="goods__inner">
+                            <h1 class="goods__text">Товары</h1>
+                            <ul class="goods__list">
+                                <li class="goods__item">
+                                    <div class="goods__header">
+                                        <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
+                                    </div>
+                                    <div class="goods__content">
+                                        <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                                            (ПЦ 400 Д20)</div>
+                                        <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                                    </div>
+                                    <div class="goods__footer">
+                                        <button class="btn  btn-orange">Заказать</button>
+                                    </div>
+                                </li>
+                                <li class="goods__item">
+                                    <div class="goods__header">
+                                        <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
+                                    </div>
+                                    <div class="goods__content">
+                                        <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                                            (ПЦ 400 Д20)</div>
+                                        <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                                    </div>
+                                    <div class="goods__footer">
+                                        <button class="btn  btn-orange">Заказать</button>
+                                    </div>
+                                </li>
+                                <li class="goods__item">
+                                    <div class="goods__header">
+                                        <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
+                                    </div>
+                                    <div class="goods__content">
+                                        <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                                            (ПЦ 400 Д20)</div>
+                                        <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                                    </div>
+                                    <div class="goods__footer">
+                                        <button class="btn  btn-orange">Заказать</button>
+                                    </div>
+                                </li>
+                                <li class="goods__item">
+                                    <div class="goods__header">
+                                        <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
+                                    </div>
+                                    <div class="goods__content">
+                                        <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                                            (ПЦ 400 Д20)</div>
+                                        <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                                    </div>
+                                    <div class="goods__footer">
+                                        <button class="btn  btn-orange">Заказать</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+            
         </main>
 
         <!-- Footer -->

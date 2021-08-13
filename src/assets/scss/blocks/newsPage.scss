@@ -79,6 +79,17 @@
         line-height: 28px;
         color: #F04037;
     }
+
+    /* перебивание стилей uikit */
+    .uk-search-default {
+        width: 100%;
+        padding-left: 40px;
+    }
+    
+    .uk-search-default .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
+        padding-left: 0;
+    }
+
 }
 
 .newsPage__item:nth-child(3n) {
@@ -116,8 +127,8 @@
     }
 
     .newsPage-margin {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .uk-search .uk-search-icon {

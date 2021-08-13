@@ -43,6 +43,7 @@ input:focus {
     padding: 0;
 }
 
+
 .uk-grid {
     margin-left: 0;
 }
@@ -55,6 +56,14 @@ input:focus {
 
 .uk-margin {
     margin-bottom: 0;
+}
+
+.uk-offcanvas-bar {
+    background: #1a4375;
+}
+
+.uk-button {
+    display: none;
 }
 
 @media (min-width: 1200px) {
@@ -74,9 +83,11 @@ input:focus {
 
 .uk-breadcrumb {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 18px;
+    padding: 0 10px;
 
     a {
         font-family: "Nunito";
@@ -103,6 +114,7 @@ input:focus {
 /* Blocks */
 
 @import "blocks/header";
+@import "blocks/burger";
 @import "blocks/_home";
 @import "blocks/_products";
 @import "blocks/_offer";

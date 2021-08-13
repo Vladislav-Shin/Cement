@@ -20,7 +20,7 @@
 <body>
     <div class="page">
         <!--  Header -->
-        <!-- <header class="header">
+        <header class="header">
         	<div class="container">
         		<div class="header__inner">
         			<div class="header__logo">
@@ -52,12 +52,59 @@
         				</ul>
         			</nav>
         
-        			<div class="header__tel">
-        				<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+        
+        
+        			<div class="header__wrap-btns">
+        
+        
+        				<div class="header__tel">
+        					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+        				</div>
+        
+        				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
+        					uk-toggle="target: #offcanvas-overlay">
+        					<span>Открыть навигацию</span>
+        				</button>
+        
+        				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+        					<div class="uk-offcanvas-bar">
+        
+        						<button class="uk-offcanvas-close" type="button" uk-close></button>
+        
+        
+        						<ul class="nav__list">
+        							<li class="nav__item">
+        								<a class="nav__link" href="#">Главная</a>
+        							</li>
+        							<li class="nav__item">
+        								<a class="nav__link" href="#">Продукция</a>
+        							</li>
+        							<li class="nav__item">
+        								<a class="nav__link" href="#">Калькулятор</a>
+        							</li>
+        							<li class="nav__item">
+        								<a class="nav__link" href="#">О компании</a>
+        							</li>
+        							<li class="nav__item">
+        								<a class="nav__link" href="#">Новости</a>
+        							</li>
+        							<li class="nav__item">
+        								<a class="nav__link" href="#">Контакты</a>
+        							</li>
+        						</ul>
+        
+        						<div class="header__burder-tel">
+        							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+        						</div>
+        
+        
+        					</div>
+        				</div>
         			</div>
+        
         		</div>
         	</div>
-        </header> -->
+        </header>
         <!-- Main -->
         <main class="main">
             <div class="addressPage">
