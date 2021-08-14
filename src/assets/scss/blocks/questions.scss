@@ -1,210 +1,212 @@
-/* addressPage */
-.addressPage__row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.addressPage__item-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 49%;
-    background: #ffffff;
-    border: 4px solid #d8f4ff;
-    box-sizing: border-box;
-    border-radius: 20px;
-    padding: 27px;
-    margin-bottom: 25px;
-}
-
-.addressPage__item-header-title {
-    position: relative;
-    font-family: "Nunito";
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.5;
-    text-transform: uppercase;
-    color: #106ca3;
-    padding-left: 25px;
-    margin-bottom: 15px;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(60%);
-        width: 11px;
-        height: 11px;
-        background: #1180c1;
-        border-radius: 50%;
-    }
-}
-
-.addressPage__item-content {
-    background: #f2faff;
-    border-radius: 7px;
-    padding: 15px;
-}
-
-.addressPage__item-text {
-    font-family: "Nunito";
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 172.69%;
-    letter-spacing: 1px;
-    color: #08104f;
-}
-
-.addressPage__items-list {
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-}
-
-.addressPage__list-item {
-    width: 31%;
-
-    a {
-        font-family: "Nunito";
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1.6;
-        text-transform: uppercase;
-        color: #000000;
-    }
-}
-
-.addressPage__row-footer {
-    flex-wrap: wrap;
-
-    .addressPage__item-header {
-        width: 24%;
+.page__address {
+    /* address */
+    .address__row {
+        display: flex;
+        justify-content: space-between;
     }
 
-    .addressPage__item-footer {
-        font-family: "Nunito";
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 150%;
-        text-transform: uppercase;
-        color: #000000;
-    }
-
-    address {
-        font-family: "Nunito";
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 150%;
-        text-transform: uppercase;
-        color: #646464;
-        padding-bottom: 15px;
-        border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
-        margin-bottom: 10px;
-    }
-}
-
-/* questions */
-.questions__inner {
-    background: rgba(43, 153, 255, 0.1);
-    border-radius: 38px;
-    padding: 50px 50px 90px;
-}
-
-.questions__title {
-    font-family: "Nunito";
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 48px;
-    text-align: center;
-    color: #000000;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-}
-
-.questions__subtitle {
-    font-family: "Nunito";
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 31px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 50px;
-}
-
-.questions__row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
-}
-
-.questions__left,
-.questions__right {
-    width: 48.5%;
-}
-
-.questions__left-item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-
-    label {
-        font-family: "Nunito";
-        font-weight: 400;
-        font-size: 23px;
-        line-height: 31px;
-        color: #000000;
-        margin-bottom: 13px;
-    }
-
-    input {
+    .address__item-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 49%;
         background: #ffffff;
-        box-shadow: 0px 17px 36px rgba(0, 0, 0, 0.03);
-        border-radius: 95px;
-        border: none;
-        padding: 15px 25px;
+        border: 4px solid #d8f4ff;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 27px;
+        margin-bottom: 25px;
+    }
 
-        &:focus {
-            border: 1px solid #000;
+    .address__item-header-title {
+        position: relative;
+        font-family: "Nunito";
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: #106ca3;
+        padding-left: 25px;
+        margin-bottom: 15px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(60%);
+            width: 11px;
+            height: 11px;
+            background: #1180c1;
+            border-radius: 50%;
         }
     }
 
-    &:last-child {
-        margin-bottom: 0;
+    .address__item-content {
+        background: #f2faff;
+        border-radius: 7px;
+        padding: 15px;
     }
-}
 
-.questions__right-item {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    .address__item-text {
+        font-family: "Nunito";
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 172.69%;
+        letter-spacing: 1px;
+        color: #08104f;
+    }
 
-    label {
+    .address__items-list {
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+
+    .address__list-item {
+        width: 31%;
+
+        a {
+            font-family: "Nunito";
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.6;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
+
+    .address__row-footer {
+        flex-wrap: wrap;
+
+        .address__item-header {
+            width: 24%;
+        }
+
+        .address__item-footer {
+            font-family: "Nunito";
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            text-transform: uppercase;
+            color: #000000;
+        }
+
+        address {
+            font-family: "Nunito";
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            text-transform: uppercase;
+            color: #646464;
+            padding-bottom: 15px;
+            border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+    }
+
+    /* questions */
+    .questions__inner {
+        background: rgba(43, 153, 255, 0.1);
+        border-radius: 38px;
+        padding: 50px 50px 90px;
+    }
+
+    .questions__title {
+        font-family: "Nunito";
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 48px;
+        text-align: center;
+        color: #000000;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    .questions__subtitle {
         font-family: "Nunito";
         font-weight: 400;
         font-size: 23px;
         line-height: 31px;
+        text-align: center;
         color: #000000;
-        margin-bottom: 13px;
+        margin-bottom: 50px;
     }
 
-    textarea {
-        background: #ffffff;
-        box-shadow: 0px 17px 36px rgba(0, 0, 0, 0.03);
-        border-radius: 36px;
-        border: none;
-        resize: none;
-        padding: 25px;
+    .questions__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+
+    .questions__left,
+    .questions__right {
+        width: 48.5%;
+    }
+
+    .questions__left-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        label {
+            font-family: "Nunito";
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 31px;
+            color: #000000;
+            margin-bottom: 13px;
+        }
+
+        input {
+            background: #ffffff;
+            box-shadow: 0px 17px 36px rgba(0, 0, 0, 0.03);
+            border-radius: 95px;
+            border: none;
+            padding: 15px 25px;
+
+            &:focus {
+                border: 1px solid #000;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .questions__right-item {
+        display: flex;
+        flex-direction: column;
         height: 100%;
+
+        label {
+            font-family: "Nunito";
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 31px;
+            color: #000000;
+            margin-bottom: 13px;
+        }
+
+        textarea {
+            background: #ffffff;
+            box-shadow: 0px 17px 36px rgba(0, 0, 0, 0.03);
+            border-radius: 36px;
+            border: none;
+            resize: none;
+            padding: 25px;
+            height: 100%;
+        }
     }
-}
 
-.questions__footer {
-    text-align: center;
+    .questions__footer {
+        text-align: center;
 
-    .btn {
-        padding-left: 80px;
-        padding-right: 80px;
+        .btn {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
     }
 }
