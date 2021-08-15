@@ -23,6 +23,6 @@ function calc() {
 	})
 }
 
-if(document.querySelector("#quantity")) {
+if (document.querySelector("#quantity")) {
 	calc()
 }

@@ -12,7 +12,7 @@ body {
     background-color: #fff;
     font-size: 21px;
     color: #000;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -35,7 +35,6 @@ input:focus {
     border: none;
 }
 
-
 /* ui-kit сброс некоторых настроек */
 
 .uk-slider-container-offset {
@@ -43,14 +42,13 @@ input:focus {
     padding: 0;
 }
 
-
 .uk-grid {
     margin-left: 0;
 }
 
-.uk-grid+.uk-grid,
-.uk-grid>.uk-grid-margin,
-*+.uk-grid-margin {
+.uk-grid + .uk-grid,
+.uk-grid > .uk-grid-margin,
+* + .uk-grid-margin {
     margin-top: 0;
 }
 
@@ -70,11 +68,20 @@ input:focus {
     margin-left: 0;
 }
 
-@media (min-width: 1200px) {
+.uk-search-default {
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 15px;
+}
 
-    .uk-grid+.uk-grid,
-    .uk-grid>.uk-grid-margin,
-    *+.uk-grid-margin {
+.uk-search-default .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
+    padding-left: 0;
+}
+
+@media (min-width: 1200px) {
+    .uk-grid + .uk-grid,
+    .uk-grid > .uk-grid-margin,
+    * + .uk-grid-margin {
         margin-top: 0;
     }
 }
@@ -100,20 +107,18 @@ input:focus {
         font-size: 24px;
         line-height: 30px;
         text-align: center;
-        color: #FFFFFF;
+        color: #ffffff;
 
         &:hover {
-            color: #f23e60
+            color: #f23e60;
         }
     }
-
-
 }
 
-.uk-breadcrumb > :last-child > span, .uk-breadcrumb > :last-child > a:not([href]) {
+.uk-breadcrumb > :last-child > span,
+.uk-breadcrumb > :last-child > a:not([href]) {
     color: #f23e60;
 }
-
 
 /* Blocks */
 
