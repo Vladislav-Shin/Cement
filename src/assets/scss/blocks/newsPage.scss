@@ -30,6 +30,17 @@
     }
 }
 
+.newsDayPage__descr {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.500211px;
+    color: #696871;
+    margin-bottom: 15px;
+}
+
 /* перебивание стилей ui-kit */
 
 .newsPage {
@@ -107,7 +118,7 @@
         padding-left: 40px;
     }
 
-    .uk-search-default .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
+    .uk-search-default .uk-search-icon:not(.uk-search-icon-flip)~.uk-search-input {
         padding-left: 0;
     }
 }

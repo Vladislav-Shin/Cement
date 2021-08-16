@@ -60,10 +60,6 @@ input:focus {
     background: #1a4375;
 }
 
-.uk-button {
-    display: none;
-}
-
 .uk-dotnav {
     margin-left: 0;
 }
@@ -76,6 +72,28 @@ input:focus {
 
 .uk-search-default .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
     padding-left: 0;
+}
+
+.uk-modal-dialog {
+    max-width: 450px !important;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.uk-modal-body {
+    padding: 0;
+}
+
+.uk-width-large {
+    max-width: 60px;
+    min-width: auto;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    .uk-nav {
+        text-align: center;
+    }
 }
 
 @media (min-width: 1200px) {

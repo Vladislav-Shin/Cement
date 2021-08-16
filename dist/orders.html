@@ -54,10 +54,7 @@
         				</ul>
         			</nav>
         
-        
-        
         			<div class="header__wrap-btns">
-        
         
         				<div class="header__tel">
         					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
@@ -99,13 +96,37 @@
         							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
         						</div>
         
+        						<!-- <button class="uk-button uk-button-default" type="button">Ru</button>
         
+        						<div class="uk-width-large" uk-dropdown>
+        							<div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+        								<div>
+        									<ul class="uk-nav uk-dropdown-nav">
+        										<li><a href="#">Ru</a></li>
+        										<li><a href="#">Анг</a></li>
+        										<li><a href="#">Кит</a></li>
+        									</ul>
+        								</div>
+        							</div>
+        						</div> -->
         					</div>
         				</div>
-        			</div>
         
+        				<!-- <button class="uk-button uk-button-default  lang" type="button">Ru</button>
+        
+        				<div class="uk-width-large" uk-dropdown>
+        					<div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+        						<div>
+        							<ul class="uk-nav uk-dropdown-nav">
+        								<li><a href="#">Ru</a></li>
+        								<li><a href="#">Анг</a></li>
+        								<li><a href="#">Кит</a></li>
+        							</ul>
+        						</div>
+        					</div>
+        				</div> -->
+        			</div>
         		</div>
-        	</div>
         </header>
         
         <div class="orders">
@@ -140,7 +161,7 @@
                             debitis similique assumenda explicabo repellat aliquid, consectetur ea non harum neque maiores.
                             Voluptate, expedita enim! Consectetur!</p>
                             <div class="orders__btn">
-                                <button class="btn  btn-blue">Заказать</button>
+                                <a class="btn  btn-blue" href="#modal-center" uk-toggle>Заказать</a>
                             </div>
                     </div>
                 </div>
@@ -203,7 +224,7 @@
                                     <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                                 </div>
                                 <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
+                                    <a class="btn  btn-orange" href="#modal-center" uk-toggle>Заказать</a>
                                 </div>
                             </li>
                             <li class="goods__item">
@@ -216,7 +237,7 @@
                                     <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                                 </div>
                                 <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
+                                    <a class="btn  btn-orange" href="#modal-center" uk-toggle>Заказать</a>
                                 </div>
                             </li>
                             <li class="goods__item">
@@ -229,7 +250,7 @@
                                     <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                                 </div>
                                 <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
+                                    <a class="btn  btn-orange" href="#modal-center" uk-toggle>Заказать</a>
                                 </div>
                             </li>
                             <li class="goods__item">
@@ -242,11 +263,32 @@
                                     <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                                 </div>
                                 <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
+                                    <a class="btn  btn-orange" href="#modal-center" uk-toggle>Заказать</a>
                                 </div>
                             </li>
                         </ul>
                     </div>
+        
+                    <div id="modal-center" class="uk-flex-top" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+            
+                            <div class="form__modal">
+                                <h2 class="form__title">Сделать заказ</h2>
+                                <form class="form__modal-add" action="">
+                                    <input class="form__modal-input" type="text" placeholder="Enter your username">
+                                    <input class="form__modal-input" type="email" placeholder="Enter your email">
+                                    <input class="form__modal-input" type="number" placeholder="Phone Number">
+                                    <textarea class="form__modal-textarea" name="" id="" cols="30" rows="10"
+                                        placeholder="Comment"></textarea>
+                                    <button type="button" class="btn  btn-orange">Contact Us</button>
+                                </form>
+                            </div>
+            
+                        </div>
+                    </div>
+        
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@
 }
 
 .offer__inner {
-	padding: 90px 155px;
+	padding: 90px 0;
 }
 
 .offer__title {
@@ -58,6 +58,7 @@
 }
 
 .offer__item-header {
+	height: 217px;
 	border-radius: 4px 4px 0 0;
 	overflow: hidden;
 	margin-bottom: 40px;

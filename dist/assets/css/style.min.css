@@ -12747,9 +12747,6 @@ input:focus {
 .uk-offcanvas-bar {
   background: #1a4375; }
 
-.uk-button {
-  display: none; }
-
 .uk-dotnav {
   margin-left: 0; }
 
@@ -12760,6 +12757,23 @@ input:focus {
 
 .uk-search-default .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
   padding-left: 0; }
+
+.uk-modal-dialog {
+  max-width: 450px !important;
+  overflow: hidden;
+  border-radius: 20px; }
+
+.uk-modal-body {
+  padding: 0; }
+
+.uk-width-large {
+  max-width: 60px;
+  min-width: auto;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  .uk-width-large .uk-nav {
+    text-align: center; }
 
 @media (min-width: 1200px) {
   .uk-grid + .uk-grid,
@@ -13218,7 +13232,7 @@ input:focus {
   background: #fff; }
 
 .offer__inner {
-  padding: 90px 155px; }
+  padding: 90px 0; }
 
 .offer__title {
   font-weight: 800;
@@ -13264,6 +13278,7 @@ input:focus {
     box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05); }
 
 .offer__item-header {
+  height: 217px;
   border-radius: 4px 4px 0 0;
   overflow: hidden;
   margin-bottom: 40px; }
@@ -14955,6 +14970,16 @@ input:focus {
   height: 100%;
   overflow: auto; }
 
+.newsDayPage__descr {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.500211px;
+  color: #696871;
+  margin-bottom: 15px; }
+
 /* перебивание стилей ui-kit */
 .newsPage {
   /* перебивание стилей uikit */ }
@@ -15226,6 +15251,8 @@ input:focus {
     width: 55%; }
   .nav__link {
     margin: 0 14px; }
+  .uk-offcanvas-bar .nav__link {
+    margin: 0; }
   .news .news__item.uk-active {
     opacity: 1; } }
 
@@ -15263,7 +15290,18 @@ input:focus {
     .header .uk-offcanvas-bar .nav__link {
       display: inline-block;
       font-size: 25px;
-      margin-bottom: 15px; } }
+      margin-bottom: 15px; }
+  .header .lang {
+    display: none; }
+  .header .uk-width-large {
+    background: #1a4375;
+    border: 1px solid #fff; }
+  .header .uk-dropdown-nav a {
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px; } }
 
 /* Landscape tablets and medium desktops - 1199px */
 @media (max-width: 1199px) {
@@ -15537,6 +15575,8 @@ input:focus {
     font-size: 30px;
     line-height: 1.2; }
   /* company */
+  .company .container {
+    padding: 0 10px; }
   .company .company__header {
     height: 150px; }
   .company .company__list .company__item {
@@ -15683,7 +15723,8 @@ input:focus {
   .header .header__tel {
     display: none; }
   .header .header__burder-tel {
-    display: block; }
+    display: block;
+    margin-bottom: 15px; }
   .header .header__telephone {
     padding: 10px;
     font-size: 15px; }

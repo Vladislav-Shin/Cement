@@ -32,25 +32,6 @@ title: calculator
                     </div>
 
                     <div class="calculator__item">
-                        <h3 class="calculator__item-title">Тип упаковки</h3>
-                        <ul class="calculator__list">
-                            <li class="calculator__list-item">
-                                <input type="radio" name="type" value="type-1" checked id="chechox-1">
-                                <label for="chechox-1">Тип 1</label>
-                            </li>
-                            <li class="calculator__list-item">
-                                <input type="radio" name="type" value="type-2" id="chechox-2">
-                                <label for="chechox-2">Тип 2</label>
-                            </li>
-                            <li class="calculator__list-item">
-                                <input type="radio" name="type" value="type-3" id="chechox-3">
-                                <label for="chechox-3">Тип 3</label>
-                            </li>
-                            <li class="calculator__list-item">
-                                <input type="radio" name="type" value="type-4" id="chechox-4">
-                                <label for="chechox-4">Тип 4</label>
-                            </li>
-                        </ul>
                         <div class="calculator__box">
                             <label for="brand">Марка цемента</label>
                             <select class="calculator-select">
@@ -89,7 +70,7 @@ title: calculator
                 <ul class="goods__list">
                     <li class="goods__item">
                         <div class="goods__header">
-                            <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
+                            <img class="goods__header-img" src="assets/images/page__products-1.jpg" alt="">
                         </div>
                         <div class="goods__content">
                             <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
@@ -97,12 +78,12 @@ title: calculator
                             <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                         </div>
                         <div class="goods__footer">
-                            <button class="btn  btn-orange">Заказать</button>
+                            <a class="btn  btn-orange" href="#modal-center" uk-toggle>Заказать</a>
                         </div>
                     </li>
                     <li class="goods__item">
                         <div class="goods__header">
-                            <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
+                            <img class="goods__header-img" src="assets/images/page__products-1.jpg" alt="">
                         </div>
                         <div class="goods__content">
                             <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
@@ -110,12 +91,12 @@ title: calculator
                             <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                         </div>
                         <div class="goods__footer">
-                            <button class="btn  btn-orange">Заказать</button>
+                            <a class="btn  btn-orange" href="#modal-center" uk-toggle>Заказать</a>
                         </div>
                     </li>
                     <li class="goods__item">
                         <div class="goods__header">
-                            <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
+                            <img class="goods__header-img" src="assets/images/page__products-1.jpg" alt="">
                         </div>
                         <div class="goods__content">
                             <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
@@ -123,12 +104,12 @@ title: calculator
                             <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                         </div>
                         <div class="goods__footer">
-                            <button class="btn  btn-orange">Заказать</button>
+                            <a class="btn  btn-orange" href="#modal-center" uk-toggle>Заказать</a>
                         </div>
                     </li>
                     <li class="goods__item">
                         <div class="goods__header">
-                            <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
+                            <img class="goods__header-img" src="assets/images/page__products-1.jpg" alt="">
                         </div>
                         <div class="goods__content">
                             <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
@@ -136,11 +117,32 @@ title: calculator
                             <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                         </div>
                         <div class="goods__footer">
-                            <button class="btn  btn-orange">Заказать</button>
+                            <a class="btn  btn-orange" href="#modal-center" uk-toggle>Заказать</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
+
+        <div id="modal-center" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                <div class="form__modal">
+                    <h2 class="form__title">Сделать заказ</h2>
+                    <form class="form__modal-add" action="">
+                        <input class="form__modal-input" type="text" placeholder="Enter your username">
+                        <input class="form__modal-input" type="email" placeholder="Enter your email">
+                        <input class="form__modal-input" type="number" placeholder="Phone Number">
+                        <textarea class="form__modal-textarea" name="" id="" cols="30" rows="10"
+                            placeholder="Comment"></textarea>
+                        <button type="button" class="btn  btn-orange">Contact Us</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </div>

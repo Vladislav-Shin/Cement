@@ -35,7 +35,7 @@ title: orders
                     debitis similique assumenda explicabo repellat aliquid, consectetur ea non harum neque maiores.
                     Voluptate, expedita enim! Consectetur!</p>
                     <div class="orders__btn">
-                        <button class="btn  btn-blue">Заказать</button>
+                        <a class="btn  btn-blue" href="#modal-center" uk-toggle>Заказать</a>
                     </div>
             </div>
         </div>
@@ -98,7 +98,7 @@ title: orders
                             <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                         </div>
                         <div class="goods__footer">
-                            <button class="btn  btn-orange">Заказать</button>
+                            <a class="btn  btn-orange" href="#modal-center" uk-toggle>Заказать</a>
                         </div>
                     </li>
                     <li class="goods__item">
@@ -111,7 +111,7 @@ title: orders
                             <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                         </div>
                         <div class="goods__footer">
-                            <button class="btn  btn-orange">Заказать</button>
+                            <a class="btn  btn-orange" href="#modal-center" uk-toggle>Заказать</a>
                         </div>
                     </li>
                     <li class="goods__item">
@@ -124,7 +124,7 @@ title: orders
                             <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                         </div>
                         <div class="goods__footer">
-                            <button class="btn  btn-orange">Заказать</button>
+                            <a class="btn  btn-orange" href="#modal-center" uk-toggle>Заказать</a>
                         </div>
                     </li>
                     <li class="goods__item">
@@ -137,11 +137,32 @@ title: orders
                             <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                         </div>
                         <div class="goods__footer">
-                            <button class="btn  btn-orange">Заказать</button>
+                            <a class="btn  btn-orange" href="#modal-center" uk-toggle>Заказать</a>
                         </div>
                     </li>
                 </ul>
             </div>
+
+            <div id="modal-center" class="uk-flex-top" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+    
+                    <div class="form__modal">
+                        <h2 class="form__title">Сделать заказ</h2>
+                        <form class="form__modal-add" action="">
+                            <input class="form__modal-input" type="text" placeholder="Enter your username">
+                            <input class="form__modal-input" type="email" placeholder="Enter your email">
+                            <input class="form__modal-input" type="number" placeholder="Phone Number">
+                            <textarea class="form__modal-textarea" name="" id="" cols="30" rows="10"
+                                placeholder="Comment"></textarea>
+                            <button type="button" class="btn  btn-orange">Contact Us</button>
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

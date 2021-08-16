@@ -19475,6 +19475,22 @@ input:focus {
     .history .container {
         padding: 0 10px;
     }
+  /* news */
+    .news .uk-card-title {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 5px;
+    }
+
+    .news .news__item time {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    .news .news__item p {
+        font-size: 15px;
+        line-height: 1.2;
+    }
 }
 
 /* breakpoint 550 */
@@ -19619,6 +19635,28 @@ input:focus {
 
     .history .history__left {
         padding: 10px;
+    }
+  /* news */
+    .news .news__item {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-left: 7.5px;
+    }
+
+    .news .uk-card {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .news .uk-card-media-top {
+        height: 250px;
+    }
+
+    .news .uk-card-media-top img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
     }
 }
 
