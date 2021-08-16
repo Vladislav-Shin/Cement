@@ -13258,7 +13258,7 @@ input:focus {
 
 .offer__items {
   position: relative;
-  width: 24%;
+  width: 31%;
   background: #fff;
   border: 0.817656px solid #FFFFFF;
   box-shadow: 0px 3.06759px 30.6759px rgba(43, 89, 255, 0.08), 24.5297px 57.2359px 98.1188px rgba(27, 49, 66, 0.13);
@@ -15264,6 +15264,17 @@ input:focus {
   /* home */
   .home__content {
     padding: 100px 20px; }
+  .scheme__list-items span::before {
+    display: none; }
+  .scheme .scheme__list-items::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 20%;
+    height: 1px;
+    background: #0068cf;
+    transform: translateX(-50%); }
   /* address */
   .page__address .address__list-item {
     width: 48%; }

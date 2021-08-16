@@ -52,6 +52,25 @@
         padding: 100px 20px;
     }
 
+    .scheme__list-items {
+        position: relative;
+
+        span::before {
+            display: none;
+        }
+    }
+
+    .scheme .scheme__list-items::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 20%;
+        height: 1px;
+        background: #0068cf;
+        transform: translateX(-50%);
+    }
+
     /* address */
     .page__address {
         .address__list-item {

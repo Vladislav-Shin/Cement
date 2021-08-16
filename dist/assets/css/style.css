@@ -17116,7 +17116,8 @@ input:focus {
     margin-bottom: 10px;
 }
 
-.history__right-descr {
+.history__right p,
+.history__left p {
     font-family: "Nunito";
     font-weight: 400;
     font-size: 17px;
@@ -17125,7 +17126,8 @@ input:focus {
     margin-bottom: 25px;
 }
 
-.history__right-descr:last-child {
+.history__right p:last-child,
+  .history__left p:last-child {
     margin-bottom: 0;
 }
 
