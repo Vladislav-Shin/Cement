@@ -1634,6 +1634,16 @@
             }
         }
     }
+
+    .footer {
+        .footer__item {
+            width: 100%;
+        }
+
+        .footer__item:first-child {
+            width: 100%;
+        }
+    }
 }
 
 /* Portrait phones and smaller - 480px */
@@ -2027,8 +2037,7 @@
             }
 
             .btn-orange {
-                max-width: 150px;
-                padding: 10px 15px;
+                padding: 11px 15px;
             }
         }
 

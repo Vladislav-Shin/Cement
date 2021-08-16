@@ -14920,10 +14920,6 @@ input:focus {
     background: #1a4375;
 }
 
-.uk-button {
-    display: none;
-}
-
 .uk-dotnav {
     margin-left: 0;
 }
@@ -14936,6 +14932,28 @@ input:focus {
 
 .uk-search-default .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
     padding-left: 0;
+}
+
+.uk-modal-dialog {
+    max-width: 450px !important;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.uk-modal-body {
+    padding: 0;
+}
+
+.uk-width-large {
+    max-width: 60px;
+    min-width: auto;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.uk-width-large .uk-nav {
+    text-align: center;
 }
 
 @media (min-width: 1200px) {
@@ -15550,7 +15568,7 @@ input:focus {
 }
 
 .offer__inner {
-    padding: 90px 155px;
+    padding: 90px 0;
 }
 
 .offer__title {
@@ -15606,6 +15624,7 @@ input:focus {
 }
 
 .offer__item-header {
+    height: 217px;
     border-radius: 4px 4px 0 0;
     overflow: hidden;
     margin-bottom: 40px;
@@ -17866,6 +17885,17 @@ input:focus {
     overflow: auto;
 }
 
+.newsDayPage__descr {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.500211px;
+    color: #696871;
+    margin-bottom: 15px;
+}
+
 /* перебивание стилей ui-kit */
 .newsPage {
   /* перебивание стилей uikit */
@@ -18254,6 +18284,10 @@ input:focus {
         margin: 0 14px;
     }
 
+    .uk-offcanvas-bar .nav__link {
+        margin: 0;
+    }
+
     .news .news__item.uk-active {
         opacity: 1;
     }
@@ -18315,6 +18349,23 @@ input:focus {
         display: inline-block;
         font-size: 25px;
         margin-bottom: 15px;
+    }
+
+    .header .lang {
+        display: none;
+    }
+
+    .header .uk-width-large {
+        background: #1a4375;
+        border: 1px solid #fff;
+    }
+
+    .header .uk-dropdown-nav a {
+        font-size: 0.875rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 5px;
     }
 }
 
@@ -18770,6 +18821,10 @@ input:focus {
         line-height: 1.2;
     }
   /* company */
+    .company .container {
+        padding: 0 10px;
+    }
+
     .company .company__header {
         height: 150px;
     }
@@ -19019,6 +19074,7 @@ input:focus {
 
     .header .header__burder-tel {
         display: block;
+        margin-bottom: 15px;
     }
 
     .header .header__telephone {
