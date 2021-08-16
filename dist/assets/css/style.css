@@ -16271,12 +16271,13 @@ input:focus {
 }
 
 .footer__descr {
-    font-size: 14px;
-    line-height: 1.5;
-    font-weight: 400;
-    color: rgba(46, 46, 70, 0.8);
-    font-family: "Nurito";
-    max-width: 210px;
+    display: inline-block;
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #222831;
+    margin-bottom: 20px;
 }
 
 .footer__app-text {
@@ -16473,7 +16474,7 @@ input:focus {
 
 .contact__inner {
     position: relative;
-    padding: 90px 100px;
+    padding: 50px 100px;
     margin: 0 60px;
     box-shadow: 45px 43px 183px rgba(27, 49, 66, 0.13);
     background: #fff;
@@ -16520,7 +16521,7 @@ input:focus {
     font-family: "Nunito", sans-serif;
     color: #08104f;
     line-height: 1.5;
-    font-size: 22px;
+    font-size: 28px;
     padding: 0 20px;
     margin-bottom: 70px;
 }
@@ -19714,6 +19715,14 @@ input:focus {
         -o-object-fit: cover;
         object-fit: cover;
     }
+
+    .footer .footer__item {
+        width: 100%;
+    }
+
+    .footer .footer__item:first-child {
+        width: 100%;
+    }
 }
 
 /* Portrait phones and smaller - 480px */
@@ -20078,8 +20087,7 @@ input:focus {
     }
 
     .footer .contact .btn-orange {
-        max-width: 150px;
-        padding: 10px 15px;
+        padding: 11px 15px;
     }
 
     .footer .footer__inner {

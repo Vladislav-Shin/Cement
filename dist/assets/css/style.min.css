@@ -14388,14 +14388,16 @@ input:focus {
   color: #000000;
   margin-bottom: 10px; }
 
-.history__right-descr {
+.history__right p,
+.history__left p {
   font-family: "Nunito";
   font-weight: 400;
   font-size: 17px;
   line-height: 31px;
   color: #64626a;
   margin-bottom: 25px; }
-  .history__right-descr:last-child {
+  .history__right p:last-child,
+  .history__left p:last-child {
     margin-bottom: 0; }
 
 .history__footer-row {

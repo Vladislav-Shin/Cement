@@ -90,16 +90,19 @@
     margin-bottom: 10px;
 }
 
-.history__right-descr {
-    font-family: "Nunito";
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 31px;
-    color: #64626a;
-    margin-bottom: 25px;
-
-    &:last-child {
-        margin-bottom: 0;
+.history__right,
+.history__left {
+    p {
+        font-family: "Nunito";
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 31px;
+        color: #64626a;
+        margin-bottom: 25px;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
