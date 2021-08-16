@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -21,355 +22,356 @@
 
 <body>
 
-        <!--  Header -->
-        <header class="header">
-        	<div class="container">
-        		<div class="header__inner">
-        			<div class="header__logo">
-        				<a href="#">
-        					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
-        				</a>
-        			</div>
+    <!--  Header -->
+    <header class="header">
+    	<div class="container">
+    		<div class="header__inner">
+    			<div class="header__logo">
+    				<a href="#">
+    					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
+    				</a>
+    			</div>
+    
+    			<nav class="nav">
+    				<ul class="nav__list">
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Главная</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Продукция</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Калькулятор</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">О компании</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Новости</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Контакты</a>
+    					</li>
+    				</ul>
+    			</nav>
+    
+    
+    
+    			<div class="header__wrap-btns">
+    
+    
+    				<div class="header__tel">
+    					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+    				</div>
+    
+    				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
+    					uk-toggle="target: #offcanvas-overlay">
+    					<span>Открыть навигацию</span>
+    				</button>
+    
+    				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+    					<div class="uk-offcanvas-bar">
+    
+    						<button class="uk-offcanvas-close" type="button" uk-close></button>
+    
+    
+    						<ul class="nav__list">
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Главная</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Продукция</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Калькулятор</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">О компании</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Новости</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Контакты</a>
+    							</li>
+    						</ul>
+    
+    						<div class="header__burder-tel">
+    							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+    						</div>
+    
+    
+    					</div>
+    				</div>
+    			</div>
+    
+    		</div>
+    	</div>
+    </header>
+    
+    <main class="page__address">
+    
+        <div class="address">
+    
+            <div class="home__container">
+                <div class="header__footer">
+                    <ul class="uk-breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Linked Category</a></li>
+                        <li class="uk-disabled"><a>Disabled Category</a></li>
+                    </ul>
         
-        			<nav class="nav">
-        				<ul class="nav__list">
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Главная</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Продукция</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Калькулятор</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">О компании</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Новости</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Контакты</a>
-        					</li>
-        				</ul>
-        			</nav>
-        
-        
-        
-        			<div class="header__wrap-btns">
-        
-        
-        				<div class="header__tel">
-        					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
-        				</div>
-        
-        				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
-        					uk-toggle="target: #offcanvas-overlay">
-        					<span>Открыть навигацию</span>
-        				</button>
-        
-        				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-        					<div class="uk-offcanvas-bar">
-        
-        						<button class="uk-offcanvas-close" type="button" uk-close></button>
-        
-        
-        						<ul class="nav__list">
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Главная</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Продукция</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Калькулятор</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">О компании</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Новости</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Контакты</a>
-        							</li>
-        						</ul>
-        
-        						<div class="header__burder-tel">
-        							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
-        						</div>
-        
-        
-        					</div>
-        				</div>
-        			</div>
-        
-        		</div>
-        	</div>
-        </header>
-        
-        <main class="page__address">
-        
-            <div class="address">
-        
-                <div class="home__container">
-                    <div class="header__footer">
-                        <ul class="uk-breadcrumb">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Linked Category</a></li>
-                            <li class="uk-disabled"><a>Disabled Category</a></li>
-                        </ul>
-            
-                        <h1 class="header__footer-title">Адрес</h1>
-                    </div>
+                    <h1 class="header__footer-title">Адрес</h1>
                 </div>
-            
-                <div class="container">
-                    <div class="address__inner">
-                        <div class="address__row">
-                            <div class="address__item-header">
-                                <div class="address__item-header-title">Зам.директор по общим вопросам</div>
-                                <div class="address__item-content">
-                                    <ul class="address__items-list">
-                                        <li class="address__list-item">
-                                            <a href="tel:+77252955880">+7(7252) 95-58-80</a>
-                                        </li>
-                                        <li class="address__list-item">
-                                            <a href="tel:+77252955880">+7(7252) 95-58-80</a>
-                                        </li>
-                                        <li class="address__list-item">
-                                            <a href="tel:+77252955880">+7(7252) 95-58-80</a>
-                                        </li>
-                                        <li class="address__list-item">
-                                            <a href="tel:+77252955880">+7(7252) 95-58-80</a>
-                                        </li>
-                                        <li class="address__list-item">
-                                            <a href="tel:+77252955880">+7(7252) 95-58-80</a>
-                                        </li>
-                                    </ul>
-                                </div> <!-- address__items-content -->
-                            </div> <!-- address__item-header -->
-                            <div class="address__item-header">
-                                <div class="address__item-header-title">АДРЕС:</div>
-                                <div class="address__item-content">
-                                    <p class="address__item-text">Lorem Ipsum is simply dummy text of the printing and
-                                        typesetting
-                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                        1500s...</p>
-                                </div>
-                            </div>
-                        </div> <!-- address__row -->
-            
-            
-                        <div class="address__row  address__row-footer">
-                            <div class="address__item-header">
-                                <div class="address__item-header-title">Зам.директор по общим вопросам</div>
-                                <div class="address__item-content">
-                                    <address>2100 N Ronald Reagan Blvd #1044, Longwood, FL 32750</address>
-                                    <div class="address__item-footer">Phone: <a href="">1104</a></div>
-                                </div>
-                            </div>
-                            <div class="address__item-header">
-                                <div class="address__item-header-title">Главный бухгалтер</div>
-                                <div class="address__item-content">
-                                    <address>2100 N Ronald Reagan Blvd #1044, Longwood, FL 32750</address>
-                                    <div class="address__item-footer">Phone: <a href="">1104</a></div>
-                                </div>
-                            </div>
-                            <div class="address__item-header">
-                                <div class="address__item-header-title">Старший бухгалтер по реализации</div>
-                                <div class="address__item-content">
-                                    <address>2100 N Ronald Reagan Blvd #1044, Longwood, FL 32750</address>
-                                    <div class="address__item-footer">Phone: <a href="">1104</a></div>
-                                </div>
-                            </div>
-                            <div class="address__item-header">
-                                <div class="address__item-header-title">Менеджер по обслуживанию клиентов</div>
-                                <div class="address__item-content">
-                                    <address>2100 N Ronald Reagan Blvd #1044, Longwood, FL 32750</address>
-                                    <div class="address__item-footer">Phone: <a href="">1104</a></div>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="questions">
-                            <div class="questions__inner">
-                                <h2 class="questions__title">Остались вопросы?</h2>
-                                <div class="questions__subtitle">Напишите нашему менеджеру</div>
-                                <form class="questions__form" action="/">
-                                    <div class="questions__row">
-                                        <div class="questions__left">
-                                            <div class="questions__left-item">
-                                                <label for="input-1">ФИО *</label>
-                                                <input type="text" id="input-1">
-                                            </div>
-                                            <div class="questions__left-item">
-                                                <label for="input-2">Телефонный номер *</label>
-                                                <input type="number" id="input-2">
-                                            </div>
-                                            <div class="questions__left-item">
-                                                <label for="input-3">Город *</label>
-                                                <input type="text" id="input-3">
-                                            </div>
-                                            <div class="questions__left-item">
-                                                <label for="input-4">Электронная почта *</label>
-                                                <input type="email" id="input-4">
-                                            </div>
-                                        </div> <!-- questions__left -->
-            
-                                        <div class="questions__right">
-                                            <div class="questions__right-item">
-                                                <label for="textarea">Сообщение</label>
-                                                <textarea name="" id="textarea" cols="30" rows="10"></textarea>
-                                            </div>
-            
-                                        </div>
-                                    </div> <!-- questions__row -->
-            
-                                    <div class="questions__footer">
-                                        <button class="btn  btn-blue">Отправить</button>
-                                    </div>
-                                </form> <!-- questions__form -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="map">
-                    <div class="container">
-                        <div class="map__inner">
-                            <div class="map__wrapper">
-                                <iframe class="map__iframe"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47951.94456380261!2d69.2497987218396!3d41.30893898628785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2931f41f23%3A0x81095e06b654b845!2z0KHQutCy0LXRgCDQuNC8LiDQkNC80LjRgNCwINCi0LXQvNGD0YDQsA!5e0!3m2!1sru!2s!4v1626100537474!5m2!1sru!2s"
-                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- map -->
-            
             </div>
         
-        </main>
+            <div class="container">
+                <div class="address__inner">
+                    <div class="address__row">
+                        <div class="address__item-header">
+                            <div class="address__item-header-title">Зам.директор по общим вопросам</div>
+                            <div class="address__item-content">
+                                <ul class="address__items-list">
+                                    <li class="address__list-item">
+                                        <a href="tel:+77252955880">+7(7252) 95-58-80</a>
+                                    </li>
+                                    <li class="address__list-item">
+                                        <a href="tel:+77252955880">+7(7252) 95-58-80</a>
+                                    </li>
+                                    <li class="address__list-item">
+                                        <a href="tel:+77252955880">+7(7252) 95-58-80</a>
+                                    </li>
+                                    <li class="address__list-item">
+                                        <a href="tel:+77252955880">+7(7252) 95-58-80</a>
+                                    </li>
+                                    <li class="address__list-item">
+                                        <a href="tel:+77252955880">+7(7252) 95-58-80</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- address__items-content -->
+                        </div> <!-- address__item-header -->
+                        <div class="address__item-header">
+                            <div class="address__item-header-title">АДРЕС:</div>
+                            <div class="address__item-content">
+                                <p class="address__item-text">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                    1500s...</p>
+                            </div>
+                        </div>
+                    </div> <!-- address__row -->
         
-        <!-- Footer -->
-        <footer class="footer">
-        	<div class="contact">
-        		<div class="container">
-        			<div class="contact__inner">
-        				<div class="contact__content">
-        					<h5 class="contact__title">Contact Us</h5>
-        					<p class="contact__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
-        						industry.
-        						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-        				</div>
-        				<div class="contact__footer">
-        					<button class="btn  btn-orange  btn-contact">Contact Us</button>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
         
-        	<div class="container">
-        		<div class="footer__inner">
-        			<div class="footer__row">
-        				<div class="footer__item">
-        					<div class="footer__logo">
-        						<a href="#">ofsp_ce</a>
-        						<p class="footer__descr">Lorem Ipsum is simply dummy text of the printing and typesetting
-        							industry. Lorem
-        							Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-        					</div>
-        				</div>
+                    <div class="address__row  address__row-footer">
+                        <div class="address__item-header">
+                            <div class="address__item-header-title">Зам.директор по общим вопросам</div>
+                            <div class="address__item-content">
+                                <address>2100 N Ronald Reagan Blvd #1044, Longwood, FL 32750</address>
+                                <div class="address__item-footer">Phone: <a href="">1104</a></div>
+                            </div>
+                        </div>
+                        <div class="address__item-header">
+                            <div class="address__item-header-title">Главный бухгалтер</div>
+                            <div class="address__item-content">
+                                <address>2100 N Ronald Reagan Blvd #1044, Longwood, FL 32750</address>
+                                <div class="address__item-footer">Phone: <a href="">1104</a></div>
+                            </div>
+                        </div>
+                        <div class="address__item-header">
+                            <div class="address__item-header-title">Старший бухгалтер по реализации</div>
+                            <div class="address__item-content">
+                                <address>2100 N Ronald Reagan Blvd #1044, Longwood, FL 32750</address>
+                                <div class="address__item-footer">Phone: <a href="">1104</a></div>
+                            </div>
+                        </div>
+                        <div class="address__item-header">
+                            <div class="address__item-header-title">Менеджер по обслуживанию клиентов</div>
+                            <div class="address__item-content">
+                                <address>2100 N Ronald Reagan Blvd #1044, Longwood, FL 32750</address>
+                                <div class="address__item-footer">Phone: <a href="">1104</a></div>
+                            </div>
+                        </div>
+                    </div>
         
-        				<div class="footer__item  footer-flex">
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
+                    <div class="questions">
+                        <div class="questions__inner">
+                            <h2 class="questions__title">Остались вопросы?</h2>
+                            <div class="questions__subtitle">Напишите нашему менеджеру</div>
+                            <form class="questions__form" action="/">
+                                <div class="questions__row">
+                                    <div class="questions__left">
+                                        <div class="questions__left-item">
+                                            <label for="input-1">ФИО *</label>
+                                            <input type="text" id="input-1">
+                                        </div>
+                                        <div class="questions__left-item">
+                                            <label for="input-2">Телефонный номер *</label>
+                                            <input type="number" id="input-2">
+                                        </div>
+                                        <div class="questions__left-item">
+                                            <label for="input-3">Город *</label>
+                                            <input type="text" id="input-3">
+                                        </div>
+                                        <div class="questions__left-item">
+                                            <label for="input-4">Электронная почта *</label>
+                                            <input type="email" id="input-4">
+                                        </div>
+                                    </div> <!-- questions__left -->
         
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
+                                    <div class="questions__right">
+                                        <div class="questions__right-item">
+                                            <label for="textarea">Сообщение</label>
+                                            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                                        </div>
         
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        				</div>
+                                    </div>
+                                </div> <!-- questions__row -->
         
-        				<div class="footer__item  footer-width">
-        					<h5 class="footer__app-text">Подписаться</h5>
-        					<form class="footer__form" action="/">
-        						<div class="footer__form-inner">
-        							<input type="email" placeholder="Ваш Email">
-        							<div class="footer__form-btn">
-        								<button class="btn  btn-form">Подписаться</button>
-        							</div>
-        						</div>
-        					</form>
-        					<div class="footer__app-socials">
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/facebook.svg" alt="">
-        						</a>
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/instagram.svg" alt="">
-        						</a>
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/twitter.svg" alt="">
-        						</a>
-        					</div>
-        				</div>
-        			</div>
+                                <div class="questions__footer">
+                                    <button class="btn  btn-blue">Отправить</button>
+                                </div>
+                            </form> <!-- questions__form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         
-        			<div class="footer__bottom">
-        				<div class="copyright">
-        					<h6 class="footer__buttom-text">All rights reserved @ofspace.co</h6>
-        				</div>
-        				<div class="logo__panda">
-        					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
-        						<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-        							<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-        							<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-        						</svg>
-        						<img src="assets/images/logo-white.svg" alt="https://digitalpanda.uz/">
-        					</a>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
+            <div class="map">
+                <div class="container">
+                    <div class="map__inner">
+                        <div class="map__wrapper">
+                            <iframe class="map__iframe"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47951.94456380261!2d69.2497987218396!3d41.30893898628785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2931f41f23%3A0x81095e06b654b845!2z0KHQutCy0LXRgCDQuNC8LiDQkNC80LjRgNCwINCi0LXQvNGD0YDQsA!5e0!3m2!1sru!2s!4v1626100537474!5m2!1sru!2s"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- map -->
+        
+        </div>
+    
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+    	<div class="contact">
+    		<div class="container">
+    			<div class="contact__inner">
+    				<div class="contact__content">
+    					<h5 class="contact__title">Contact Us</h5>
+    					<p class="contact__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
+    						industry.
+    						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    				</div>
+    				<div class="contact__footer">
+    					<button class="btn  btn-orange  btn-contact">Contact Us</button>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    
+    	<div class="container">
+    		<div class="footer__inner">
+    			<div class="footer__row">
+    				<div class="footer__item">
+    					<div class="footer__logo">
+    						<a href="#">ofsp_ce</a>
+    						<p class="footer__descr">Lorem Ipsum is simply dummy text of the printing and typesetting
+    							industry. Lorem
+    							Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    					</div>
+    				</div>
+    
+    				<div class="footer__item  footer-flex">
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    				</div>
+    
+    				<div class="footer__item  footer-width">
+    					<h5 class="footer__app-text">Подписаться</h5>
+    					<form class="footer__form" action="/">
+    						<div class="footer__form-inner">
+    							<input type="email" placeholder="Ваш Email">
+    							<div class="footer__form-btn">
+    								<button class="btn  btn-form">Подписаться</button>
+    							</div>
+    						</div>
+    					</form>
+    					<div class="footer__app-socials">
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/facebook.svg" alt="">
+    						</a>
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/instagram.svg" alt="">
+    						</a>
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/twitter.svg" alt="">
+    						</a>
+    					</div>
+    				</div>
+    			</div>
+    
+    			<div class="footer__bottom">
+    				<div class="copyright">
+    					<h6 class="footer__buttom-text">All rights reserved @ofspace.co</h6>
+    				</div>
+    				<div class="logo__panda">
+    					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
+    						<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+    							<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+    							<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+    						</svg>
+    						<img src="assets/images/logo-white.svg" alt="https://digitalpanda.uz/">
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
     <!-- JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

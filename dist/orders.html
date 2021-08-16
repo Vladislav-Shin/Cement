@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -21,355 +22,356 @@
 
 <body>
 
-        <!--  Header -->
-        <header class="header">
-        	<div class="container">
-        		<div class="header__inner">
-        			<div class="header__logo">
-        				<a href="#">
-        					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
-        				</a>
-        			</div>
-        
-        			<nav class="nav">
-        				<ul class="nav__list">
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Главная</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Продукция</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Калькулятор</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">О компании</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Новости</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Контакты</a>
-        					</li>
-        				</ul>
-        			</nav>
-        
-        
-        
-        			<div class="header__wrap-btns">
-        
-        
-        				<div class="header__tel">
-        					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
-        				</div>
-        
-        				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
-        					uk-toggle="target: #offcanvas-overlay">
-        					<span>Открыть навигацию</span>
-        				</button>
-        
-        				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-        					<div class="uk-offcanvas-bar">
-        
-        						<button class="uk-offcanvas-close" type="button" uk-close></button>
-        
-        
-        						<ul class="nav__list">
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Главная</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Продукция</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Калькулятор</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">О компании</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Новости</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Контакты</a>
-        							</li>
-        						</ul>
-        
-        						<div class="header__burder-tel">
-        							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
-        						</div>
-        
-        
-        					</div>
-        				</div>
-        			</div>
-        
-        		</div>
-        	</div>
-        </header>
-        
-        <div class="orders">
-        
-            <div class="home__container">
-                <div class="header__footer">
-                    <ul class="uk-breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Linked Category</a></li>
-                        <li class="uk-disabled"><a>Disabled Category</a></li>
-                    </ul>
-        
-                    <h1 class="header__footer-title">Новости</h1>
+    <!--  Header -->
+    <header class="header">
+    	<div class="container">
+    		<div class="header__inner">
+    			<div class="header__logo">
+    				<a href="#">
+    					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
+    				</a>
+    			</div>
+    
+    			<nav class="nav">
+    				<ul class="nav__list">
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Главная</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Продукция</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Калькулятор</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">О компании</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Новости</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Контакты</a>
+    					</li>
+    				</ul>
+    			</nav>
+    
+    
+    
+    			<div class="header__wrap-btns">
+    
+    
+    				<div class="header__tel">
+    					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+    				</div>
+    
+    				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
+    					uk-toggle="target: #offcanvas-overlay">
+    					<span>Открыть навигацию</span>
+    				</button>
+    
+    				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+    					<div class="uk-offcanvas-bar">
+    
+    						<button class="uk-offcanvas-close" type="button" uk-close></button>
+    
+    
+    						<ul class="nav__list">
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Главная</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Продукция</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Калькулятор</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">О компании</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Новости</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Контакты</a>
+    							</li>
+    						</ul>
+    
+    						<div class="header__burder-tel">
+    							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+    						</div>
+    
+    
+    					</div>
+    				</div>
+    			</div>
+    
+    		</div>
+    	</div>
+    </header>
+    
+    <div class="orders">
+    
+        <div class="home__container">
+            <div class="header__footer">
+                <ul class="uk-breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Linked Category</a></li>
+                    <li class="uk-disabled"><a>Disabled Category</a></li>
+                </ul>
+    
+                <h1 class="header__footer-title">Новости</h1>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="orders__row">
+                <div class="orders__left">
+                    <img src="assets/images/cement.png" alt="">
+                </div>
+                <div class="orders__right  clear">
+                    <h2 class="orders__title">Описание</h2>
+                    <p class="orders__right-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                        possimus explicabo necessitatib
+                        us doloribus vero. Autem nobis rerum quia adipisci veniam in odio
+                        nemo, maiores consectetur atque laborum voluptatum ipsa quaerat labore soluta repudiandae deserunt
+                        reprehenderit? Et modi laudantium eos a error aperiam ut blanditiis, omnis temporibus repudiandae
+                        vel harum. Alias numquam placeat vel ducimus recusandae doloremque natus assumenda dolores
+                        laboriosam omnis doloribus officiis ipsa velit, facilis minima repudiandae. Culpa fugit eum
+                        doloribus, rem fuga suscipit nam ab accusantium deleniti nulla cumque nostrum, aut architecto
+                        debitis similique assumenda explicabo repellat aliquid, consectetur ea non harum neque maiores.
+                        Voluptate, expedita enim! Consectetur!</p>
+                        <div class="orders__btn">
+                            <button class="btn  btn-blue">Заказать</button>
+                        </div>
                 </div>
             </div>
-        
-            <div class="container">
-                <div class="orders__row">
-                    <div class="orders__left">
-                        <img src="assets/images/cement.png" alt="">
-                    </div>
-                    <div class="orders__right  clear">
-                        <h2 class="orders__title">Описание</h2>
-                        <p class="orders__right-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                            possimus explicabo necessitatib
-                            us doloribus vero. Autem nobis rerum quia adipisci veniam in odio
-                            nemo, maiores consectetur atque laborum voluptatum ipsa quaerat labore soluta repudiandae deserunt
-                            reprehenderit? Et modi laudantium eos a error aperiam ut blanditiis, omnis temporibus repudiandae
-                            vel harum. Alias numquam placeat vel ducimus recusandae doloremque natus assumenda dolores
-                            laboriosam omnis doloribus officiis ipsa velit, facilis minima repudiandae. Culpa fugit eum
-                            doloribus, rem fuga suscipit nam ab accusantium deleniti nulla cumque nostrum, aut architecto
-                            debitis similique assumenda explicabo repellat aliquid, consectetur ea non harum neque maiores.
-                            Voluptate, expedita enim! Consectetur!</p>
-                            <div class="orders__btn">
-                                <button class="btn  btn-blue">Заказать</button>
-                            </div>
-                    </div>
-                </div>
-        
-                <div class="charact">
-                    <div class="charact__row">
-                        <div class="charact__item">
-                            <h2 class="charact__title">Общие характеристики</h2>
-                            <ul class="charact__list">
-                                <li class="charact__list-item">
-                                    <span class="charact__list-title">Операционная система</span>
-                                    <span class="charact__list-subtitle">DOS</span>
-                                </li>
-                                <li class="charact__list-item">
-                                    <span class="charact__list-title">Версия операционной системы</span>
-                                    <span class="charact__list-subtitle">DOS</span>
-                                </li>
-                                <li class="charact__list-item">
-                                    <span class="charact__list-title">Гарантийный срок</span>
-                                    <span class="charact__list-subtitle">DOS</span>
-                                </li>
-                                <li class="charact__list-item">
-                                    <span class="charact__list-title">Операционная система</span>
-                                    <span class="charact__list-subtitle">DOS</span>
-                                </li>
-                                <li class="charact__list-item">
-                                    <span class="charact__list-title">Версия операционной системы</span>
-                                    <span class="charact__list-subtitle">DOS</span>
-                                </li>
-                                <li class="charact__list-item">
-                                    <span class="charact__list-title">Гарантийный срок</span>
-                                    <span class="charact__list-subtitle">DOS</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="charact__item">
-                            <h2 class="charact__title">Применение</h2>
-                            <p class="charact__subtitle">Цемент марки ПЦ 400 Д0 используется для производства сборных бетонных и
-                                железобетонных конструкций с применением термовлажностной обработки, а также для бетонных,
-                                железобетонных подземных, надземных и подводных сооружений, подвергающихся действию пресных и
-                                минерализированных вод. Цемент этой марки успешно зарекомендовал себя для строительства бетонных и
-                                строительных растворов.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="goods">
-                <div class="container">
-                    <div class="goods__inner">
-                        <h1 class="goods__text">Товары</h1>
-                        <ul class="goods__list">
-                            <li class="goods__item">
-                                <div class="goods__header">
-                                    <img src="assets/images/page__products-1.jpg" alt="">
-                                </div>
-                                <div class="goods__content">
-                                    <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                                        (ПЦ 400 Д20)</div>
-                                    <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-                                </div>
-                                <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
-                                </div>
+    
+            <div class="charact">
+                <div class="charact__row">
+                    <div class="charact__item">
+                        <h2 class="charact__title">Общие характеристики</h2>
+                        <ul class="charact__list">
+                            <li class="charact__list-item">
+                                <span class="charact__list-title">Операционная система</span>
+                                <span class="charact__list-subtitle">DOS</span>
                             </li>
-                            <li class="goods__item">
-                                <div class="goods__header">
-                                    <img src="assets/images/page__products-1.jpg" alt="">
-                                </div>
-                                <div class="goods__content">
-                                    <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                                        (ПЦ 400 Д20)</div>
-                                    <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-                                </div>
-                                <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
-                                </div>
+                            <li class="charact__list-item">
+                                <span class="charact__list-title">Версия операционной системы</span>
+                                <span class="charact__list-subtitle">DOS</span>
                             </li>
-                            <li class="goods__item">
-                                <div class="goods__header">
-                                    <img src="assets/images/page__products-1.jpg" alt="">
-                                </div>
-                                <div class="goods__content">
-                                    <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                                        (ПЦ 400 Д20)</div>
-                                    <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-                                </div>
-                                <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
-                                </div>
+                            <li class="charact__list-item">
+                                <span class="charact__list-title">Гарантийный срок</span>
+                                <span class="charact__list-subtitle">DOS</span>
                             </li>
-                            <li class="goods__item">
-                                <div class="goods__header">
-                                    <img src="assets/images/page__products-1.jpg" alt="">
-                                </div>
-                                <div class="goods__content">
-                                    <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                                        (ПЦ 400 Д20)</div>
-                                    <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-                                </div>
-                                <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
-                                </div>
+                            <li class="charact__list-item">
+                                <span class="charact__list-title">Операционная система</span>
+                                <span class="charact__list-subtitle">DOS</span>
+                            </li>
+                            <li class="charact__list-item">
+                                <span class="charact__list-title">Версия операционной системы</span>
+                                <span class="charact__list-subtitle">DOS</span>
+                            </li>
+                            <li class="charact__list-item">
+                                <span class="charact__list-title">Гарантийный срок</span>
+                                <span class="charact__list-subtitle">DOS</span>
                             </li>
                         </ul>
+                    </div>
+                    <div class="charact__item">
+                        <h2 class="charact__title">Применение</h2>
+                        <p class="charact__subtitle">Цемент марки ПЦ 400 Д0 используется для производства сборных бетонных и
+                            железобетонных конструкций с применением термовлажностной обработки, а также для бетонных,
+                            железобетонных подземных, надземных и подводных сооружений, подвергающихся действию пресных и
+                            минерализированных вод. Цемент этой марки успешно зарекомендовал себя для строительства бетонных и
+                            строительных растворов.</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Footer -->
-        <footer class="footer">
-        	<div class="contact">
-        		<div class="container">
-        			<div class="contact__inner">
-        				<div class="contact__content">
-        					<h5 class="contact__title">Contact Us</h5>
-        					<p class="contact__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
-        						industry.
-        						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-        				</div>
-        				<div class="contact__footer">
-        					<button class="btn  btn-orange  btn-contact">Contact Us</button>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        
-        	<div class="container">
-        		<div class="footer__inner">
-        			<div class="footer__row">
-        				<div class="footer__item">
-        					<div class="footer__logo">
-        						<a href="#">ofsp_ce</a>
-        						<p class="footer__descr">Lorem Ipsum is simply dummy text of the printing and typesetting
-        							industry. Lorem
-        							Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-        					</div>
-        				</div>
-        
-        				<div class="footer__item  footer-flex">
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        				</div>
-        
-        				<div class="footer__item  footer-width">
-        					<h5 class="footer__app-text">Подписаться</h5>
-        					<form class="footer__form" action="/">
-        						<div class="footer__form-inner">
-        							<input type="email" placeholder="Ваш Email">
-        							<div class="footer__form-btn">
-        								<button class="btn  btn-form">Подписаться</button>
-        							</div>
-        						</div>
-        					</form>
-        					<div class="footer__app-socials">
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/facebook.svg" alt="">
-        						</a>
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/instagram.svg" alt="">
-        						</a>
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/twitter.svg" alt="">
-        						</a>
-        					</div>
-        				</div>
-        			</div>
-        
-        			<div class="footer__bottom">
-        				<div class="copyright">
-        					<h6 class="footer__buttom-text">All rights reserved @ofspace.co</h6>
-        				</div>
-        				<div class="logo__panda">
-        					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
-        						<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-        							<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-        							<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-        						</svg>
-        						<img src="assets/images/logo-white.svg" alt="https://digitalpanda.uz/">
-        					</a>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
+    
+        <div class="goods">
+            <div class="container">
+                <div class="goods__inner">
+                    <h1 class="goods__text">Товары</h1>
+                    <ul class="goods__list">
+                        <li class="goods__item">
+                            <div class="goods__header">
+                                <img src="assets/images/page__products-1.jpg" alt="">
+                            </div>
+                            <div class="goods__content">
+                                <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                                    (ПЦ 400 Д20)</div>
+                                <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                            </div>
+                            <div class="goods__footer">
+                                <button class="btn  btn-orange">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__header">
+                                <img src="assets/images/page__products-1.jpg" alt="">
+                            </div>
+                            <div class="goods__content">
+                                <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                                    (ПЦ 400 Д20)</div>
+                                <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                            </div>
+                            <div class="goods__footer">
+                                <button class="btn  btn-orange">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__header">
+                                <img src="assets/images/page__products-1.jpg" alt="">
+                            </div>
+                            <div class="goods__content">
+                                <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                                    (ПЦ 400 Д20)</div>
+                                <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                            </div>
+                            <div class="goods__footer">
+                                <button class="btn  btn-orange">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__header">
+                                <img src="assets/images/page__products-1.jpg" alt="">
+                            </div>
+                            <div class="goods__content">
+                                <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                                    (ПЦ 400 Д20)</div>
+                                <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                            </div>
+                            <div class="goods__footer">
+                                <button class="btn  btn-orange">Заказать</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+    	<div class="contact">
+    		<div class="container">
+    			<div class="contact__inner">
+    				<div class="contact__content">
+    					<h5 class="contact__title">Contact Us</h5>
+    					<p class="contact__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
+    						industry.
+    						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    				</div>
+    				<div class="contact__footer">
+    					<button class="btn  btn-orange  btn-contact">Contact Us</button>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    
+    	<div class="container">
+    		<div class="footer__inner">
+    			<div class="footer__row">
+    				<div class="footer__item">
+    					<div class="footer__logo">
+    						<a href="#">ofsp_ce</a>
+    						<p class="footer__descr">Lorem Ipsum is simply dummy text of the printing and typesetting
+    							industry. Lorem
+    							Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    					</div>
+    				</div>
+    
+    				<div class="footer__item  footer-flex">
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    				</div>
+    
+    				<div class="footer__item  footer-width">
+    					<h5 class="footer__app-text">Подписаться</h5>
+    					<form class="footer__form" action="/">
+    						<div class="footer__form-inner">
+    							<input type="email" placeholder="Ваш Email">
+    							<div class="footer__form-btn">
+    								<button class="btn  btn-form">Подписаться</button>
+    							</div>
+    						</div>
+    					</form>
+    					<div class="footer__app-socials">
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/facebook.svg" alt="">
+    						</a>
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/instagram.svg" alt="">
+    						</a>
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/twitter.svg" alt="">
+    						</a>
+    					</div>
+    				</div>
+    			</div>
+    
+    			<div class="footer__bottom">
+    				<div class="copyright">
+    					<h6 class="footer__buttom-text">All rights reserved @ofspace.co</h6>
+    				</div>
+    				<div class="logo__panda">
+    					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
+    						<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+    							<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+    							<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+    						</svg>
+    						<img src="assets/images/logo-white.svg" alt="https://digitalpanda.uz/">
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
     <!-- JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

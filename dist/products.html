@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -21,687 +22,688 @@
 
 <body>
 
-        <!--  Header -->
-        <header class="header">
-        	<div class="container">
-        		<div class="header__inner">
-        			<div class="header__logo">
-        				<a href="#">
-        					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
-        				</a>
-        			</div>
-        
-        			<nav class="nav">
-        				<ul class="nav__list">
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Главная</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Продукция</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Калькулятор</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">О компании</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Новости</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Контакты</a>
-        					</li>
-        				</ul>
-        			</nav>
-        
-        
-        
-        			<div class="header__wrap-btns">
-        
-        
-        				<div class="header__tel">
-        					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
-        				</div>
-        
-        				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
-        					uk-toggle="target: #offcanvas-overlay">
-        					<span>Открыть навигацию</span>
-        				</button>
-        
-        				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-        					<div class="uk-offcanvas-bar">
-        
-        						<button class="uk-offcanvas-close" type="button" uk-close></button>
-        
-        
-        						<ul class="nav__list">
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Главная</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Продукция</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Калькулятор</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">О компании</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Новости</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Контакты</a>
-        							</li>
-        						</ul>
-        
-        						<div class="header__burder-tel">
-        							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
-        						</div>
-        
-        
-        					</div>
-        				</div>
-        			</div>
-        
-        		</div>
-        	</div>
-        </header>
-        
-        <main class="page__products">
-        
-            <div class="home__container">
-                <div class="header__footer">
-                    <ul class="uk-breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Linked Category</a></li>
-                        <li class="uk-disabled"><a>Disabled Category</a></li>
-                    </ul>
-        
-                    <h1 class="header__footer-title">Наша продукция</h1>
-                </div>
+    <!--  Header -->
+    <header class="header">
+    	<div class="container">
+    		<div class="header__inner">
+    			<div class="header__logo">
+    				<a href="#">
+    					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
+    				</a>
+    			</div>
+    
+    			<nav class="nav">
+    				<ul class="nav__list">
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Главная</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Продукция</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Калькулятор</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">О компании</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Новости</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Контакты</a>
+    					</li>
+    				</ul>
+    			</nav>
+    
+    
+    
+    			<div class="header__wrap-btns">
+    
+    
+    				<div class="header__tel">
+    					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+    				</div>
+    
+    				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
+    					uk-toggle="target: #offcanvas-overlay">
+    					<span>Открыть навигацию</span>
+    				</button>
+    
+    				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+    					<div class="uk-offcanvas-bar">
+    
+    						<button class="uk-offcanvas-close" type="button" uk-close></button>
+    
+    
+    						<ul class="nav__list">
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Главная</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Продукция</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Калькулятор</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">О компании</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Новости</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Контакты</a>
+    							</li>
+    						</ul>
+    
+    						<div class="header__burder-tel">
+    							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+    						</div>
+    
+    
+    					</div>
+    				</div>
+    			</div>
+    
+    		</div>
+    	</div>
+    </header>
+    
+    <main class="page__products">
+    
+        <div class="home__container">
+            <div class="header__footer">
+                <ul class="uk-breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Linked Category</a></li>
+                    <li class="uk-disabled"><a>Disabled Category</a></li>
+                </ul>
+    
+                <h1 class="header__footer-title">Наша продукция</h1>
             </div>
-        
-            <div class="container">
-                <div class="page__products__inner">
-                    <div class="page__products__row">
-                        <div class="page__products__item">
-                            <div class="uk-slider-container-offset" uk-slider>
-        
-                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-        
-                                    <ul class="uk-slider-items uk-child-width-1@s uk-grid">
-        
-                                        <li>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/qwe.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+        </div>
+    
+        <div class="container">
+            <div class="page__products__inner">
+                <div class="page__products__row">
+                    <div class="page__products__item">
+                        <div class="uk-slider-container-offset" uk-slider>
+    
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+    
+                                <ul class="uk-slider-items uk-child-width-1@s uk-grid">
+    
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/qwe.jpg" alt="">
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
                                             </div>
-        
-                                        </li>
-        
-                                        <li>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
                                             </div>
-        
-                                        </li>
-        
-                                        <li>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
                                             </div>
-        
-                                        </li>
-        
-                                        <li>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                        </div>
+    
+                                    </li>
+    
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
                                             </div>
-                                            <div class="uk-card uk-card-default">
-                                                <div class="uk-card-media-top">
-                                                    <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
-                                                </div>
-                                                <div class="uk-card-body">
-                                                    <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
-                                                        (ПЦ 400 Д20)</div>
-                                                    <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
-                                                </div>
-                                                <div class="page__products__footer">
-                                                    <button class="btn  btn-orange">Заказать</button>
-                                                </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
                                             </div>
-        
-                                        </li>
-        
-                                    </ul>
-        
-                                </div>
-        
-                                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin company__arrow"></ul>
-                                <div class="page__products__arrows">
-                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover company-prev" href="#"
-                                        uk-slidenav-previous uk-slider-item="previous"></a>
-                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover  company-next" href="#"
-                                        uk-slidenav-next uk-slider-item="next"></a>
-                                </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+    
+                                    </li>
+    
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+    
+                                    </li>
+    
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img class="page__products__item-img" src="assets/images/page__products-1.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <div class="page__products__card-title  uk-card-title">ЦЕМ II/A-Ш 32,5Н
+                                                    (ПЦ 400 Д20)</div>
+                                                <div class="page__products__card-subtitle">Применяется при производстве общестроительных работ.</div>
+                                            </div>
+                                            <div class="page__products__footer">
+                                                <button class="btn  btn-orange">Заказать</button>
+                                            </div>
+                                        </div>
+    
+                                    </li>
+    
+                                </ul>
+    
                             </div>
-                        </div> <!-- company__item -->
-                    </div>
-        
+    
+                            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin company__arrow"></ul>
+                            <div class="page__products__arrows">
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover company-prev" href="#"
+                                    uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover  company-next" href="#"
+                                    uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+                        </div>
+                    </div> <!-- company__item -->
                 </div>
+    
             </div>
-        </main>
-        
-        <!-- Footer -->
-        <footer class="footer">
-        	<div class="contact">
-        		<div class="container">
-        			<div class="contact__inner">
-        				<div class="contact__content">
-        					<h5 class="contact__title">Contact Us</h5>
-        					<p class="contact__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
-        						industry.
-        						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-        				</div>
-        				<div class="contact__footer">
-        					<button class="btn  btn-orange  btn-contact">Contact Us</button>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        
-        	<div class="container">
-        		<div class="footer__inner">
-        			<div class="footer__row">
-        				<div class="footer__item">
-        					<div class="footer__logo">
-        						<a href="#">ofsp_ce</a>
-        						<p class="footer__descr">Lorem Ipsum is simply dummy text of the printing and typesetting
-        							industry. Lorem
-        							Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-        					</div>
-        				</div>
-        
-        				<div class="footer__item  footer-flex">
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        				</div>
-        
-        				<div class="footer__item  footer-width">
-        					<h5 class="footer__app-text">Подписаться</h5>
-        					<form class="footer__form" action="/">
-        						<div class="footer__form-inner">
-        							<input type="email" placeholder="Ваш Email">
-        							<div class="footer__form-btn">
-        								<button class="btn  btn-form">Подписаться</button>
-        							</div>
-        						</div>
-        					</form>
-        					<div class="footer__app-socials">
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/facebook.svg" alt="">
-        						</a>
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/instagram.svg" alt="">
-        						</a>
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/twitter.svg" alt="">
-        						</a>
-        					</div>
-        				</div>
-        			</div>
-        
-        			<div class="footer__bottom">
-        				<div class="copyright">
-        					<h6 class="footer__buttom-text">All rights reserved @ofspace.co</h6>
-        				</div>
-        				<div class="logo__panda">
-        					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
-        						<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-        							<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-        							<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-        						</svg>
-        						<img src="assets/images/logo-white.svg" alt="https://digitalpanda.uz/">
-        					</a>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+    	<div class="contact">
+    		<div class="container">
+    			<div class="contact__inner">
+    				<div class="contact__content">
+    					<h5 class="contact__title">Contact Us</h5>
+    					<p class="contact__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
+    						industry.
+    						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    				</div>
+    				<div class="contact__footer">
+    					<button class="btn  btn-orange  btn-contact">Contact Us</button>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    
+    	<div class="container">
+    		<div class="footer__inner">
+    			<div class="footer__row">
+    				<div class="footer__item">
+    					<div class="footer__logo">
+    						<a href="#">ofsp_ce</a>
+    						<p class="footer__descr">Lorem Ipsum is simply dummy text of the printing and typesetting
+    							industry. Lorem
+    							Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    					</div>
+    				</div>
+    
+    				<div class="footer__item  footer-flex">
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    				</div>
+    
+    				<div class="footer__item  footer-width">
+    					<h5 class="footer__app-text">Подписаться</h5>
+    					<form class="footer__form" action="/">
+    						<div class="footer__form-inner">
+    							<input type="email" placeholder="Ваш Email">
+    							<div class="footer__form-btn">
+    								<button class="btn  btn-form">Подписаться</button>
+    							</div>
+    						</div>
+    					</form>
+    					<div class="footer__app-socials">
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/facebook.svg" alt="">
+    						</a>
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/instagram.svg" alt="">
+    						</a>
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/twitter.svg" alt="">
+    						</a>
+    					</div>
+    				</div>
+    			</div>
+    
+    			<div class="footer__bottom">
+    				<div class="copyright">
+    					<h6 class="footer__buttom-text">All rights reserved @ofspace.co</h6>
+    				</div>
+    				<div class="logo__panda">
+    					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
+    						<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+    							<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+    							<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+    						</svg>
+    						<img src="assets/images/logo-white.svg" alt="https://digitalpanda.uz/">
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
     <!-- JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

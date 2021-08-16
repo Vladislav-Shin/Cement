@@ -33,6 +33,7 @@
         "IE 10"
     ],
     "dependencies": {
-        "gulp-install": "^1.1.0"
+        "gulp-install": "^1.1.0",
+        "swiper": "^6.8.1"
     }
 }

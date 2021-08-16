@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -21,384 +22,385 @@
 
 <body>
 
-        <!--  Header -->
-        <header class="header">
-        	<div class="container">
-        		<div class="header__inner">
-        			<div class="header__logo">
-        				<a href="#">
-        					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
-        				</a>
-        			</div>
-        
-        			<nav class="nav">
-        				<ul class="nav__list">
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Главная</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Продукция</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Калькулятор</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">О компании</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Новости</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Контакты</a>
-        					</li>
-        				</ul>
-        			</nav>
-        
-        
-        
-        			<div class="header__wrap-btns">
-        
-        
-        				<div class="header__tel">
-        					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
-        				</div>
-        
-        				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
-        					uk-toggle="target: #offcanvas-overlay">
-        					<span>Открыть навигацию</span>
-        				</button>
-        
-        				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-        					<div class="uk-offcanvas-bar">
-        
-        						<button class="uk-offcanvas-close" type="button" uk-close></button>
-        
-        
-        						<ul class="nav__list">
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Главная</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Продукция</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Калькулятор</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">О компании</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Новости</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Контакты</a>
-        							</li>
-        						</ul>
-        
-        						<div class="header__burder-tel">
-        							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
-        						</div>
-        
-        
-        					</div>
-        				</div>
-        			</div>
-        
-        		</div>
-        	</div>
-        </header>
-        
-        <main class="newsDayPage">
-        
-            <div class="home__container">
-                <div class="header__footer">
-                    <ul class="uk-breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Linked Category</a></li>
-                        <li class="uk-disabled"><a>Disabled Category</a></li>
-                    </ul>
-        
-                    <h1 class="header__footer-title">Новости дня</h1>
-                </div>
+    <!--  Header -->
+    <header class="header">
+    	<div class="container">
+    		<div class="header__inner">
+    			<div class="header__logo">
+    				<a href="#">
+    					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
+    				</a>
+    			</div>
+    
+    			<nav class="nav">
+    				<ul class="nav__list">
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Главная</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Продукция</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Калькулятор</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">О компании</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Новости</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Контакты</a>
+    					</li>
+    				</ul>
+    			</nav>
+    
+    
+    
+    			<div class="header__wrap-btns">
+    
+    
+    				<div class="header__tel">
+    					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+    				</div>
+    
+    				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
+    					uk-toggle="target: #offcanvas-overlay">
+    					<span>Открыть навигацию</span>
+    				</button>
+    
+    				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+    					<div class="uk-offcanvas-bar">
+    
+    						<button class="uk-offcanvas-close" type="button" uk-close></button>
+    
+    
+    						<ul class="nav__list">
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Главная</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Продукция</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Калькулятор</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">О компании</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Новости</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Контакты</a>
+    							</li>
+    						</ul>
+    
+    						<div class="header__burder-tel">
+    							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+    						</div>
+    
+    
+    					</div>
+    				</div>
+    			</div>
+    
+    		</div>
+    	</div>
+    </header>
+    
+    <main class="newsDayPage">
+    
+        <div class="home__container">
+            <div class="header__footer">
+                <ul class="uk-breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Linked Category</a></li>
+                    <li class="uk-disabled"><a>Disabled Category</a></li>
+                </ul>
+    
+                <h1 class="header__footer-title">Новости дня</h1>
             </div>
-        
-            <div class="container">
-                <div class="newsDayPage__inner">
-                    <div class="newsDay__row  uk-flex">
-                        <div class="newsDayPage__left">
-                            <div class="newsDayPage__left-header">
-                                <img src="assets/images/advantage-2.jpg" alt="">
-                            </div>
-                            <div class="newsDayPage__left-content">
-                                
-                                <div uk-filter="target: .js-filter">
-        
-                                    <ul class="uk-subnav uk-subnav-pill">
-                                        <li class="uk-active" uk-filter-control><a href="#">All</a></li>
-                                        <li uk-filter-control="[data-tags*='1']"><a href="#">Freelance</a></li>
-                                        <li uk-filter-control="[data-tags*='2']"><a href="#">Earning</a></li>
-                                        <li uk-filter-control="[data-tags*='3']"><a href="#">Design</a></li>
-                                        <li uk-filter-control="[data-tags*='4']"><a href="#">Work</a></li>
-                                        <li uk-filter-control="[data-tags*='5']"><a href="#">Marketing</a></li>
-                                    </ul>
-        
-                                    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-1@m uk-text-center" uk-grid>
-                                        <li data-tags="1">
-                                            <div class="uk-card uk-card-default uk-card-body">Freelance</div>
-                                        </li>
-                                        <li data-tags="2">
-                                            <div class="uk-card uk-card-default uk-card-body">Earning</div>
-                                        </li>
-                                        <li data-tags="3">
-                                            <div class="uk-card uk-card-default uk-card-body">Design</div>
-                                        </li>
-                                        <li data-tags="4">
-                                            <div class="uk-card uk-card-default uk-card-body">Work</div>
-                                        </li>
-                                        <li data-tags="5">
-                                            <div class="uk-card uk-card-default uk-card-body">Marketing</div>
-                                        </li>
-                                        <li data-tags="2">
-                                            <div class="uk-card uk-card-default uk-card-body">Earning</div>
-                                        </li>
-                                        <li data-tags="3">
-                                            <div class="uk-card uk-card-default uk-card-body">Design</div>
-                                        </li>
-                                        <li data-tags="5">
-                                            <div class="uk-card uk-card-default uk-card-body">Marketing</div>
-                                        </li>
-                                        <li data-tags="1">
-                                            <div class="uk-card uk-card-default uk-card-body">Freelance</div>
-                                        </li>
-                                        <li data-tags="4">
-                                            <div class="uk-card uk-card-default uk-card-body">Work</div>
-                                        </li>
-                                        <li data-tags="3">
-                                            <div class="uk-card uk-card-default uk-card-body">Design</div>
-                                        </li>
-                                        <li data-tags="2">
-                                            <div class="uk-card uk-card-default uk-card-body">Earning</div>
-                                        </li>
-                                    </ul>
-        
-                                </div>
+        </div>
+    
+        <div class="container">
+            <div class="newsDayPage__inner">
+                <div class="newsDay__row  uk-flex">
+                    <div class="newsDayPage__left">
+                        <div class="newsDayPage__left-header">
+                            <img src="assets/images/advantage-2.jpg" alt="">
+                        </div>
+                        <div class="newsDayPage__left-content">
+                            
+                            <div uk-filter="target: .js-filter">
+    
+                                <ul class="uk-subnav uk-subnav-pill">
+                                    <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                                    <li uk-filter-control="[data-tags*='1']"><a href="#">Freelance</a></li>
+                                    <li uk-filter-control="[data-tags*='2']"><a href="#">Earning</a></li>
+                                    <li uk-filter-control="[data-tags*='3']"><a href="#">Design</a></li>
+                                    <li uk-filter-control="[data-tags*='4']"><a href="#">Work</a></li>
+                                    <li uk-filter-control="[data-tags*='5']"><a href="#">Marketing</a></li>
+                                </ul>
+    
+                                <ul class="js-filter uk-child-width-1-2 uk-child-width-1-1@m uk-text-center" uk-grid>
+                                    <li data-tags="1">
+                                        <div class="uk-card uk-card-default uk-card-body">Freelance</div>
+                                    </li>
+                                    <li data-tags="2">
+                                        <div class="uk-card uk-card-default uk-card-body">Earning</div>
+                                    </li>
+                                    <li data-tags="3">
+                                        <div class="uk-card uk-card-default uk-card-body">Design</div>
+                                    </li>
+                                    <li data-tags="4">
+                                        <div class="uk-card uk-card-default uk-card-body">Work</div>
+                                    </li>
+                                    <li data-tags="5">
+                                        <div class="uk-card uk-card-default uk-card-body">Marketing</div>
+                                    </li>
+                                    <li data-tags="2">
+                                        <div class="uk-card uk-card-default uk-card-body">Earning</div>
+                                    </li>
+                                    <li data-tags="3">
+                                        <div class="uk-card uk-card-default uk-card-body">Design</div>
+                                    </li>
+                                    <li data-tags="5">
+                                        <div class="uk-card uk-card-default uk-card-body">Marketing</div>
+                                    </li>
+                                    <li data-tags="1">
+                                        <div class="uk-card uk-card-default uk-card-body">Freelance</div>
+                                    </li>
+                                    <li data-tags="4">
+                                        <div class="uk-card uk-card-default uk-card-body">Work</div>
+                                    </li>
+                                    <li data-tags="3">
+                                        <div class="uk-card uk-card-default uk-card-body">Design</div>
+                                    </li>
+                                    <li data-tags="2">
+                                        <div class="uk-card uk-card-default uk-card-body">Earning</div>
+                                    </li>
+                                </ul>
+    
                             </div>
                         </div>
-        
-                        <div class="newsPage__right">
-                            <div class="newsPage__right-item">
-                                <div class="uk-margin newsPage-margin">
-                                    <form class="uk-search uk-search-default">
-                                        <span uk-search-icon></span>
-                                        <input class="uk-search-input  newsPage__input" type="search"
-                                            placeholder="Поиск по новостям">
-                                    </form>
-                                </div>
-                            </div>
-        
-                            <div class="newsPage__right-item">
-                                <ul class="newsPage__list">
-                                    <h3 class="newsPage__list-title">Не давние посты</h3>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">How To Blow Through Capital At An Incredible Rate</div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Design Studios That Everyone Should Know About? </div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">How did we get 1M+ visitors in 30 days without
-                                            anything!</div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Figma On Figma: How We Built Our Website Design System
-                                        </div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                </ul>
-                            </div>
-        
-                            <div class="newsPage__right-item">
-                                <ul class="newsPage__list">
-                                    <h3 class="newsPage__list-title">Популярные посты</h3>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">How To Blow Through Capital At An Incredible Rate</div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Design Studios That Everyone Should Know About? </div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">How did we get 1M+ visitors in 30 days without
-                                            anything!</div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Figma On Figma: How We Built Our Website Design System
-                                        </div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                </ul>
-                            </div>
-        
-                            <div class="newsPage__right-item  newsPage__right-category">
-                                <ul class="newsPage__list">
-                                    <h3 class="newsPage__list-title">Категория</h3>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Technology - <span class="newsPage__item-post">20
-                                                Posts</span> </div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Freelancing - <span class="newsPage__item-post">07
-                                                Posts</span> </div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Writing - <span class="newsPage__item-post">16
-                                                Posts</span> </div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Marketing - <span class="newsPage__item-post">1
-                                                Posts</span> </div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Business - <span class="newsPage__item-post">35
-                                                Posts</span> </div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Business - <span class="newsPage__item-post">14
-                                                Posts</span> </div>
-                                    </li>
-        
-                                </ul>
-                            </div>
-                        </div> <!-- newsPage__right -->
                     </div>
+    
+                    <div class="newsPage__right">
+                        <div class="newsPage__right-item">
+                            <div class="uk-margin newsPage-margin">
+                                <form class="uk-search uk-search-default">
+                                    <span uk-search-icon></span>
+                                    <input class="uk-search-input  newsPage__input" type="search"
+                                        placeholder="Поиск по новостям">
+                                </form>
+                            </div>
+                        </div>
+    
+                        <div class="newsPage__right-item">
+                            <ul class="newsPage__list">
+                                <h3 class="newsPage__list-title">Не давние посты</h3>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">How To Blow Through Capital At An Incredible Rate</div>
+                                    <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                                </li>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">Design Studios That Everyone Should Know About? </div>
+                                    <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                                </li>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">How did we get 1M+ visitors in 30 days without
+                                        anything!</div>
+                                    <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                                </li>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">Figma On Figma: How We Built Our Website Design System
+                                    </div>
+                                    <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="newsPage__right-item">
+                            <ul class="newsPage__list">
+                                <h3 class="newsPage__list-title">Популярные посты</h3>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">How To Blow Through Capital At An Incredible Rate</div>
+                                    <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                                </li>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">Design Studios That Everyone Should Know About? </div>
+                                    <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                                </li>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">How did we get 1M+ visitors in 30 days without
+                                        anything!</div>
+                                    <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                                </li>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">Figma On Figma: How We Built Our Website Design System
+                                    </div>
+                                    <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="newsPage__right-item  newsPage__right-category">
+                            <ul class="newsPage__list">
+                                <h3 class="newsPage__list-title">Категория</h3>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">Technology - <span class="newsPage__item-post">20
+                                            Posts</span> </div>
+                                </li>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">Freelancing - <span class="newsPage__item-post">07
+                                            Posts</span> </div>
+                                </li>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">Writing - <span class="newsPage__item-post">16
+                                            Posts</span> </div>
+                                </li>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">Marketing - <span class="newsPage__item-post">1
+                                            Posts</span> </div>
+                                </li>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">Business - <span class="newsPage__item-post">35
+                                            Posts</span> </div>
+                                </li>
+                                <li class="newsPage__box">
+                                    <div class="newsPage__item-text">Business - <span class="newsPage__item-post">14
+                                            Posts</span> </div>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div> <!-- newsPage__right -->
                 </div>
             </div>
-        </main>
-        
-        <!-- Footer -->
-        <footer class="footer">
-        	<div class="contact">
-        		<div class="container">
-        			<div class="contact__inner">
-        				<div class="contact__content">
-        					<h5 class="contact__title">Contact Us</h5>
-        					<p class="contact__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
-        						industry.
-        						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-        				</div>
-        				<div class="contact__footer">
-        					<button class="btn  btn-orange  btn-contact">Contact Us</button>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        
-        	<div class="container">
-        		<div class="footer__inner">
-        			<div class="footer__row">
-        				<div class="footer__item">
-        					<div class="footer__logo">
-        						<a href="#">ofsp_ce</a>
-        						<p class="footer__descr">Lorem Ipsum is simply dummy text of the printing and typesetting
-        							industry. Lorem
-        							Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-        					</div>
-        				</div>
-        
-        				<div class="footer__item  footer-flex">
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        				</div>
-        
-        				<div class="footer__item  footer-width">
-        					<h5 class="footer__app-text">Подписаться</h5>
-        					<form class="footer__form" action="/">
-        						<div class="footer__form-inner">
-        							<input type="email" placeholder="Ваш Email">
-        							<div class="footer__form-btn">
-        								<button class="btn  btn-form">Подписаться</button>
-        							</div>
-        						</div>
-        					</form>
-        					<div class="footer__app-socials">
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/facebook.svg" alt="">
-        						</a>
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/instagram.svg" alt="">
-        						</a>
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/twitter.svg" alt="">
-        						</a>
-        					</div>
-        				</div>
-        			</div>
-        
-        			<div class="footer__bottom">
-        				<div class="copyright">
-        					<h6 class="footer__buttom-text">All rights reserved @ofspace.co</h6>
-        				</div>
-        				<div class="logo__panda">
-        					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
-        						<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-        							<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-        							<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-        						</svg>
-        						<img src="assets/images/logo-white.svg" alt="https://digitalpanda.uz/">
-        					</a>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+    	<div class="contact">
+    		<div class="container">
+    			<div class="contact__inner">
+    				<div class="contact__content">
+    					<h5 class="contact__title">Contact Us</h5>
+    					<p class="contact__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
+    						industry.
+    						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    				</div>
+    				<div class="contact__footer">
+    					<button class="btn  btn-orange  btn-contact">Contact Us</button>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    
+    	<div class="container">
+    		<div class="footer__inner">
+    			<div class="footer__row">
+    				<div class="footer__item">
+    					<div class="footer__logo">
+    						<a href="#">ofsp_ce</a>
+    						<p class="footer__descr">Lorem Ipsum is simply dummy text of the printing and typesetting
+    							industry. Lorem
+    							Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    					</div>
+    				</div>
+    
+    				<div class="footer__item  footer-flex">
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    				</div>
+    
+    				<div class="footer__item  footer-width">
+    					<h5 class="footer__app-text">Подписаться</h5>
+    					<form class="footer__form" action="/">
+    						<div class="footer__form-inner">
+    							<input type="email" placeholder="Ваш Email">
+    							<div class="footer__form-btn">
+    								<button class="btn  btn-form">Подписаться</button>
+    							</div>
+    						</div>
+    					</form>
+    					<div class="footer__app-socials">
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/facebook.svg" alt="">
+    						</a>
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/instagram.svg" alt="">
+    						</a>
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/twitter.svg" alt="">
+    						</a>
+    					</div>
+    				</div>
+    			</div>
+    
+    			<div class="footer__bottom">
+    				<div class="copyright">
+    					<h6 class="footer__buttom-text">All rights reserved @ofspace.co</h6>
+    				</div>
+    				<div class="logo__panda">
+    					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
+    						<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+    							<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+    							<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+    						</svg>
+    						<img src="assets/images/logo-white.svg" alt="https://digitalpanda.uz/">
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
     <!-- JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -21,355 +22,337 @@
 
 <body>
 
-        <!--  Header -->
-        <header class="header">
-        	<div class="container">
-        		<div class="header__inner">
-        			<div class="header__logo">
-        				<a href="#">
-        					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
-        				</a>
-        			</div>
-        
-        			<nav class="nav">
-        				<ul class="nav__list">
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Главная</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Продукция</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Калькулятор</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">О компании</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Новости</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Контакты</a>
-        					</li>
-        				</ul>
-        			</nav>
-        
-        
-        
-        			<div class="header__wrap-btns">
-        
-        
-        				<div class="header__tel">
-        					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
-        				</div>
-        
-        				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
-        					uk-toggle="target: #offcanvas-overlay">
-        					<span>Открыть навигацию</span>
-        				</button>
-        
-        				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-        					<div class="uk-offcanvas-bar">
-        
-        						<button class="uk-offcanvas-close" type="button" uk-close></button>
-        
-        
-        						<ul class="nav__list">
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Главная</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Продукция</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Калькулятор</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">О компании</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Новости</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Контакты</a>
-        							</li>
-        						</ul>
-        
-        						<div class="header__burder-tel">
-        							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
-        						</div>
-        
-        
-        					</div>
-        				</div>
-        			</div>
-        
-        		</div>
-        	</div>
-        </header>
-        
+    <!--  Header -->
+    <header class="header">
+    	<div class="container">
+    		<div class="header__inner">
+    			<div class="header__logo">
+    				<a href="#">
+    					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
+    				</a>
+    			</div>
+    
+    			<nav class="nav">
+    				<ul class="nav__list">
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Главная</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Продукция</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Калькулятор</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">О компании</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Новости</a>
+    					</li>
+    					<li class="nav__item">
+    						<a class="nav__link" href="#">Контакты</a>
+    					</li>
+    				</ul>
+    			</nav>
+    
+    
+    
+    			<div class="header__wrap-btns">
+    
+    
+    				<div class="header__tel">
+    					<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+    				</div>
+    
+    				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
+    					uk-toggle="target: #offcanvas-overlay">
+    					<span>Открыть навигацию</span>
+    				</button>
+    
+    				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+    					<div class="uk-offcanvas-bar">
+    
+    						<button class="uk-offcanvas-close" type="button" uk-close></button>
+    
+    
+    						<ul class="nav__list">
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Главная</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Продукция</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Калькулятор</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">О компании</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Новости</a>
+    							</li>
+    							<li class="nav__item">
+    								<a class="nav__link" href="#">Контакты</a>
+    							</li>
+    						</ul>
+    
+    						<div class="header__burder-tel">
+    							<a class="header__telephone  btn  btn-blue" href="tel:+78142332211">+99899 999-99-99</a>
+    						</div>
+    
+    
+    					</div>
+    				</div>
+    			</div>
+    
+    		</div>
+    	</div>
+    </header>
+    
+    <div class="calculator">
+    
+        <div class="home__container">
+            <div class="header__footer">
+                <ul class="uk-breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Linked Category</a></li>
+                    <li class="uk-disabled"><a>Disabled Category</a></li>
+                </ul>
+    
+                <h1 class="header__footer-title">Калькулятор цен</h1>
+            </div>
+        </div>
+    
         <div class="calculator">
-        
-            <div class="home__container">
-                <div class="header__footer">
-                    <ul class="uk-breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Linked Category</a></li>
-                        <li class="uk-disabled"><a>Disabled Category</a></li>
-                    </ul>
-        
-                    <h1 class="header__footer-title">Калькулятор цен</h1>
+            <div class="container">
+                <div class="calculator__inner">
+                    <h2 class="calculator__title">Калькулятор цен</h2>
+                    <div class="calculator__subtitle">Для удобного расчета стоимости вы можете воспользоваться калькулятором
+                        цен.
+                    </div>
+                    <div class="calculator__row uk-flex">
+                        <div class="calculator__item">
+                            <div class="calculator__item-img">
+                                <img src="assets/images/cement.png" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="calculator__item">
+                            <div class="calculator__box">
+                                <label for="brand">Марка цемента</label>
+                                <select class="calculator-select">
+                                    <option class="calculator-option" value="1500">Пункт 1</option>
+                                    <option class="calculator-option" value="3000">Пункт 2</option>
+                                    <option class="calculator-option" value="4500">Пункт 3</option>
+                                    <option class="calculator-option" value="6000">Пункт 4</option>
+                                </select>
+                            </div>
+                            <div class="calculator__box">
+                                <label for="">Цена</label>
+                                <span class="calculator__price"></span>
+                            </div>
+                            <div class="calculator__box">
+                                <label for="quantity">Количество цемента (кг)</label>
+                                <div class="calculator__wrapper-input">
+                                    <input type="range" min="0" max="1000" step="1" value="0" id="quantity">
+                                    <span id="amount-span">0</span>
+                                </div>
+                            </div>
+                            <div class="calculator__footer">
+                                <button class="btn  btn-blue" id="calculate">Рассчитать</button>
+                                <span class="calculator__footer-price">Итоговая цена: <span id="total-price">0</span>
+                                    сум</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        
-            <div class="calculator">
-                <div class="container">
-                    <div class="calculator__inner">
-                        <h2 class="calculator__title">Калькулятор цен</h2>
-                        <div class="calculator__subtitle">Для удобного расчета стоимости вы можете воспользоваться калькулятором
-                            цен.
-                        </div>
-                        <div class="calculator__row uk-flex">
-                            <div class="calculator__item">
-                                <div class="calculator__item-img">
-                                    <img src="assets/images/cement.png" alt="">
-                                </div>
+        </div><!-- calculator -->
+    
+        <div class="goods">
+            <div class="container">
+                <div class="goods__inner">
+                    <h1 class="goods__text">Товары</h1>
+                    <ul class="goods__list">
+                        <li class="goods__item">
+                            <div class="goods__header">
+                                <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
                             </div>
-        
-                            <div class="calculator__item">
-                                <h3 class="calculator__item-title">Тип упаковки</h3>
-                                <ul class="calculator__list">
-                                    <li class="calculator__list-item">
-                                        <input type="radio" name="type" value="type-1" checked id="chechox-1">
-                                        <label for="chechox-1">Тип 1</label>
-                                    </li>
-                                    <li class="calculator__list-item">
-                                        <input type="radio" name="type" value="type-2" id="chechox-2">
-                                        <label for="chechox-2">Тип 2</label>
-                                    </li>
-                                    <li class="calculator__list-item">
-                                        <input type="radio" name="type" value="type-3" id="chechox-3">
-                                        <label for="chechox-3">Тип 3</label>
-                                    </li>
-                                    <li class="calculator__list-item">
-                                        <input type="radio" name="type" value="type-4" id="chechox-4">
-                                        <label for="chechox-4">Тип 4</label>
-                                    </li>
-                                </ul>
-                                <div class="calculator__box">
-                                    <label for="brand">Марка цемента</label>
-                                    <select class="calculator-select">
-                                        <option class="calculator-option" value="1500">Пункт 1</option>
-                                        <option class="calculator-option" value="3000">Пункт 2</option>
-                                        <option class="calculator-option" value="4500">Пункт 3</option>
-                                        <option class="calculator-option" value="6000">Пункт 4</option>
-                                    </select>
-                                </div>
-                                <div class="calculator__box">
-                                    <label for="">Цена</label>
-                                    <span class="calculator__price"></span>
-                                </div>
-                                <div class="calculator__box">
-                                    <label for="quantity">Количество цемента (кг)</label>
-                                    <div class="calculator__wrapper-input">
-                                        <input type="range" min="0" max="1000" step="1" value="0" id="quantity">
-                                        <span id="amount-span">0</span>
-                                    </div>
-                                </div>
-                                <div class="calculator__footer">
-                                    <button class="btn  btn-blue" id="calculate">Рассчитать</button>
-                                    <span class="calculator__footer-price">Итоговая цена: <span id="total-price">0</span>
-                                        сум</span>
-                                </div>
+                            <div class="goods__content">
+                                <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                                    (ПЦ 400 Д20)</div>
+                                <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- calculator -->
-        
-            <div class="goods">
-                <div class="container">
-                    <div class="goods__inner">
-                        <h1 class="goods__text">Товары</h1>
-                        <ul class="goods__list">
-                            <li class="goods__item">
-                                <div class="goods__header">
-                                    <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
-                                </div>
-                                <div class="goods__content">
-                                    <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                                        (ПЦ 400 Д20)</div>
-                                    <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-                                </div>
-                                <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="goods__item">
-                                <div class="goods__header">
-                                    <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
-                                </div>
-                                <div class="goods__content">
-                                    <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                                        (ПЦ 400 Д20)</div>
-                                    <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-                                </div>
-                                <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="goods__item">
-                                <div class="goods__header">
-                                    <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
-                                </div>
-                                <div class="goods__content">
-                                    <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                                        (ПЦ 400 Д20)</div>
-                                    <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-                                </div>
-                                <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="goods__item">
-                                <div class="goods__header">
-                                    <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
-                                </div>
-                                <div class="goods__content">
-                                    <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
-                                        (ПЦ 400 Д20)</div>
-                                    <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
-                                </div>
-                                <div class="goods__footer">
-                                    <button class="btn  btn-orange">Заказать</button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                            <div class="goods__footer">
+                                <button class="btn  btn-orange">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__header">
+                                <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
+                            </div>
+                            <div class="goods__content">
+                                <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                                    (ПЦ 400 Д20)</div>
+                                <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                            </div>
+                            <div class="goods__footer">
+                                <button class="btn  btn-orange">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__header">
+                                <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
+                            </div>
+                            <div class="goods__content">
+                                <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                                    (ПЦ 400 Д20)</div>
+                                <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                            </div>
+                            <div class="goods__footer">
+                                <button class="btn  btn-orange">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__header">
+                                <img class="goods__header-img" src="assets/images/productsPage-1.jpg" alt="">
+                            </div>
+                            <div class="goods__content">
+                                <div class="goods__title">ЦЕМ II/A-Ш 32,5Н
+                                    (ПЦ 400 Д20)</div>
+                                <div class="goods__subtitle">Применяется при производстве общестроительных работ.</div>
+                            </div>
+                            <div class="goods__footer">
+                                <button class="btn  btn-orange">Заказать</button>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        
-        
-        <!-- Footer -->
-        <footer class="footer">
-        	<div class="contact">
-        		<div class="container">
-        			<div class="contact__inner">
-        				<div class="contact__content">
-        					<h5 class="contact__title">Contact Us</h5>
-        					<p class="contact__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
-        						industry.
-        						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-        				</div>
-        				<div class="contact__footer">
-        					<button class="btn  btn-orange  btn-contact">Contact Us</button>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        
-        	<div class="container">
-        		<div class="footer__inner">
-        			<div class="footer__row">
-        				<div class="footer__item">
-        					<div class="footer__logo">
-        						<a href="#">ofsp_ce</a>
-        						<p class="footer__descr">Lorem Ipsum is simply dummy text of the printing and typesetting
-        							industry. Lorem
-        							Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-        					</div>
-        				</div>
-        
-        				<div class="footer__item  footer-flex">
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Лечение</a></li>
-        									<li><a class="footer__list-link" href="#">Вопросы</a></li>
-        									<li><a class="footer__list-link" href="#">Врачи</a></li>
-        									<li><a class="footer__list-link" href="#">Команда</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        				</div>
-        
-        				<div class="footer__item  footer-width">
-        					<h5 class="footer__app-text">Подписаться</h5>
-        					<form class="footer__form" action="/">
-        						<div class="footer__form-inner">
-        							<input type="email" placeholder="Ваш Email">
-        							<div class="footer__form-btn">
-        								<button class="btn  btn-form">Подписаться</button>
-        							</div>
-        						</div>
-        					</form>
-        					<div class="footer__app-socials">
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/facebook.svg" alt="">
-        						</a>
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/instagram.svg" alt="">
-        						</a>
-        						<a class="footer__app-social" href="">
-        							<img src="assets/images/twitter.svg" alt="">
-        						</a>
-        					</div>
-        				</div>
-        			</div>
-        
-        			<div class="footer__bottom">
-        				<div class="copyright">
-        					<h6 class="footer__buttom-text">All rights reserved @ofspace.co</h6>
-        				</div>
-        				<div class="logo__panda">
-        					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
-        						<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-        							<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-        							<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-        						</svg>
-        						<img src="assets/images/logo-white.svg" alt="https://digitalpanda.uz/">
-        					</a>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+    	<div class="contact">
+    		<div class="container">
+    			<div class="contact__inner">
+    				<div class="contact__content">
+    					<h5 class="contact__title">Contact Us</h5>
+    					<p class="contact__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
+    						industry.
+    						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    				</div>
+    				<div class="contact__footer">
+    					<button class="btn  btn-orange  btn-contact">Contact Us</button>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    
+    	<div class="container">
+    		<div class="footer__inner">
+    			<div class="footer__row">
+    				<div class="footer__item">
+    					<div class="footer__logo">
+    						<a href="#">ofsp_ce</a>
+    						<p class="footer__descr">Lorem Ipsum is simply dummy text of the printing and typesetting
+    							industry. Lorem
+    							Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    					</div>
+    				</div>
+    
+    				<div class="footer__item  footer-flex">
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Полезное
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Лечение</a></li>
+    									<li><a class="footer__list-link" href="#">Вопросы</a></li>
+    									<li><a class="footer__list-link" href="#">Врачи</a></li>
+    									<li><a class="footer__list-link" href="#">Команда</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    				</div>
+    
+    				<div class="footer__item  footer-width">
+    					<h5 class="footer__app-text">Подписаться</h5>
+    					<form class="footer__form" action="/">
+    						<div class="footer__form-inner">
+    							<input type="email" placeholder="Ваш Email">
+    							<div class="footer__form-btn">
+    								<button class="btn  btn-form">Подписаться</button>
+    							</div>
+    						</div>
+    					</form>
+    					<div class="footer__app-socials">
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/facebook.svg" alt="">
+    						</a>
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/instagram.svg" alt="">
+    						</a>
+    						<a class="footer__app-social" href="">
+    							<img src="assets/images/twitter.svg" alt="">
+    						</a>
+    					</div>
+    				</div>
+    			</div>
+    
+    			<div class="footer__bottom">
+    				<div class="copyright">
+    					<h6 class="footer__buttom-text">All rights reserved @ofspace.co</h6>
+    				</div>
+    				<div class="logo__panda">
+    					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
+    						<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+    							<polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+    							<polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+    						</svg>
+    						<img src="assets/images/logo-white.svg" alt="https://digitalpanda.uz/">
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
     <!-- JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 
