@@ -124,13 +124,23 @@
                 font-size: 25px;
                 margin-bottom: 15px;
             }
+
+            .uk-accordion-content {
+                font-size: 25px;
+                margin-bottom: 0;
+                margin-top: 10px;
+            }
+
+            .uk-accordion-title {
+                font-size: 25px;
+            }
         }
 
         .lang {
             display: none;
         }
 
-        .uk-width-large  {
+        .uk-width-large {
             background: #1a4375;
             border: 1px solid #fff;
         }
@@ -962,6 +972,18 @@
             }
         }
 
+        .uk-offcanvas-bar {
+            .uk-accordion-title {
+                font-size: 20px;
+            }
+        }
+
+        .uk-accordion-content {
+            a {
+                font-size: 20px;
+            }
+        }
+
         .header__tel {
             display: none;
         }
@@ -1480,6 +1502,11 @@
 
 /* breakpoint 550 */
 @media (max-width: 550px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
     .page__address {
         .address__row {
             flex-wrap: wrap;
@@ -1487,6 +1514,18 @@
             .address__item-header {
                 width: 100%;
             }
+        }
+    }
+
+    /* offer */
+    .offer {
+        .offer__item-header {
+            height: 190px;
+            margin-bottom: 20px;
+        }
+
+        .offer__item-content-text {
+            font-size: 22px;
         }
     }
 

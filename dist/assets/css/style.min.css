@@ -13238,7 +13238,6 @@ input:focus {
   font-weight: 800;
   font-size: 35px;
   color: #092853;
-  font-family: "Nunito";
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center; }
@@ -13247,7 +13246,6 @@ input:focus {
   font-size: 23px;
   line-height: 1.5;
   color: #000;
-  font-family: "Nunito";
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px; }
@@ -13294,7 +13292,7 @@ input:focus {
   font-weight: 600;
   font-size: 25px;
   color: #000;
-  font-family: "Poppins"; }
+  font-family: "Poppins", sans-serif; }
 
 .news {
   background: #fff;
@@ -13587,7 +13585,11 @@ input:focus {
     border-radius: 50px; }
 
 .nav__list {
-  display: flex; }
+  display: flex;
+  align-items: center; }
+
+.uk-offcanvas-bar .nav__list {
+  align-items: flex-start; }
 
 .nav__item {
   list-style: none; }
@@ -13596,9 +13598,58 @@ input:focus {
   font-size: 18px;
   color: #000;
   margin: 0 24px;
-  transition: color 0.2s linear; }
+  transition: color 0.2s linear;
+  border: none;
+  text-transform: capitalize; }
   .nav__link:hover {
     color: #f23e60; }
+
+/* uk-dropdown */
+.nav .uk-button-default {
+  padding-left: 0;
+  padding-right: 0; }
+
+.nav .uk-dropdown.uk-open {
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 15px; }
+
+.nav .nav__dropdown {
+  border-radius: 5px; }
+  .nav .nav__dropdown a {
+    display: inline-block;
+    color: #000;
+    margin-bottom: 5px; }
+
+.nav__list [hidden], .nav__list .uk-hidden {
+  display: none !important; }
+
+.uk-offcanvas-bar [hidden], .uk-offcanvas-bar .uk-hidden,
+.nav__list [hidden],
+.nav__list .uk-hidden {
+  display: none !important; }
+
+.uk-offcanvas-bar .uk-accordion,
+.nav__list .uk-accordion {
+  padding-bottom: 10px; }
+
+.uk-offcanvas-bar .uk-accordion-title,
+.nav__list .uk-accordion-title {
+  color: #fff; }
+  .uk-offcanvas-bar .uk-accordion-title:focus,
+  .nav__list .uk-accordion-title:focus {
+    color: #fff; }
+
+.uk-offcanvas-bar .uk-accordion-content,
+.nav__list .uk-accordion-content {
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column; }
+  .uk-offcanvas-bar .uk-accordion-content a,
+  .nav__list .uk-accordion-content a {
+    margin-bottom: 10px; }
 
 .btn {
   position: relative;
@@ -13696,6 +13747,7 @@ input:focus {
 
 .form__modal-input,
 .form__modal-textarea {
+  font-family: "Nurito", sans-serif;
   width: 100%;
   border-radius: 90px;
   padding: 20px 25px;
@@ -13893,7 +13945,7 @@ input:focus {
     display: none; }
 
 .contact {
-  transform: translateY(-386px); }
+  transform: translateY(-300px); }
 
 .contact__inner {
   position: relative;
@@ -14974,7 +15026,6 @@ input:focus {
   overflow: auto; }
 
 .newsDayPage__descr {
-  font-family: "Nunito";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -15004,7 +15055,6 @@ input:focus {
     box-sizing: border-box;
     border-radius: 8px; }
   .newsPage .newsPage__supDate {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -15013,7 +15063,6 @@ input:focus {
     color: #767581;
     margin-bottom: 20px; }
   .newsPage .uk-card-title {
-    font-family: "Nunito";
     font-weight: 700;
     font-size: 21px;
     line-height: 32px;
@@ -15021,7 +15070,6 @@ input:focus {
     color: #19191b;
     margin-bottom: 12px; }
   .newsPage p {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -15030,7 +15078,6 @@ input:focus {
     line-height: 1.6;
     margin-bottom: 20px; }
   .newsPage .newsPage__link {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -15080,7 +15127,6 @@ input:focus {
   padding-bottom: 36px; }
 
 .newsPage__list-title {
-  font-family: "Nunito";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -15090,7 +15136,6 @@ input:focus {
   background: #1b3566; }
 
 .newsPage__item-text {
-  font-family: "Nunito";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -15099,7 +15144,6 @@ input:focus {
   margin-bottom: 10px; }
 
 .newsPage__item-subDate {
-  font-family: "Nunito";
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -15124,7 +15168,6 @@ input:focus {
     background: transparent; }
 
 .newsPage__item-post {
-  font-family: "Nunito";
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -15161,7 +15204,6 @@ input:focus {
     text-align: center;
     color: #19191b; }
   .newsPage .uk-pagination li span {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: 900;
     font-size: 21px;
@@ -15264,8 +15306,10 @@ input:focus {
   /* home */
   .home__content {
     padding: 100px 20px; }
-  .scheme__list-items span::before {
-    display: none; }
+  .scheme__list-items {
+    position: relative; }
+    .scheme__list-items span::before {
+      display: none; }
   .scheme .scheme__list-items::after {
     content: "";
     position: absolute;
@@ -15305,6 +15349,12 @@ input:focus {
       display: inline-block;
       font-size: 25px;
       margin-bottom: 15px; }
+    .header .uk-offcanvas-bar .uk-accordion-content {
+      font-size: 25px;
+      margin-bottom: 0;
+      margin-top: 10px; }
+    .header .uk-offcanvas-bar .uk-accordion-title {
+      font-size: 25px; }
   .header .lang {
     display: none; }
   .header .uk-width-large {
@@ -15734,6 +15784,10 @@ input:focus {
   .header .uk-offcanvas-bar .nav__link {
     font-size: 20px;
     margin-bottom: 10px; }
+  .header .uk-offcanvas-bar .uk-accordion-title {
+    font-size: 20px; }
+  .header .uk-accordion-content a {
+    font-size: 20px; }
   .header .header__tel {
     display: none; }
   .header .header__burder-tel {
@@ -16015,10 +16069,18 @@ input:focus {
 
 /* breakpoint 550 */
 @media (max-width: 550px) {
+  .container {
+    padding: 0 15px; }
   .page__address .address__row {
     flex-wrap: wrap; }
     .page__address .address__row .address__item-header {
       width: 100%; }
+  /* offer */
+  .offer .offer__item-header {
+    height: 190px;
+    margin-bottom: 20px; }
+  .offer .offer__item-content-text {
+    font-size: 22px; }
   /* orders */
   .orders .container {
     padding: 0 15px; }

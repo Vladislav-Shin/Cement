@@ -19,7 +19,25 @@
 						<a class="nav__link" href="#">Калькулятор</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="#">О компании</a>
+						<div class="uk-inline">
+							<button class="uk-button uk-button-default  nav__link" type="button">О компании</button>
+							<div uk-dropdown="mode: click">
+								<ul class="nav__dropdown">
+									<li>
+										<a href="">История</a>
+									</li>
+									<li>
+										<a href="">Проекты</a>
+									</li>
+									<li>
+										<a href="">Преимущества</a>
+									</li>
+									<li>
+										<a href="">Руководство</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</li>
 					<li class="nav__item">
 						<a class="nav__link" href="#">Новости</a>
@@ -58,7 +76,17 @@
 								<a class="nav__link" href="#">Калькулятор</a>
 							</li>
 							<li class="nav__item">
-								<a class="nav__link" href="#">О компании</a>
+								<ul uk-accordion>
+									<li class="">
+										<a class="uk-accordion-title" href="#">О компании</a>
+										<div class="uk-accordion-content">
+											<a href="#">История</a>
+											<a href="#">Проекты</a>
+											<a href="#">Преимущества</a>
+											<a href="#">Руководство</a>
+										</div>
+									</li>
+								</ul>
 							</li>
 							<li class="nav__item">
 								<a class="nav__link" href="#">Новости</a>
