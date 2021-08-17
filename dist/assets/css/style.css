@@ -15297,7 +15297,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .home__footer-right .home__footer-img {
     border-radius: 20px;
-    height: 100%;
+    height: 450px;
     width: 100%;
     box-shadow: 0px 10px 31px #3b3a40;
     border-radius: 22px;
@@ -16120,7 +16120,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .nav__link {
     font-size: 18px;
     color: #000;
-    margin: 0 24px;
+    margin: 0 20px;
     transition: color 0.2s linear;
     border: none;
     text-transform: capitalize;
@@ -17361,6 +17361,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .company .company__list {
+    list-style: none;
+    padding-left: 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -17814,18 +17816,19 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 /* orders */
 /* charact */
 .orders__row {
-  /*     display: flex;
-    justify-content: space-between; */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-bottom: 50px;
 }
 
 .orders__left {
-    width: 50%;
+    width: 49%;
     height: 600px;
     border-radius: 21px;
     box-shadow: 0px 10px 31.8206px rgba(59, 58, 64, 0.08);
     overflow: hidden;
-    float: left;
     margin-right: 25px;
     margin-bottom: 25px;
 }
@@ -17837,7 +17840,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .orders__right {
     padding: 20px 0;
-    width: 100%;
+    width: 49%;
 }
 
 .clear::after {
@@ -17927,6 +17930,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     font-size: 17px;
     line-height: 30px;
     color: #666666;
+}
+
+.charact .charact__list {
+    padding-left: 0;
 }
 
 .charact .charact__list-item {
@@ -18042,6 +18049,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     box-shadow: 10px 10px 20px 10px rgba(34, 60, 80, 0.2);
 }
 
+.newsPage .uk-card-media-top {
+    height: 360px;
+}
+
 .newsPage__inner {
     padding-bottom: 125px;
 }
@@ -18051,6 +18062,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+
+.newsPage__list {
+    list-style: none;
+    padding-left: 0;
 }
 
 .newsPage__left {
@@ -18470,7 +18486,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 /* Breakponts 1830 */
 @media (max-width: 1830px) {
     .container {
-        padding: 0 120px;
+        padding: 0 110px;
     }
 }
 
@@ -18761,6 +18777,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .history .history__right-descr {
         line-height: 1.4;
     }
+  /* newsPage */
+    .newsPage .uk-card-media-top {
+        height: 290px;
+    }
 }
 
 /* Portrait tablets and small desktops - 991px */
@@ -18770,6 +18790,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         min-height: 120px;
     }
   /* home */
+    .home {
+        margin-bottom: 380px;
+    }
+
     .home .home__content {
         min-height: 920px;
         padding-left: 10px;
@@ -18798,7 +18822,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .home .home__footer-img {
-        height: auto;
+        height: 310px;
     }
 
     .home .home__footer-left {
@@ -19442,7 +19466,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .products .products__left {
-        max-height: 450px;
+        height: 350px;
     }
 
     .products .products__right-items {
