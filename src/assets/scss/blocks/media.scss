@@ -2,7 +2,7 @@
 
 @media (max-width: 1830px) {
     .container {
-        padding: 0 120px;
+        padding: 0 110px;
     }
 }
 
@@ -353,6 +353,13 @@
             line-height: 1.4;
         }
     }
+
+    /* newsPage */
+    .newsPage {
+        .uk-card-media-top {
+            height: 290px;
+        }
+    }
 }
 
 /* Portrait tablets and small desktops - 991px */
@@ -367,6 +374,8 @@
 
     /* home */
     .home {
+        margin-bottom: 380px;
+
         .home__content {
             min-height: 920px;
             padding-left: 10px;
@@ -395,7 +404,7 @@
         }
 
         .home__footer-img {
-            height: auto;
+            height: 310px;
         }
 
         .home__footer-left {
@@ -1109,7 +1118,7 @@
         }
 
         .products__left {
-            max-height: 450px;
+            height: 350px;
         }
 
         .products__right-items {
