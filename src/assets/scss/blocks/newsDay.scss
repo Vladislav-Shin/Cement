@@ -1,3 +1,10 @@
+.newsDayPage {
+    .newsPage__list {
+        list-style: none;
+        padding-left: 0;
+    }
+}
+
 .newsDayPage__inner {
     padding-bottom: 40px;
 }
@@ -5,6 +12,22 @@
 .newsDayPage__left {
     width: 65%;
     margin-right: 40px;
+}
+
+.newsDayPage__left-content {
+
+    ol,
+    ul {
+        padding-left: 30;
+        li {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 26px;
+            color: #000;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .newsDayPage__left-header {
@@ -21,6 +44,18 @@
     }
 }
 
+.newsDayPage__left {
+    p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.500211px;
+        color: #696871;
+        margin-bottom: 15px;
+    }
+}
+
 .newsDayPage__text {
     font-family: "Nunito";
     font-style: normal;
@@ -29,12 +64,6 @@
     line-height: 26px;
     color: #696871;
     margin-bottom: 40px;
-}
-
-.newsDayPage__left-content {
-    p {
-        
-    }
 }
 
 /* uikit */
@@ -62,7 +91,7 @@
 
     .js-filter {
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 10px;
         box-shadow: 0px 10.6069px 31.8206px rgba(59, 58, 64, 0.08);
@@ -80,11 +109,11 @@
             a {
                 background: #1B3566;
             }
-            
+
         }
 
         li {
-            
+
             a {
                 padding: 10px 15px;
                 background: #EAE9F2;
@@ -94,10 +123,11 @@
         }
     }
 
-    .uk-grid > * {
+    .uk-grid>* {
         padding-left: 0;
     }
 }
-.uk-grid > * {
+
+.uk-grid>* {
     padding-left: 0;
 }

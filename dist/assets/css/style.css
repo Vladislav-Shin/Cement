@@ -15575,7 +15575,6 @@ input:focus {
     font-weight: 800;
     font-size: 35px;
     color: #092853;
-    font-family: "Nunito";
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: center;
@@ -15585,7 +15584,6 @@ input:focus {
     font-size: 23px;
     line-height: 1.5;
     color: #000;
-    font-family: "Nunito";
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
@@ -15643,7 +15641,7 @@ input:focus {
     font-weight: 600;
     font-size: 25px;
     color: #000;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
 }
 
 .news {
@@ -16021,6 +16019,13 @@ input:focus {
 .nav__list {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.uk-offcanvas-bar .nav__list {
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 
 .nav__item {
@@ -16032,10 +16037,75 @@ input:focus {
     color: #000;
     margin: 0 24px;
     transition: color 0.2s linear;
+    border: none;
+    text-transform: capitalize;
 }
 
 .nav__link:hover {
     color: #f23e60;
+}
+
+/* uk-dropdown */
+.nav .uk-button-default {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav .uk-dropdown.uk-open {
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+.nav .nav__dropdown {
+    border-radius: 5px;
+}
+
+.nav .nav__dropdown a {
+    display: inline-block;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.nav__list [hidden], .nav__list .uk-hidden {
+    display: none !important;
+}
+
+.uk-offcanvas-bar [hidden], .uk-offcanvas-bar .uk-hidden,
+.nav__list [hidden],
+.nav__list .uk-hidden {
+    display: none !important;
+}
+
+.uk-offcanvas-bar .uk-accordion,
+.nav__list .uk-accordion {
+    padding-bottom: 10px;
+}
+
+.uk-offcanvas-bar .uk-accordion-title,
+.nav__list .uk-accordion-title {
+    color: #fff;
+}
+
+.uk-offcanvas-bar .uk-accordion-title:focus,
+  .nav__list .uk-accordion-title:focus {
+    color: #fff;
+}
+
+.uk-offcanvas-bar .uk-accordion-content,
+.nav__list .uk-accordion-content {
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.uk-offcanvas-bar .uk-accordion-content a,
+  .nav__list .uk-accordion-content a {
+    margin-bottom: 10px;
 }
 
 .btn {
@@ -16155,6 +16225,7 @@ input:focus {
 
 .form__modal-input,
 .form__modal-textarea {
+    font-family: "Nurito", sans-serif;
     width: 100%;
     border-radius: 90px;
     padding: 20px 25px;
@@ -16468,8 +16539,8 @@ input:focus {
 }
 
 .contact {
-    -webkit-transform: translateY(-386px);
-    transform: translateY(-386px);
+    -webkit-transform: translateY(-300px);
+    transform: translateY(-300px);
 }
 
 .contact__inner {
@@ -17889,7 +17960,6 @@ input:focus {
 }
 
 .newsDayPage__descr {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -17933,7 +18003,6 @@ input:focus {
 }
 
 .newsPage .newsPage__supDate {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -17944,7 +18013,6 @@ input:focus {
 }
 
 .newsPage .uk-card-title {
-    font-family: "Nunito";
     font-weight: 700;
     font-size: 21px;
     line-height: 32px;
@@ -17954,7 +18022,6 @@ input:focus {
 }
 
 .newsPage p {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -17965,7 +18032,6 @@ input:focus {
 }
 
 .newsPage .newsPage__link {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -18056,7 +18122,6 @@ input:focus {
 }
 
 .newsPage__list-title {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -18067,7 +18132,6 @@ input:focus {
 }
 
 .newsPage__item-text {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -18077,7 +18141,6 @@ input:focus {
 }
 
 .newsPage__item-subDate {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -18111,7 +18174,6 @@ input:focus {
 }
 
 .newsPage__item-post {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -18159,7 +18221,6 @@ input:focus {
 }
 
 .newsPage .uk-pagination li span {
-    font-family: "Nunito";
     font-style: normal;
     font-weight: 900;
     font-size: 21px;
@@ -18372,6 +18433,16 @@ input:focus {
         display: inline-block;
         font-size: 25px;
         margin-bottom: 15px;
+    }
+
+    .header .uk-offcanvas-bar .uk-accordion-content {
+        font-size: 25px;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    .header .uk-offcanvas-bar .uk-accordion-title {
+        font-size: 25px;
     }
 
     .header .lang {
@@ -19091,6 +19162,14 @@ input:focus {
         margin-bottom: 10px;
     }
 
+    .header .uk-offcanvas-bar .uk-accordion-title {
+        font-size: 20px;
+    }
+
+    .header .uk-accordion-content a {
+        font-size: 20px;
+    }
+
     .header .header__tel {
         display: none;
     }
@@ -19574,6 +19653,10 @@ input:focus {
 
 /* breakpoint 550 */
 @media (max-width: 550px) {
+    .container {
+        padding: 0 15px;
+    }
+
     .page__address .address__row {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -19581,6 +19664,15 @@ input:focus {
 
     .page__address .address__row .address__item-header {
         width: 100%;
+    }
+  /* offer */
+    .offer .offer__item-header {
+        height: 190px;
+        margin-bottom: 20px;
+    }
+
+    .offer .offer__item-content-text {
+        font-size: 22px;
     }
   /* orders */
     .orders .container {

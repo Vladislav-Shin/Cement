@@ -1,6 +1,7 @@
 .nav__list {
 	display: flex;
 	align-items: center;
+	padding-left: 0;
 }
 
 .uk-offcanvas-bar {
@@ -42,11 +43,17 @@
 
 	.nav__dropdown {
 		border-radius: 5px;
+		list-style: none;
+		padding-left: 0;
 		
 		a {
 			display: inline-block;
 			color: #000;
 			margin-bottom: 5px;
+
+			&:hover {
+				color: #f23e60;
+			}
 		}
 	}
 }
@@ -68,10 +75,15 @@
 	}
 
 	.uk-accordion-title {
+		padding-right: 30px;
 		color: #fff;
 
 		&:focus {
 			color: #fff;
+		}
+
+		&:hover {
+			color: #f23e60;
 		}
 	}
 
@@ -84,6 +96,10 @@
 
 		a {
 			margin-bottom: 10px;
+			
+			&:hover {
+				color: #f23e60;
+			}
 		}
 	}
 }

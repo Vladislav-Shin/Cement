@@ -1,6 +1,6 @@
 @import "vars";
-@import "blocks/uikit";
 @import "vendor/reset";
+@import "blocks/uikit";
 
 *,
 *::after,
@@ -20,12 +20,16 @@ body {
 .container {
     max-width: 1920px;
     width: 100%;
-    padding: 0 240px;
+    padding: 0 190px;
     margin: 0 auto;
 }
 
 a {
     text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 a:focus,
@@ -96,6 +100,12 @@ input:focus {
     }
 }
 
+.uk-offcanvas-bar {
+    .nav__list {
+        padding-left: 0;
+    }
+}
+
 @media (min-width: 1200px) {
     .uk-grid + .uk-grid,
     .uk-grid > .uk-grid-margin,
@@ -136,6 +146,10 @@ input:focus {
 .uk-breadcrumb > :last-child > span,
 .uk-breadcrumb > :last-child > a:not([href]) {
     color: #f23e60;
+}
+
+p, ul, ol, dl, pre, address, fieldset, figure {
+    margin: 0;
 }
 
 /* Blocks */
