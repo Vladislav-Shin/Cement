@@ -18493,7 +18493,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 /* Breakpoints 1600 */
 @media (max-width: 1600px) {
     .container {
-        padding: 0 40px;
+        padding: 0 80px;
     }
 
     .header .header__telephone {
@@ -18565,6 +18565,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 /* Breakpoint 1300 */
 @media (max-width: 1300px) {
+    .container {
+        padding: 0 80px;
+    }
+
     .nav {
         display: none;
     }
@@ -19325,6 +19329,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 /* Landscape phones and portrait tablets - 767px*/
 @media (max-width: 767px) {
+    .container {
+        padding: 0 20px;
+    }
+
     .header__footer {
         margin-bottom: -180px;
     }
