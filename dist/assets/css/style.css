@@ -15469,6 +15469,22 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     margin-top: -175px;
 }
 
+.products__left,
+.products__right-items {
+    position: relative;
+}
+
+.products__left::after,
+  .products__right-items::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+}
+
 /* scheme */
 .scheme__title {
     font-size: 35px;

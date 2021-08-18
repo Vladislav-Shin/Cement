@@ -13890,13 +13890,9 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   .footer__list-link:hover {
     color: #222831; }
 
-.footer__logo {
-  margin-top: -15px; }
-  .footer__logo a {
-    display: inline-block;
-    color: #000;
-    font-size: 48px;
-    font-weight: 800; }
+.footer__logo a {
+  display: inline-block;
+  margin-bottom: 20px; }
 
 .footer__descr {
   display: inline-block;
@@ -16088,7 +16084,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
       margin: 0; }
     .footer .footer-flex {
       justify-content: flex-start;
-      margin-top: 130px; }
+      margin-top: 65px; }
   /* goods */
   .goods .goods__header {
     height: 200px; }
