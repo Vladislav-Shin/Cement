@@ -30,8 +30,9 @@
     flex: 1;
     padding: 10px;
     overflow-y: auto;
-    height: 800px;
+    height: 100%;
     box-shadow: 45.8202px 43px 183.281px rgba(27, 49, 66, 0.3);
+    border-radius: 10px;
 }
 
 .newsPage {
@@ -79,6 +80,7 @@
         border: 1px solid #eae9f2;
         box-sizing: border-box;
         border-radius: 8px;
+        height: 100%;
     }
 
     .newsPage__supDate {

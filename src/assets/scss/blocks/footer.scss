@@ -18,6 +18,12 @@
     justify-content: space-between;
     border-bottom: 1px solid rgba(105, 120, 131, 0.4);
     padding-bottom: 40px;
+
+    .footer__accordion {
+        width: 32%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .footer__item {
@@ -35,7 +41,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex: 1;
 }
 
 .footer__list {
