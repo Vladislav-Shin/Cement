@@ -371,8 +371,8 @@
                             <div class="calculator__item">
                                 <div class="calculator__box">
                                     <label for="brand">Марка цемента</label>
-                                    <select class="calculator-select">
-                                        <option class="calculator-option" value="1500">Пункт 1</option>
+                                    <select class="calculator-select" id="select-product">
+                                        <option class="calculator-option" value="1500" selected>Пункт 1</option>
                                         <option class="calculator-option" value="3000">Пункт 2</option>
                                         <option class="calculator-option" value="4500">Пункт 3</option>
                                         <option class="calculator-option" value="6000">Пункт 4</option>
@@ -380,7 +380,7 @@
                                 </div>
                                 <div class="calculator__box">
                                     <label for="">Цена</label>
-                                    <span class="calculator__price"></span>
+                                    <span class="calculator__price">123123</span>
                                 </div>
                                 <div class="calculator__box">
                                     <label for="quantity">Количество цемента (кг)</label>
@@ -390,9 +390,8 @@
                                     </div>
                                 </div>
                                 <div class="calculator__footer">
-                                    <button class="btn  btn-blue" id="calculate">Рассчитать</button>
-                                    <span class="calculator__footer-price">Итоговая цена: <span id="total-price">0</span>
-                                        сум</span>
+                                    <span class="calculator__footer-price">
+                                        Итоговая цена: <span id="total-price">0</span>сум</span>
                                 </div>
                             </div>
                         </div>
