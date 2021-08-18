@@ -25,6 +25,15 @@
         .home__left {
             width: 55%;
         }
+
+        .header__lang {
+
+            .uk-dropdown {
+                a {
+                    margin: 0 11px;
+                }
+            }
+        }
     }
 
     .nav__link {
@@ -46,6 +55,10 @@
 
 /* Breakpoints 1450 */
 @media (max-width: 1450px) {
+
+    .container {
+        padding: 0 40px;
+    }
 
     /* home */
     .home__content {

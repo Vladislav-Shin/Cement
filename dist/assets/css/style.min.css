@@ -12865,6 +12865,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     padding: 0;
     font-weight: 700; }
   .header__wrap-btns .nav__dropdown {
+    left: 0;
     list-style: none;
     padding-left: 0; }
     .header__wrap-btns .nav__dropdown li {
@@ -12875,17 +12876,31 @@ p, ul, ol, dl, pre, address, fieldset, figure {
       display: inline-block;
       font-weight: 700;
       color: #000;
-      margin-bottom: 5px; }
+      font-size: 18px;
+      margin-bottom: 5px;
+      transition: color 0.3s ease; }
+      .header__wrap-btns .nav__dropdown a:hover {
+        color: #f23e60; }
       .header__wrap-btns .nav__dropdown a:last-child {
         margin-bottom: 0; }
   .header__wrap-btns .header__lang {
     display: flex;
     align-items: center; }
     .header__wrap-btns .header__lang .uk-dropdown {
+      left: 0 !important;
+      top: 42px !important;
       margin-top: 0;
-      padding: 10px;
+      padding: 10px 0;
       min-width: auto;
       border-radius: 5px; }
+      .header__wrap-btns .header__lang .uk-dropdown a {
+        margin: 0 20px; }
+
+/* uikit */
+.header__lang .uk-inline {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  margin-right: 10px; }
 
 .burger {
   display: none;
@@ -15415,6 +15430,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     padding-right: 70px; }
   .header .home__left {
     width: 55%; }
+  .header .header__lang .uk-dropdown a {
+    margin: 0 11px; }
   .nav__link {
     margin: 0 11px; }
   .uk-offcanvas-bar .nav__link {
@@ -15424,6 +15441,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 /* Breakpoints 1450 */
 @media (max-width: 1450px) {
+  .container {
+    padding: 0 40px; }
   /* home */
   .home__content {
     padding: 100px 20px; }
