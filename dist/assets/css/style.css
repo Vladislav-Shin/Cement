@@ -16452,15 +16452,9 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     color: #222831;
 }
 
-.footer__logo {
-    margin-top: -15px;
-}
-
 .footer__logo a {
     display: inline-block;
-    color: #000;
-    font-size: 48px;
-    font-weight: 800;
+    margin-bottom: 20px;
 }
 
 .footer__descr {
@@ -19662,7 +19656,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .footer .footer-flex {
         -ms-flex-pack: start;
         justify-content: flex-start;
-        margin-top: 130px;
+        margin-top: 65px;
     }
   /* goods */
     .goods .goods__header {
