@@ -37,16 +37,17 @@
 	font-family: "Nurito", sans-serif;
 	width: 100%;
 	border-radius: 90px;
-	padding: 20px 25px;
+	padding: 12px 25px;
 	font-size: 16px;
 	outline: none;
+	border: 1px solid rgba(28, 56, 99, 0.8);
 
 	&::placeholder {
 		font-size: 16px;
 	}
 
 	&:focus {
-		box-shadow: 0 0 0 2px #bdc3cdf7;
+		border: 1px solid #000;
 	}
 }
 

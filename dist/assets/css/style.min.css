@@ -12962,9 +12962,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     transform: rotate(-45deg); }
 
 /* home */
-.home {
-  margin-bottom: 500px; }
-
 .home__container {
   max-width: 1900px;
   margin: 0 auto;
@@ -12973,12 +12970,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .home__content {
   position: relative;
   min-height: 1200px;
-  background: url("../images/home-bg.webp") center no-repeat;
+  background: url("../images/home-bg.png") center no-repeat;
   background-size: cover;
   border-radius: 45px;
   display: flex;
   justify-content: space-between;
-  padding: 105px 250px; }
+  padding: 105px 190px; }
   .home__content::before {
     content: "";
     position: absolute;
@@ -13090,7 +13087,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 /* scheme */
 .products {
   background: rgba(43, 153, 255, 0.1);
-  padding-bottom: 165px; }
+  padding-bottom: 165px;
+  margin-top: 500px; }
   .products .products__content {
     position: relative;
     transform: translateY(-50%);
@@ -13859,15 +13857,16 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   font-family: "Nurito", sans-serif;
   width: 100%;
   border-radius: 90px;
-  padding: 20px 25px;
+  padding: 12px 25px;
   font-size: 16px;
-  outline: none; }
+  outline: none;
+  border: 1px solid rgba(28, 56, 99, 0.8); }
   .form__modal-input::placeholder,
   .form__modal-textarea::placeholder {
     font-size: 16px; }
   .form__modal-input:focus,
   .form__modal-textarea:focus {
-    box-shadow: 0 0 0 2px #bdc3cdf7; }
+    border: 1px solid #000; }
 
 .form__modal-textarea {
   border-radius: 26px;

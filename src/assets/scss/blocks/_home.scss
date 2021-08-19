@@ -1,8 +1,4 @@
 /* home */
-.home {
-	margin-bottom: 500px;
-}
-
 .home__container {
 	max-width: 1900px;
 	margin: 0 auto;
@@ -12,12 +8,12 @@
 .home__content {
 	position: relative;
 	min-height: 1200px;
-	background: url("../images/home-bg.webp") center no-repeat;
+	background: url("../images/home-bg.png") center no-repeat;
 	background-size: cover;
 	border-radius: 45px;
 	display: flex;
 	justify-content: space-between;
-	padding: 105px 250px;
+	padding: 105px 190px;
 
 	&::before {
 		content: "";
