@@ -38,7 +38,6 @@
 	width: 100%;
 	border-radius: 90px;
 	padding: 20px 25px;
-	margin-bottom: 15px;
 	font-size: 16px;
 	outline: none;
 
@@ -57,3 +56,21 @@
 	height: 134px;
 	margin-bottom: 25px;
 }
+
+.form__wrapper-input {
+	margin-bottom: 15px;
+}
+
+.form__input-error {
+	margin-top: 5px;
+	color: red;
+	font-size: 15px;
+	background: transparent;
+	width: 100%;
+	padding: 5px;
+	border-radius: 20px;
+}
+/* 
+.form-error {
+	&::placeholder
+} */

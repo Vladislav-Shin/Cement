@@ -12816,6 +12816,23 @@ input:focus {
 p, ul, ol, dl, pre, address, fieldset, figure {
   margin: 0; }
 
+#modal-successfully p {
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+  height: 220px;
+  background: rgba(31, 179, 122, 0.88);
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+  text-align: center; }
+
+#modal-successfully .uk-close {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fe5e796c;
+  padding: 10px; }
+
 /* Blocks */
 .header__inner {
   display: flex;
@@ -13014,8 +13031,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   justify-content: space-between; }
 
 .home__footer-left {
-  width: 52%;
-  padding-top: 60px; }
+  width: 52%; }
 
 .home__footer-right {
   position: relative;
@@ -13844,7 +13860,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   width: 100%;
   border-radius: 90px;
   padding: 20px 25px;
-  margin-bottom: 15px;
   font-size: 16px;
   outline: none; }
   .form__modal-input::placeholder,
@@ -13860,6 +13875,22 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   height: 134px;
   margin-bottom: 25px; }
 
+.form__wrapper-input {
+  margin-bottom: 15px; }
+
+.form__input-error {
+  margin-top: 5px;
+  color: red;
+  font-size: 15px;
+  background: transparent;
+  width: 100%;
+  padding: 5px;
+  border-radius: 20px; }
+
+/* 
+.form-error {
+	&::placeholder
+} */
 .footer {
   margin-top: 290px;
   padding-top: 100px;

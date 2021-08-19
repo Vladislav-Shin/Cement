@@ -154,6 +154,27 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     margin: 0;
 }
 
+#modal-successfully {
+    p {
+        display: flex;
+        align-items: center;
+        max-width: 450px;
+        height: 220px;
+        background: rgba(31,179,122,.88);
+        border-radius: 5px;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .uk-close {
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #fe5e796c;
+        padding: 10px
+    }
+}
+
 /* Blocks */
 
 @import "blocks/header";

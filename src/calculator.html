@@ -131,9 +131,18 @@ title: calculator
                 <div class="form__modal">
                     <h2 class="form__title">Форма для заказа</h2>
                     <form class="form__modal-add" action="">
-                        <input class="form__modal-input" type="text" placeholder="Введите Ваше имя">
-                        <input class="form__modal-input" type="email" placeholder="Введите Ваш email">
-                        <input class="form__modal-input" type="number" placeholder="Введите Ваш номер телефона">
+                        <div class="form__wrapper-input">
+                            <input class="form__modal-input" type="text" placeholder="Введите Ваше имя">
+                            <div class="form__input-error">
+                                Ошибка
+                            </div>
+                        </div>
+                        <div class="form__wrapper-input">
+                            <input class="form__modal-input" type="email" placeholder="Введите Ваш email">
+                        </div>
+                        <div class="form__wrapper-input">
+                            <input class="form__modal-input" type="number" placeholder="Введите Ваш номер телефона">
+                        </div>
                         <textarea class="form__modal-textarea" name="" id="" cols="30" rows="10"
                             placeholder="Если есть комментарий, можете оставить его здесь"></textarea>
                         <button type="button" class="btn  btn-orange">Отправить</button>
