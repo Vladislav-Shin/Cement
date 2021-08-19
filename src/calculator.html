@@ -34,8 +34,8 @@ title: calculator
                     <div class="calculator__item">
                         <div class="calculator__box">
                             <label for="brand">Марка цемента</label>
-                            <select class="calculator-select">
-                                <option class="calculator-option" value="1500">Пункт 1</option>
+                            <select class="calculator-select" id="select-product">
+                                <option class="calculator-option" value="1500" selected>Пункт 1</option>
                                 <option class="calculator-option" value="3000">Пункт 2</option>
                                 <option class="calculator-option" value="4500">Пункт 3</option>
                                 <option class="calculator-option" value="6000">Пункт 4</option>
@@ -43,7 +43,7 @@ title: calculator
                         </div>
                         <div class="calculator__box">
                             <label for="">Цена</label>
-                            <span class="calculator__price"></span>
+                            <span class="calculator__price">123123</span>
                         </div>
                         <div class="calculator__box">
                             <label for="quantity">Количество цемента (кг)</label>
@@ -53,9 +53,8 @@ title: calculator
                             </div>
                         </div>
                         <div class="calculator__footer">
-                            <button class="btn  btn-blue" id="calculate">Рассчитать</button>
-                            <span class="calculator__footer-price">Итоговая цена: <span id="total-price">0</span>
-                                сум</span>
+                            <span class="calculator__footer-price">
+                                Итоговая цена: <span id="total-price">0</span>сум</span>
                         </div>
                     </div>
                 </div>
@@ -130,19 +129,18 @@ title: calculator
                 <button class="uk-modal-close-default" type="button" uk-close></button>
 
                 <div class="form__modal">
-                    <h2 class="form__title">Сделать заказ</h2>
+                    <h2 class="form__title">Форма для заказа</h2>
                     <form class="form__modal-add" action="">
-                        <input class="form__modal-input" type="text" placeholder="Enter your username">
-                        <input class="form__modal-input" type="email" placeholder="Enter your email">
-                        <input class="form__modal-input" type="number" placeholder="Phone Number">
+                        <input class="form__modal-input" type="text" placeholder="Введите Ваше имя">
+                        <input class="form__modal-input" type="email" placeholder="Введите Ваш email">
+                        <input class="form__modal-input" type="number" placeholder="Введите Ваш номер телефона">
                         <textarea class="form__modal-textarea" name="" id="" cols="30" rows="10"
-                            placeholder="Comment"></textarea>
-                        <button type="button" class="btn  btn-orange">Contact Us</button>
+                            placeholder="Если есть комментарий, можете оставить его здесь"></textarea>
+                        <button type="button" class="btn  btn-orange">Отправить</button>
                     </form>
                 </div>
-
             </div>
-        </div>
+        </div> <!-- uk-flex-top -->
 
     </div>
 </div>

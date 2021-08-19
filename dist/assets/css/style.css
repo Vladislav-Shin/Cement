@@ -15040,10 +15040,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
-    font-size: 35px;
-    line-height: 58px;
+    font-size: 26px;
+    line-height: 1.4;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 35px;
     letter-spacing: -0.5px;
     color: #fff;
     text-transform: uppercase;
@@ -15747,6 +15747,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .offer__item-content-text {
+    line-height: 1.2;
     font-weight: 600;
     font-size: 25px;
     color: #000;
@@ -16429,6 +16430,14 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     padding-bottom: 40px;
 }
 
+.footer__row .footer__accordion {
+    width: 32%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 .footer__item:first-child {
     width: 20%;
 }
@@ -16444,8 +16453,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     flex-direction: row;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    -ms-flex: 1;
-    flex: 1;
 }
 
 .footer__list {
@@ -17054,6 +17061,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .page__address .address__item-content {
+    height: 100%;
     background: #f2faff;
     border-radius: 7px;
     padding: 15px;
@@ -17061,9 +17069,9 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .page__address .address__item-text {
     font-family: "Nunito";
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 172.69%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.6;
     letter-spacing: 1px;
     color: #08104f;
 }
@@ -17087,8 +17095,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .page__address .address__list-item a {
     font-family: "Nunito";
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 1.6;
     text-transform: uppercase;
     color: #000000;
@@ -18115,8 +18123,9 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     flex: 1;
     padding: 10px;
     overflow-y: auto;
-    height: 800px;
+    height: 100%;
     box-shadow: 45.8202px 43px 183.281px rgba(27, 49, 66, 0.3);
+    border-radius: 10px;
 }
 
 .newsPage .newsPage__right {
@@ -18165,6 +18174,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     border: 1px solid #eae9f2;
     box-sizing: border-box;
     border-radius: 8px;
+    height: 100%;
 }
 
 .newsPage .newsPage__supDate {
@@ -18397,6 +18407,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .newsDayPage .newsPage__list {
     list-style: none;
     padding-left: 0;
+}
+
+.newsDayPage .header__footer-title {
+    font-size: 26px;
 }
 
 .newsDayPage__inner {
@@ -18740,27 +18754,67 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         padding-left: 40px;
         padding-right: 40px;
     }
-
+  /* footer */
     .footer .footer__row {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
     .footer .footer__item {
+        width: 31%;
         margin-bottom: 15px;
     }
 
     .footer .footer__item:first-child {
-        width: 30%;
+        width: 50%;
         margin-right: 20px;
     }
 
-    .footer .footer-width {
+    .footer .footer__accordion {
+        -ms-flex-pack: start;
+        justify-content: start;
         width: 100%;
+    }
+
+    .footer .footer-flex {
+        margin-left: 20px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 31%;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
     }
 
     .footer .footer__logo a {
         font-size: 36px;
+    }
+
+    .footer [hidden],
+  .footer .uk-hidden {
+        display: none !important;
+    }
+
+    .footer .uk-accordion-title {
+        pointer-events: auto;
+        margin-bottom: 10px;
+    }
+
+    .footer .uk-accordion-title::before {
+        display: block;
+    }
+
+    .footer .uk-accordion-content {
+        margin-top: 0;
+    }
+
+    .footer .footer__accordion {
+        margin: 0;
+    }
+
+    .footer .footer-width {
+        width: 100%;
     }
   /* projects */
     .projects .projects__header {
@@ -19681,9 +19735,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .footer .footer-flex {
+        width: 100%;
         -ms-flex-pack: start;
         justify-content: flex-start;
-        margin-top: 65px;
+        margin-left: 0;
     }
   /* goods */
     .goods .goods__header {
@@ -19860,6 +19915,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         padding: 0 10px;
     }
   /* news */
+    .news .uk-card-default {
+        width: 32%;
+    }
+
     .news .uk-card-title {
         font-size: 16px;
         line-height: 1.2;
@@ -20564,6 +20623,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .page__products .uk-slider-nav li {
         margin-right: 0;
+    }
+
+    .page__products .company__arrow a {
+        width: 10px;
+        height: 10px;
     }
   /* orders */
     .orders .orders__title {

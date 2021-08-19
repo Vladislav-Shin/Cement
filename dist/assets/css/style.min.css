@@ -15329,6 +15329,53 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     text-align: center;
     color: #19191b; }
 
+.newsDayPage .uk-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+  border-top: 5px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-collapse: collapse;
+  outline: 3px solid #ffd300;
+  background: #fff !important; }
+  .newsDayPage .uk-table tbody tr:nth-child(even) {
+    background: #f8f8f8 !important; }
+  .newsDayPage .uk-table tbody th {
+    font-weight: bold;
+    padding: 7px;
+    background: #ffd300;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #ffd300; }
+  .newsDayPage .uk-table tbody td {
+    padding: 7px;
+    border: none;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 15px; }
+
+.newsDayPage .table th {
+  font-weight: bold;
+  padding: 7px;
+  background: #ffd300;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #ffd300; }
+
+.newsDayPage .table td {
+  padding: 7px;
+  border: none;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  font-size: 15px; }
+
+.newsDayPage .table tbody tr:nth-child(even) {
+  background: #f8f8f8 !important; }
+
 .newsDayPage .newsPage__list {
   list-style: none;
   padding-left: 0; }
@@ -15477,7 +15524,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     font-size: 18px;
     padding: 20px; }
   .products .product__descr {
-    font-size: 18px; } }
+    font-size: 18px; }
+  /* .newsDayPage */
+  .newsDayPage .header__footer {
+    height: 650px; } }
 
 /* Breakpoint 1300 */
 @media (max-width: 1300px) {
