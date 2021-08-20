@@ -5,6 +5,18 @@
     min-height: 170px;
 }
 
+.header__logo {
+    width: 22%;
+
+    a {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
 /* Фон для других страниц */
 .header__footer {
     text-align: center;

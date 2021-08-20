@@ -20,20 +20,7 @@
     padding-bottom: 40px;
 
     .footer__accordion {
-        width: 32%;
         display: flex;
-        justify-content: center;
-    }
-}
-
-.footer__item {
-    
-    &:first-child {
-        width: 20%;
-    }
-
-    &:last-child {
-        width: 20%;
     }
 }
 
@@ -173,7 +160,7 @@
         width: 180px;
         height: 60px;
         cursor: pointer;
-        background: linear-gradient(180deg, #000, #8d8d99);
+        background: transparent;
         outline: none;
         transition: 1s ease-in-out;
         border-radius: 5px;

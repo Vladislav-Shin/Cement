@@ -15060,7 +15060,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .header__footer-title {
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 26px;
     line-height: 1.4;
     text-align: center;
@@ -15098,7 +15098,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .header__wrap-btns .uk-button {
     padding: 0;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .header__wrap-btns .nav__dropdown {
@@ -15117,7 +15117,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .header__wrap-btns .nav__dropdown a {
     display: inline-block;
-    font-weight: 700;
+    font-weight: 600;
     color: #000;
     font-size: 18px;
     margin-bottom: 5px;
@@ -15157,6 +15157,27 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     border-radius: 3px;
     margin-right: 10px;
+    min-width: 75px;
+}
+
+.header__lang .uk-inline span {
+    display: inline-block;
+    width: 30px;
+}
+
+.header__lang .uk-inline span img {
+    width: 100%;
+    height: 100%;
+}
+
+.header__lang .uk-inline .lang-ru span {
+    display: inline-block;
+    width: 30px;
+}
+
+.header__lang .uk-inline .lang-ru span img {
+    width: 100%;
+    height: 100%;
 }
 
 .burger {
@@ -15233,6 +15254,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     padding: 0 10px;
 }
 
+.home__content-row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 .home__content {
     position: relative;
     min-height: 1200px;
@@ -15271,14 +15297,14 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .home__title {
     color: #fff;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 45px;
 }
 
 .home__subtitle {
     position: relative;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.4;
     padding-left: 60px;
 }
@@ -15298,7 +15324,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 /* home__footer */
 .home__footer {
-    margin-top: -40px;
+    padding: 40px 0;
 }
 
 .home__footer-row {
@@ -15316,19 +15342,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     position: relative;
     width: 44%;
     height: 450px;
-  /* 	.home__border {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 15%;
-		left: 10%;
-		z-index: 10;
-
-		img {
-			width: 100%;
-			height: 100%;
-		}
-	} */
 }
 
 .home__footer-right .home__footer-img {
@@ -15349,7 +15362,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .home__footer-title {
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 700;
     color: #0072e2;
     text-transform: uppercase;
     margin-bottom: 24px;
@@ -15357,7 +15370,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .home__footer-subtitle {
     font-size: 23px;
-    font-weight: 700;
+    font-weight: 600;
     color: #000;
     line-height: 1.4;
     margin-bottom: 30px;
@@ -15368,6 +15381,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     color: #000;
     font-weight: 400;
     line-height: 1.5;
+    margin-bottom: 10px;
 }
 
 .home__footer-img {
@@ -15379,14 +15393,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 /* scheme */
 .products {
     background: rgba(43, 153, 255, 0.1);
+    padding-top: 70px;
     padding-bottom: 165px;
-    margin-top: 500px;
 }
 
 .products .products__content {
     position: relative;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
     background: #fff;
     border-radius: 55px;
     box-shadow: 45px 43px 183px rgba(23, 49, 66, 0.2);
@@ -15415,7 +15427,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .products .products__title {
     font-family: "Nunito";
-    font-weight: 800;
+    font-weight: 700;
     font-size: 35px;
     line-height: 62px;
     text-align: center;
@@ -15431,7 +15443,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     z-index: 10;
     color: #fff;
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.4;
     text-transform: uppercase;
     padding: 30px;
@@ -15526,7 +15538,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .scheme__title {
     font-size: 35px;
     font-family: "Nunito";
-    font-weight: 800;
+    font-weight: 600;
     text-transform: uppercase;
     color: #000;
     text-align: center;
@@ -15629,7 +15641,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .scheme__content-title {
     position: relative;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 700;
     color: #092853;
     margin-bottom: 58px;
 }
@@ -15661,7 +15673,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     display: inline-block;
     color: #0068CF;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     text-align: center;
     line-height: 1.8;
@@ -15698,7 +15710,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .offer__title {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 35px;
     color: #092853;
     text-transform: uppercase;
@@ -15765,7 +15777,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .offer__item-content-text {
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 25px;
     color: #000;
     font-family: "Poppins", sans-serif;
@@ -15800,7 +15812,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .news__title {
     font-family: "Nunito";
-    font-weight: 800;
+    font-weight: 700;
     font-size: 40px;
     line-height: 55px;
     letter-spacing: 0.01em;
@@ -15885,7 +15897,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .news__item time {
     display: block;
     font-family: "Nunito", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 17px;
     line-height: 1.5;
     letter-spacing: 1px;
@@ -15895,7 +15907,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .news__item h3 {
     font-family: "Nunito", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 25px;
     line-height: 1.5;
     text-align: center;
@@ -15956,7 +15968,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .partners__title {
     font-family: "Nunito";
-    font-weight: 700;
+    font-weight: 600;
     font-size: 55px;
     line-height: 1.3;
     color: #ffffff;
@@ -16308,7 +16320,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     font-size: 16px;
     padding-left: 69px;
     padding-right: 69px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     font-family: 'Nunito', sans-serif;
 }
@@ -16373,7 +16385,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .form__title {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     color: #fff;
     margin-bottom: 35px;
@@ -16503,7 +16515,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .footer__list-link {
     display: inline-block;
     font-family: "Nunito";
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.2;
     color: #222831;
@@ -16522,7 +16534,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .footer__descr {
     display: inline-block;
     font-family: "Nunito";
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     color: #222831;
@@ -16532,7 +16544,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .footer__app-text {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 30px;
     line-height: 22px;
     color: #1B8ECE;
@@ -16591,7 +16603,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .footer__buttom-text {
     font-family: "Nunito";
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.004em;
@@ -16693,7 +16705,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .logo__panda .btn a {
     color: white;
     font-size: 18px;
-    font-weight: 100;
 }
 
 /* uikit */
@@ -16704,7 +16715,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .footer .uk-accordion-title {
     font-family: "Nunito";
-    font-weight: 800;
+    font-weight: 700;
     font-size: 24px;
     line-height: 1.3;
     color: #2e2e46;
@@ -16756,7 +16767,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .contact__title {
     color: #08104f;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Nunito", sans-serif;
     line-height: 1.5;
     text-align: center;
@@ -16781,7 +16792,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .btn-contact {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -16801,7 +16812,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .advantage__title {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 35px;
     line-height: 62px;
     text-transform: uppercase;
@@ -16867,7 +16878,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .advantage__content-title {
     font-family: "Nunito";
-    font-weight: 800;
+    font-weight: 700;
     font-size: 22px;
     line-height: 27px;
     text-align: center;
@@ -16878,7 +16889,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .advantage__content-descr {
     position: relative;
     font-family: "Nunito";
-    font-weight: 500;
+    font-weight: 400;
     font-size: 17px;
     line-height: 24px;
     text-align: center;
@@ -16937,7 +16948,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .advantage__footer-item-title {
     font-family: "Nunito";
-    font-weight: 700;
+    font-weight: 600;
     font-size: 36px;
     line-height: 43px;
     color: #000000;
@@ -16954,7 +16965,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .projects .projects__title {
     font-family: "Nunito";
-    font-weight: 800;
+    font-weight: 700;
     font-size: 35px;
     line-height: 62px;
     text-transform: uppercase;
@@ -17035,7 +17046,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .projects .projects__title {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 35px;
     line-height: 62px;
     text-transform: uppercase;
@@ -17073,7 +17084,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .page__address .address__item-header-title {
     position: relative;
     font-family: "Nunito";
-    font-weight: 800;
+    font-weight: 700;
     font-size: 18px;
     line-height: 1.5;
     text-transform: uppercase;
@@ -17104,7 +17115,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .page__address .address__item-text {
     font-family: "Nunito";
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 1px;
@@ -17130,7 +17141,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .page__address .address__list-item a {
     font-family: "Nunito";
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.6;
     text-transform: uppercase;
@@ -17148,7 +17159,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .page__address .address__row-footer .address__item-footer {
     font-family: "Nunito";
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     text-transform: uppercase;
@@ -17157,7 +17168,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .page__address .address__row-footer address {
     font-family: "Nunito";
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     text-transform: uppercase;
@@ -17175,7 +17186,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .page__address .questions__title {
     font-family: "Nunito";
-    font-weight: 700;
+    font-weight: 600;
     font-size: 35px;
     line-height: 48px;
     text-align: center;
@@ -17280,10 +17291,39 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     padding-bottom: 120px;
 }
 
+.history .uk-slider-items .uk-panel {
+    padding: 0 10px;
+    overflow: hidden;
+    height: 340px;
+}
+
+.history .uk-slider-items img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.history .uk-slider-nav li a {
+    border: 1px solid #64626a;
+}
+
+.history .uk-slider-nav li a:hover {
+    background: #f23e60;
+}
+
+.history .uk-slider-nav .uk-active a {
+    background: #f23e60;
+}
+
+.history .history__left {
+    padding: 0 20px;
+}
+
 .history__title {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 35px;
     line-height: 62px;
     text-transform: uppercase;
@@ -17293,6 +17333,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .history__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
     background: #ffffff;
     border: 1.52734px solid #ffffff;
@@ -17321,39 +17365,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     width: 60%;
 }
 
-.history__left {
-    width: 50%;
-    margin-bottom: 20px;
-    margin-right: 20px;
-}
-
-.history__left-float {
-    float: left;
-}
-
-.history__right-float {
-    float: right;
-    width: 49%;
-    margin-left: 20px;
-}
-
-.history__right {
-    width: 100%;
-}
-
-.history__left-img {
-    border-radius: 24px;
-    overflow: hidden;
-    height: 365px;
-}
-
-.history__left-img img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
 .history__right-img {
     border-radius: 0 250px 250px 0;
     overflow: hidden;
@@ -17362,7 +17373,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .history__right-title {
     font-family: "Nunito";
-    font-weight: 700;
+    font-weight: 600;
     font-size: 36px;
     line-height: 1.1;
     color: #000000;
@@ -17373,8 +17384,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .history__left p {
     font-family: "Nunito";
     font-weight: 400;
-    font-size: 17px;
-    line-height: 31px;
+    font-size: 20px;
+    line-height: 1.5;
     color: #64626a;
     margin-bottom: 25px;
 }
@@ -17385,15 +17396,15 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .history__footer-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
     margin-top: 150px;
 }
 
 .history__footer-row .history__left {
-    width: 100%;
-}
-
-.history__footer-row .history__right-float {
-    width: 49%;
+    margin-bottom: 20px;
 }
 
 .history__footer-row .history__right-img {
@@ -17409,7 +17420,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     position: relative;
     max-width: 465px;
     font-family: "Nunito";
-    font-weight: 700;
+    font-weight: 600;
     font-size: 36px;
     line-height: 1.1;
     text-transform: uppercase;
@@ -17425,12 +17436,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     width: 30%;
     height: 1px;
     background: #f23e60;
-}
-
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
 .company .company__list {
@@ -17486,7 +17491,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .company .company__title {
     font-family: "Poppins";
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 16px;
     color: #000B33;
@@ -17585,7 +17590,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .goods__text {
     font-family: "Nunito";
-    font-weight: 800;
+    font-weight: 700;
     font-size: 35px;
     line-height: 62px;
     text-transform: uppercase;
@@ -17627,7 +17632,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .goods__title {
     max-width: 236px;
     font-family: "Nunito";
-    font-weight: 700;
+    font-weight: 600;
     font-size: 22px;
     line-height: 30px;
     color: #3B3A40;
@@ -17668,7 +17673,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .calculator__title {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 35px;
     line-height: 58px;
     text-align: center;
@@ -17679,7 +17684,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .calculator__subtitle {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 27px;
     text-align: center;
@@ -17699,7 +17704,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .calculator__item-title {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 22px;
     line-height: 30px;
     color: #000000;
@@ -17741,7 +17746,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .calculator__list label {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 23px;
     line-height: 31px;
     text-align: center;
@@ -17759,7 +17764,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .calculator__box label {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 22px;
     line-height: 30px;
     color: #000000;
@@ -17788,13 +17793,13 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .calculator__box .calculator__price {
-    font-weight: 700;
+    font-weight: 600;
     min-height: 62px;
 }
 
 .calculator__box .calculator-option,
     .calculator__box .calculator-select {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .calculator__box .calculator-select {
@@ -17821,7 +17826,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     margin: 0 10px;
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 22px;
     line-height: 30px;
     color: #000;
@@ -17840,7 +17845,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .calculator__footer-price {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 22px;
     line-height: 30px;
     color: #000000;
@@ -17893,6 +17898,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 50px;
 }
 
@@ -17924,7 +17931,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .orders__title {
     font-family: "Nunito";
-    font-weight: 800;
+    font-weight: 700;
     font-size: 35px;
     line-height: 62px;
     text-transform: uppercase;
@@ -17946,8 +17953,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .orders__btn {
     border-top: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.orders__btn .btn {
+    padding: 12px 35px;
 }
 
 /* charact */
@@ -17988,7 +17999,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .charact .charact__title {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 19.5347px;
     line-height: 28px;
     text-transform: uppercase;
@@ -17999,7 +18010,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .charact .charact__subtitle {
     font-family: "Roboto";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 17px;
     line-height: 30px;
     color: #666666;
@@ -18085,7 +18096,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .page__products .page__products__card-title {
     max-width: 236px;
     font-family: "Nunito";
-    font-weight: 700;
+    font-weight: 600;
     font-size: 22px;
     line-height: 30px;
     color: #3B3A40;
@@ -18120,6 +18131,22 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     border-radius: 50%;
     background: #FFFFFF;
     box-shadow: 10px 10px 20px 10px rgba(34, 60, 80, 0.2);
+}
+
+.page__products .uk-pagination li {
+    background: #ffffff;
+    border: 1px solid #eae9f2;
+    border-radius: 5px;
+}
+
+.page__products .uk-pagination li a, .page__products .uk-pagination li span {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 29px;
+    text-align: center;
+    color: #19191b;
 }
 
 .newsPage .uk-card-media-top {
@@ -18170,7 +18197,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .newsDayPage__descr {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: -0.500211px;
@@ -18214,7 +18241,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .newsPage .newsPage__supDate {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: -0.500211px;
@@ -18223,7 +18250,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .newsPage .uk-card-title {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 21px;
     line-height: 32px;
     letter-spacing: -0.656526px;
@@ -18233,7 +18260,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .newsPage p {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     color: #767581;
@@ -18243,7 +18270,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .newsPage .newsPage__link {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     line-height: 28px;
     color: #f04037;
@@ -18333,7 +18360,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .newsPage__list-title {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 24px;
     line-height: 32px;
     color: #ffffff;
@@ -18343,7 +18370,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .newsPage__item-text {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     line-height: 26px;
     color: #ffffff;
@@ -18352,7 +18379,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .newsPage__item-subDate {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 14px;
     line-height: 26px;
     color: rgba(255, 255, 255, 0.7);
@@ -18385,7 +18412,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .newsPage__item-post {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 14px;
     line-height: 26px;
     color: rgba(255, 255, 255, 0.7);
@@ -18423,7 +18450,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .newsPage .uk-pagination li a {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 21px;
     line-height: 29px;
     text-align: center;
@@ -18432,7 +18459,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .newsPage .uk-pagination li span {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 21px;
     line-height: 29px;
     text-align: center;
@@ -18455,7 +18482,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .newsDayPage .uk-table tbody th {
-    font-weight: bold;
+    font-weight: 600;
     padding: 7px;
     background: #ffd300;
     border: none;
@@ -18474,7 +18501,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .newsDayPage .table th {
-    font-weight: bold;
+    font-weight: 600;
     padding: 7px;
     background: #ffd300;
     border: none;
@@ -18546,7 +18573,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .newsDayPage__left p {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: -0.500211px;
@@ -18557,7 +18584,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .newsDayPage__text {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     line-height: 26px;
     color: #696871;
@@ -18572,7 +18599,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .newsDayPage__inner .uk-card {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     line-height: 26px;
     color: #696871;
@@ -18952,6 +18979,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         padding: 12px 22px;
     }
   /* orders */
+    .orders .orders__row {
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
     .orders .orders__left {
         height: 450px;
     }
@@ -18960,6 +18992,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         margin-right: 20px;
     }
   /* history */
+    .history .history__row {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
     .history .history__left-img,
   .history .history__right-img {
         height: 450px;
@@ -18967,6 +19004,40 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .history .history__right-descr {
         line-height: 1.4;
+    }
+
+    .history .history__left {
+        margin-top: 50px;
+    }
+
+    .history .history__right {
+        margin-top: 20px;
+    }
+
+    .history .order {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .history .history__right-title {
+        text-align: center;
+    }
+
+    .history .history__left-title {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .history .history__left-title::after {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        bottom: -15px;
+    }
+
+    .history__right-img {
+        border-radius: 0;
     }
   /* newsPage */
     .newsPage .uk-card-media-top {
@@ -18979,6 +19050,14 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   /* header */
     .header .header__inner {
         min-height: 120px;
+    }
+
+    .header .header__burder-tel {
+        display: block;
+    }
+
+    .header .header__tel {
+        display: none;
     }
   /* home */
     .home {
@@ -19491,6 +19570,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .history .history__left {
+        width: 100%;
         margin-bottom: 0;
     }
 
@@ -19994,7 +20074,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         font-size: 16px;
         line-height: 1.3;
         margin-bottom: 5px;
-        font-weight: 800;
+        font-weight: 700;
     }
 
     .newsPage .newsPage__link {
@@ -20151,7 +20231,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .history .history__left-title {
-        max-width: 100%;
+        width: 100%;
         text-align: center;
         margin-bottom: 30px;
     }
@@ -20514,7 +20594,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .questions .questions__title {
-        font-weight: 700;
+        font-weight: 600;
         font-size: 26px;
         margin-bottom: 0;
         line-height: 1.2;
@@ -20522,10 +20602,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .questions .questions__subtitle {
         margin-bottom: 25px;
-    }
-
-    .questions .questions__subtitle {
-        font-weight: 20;
     }
 
     .questions .questions__footer .btn {
@@ -20592,7 +20668,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .footer .contact .contact__title {
-        font-weight: 800;
+        font-weight: 700;
         font-size: 26px;
         margin-bottom: 10px;
     }
@@ -20698,6 +20774,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         height: 220px;
     }
   /* page__products */
+    .page__products li {
+        margin-right: 10px;
+    }
+
     .page__products .uk-card-media-top {
         height: 120px;
     }
@@ -20724,6 +20804,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .page__products .company__arrow a {
         width: 10px;
         height: 10px;
+    }
+
+    .page__products .uk-pagination li a,
+  .page__products .uk-pagination li span {
+        font-size: 18px;
     }
   /* orders */
     .orders .orders__title {
@@ -20788,16 +20873,16 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .home .home__footer-title {
         font-size: 26px;
-        font-weight: 900;
-    }
-
-    .home .home__footer-subtitle {
-        font-size: 18px;
-    }
-
-    .home .home__footer-subtitle {
-        font-size: 18px;
         font-weight: 700;
+    }
+
+    .home .home__footer-subtitle {
+        font-size: 18px;
+    }
+
+    .home .home__footer-subtitle {
+        font-size: 18px;
+        font-weight: 600;
     }
   /* form */
     .form__modal .form__title {

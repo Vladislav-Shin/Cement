@@ -36,7 +36,7 @@
     }
 
     .nav__link {
-        margin: 0 11px;
+        margin: 0 10px;
     }
 
     .uk-offcanvas-bar {
@@ -120,6 +120,11 @@
     }
 
     .header {
+
+        .header__logo {
+            width: 35%;
+        }
+
         .header__wrap-btns {
             display: flex;
             align-items: center;
@@ -1075,6 +1080,12 @@
 @media (max-width: 767px) {
     .container {
         padding: 0 20px;
+    }
+
+    .header {
+        .header__logo {
+            width: 49%;
+        }
     }
 
     .header__footer {
@@ -2436,6 +2447,11 @@
                 }
             }
         }
+    }
+
+    .burger {
+        width: 25px;
+        height: 20px;
     }
 }
 

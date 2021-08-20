@@ -12840,6 +12840,13 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   align-items: center;
   min-height: 170px; }
 
+.header__logo {
+  width: 22%; }
+  .header__logo a {
+    width: 100%; }
+    .header__logo a img {
+      width: 100%; }
+
 /* Фон для других страниц */
 .header__footer {
   text-align: center;
@@ -13696,7 +13703,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .nav__link {
   font-size: 18px;
   color: #000;
-  margin: 0 20px;
+  margin: 0 14px;
   transition: color 0.2s linear;
   border: none;
   text-transform: capitalize; }
@@ -13909,15 +13916,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   border-bottom: 1px solid rgba(105, 120, 131, 0.4);
   padding-bottom: 40px; }
   .footer__row .footer__accordion {
-    width: 32%;
-    display: flex;
-    justify-content: center; }
-
-.footer__item:first-child {
-  width: 20%; }
-
-.footer__item:last-child {
-  width: 20%; }
+    display: flex; }
 
 .footer-flex {
   display: flex;
@@ -14028,7 +14027,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   width: 180px;
   height: 60px;
   cursor: pointer;
-  background: linear-gradient(180deg, #000, #8d8d99);
+  background: transparent;
   outline: none;
   transition: 1s ease-in-out;
   border-radius: 5px; }
@@ -15526,7 +15525,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   .header .header__lang .uk-dropdown a {
     margin: 0 11px; }
   .nav__link {
-    margin: 0 11px; }
+    margin: 0 10px; }
   .uk-offcanvas-bar .nav__link {
     margin: 0; }
   .news .news__item.uk-active {
@@ -15571,6 +15570,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     padding: 0 80px; }
   .nav {
     display: none; }
+  .header .header__logo {
+    width: 35%; }
   .header .header__wrap-btns {
     display: flex;
     align-items: center; }
@@ -16073,6 +16074,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 @media (max-width: 767px) {
   .container {
     padding: 0 20px; }
+  .header .header__logo {
+    width: 49%; }
   .header__footer {
     margin-bottom: -180px; }
   .home__container {
@@ -16793,7 +16796,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
       .newsPage .uk-pagination li a,
       .newsPage .uk-pagination li span {
         font-size: 16px;
-        line-height: 16px; } }
+        line-height: 16px; }
+  .burger {
+    width: 25px;
+    height: 20px; } }
 
 /* Iphone 5 - 320px*/
 @media (max-width: 320px) {
