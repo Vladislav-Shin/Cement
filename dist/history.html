@@ -76,14 +76,21 @@
         
         				<div class="header__lang">
         					<div class="uk-inline">
-        						<button class="uk-button uk-button-default  nav__link lang-ru" type="button">RU</button>
+        						<button class="uk-button uk-button-default  nav__link lang-ru" type="button">
+        							<span><img src="assets/images/ru.png" alt=""></span>Ru</button>
         						<div uk-dropdown="mode: click">
         							<ul class="nav__dropdown">
         								<li>
-        									<a class="lang-en" href="">EN</a>
+        									<a class="lang-en" href="">
+        										<span>
+        											<img src="assets/images/en.png" alt="">
+        										</span>En</a>
         								</li>
         								<li>
-        									<a href="lang-cn">CN</a>
+        									<a class="lang-uz" href="">
+        										<span>
+        											<img src="assets/images/uz.png" alt="">
+        										</span>Uz</a>
         								</li>
         							</ul>
         						</div>
@@ -103,7 +110,6 @@
         					<div class="uk-offcanvas-bar">
         
         						<button class="uk-offcanvas-close" type="button" uk-close></button>
-        
         
         						<ul class="nav__list">
         							<li class="nav__item">
@@ -139,38 +145,9 @@
         						<div class="header__burder-tel">
         							<a class="header__telephone  btn  btn-blue" href="tel:+998999366888">+99899 936-68-88</a>
         						</div>
-        
-        						<!-- <button class="uk-button uk-button-default" type="button">Ru</button>
-        
-        						<div class="uk-width-large" uk-dropdown>
-        							<div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
-        								<div>
-        									<ul class="uk-nav uk-dropdown-nav">
-        										<li><a href="#">Ru</a></li>
-        										<li><a href="#">Анг</a></li>
-        										<li><a href="#">Кит</a></li>
-        									</ul>
-        								</div>
-        							</div>
-        						</div> -->
         					</div>
         				</div>
-        
-        				<!-- <button class="uk-button uk-button-default  lang" type="button">Ru</button>
-        
-        				<div class="uk-width-large" uk-dropdown>
-        					<div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
-        						<div>
-        							<ul class="uk-nav uk-dropdown-nav">
-        								<li><a href="#">Ru</a></li>
-        								<li><a href="#">Анг</a></li>
-        								<li><a href="#">Кит</a></li>
-        							</ul>
-        						</div>
-        					</div>
-        				</div> -->
         			</div>
-        		</div>
         </header>
         
         <div class="history">
@@ -189,11 +166,57 @@
         
             <div class="container">
                 <div class="history__inner">
-                    <div class="history__row">
-                        <div class="history__left history__left-float  clearfix">
-                            <div class="history__left-img">
-                                <img src="assets/images/products-1.webp" alt="">
+                    <div class="history__row  uk-child-width-1-2@l uk-flex-wrap uk-flex-between">
+                        <div class="history__left order">
+        
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+                                <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-1@m uk-grid">
+                                    <li>
+                                        <div class="uk-panel">
+                                            <img src="assets/images/advantage-1.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-panel">
+                                            <img src="assets/images/advantage-1.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-panel">
+                                            <img src="assets/images/advantage-1.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-panel">
+                                            <img src="assets/images/advantage-1.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-panel">
+                                            <img src="assets/images/advantage-1.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-panel">
+                                            <img src="assets/images/advantage-1.jpg" alt="">
+                                        </div>
+                                    </li>
+        
+                                </ul>
+        
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                                    uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                                    uk-slider-item="next"></a>
+        
+                                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
                             </div>
+        
+        
+                            <!--                     <div class="history__left-img">
+                                <img src="assets/images/products-1.webp" alt="">
+                            </div> -->
                         </div>
                         <div class="history__right">
                             <h2 class="history__right-title">The New Standard Of Console Table</h2>
@@ -210,13 +233,7 @@
                         </div> <!-- history__right -->
                     </div> <!-- history__row -->
         
-                    <div class="history__footer-row ">
-                        <div class="history__right  history__right-float  clearfix">
-                            <div class="history__right-img">
-                                <img src="assets/images/history.png" alt="">
-                            </div>
-                        </div>
-        
+                    <div class="history__footer-row  uk-child-width-1-2@l uk-flex-wrap">
                         <div class="history__left">
                             <h3 class="history__left-title">The New Standard Of Console Table</h3>
                             <p>Разнообразный и богатый опыт консультация с широким активом
@@ -232,6 +249,12 @@
                                 развитие различных форм деятельности позволяет оценить значение новых предложений.
                                 Таким образом реализация намеченных плановых заданий позволяет оценить значение новых
                                 предложений. Если у вас есть какие то интересные предложения, обращайтесь!</p>
+                        </div>
+        
+                        <div class="history__right">
+                            <div class="history__right-img">
+                                <img src="assets/images/calc.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div> <!-- history__inner -->

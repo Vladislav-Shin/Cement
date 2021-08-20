@@ -51,7 +51,7 @@
     .page__products__card-title {
         max-width: 236px;
         font-family: "Nunito";
-        font-weight: 700;
+        font-weight: 600;
         font-size: 22px;
         line-height: 30px;
         color: #3B3A40;
@@ -82,6 +82,22 @@
             border-radius: 50%;
             background: #FFFFFF;
             box-shadow: 10px 10px 20px 10px rgba(34, 60, 80, 0.2);
+        }
+    }
+
+    .uk-pagination li {
+        background: #ffffff;
+        border: 1px solid #eae9f2;
+        border-radius: 5px;
+
+         a, span {
+            font-family: "Nunito";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 21px;
+            line-height: 29px;
+            text-align: center;
+            color: #19191b;
         }
     }
 }

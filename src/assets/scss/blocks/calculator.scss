@@ -10,7 +10,7 @@
     &__title {
         font-family: "Nunito";
         font-style: normal;
-        font-weight: 800;
+        font-weight: 700;
         font-size: 35px;
         line-height: 58px;
         text-align: center;
@@ -21,7 +21,7 @@
     &__subtitle {
         font-family: "Nunito";
         font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 20px;
         line-height: 27px;
         text-align: center;
@@ -39,7 +39,7 @@
         &-title {
             font-family: "Nunito";
             font-style: normal;
-            font-weight: 800;
+            font-weight: 700;
             font-size: 22px;
             line-height: 30px;
             color: #000000;
@@ -78,7 +78,7 @@
         label {
             font-family: "Nunito";
             font-style: normal;
-            font-weight: normal;
+            font-weight: 400;
             font-size: 23px;
             line-height: 31px;
             text-align: center;
@@ -94,7 +94,7 @@
         label {
             font-family: "Nunito";
             font-style: normal;
-            font-weight: 800;
+            font-weight: 600;
             font-size: 22px;
             line-height: 30px;
             color: #000000;
@@ -123,13 +123,13 @@
         }
 
         .calculator__price {
-            font-weight: 700;
+            font-weight: 600;
             min-height: 62px;
         }
 
         .calculator-option,
         .calculator-select {
-            font-weight: 600;
+            font-weight: 500;
         }
 
         .calculator-select {
@@ -155,7 +155,7 @@
             margin: 0 10px;
             font-family: "Nunito";
             font-style: normal;
-            font-weight: 800;
+            font-weight: 700;
             font-size: 22px;
             line-height: 30px;
             color: #000;
@@ -173,7 +173,7 @@
 .calculator__footer-price {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 22px;
     line-height: 30px;
     color: #000000;

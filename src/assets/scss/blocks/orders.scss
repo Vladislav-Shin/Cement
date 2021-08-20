@@ -4,6 +4,7 @@
 .orders__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 50px;
 }
 
@@ -37,7 +38,7 @@
 
 .orders__title {
     font-family: "Nunito";
-    font-weight: 800;
+    font-weight: 700;
     font-size: 35px;
     line-height: 62px;
     text-transform: uppercase;
@@ -59,9 +60,12 @@
 .orders__btn {
     border-top: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
-    ;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .btn {
+        padding: 12px 35px;
+    }
 }
 
 /* charact */
@@ -100,7 +104,7 @@
     .charact__title {
         font-family: "Nunito";
         font-style: normal;
-        font-weight: bold;
+        font-weight: 600;
         font-size: 19.5347px;
         line-height: 28px;
         text-transform: uppercase;
@@ -111,7 +115,7 @@
     .charact__subtitle {
         font-family: "Roboto";
         font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 17px;
         line-height: 30px;
         color: #666666;

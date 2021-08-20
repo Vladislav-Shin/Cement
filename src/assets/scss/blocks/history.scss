@@ -1,11 +1,48 @@
 .history {
     padding-bottom: 120px;
+
+    .uk-slider-items {
+    
+        .uk-panel {
+            padding: 0 10px;
+            overflow: hidden;
+            height: 340px;
+        }
+    
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .uk-slider-nav  {
+        li {
+            a {
+                border: 1px solid #64626a;
+
+                &:hover {
+                    background: #f23e60;
+                }
+            }
+        }
+
+        .uk-active {
+            a {
+                background: #f23e60;
+            }
+        }
+    }
+
+    .history__left {
+        padding: 0 20px;
+    }
 }
 
 .history__title {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 35px;
     line-height: 62px;
     text-transform: uppercase;
@@ -15,6 +52,8 @@
 }
 
 .history__row {
+    display: flex;
+    align-items: center;
     position: relative;
     background: #ffffff;
     border: 1.52734px solid #ffffff;
@@ -43,37 +82,7 @@
     }
 }
 
-.history__left {
-    width: 50%;
-    margin-bottom: 20px;
-    margin-right: 20px;
-}
 
-.history__left-float {
-    float: left;
-}
-
-.history__right-float {
-    float: right;
-    width: 49%;
-    margin-left: 20px;
-}
-
-.history__right {
-    width: 100%;
-}
-
-.history__left-img {
-    border-radius: 24px;
-    overflow: hidden;
-    height: 365px;
-
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-}
 
 .history__right-img {
     border-radius: 0 250px 250px 0;
@@ -83,7 +92,7 @@
 
 .history__right-title {
     font-family: "Nunito";
-    font-weight: 700;
+    font-weight: 600;
     font-size: 36px;
     line-height: 1.1;
     color: #000000;
@@ -95,8 +104,8 @@
     p {
         font-family: "Nunito";
         font-weight: 400;
-        font-size: 17px;
-        line-height: 31px;
+        font-size: 20px;
+        line-height: 1.5;
         color: #64626a;
         margin-bottom: 25px;
     
@@ -107,14 +116,12 @@
 }
 
 .history__footer-row {
+    display: flex;
+    align-items: center;
     margin-top: 150px;
 
     .history__left {
-        width: 100%;
-    }
-
-    .history__right-float {
-        width: 49%;
+        margin-bottom: 20px;
     }
 
     .history__right-img {
@@ -131,7 +138,7 @@
     position: relative;
     max-width: 465px;
     font-family: "Nunito";
-    font-weight: 700;
+    font-weight: 600;
     font-size: 36px;
     line-height: 1.1;
     text-transform: uppercase;
@@ -149,8 +156,3 @@
     }
 }
 
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-}

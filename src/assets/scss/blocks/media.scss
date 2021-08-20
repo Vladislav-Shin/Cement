@@ -386,6 +386,11 @@
 
     /* orders */
     .orders {
+
+        .orders__row {
+            align-items: flex-start;
+        }
+
         .orders__left {
             height: 450px;
         }
@@ -400,6 +405,11 @@
 
     /* history */
     .history {
+
+        .history__row {
+            justify-content: center;
+        }
+        
         .history__left-img,
         .history__right-img {
             height: 450px;
@@ -408,14 +418,47 @@
         .history__right-descr {
             line-height: 1.4;
         }
+
+        .history__left {
+            margin-top: 50px;
+        }
+
+        .history__right {
+            margin-top: 20px;
+        }
+
+        .order {
+            order: 2;
+        }
+
+        .history__right-title {
+            text-align: center;
+        }
+
+        .history__left-title {
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+
+            &::after {
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -15px;
+            }
+        }
     }
 
+    .history__right-img {
+        border-radius: 0;
+    }
     /* newsPage */
     .newsPage {
         .uk-card-media-top {
             height: 290px;
         }
     }
+
+    
 }
 
 /* Portrait tablets and small desktops - 991px */
@@ -425,8 +468,13 @@
         .header__inner {
             min-height: 120px;
         }
+        .header__burder-tel {
+            display: block;
+        }
     }
-
+    .header .header__tel {
+        display: none;
+    }
     /* home */
     .home {
         margin-bottom: 380px;
@@ -998,6 +1046,7 @@
         }
 
         .history__left {
+            width: 100%;
             margin-bottom: 0;
         }
 
@@ -1536,7 +1585,7 @@
             font-size: 16px;
             line-height: 1.3;
             margin-bottom: 5px;
-            font-weight: 800;
+            font-weight: 700;
         }
 
         .newsPage__link {
@@ -1713,7 +1762,7 @@
         }
 
         .history__left-title {
-            max-width: 100%;
+            width: 100%;
             text-align: center;
             margin-bottom: 30px;
 
@@ -2100,7 +2149,7 @@
         }
 
         .questions__title {
-            font-weight: 700;
+            font-weight: 600;
             font-size: 26px;
             margin-bottom: 0;
             line-height: 1.2;
@@ -2108,10 +2157,6 @@
 
         .questions__subtitle {
             margin-bottom: 25px;
-        }
-
-        .questions__subtitle {
-            font-weight: 20;
         }
 
         .questions__footer {
@@ -2188,7 +2233,7 @@
             }
 
             .contact__title {
-                font-weight: 800;
+                font-weight: 700;
                 font-size: 26px;
                 margin-bottom: 10px;
             }
@@ -2311,6 +2356,11 @@
 
     /* page__products */
     .page__products {
+
+        li {
+            margin-right: 10px;
+        }
+
         .uk-card-media-top {
             height: 120px;
         }
@@ -2343,6 +2393,11 @@
                 width: 10px;
                 height: 10px;
             }
+        }
+
+        .uk-pagination li a, 
+        .uk-pagination li span {
+            font-size: 18px;
         }
     }
 
@@ -2421,16 +2476,16 @@
 
         .home__footer-title {
             font-size: 26px;
-            font-weight: 900;
-        }
-
-        .home__footer-subtitle {
-            font-size: 18px;
-        }
-
-        .home__footer-subtitle {
-            font-size: 18px;
             font-weight: 700;
+        }
+
+        .home__footer-subtitle {
+            font-size: 18px;
+        }
+
+        .home__footer-subtitle {
+            font-size: 18px;
+            font-weight: 600;
         }
     }
 

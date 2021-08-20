@@ -15227,10 +15227,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 /* home */
-.home {
-    margin-bottom: 500px;
-}
-
 .home__container {
     max-width: 1900px;
     margin: 0 auto;
@@ -15240,14 +15236,14 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .home__content {
     position: relative;
     min-height: 1200px;
-    background: url("../images/home-bg.webp") center no-repeat;
+    background: url("../images/home-bg.png") center no-repeat;
     background-size: cover;
     border-radius: 45px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 105px 250px;
+    padding: 105px 190px;
 }
 
 .home__content::before {
@@ -15384,6 +15380,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .products {
     background: rgba(43, 153, 255, 0.1);
     padding-bottom: 165px;
+    margin-top: 500px;
 }
 
 .products .products__content {
@@ -16387,9 +16384,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     font-family: "Nurito", sans-serif;
     width: 100%;
     border-radius: 90px;
-    padding: 20px 25px;
+    padding: 12px 25px;
     font-size: 16px;
     outline: none;
+    border: 1px solid rgba(28, 56, 99, 0.8);
 }
 
 .form__modal-input::-webkit-input-placeholder, .form__modal-textarea::-webkit-input-placeholder {
@@ -16415,7 +16413,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .form__modal-input:focus,
   .form__modal-textarea:focus {
-    box-shadow: 0 0 0 2px #bdc3cdf7;
+    border: 1px solid #000;
 }
 
 .form__modal-textarea {

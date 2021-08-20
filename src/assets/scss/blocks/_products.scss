@@ -3,12 +3,11 @@
 
 .products {
 	background: rgba(43, 153, 255, 0.1);
+	padding-top: 70px;
 	padding-bottom: 165px;
-	margin-top: 500px;
 
 	.products__content {
 		position: relative;
-		transform: translateY(-50%);
 
 		background: #fff;
 		border-radius: 55px;
@@ -38,7 +37,7 @@
 
 	.products__title {
 		font-family: "Nunito";
-		font-weight: 800;
+		font-weight: 700;
 		font-size: 35px;
 		line-height: 62px;
 		text-align: center;
@@ -55,7 +54,7 @@
 
 		color: #fff;
 		font-size: 26px;
-		font-weight: 700;
+		font-weight: 600;
 		line-height: 1.4;
 		text-transform: uppercase;
 		padding: 30px;
@@ -145,7 +144,7 @@
 .scheme__title {
 	font-size: 35px;
 	font-family: "Nunito";
-	font-weight: 800;
+	font-weight: 600;
 	text-transform: uppercase;
 	color: #000;
 	text-align: center;
@@ -241,7 +240,7 @@
 .scheme__content-title {
 	position: relative;
 	font-size: 30px;
-	font-weight: 800;
+	font-weight: 700;
 	color: rgba(9, 40, 83, 1);
 	margin-bottom: 58px;
 
@@ -272,7 +271,7 @@
 		display: inline-block;
 		color: #0068CF;
 		font-size: 22px;
-		font-weight: 700;
+		font-weight: 600;
 		text-transform: uppercase;
 		text-align: center;
 		line-height: 1.8;
