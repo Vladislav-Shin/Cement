@@ -15046,6 +15046,18 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     min-height: 170px;
 }
 
+.header__logo {
+    width: 22%;
+}
+
+.header__logo a {
+    width: 100%;
+}
+
+.header__logo a img {
+    width: 100%;
+}
+
 /* Фон для других страниц */
 .header__footer {
     text-align: center;
@@ -15058,7 +15070,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .header__footer-title {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -15149,7 +15161,13 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .header__wrap-btns .header__lang .uk-dropdown a {
-    margin: 0 20px;
+    margin: 0 14px;
+}
+
+.header__lang .uk-inline .lang-ru span img,
+.header__lang .uk-inline .lang-en span img,
+.header__lang .uk-inline .lang-uz span img {
+    margin-top: -5px;
 }
 
 /* uikit */
@@ -15257,11 +15275,15 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .home__content-row {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .home__content {
     position: relative;
-    min-height: 1200px;
+    min-height: 100vh;
     background: url("../images/home-bg.png") center no-repeat;
     background-size: cover;
     border-radius: 45px;
@@ -15284,7 +15306,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .home__left {
-    padding-top: 130px;
     width: 58%;
     color: #fff;
 }
@@ -15306,20 +15327,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     font-size: 25px;
     font-weight: 500;
     line-height: 1.4;
-    padding-left: 60px;
-}
-
-.home__subtitle::before {
-    padding-left: 6px;
-    content: "\2713";
-    color: #000;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 31px;
-    height: 31px;
-    background: #F9B816;
-    border-radius: 50%;
 }
 
 /* home__footer */
@@ -15944,6 +15951,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     overflow: hidden;
 }
 
+.news .uk-slider-items {
+    -webkit-transform: translate3d(1200px, 0, 0);
+    transform: translate3d(1200px, 0, 0);
+}
+
 @media (min-width: 1200px) {
     .uk-grid > * {
         padding-left: 0;
@@ -16186,7 +16198,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .nav__link {
     font-size: 18px;
     color: #000;
-    margin: 0 20px;
+    margin: 0 14px;
     transition: color 0.2s linear;
     border: none;
     text-transform: capitalize;
@@ -16477,20 +16489,13 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     padding-bottom: 40px;
 }
 
+.footer__row:first-child {
+    border: none;
+}
+
 .footer__row .footer__accordion {
-    width: 32%;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.footer__item:first-child {
-    width: 20%;
-}
-
-.footer__item:last-child {
-    width: 20%;
 }
 
 .footer-flex {
@@ -16597,7 +16602,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    padding: 35px 0;
     text-align: center;
 }
 
@@ -16608,6 +16612,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     line-height: 1.6;
     letter-spacing: 0.004em;
     color: rgba(46, 46, 70, 0.8);
+    margin-bottom: 0;
 }
 
 .footer__form-inner {
@@ -16676,7 +16681,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     width: 180px;
     height: 60px;
     cursor: pointer;
-    background: linear-gradient(180deg, #000, #8d8d99);
+    background: transparent;
     outline: none;
     transition: 1s ease-in-out;
     border-radius: 5px;
@@ -16734,11 +16739,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .contact__inner {
     position: relative;
-    padding: 50px 100px;
-    margin: 0 60px;
+    padding: 30px 10px;
+    width: 70%;
     box-shadow: 45px 43px 183px rgba(27, 49, 66, 0.13);
     background: #fff;
     border-radius: 55px;
+    margin: 0 auto;
     margin-bottom: -175px;
 }
 
@@ -16787,7 +16793,14 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .contact__footer {
+    max-width: 70%;
+    margin: 0 auto;
     text-align: center;
+}
+
+.contact__footer .btn {
+    margin-bottom: 10px;
+    padding: 12px 32px;
 }
 
 .btn-contact {
@@ -17129,6 +17142,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding-left: 0;
 }
 
@@ -17241,10 +17256,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     border-radius: 95px;
     border: none;
     padding: 15px 25px;
+    border: 1px solid #ccc;
 }
 
 .page__address .questions__left-item input:focus {
-    border: 1px solid #000;
+    border: 1px solid #1e88e5;
+    box-shadow: inset 0 2px 1px rgba(51, 51, 51, 0.2);
 }
 
 .page__address .questions__left-item:last-child {
@@ -17271,11 +17288,16 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .page__address .questions__right-item textarea {
     background: #ffffff;
     box-shadow: 0px 17px 36px rgba(0, 0, 0, 0.03);
+    border: 1px solid #ccc;
     border-radius: 36px;
-    border: none;
     resize: none;
     padding: 25px;
     height: 100%;
+}
+
+.page__address .questions__right-item textarea:focus {
+    border: 1px solid #1e88e5;
+    box-shadow: inset 0 2px 1px rgba(51, 51, 51, 0.2);
 }
 
 .page__address .questions__footer {
@@ -18677,7 +18699,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .nav__link {
-        margin: 0 11px;
+        margin: 0 10px;
     }
 
     .uk-offcanvas-bar .nav__link {
@@ -18686,6 +18708,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .news .news__item.uk-active {
         opacity: 1;
+    }
+
+    .contact__footer .btn {
+        font-size: 20px;
     }
 }
 
@@ -18745,6 +18771,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .nav {
         display: none;
+    }
+
+    .header .header__logo {
+        width: 35%;
     }
 
     .header .header__wrap-btns {
@@ -18873,9 +18903,13 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
   /* contact */
     .contact .btn-orange {
-        font-size: 24px;
+        font-size: 18px;
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    .contact .contact__inner {
+        width: 100%;
     }
   /* footer */
     .footer .footer__row {
@@ -18884,12 +18918,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .footer .footer__item {
-        width: 31%;
         margin-bottom: 15px;
     }
 
     .footer .footer__item:first-child {
-        width: 50%;
         margin-right: 20px;
     }
 
@@ -18914,18 +18946,9 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         font-size: 36px;
     }
 
-    .footer [hidden],
-  .footer .uk-hidden {
-        display: none !important;
-    }
-
     .footer .uk-accordion-title {
         pointer-events: auto;
         margin-bottom: 10px;
-    }
-
-    .footer .uk-accordion-title::before {
-        display: block;
     }
 
     .footer .uk-accordion-content {
@@ -18934,10 +18957,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .footer .footer__accordion {
         margin: 0;
-    }
-
-    .footer .footer-width {
-        width: 100%;
     }
   /* projects */
     .projects .projects__header {
@@ -19598,6 +19617,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 @media (max-width: 767px) {
     .container {
         padding: 0 20px;
+    }
+
+    .header .header__logo {
+        width: 49%;
     }
 
     .header__footer {
@@ -20837,6 +20860,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
       .newsPage .uk-pagination li span {
         font-size: 16px;
         line-height: 16px;
+    }
+
+    .burger {
+        width: 25px;
+        height: 20px;
     }
 }
 

@@ -9,7 +9,7 @@
 
 	.uk-card-media-top {
 		height: 330px;
-		
+
 		img {
 			width: 100%;
 			height: 100%;
@@ -158,11 +158,12 @@
 	overflow: hidden;
 }
 
+
 @media (min-width: 1200px) {
 	.uk-grid > * {
-		padding-left: 0; 
+		padding-left: 0;
 	}
-	 .news__item.uk-active {
-		 opacity: 1;
-	 }
+	.news__item.uk-active {
+		opacity: 1;
+	}
 }

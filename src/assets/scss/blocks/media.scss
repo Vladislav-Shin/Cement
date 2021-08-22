@@ -50,6 +50,11 @@
             opacity: 1;
         }
     }
+
+    .contact__footer .btn {
+        font-size: 20px;
+    }
+
 }
 
 /* Breakpoints 1450 */
@@ -186,6 +191,13 @@
 
 /* Landscape tablets and medium desktops - 1199px */
 @media (max-width: 1199px) {
+    .home {
+        .home__title {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    }
+
     /* scheme */
     .scheme {
         .scheme__list-items {
@@ -273,9 +285,13 @@
     /* contact */
     .contact {
         .btn-orange {
-            font-size: 24px;
+            font-size: 18px;
             padding-left: 40px;
             padding-right: 40px;
+        }
+
+        .contact__inner {
+            width: 100%;
         }
     }
 
@@ -286,11 +302,9 @@
         }
 
         .footer__item {
-            width: 31%;
             margin-bottom: 15px;
 
             &:first-child {
-                width: 50%;
                 margin-right: 20px;
             }
         }
@@ -312,18 +326,9 @@
             font-size: 36px;
         }
 
-        [hidden],
-        .uk-hidden {
-            display: none !important;
-        }
-
         .uk-accordion-title {
             pointer-events: auto;
             margin-bottom: 10px;
-
-            &::before {
-                display: block;
-            }
         }
         .uk-accordion-content {
             margin-top: 0;
@@ -333,10 +338,6 @@
             margin: 0;
         }
 
-
-        .footer-width {
-            width: 100%;
-        }
     }
 
     /* projects */
@@ -375,11 +376,11 @@
 
         .uk-card-body {
             padding: 10px;
-            padding-bottom: 20px;
+            padding-bottom: 40px;
         }
 
         .uk-card-default {
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
 
         .page__products__footer {
@@ -426,6 +427,8 @@
 
         .history__left {
             margin-top: 50px;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         .history__right {
@@ -434,6 +437,7 @@
 
         .order {
             order: 2;
+            width: 80%;
         }
 
         .history__right-title {
@@ -482,12 +486,9 @@
     }
     /* home */
     .home {
-        margin-bottom: 380px;
 
         .home__content {
-            min-height: 920px;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding: 0 80px;
         }
 
         .home__title {
@@ -695,7 +696,9 @@
 
         .calculator__item {
             width: 100%;
+            margin-bottom: 30px;
         }
+
     }
 
     /* contact */
@@ -1074,6 +1077,16 @@
             margin-bottom: 20px;
         }
     }
+
+    .footer {
+        .footer-width {
+            width: 35%;
+        }
+
+        .contact__footer {
+            max-width: 90%;
+        }
+    }
 }
 
 /* Landscape phones and portrait tablets - 767px*/
@@ -1139,7 +1152,6 @@
         .home__content {
             flex-wrap: wrap;
             justify-content: center;
-            min-height: 880px;
             padding: 10px;
             margin-bottom: 90px;
         }
@@ -1153,9 +1165,6 @@
             width: 100%;
         }
 
-        .home__left {
-            padding-top: 70px;
-        }
 
         .home__subtitle {
             margin-bottom: 15px;
@@ -1411,6 +1420,10 @@
             width: 100%;
             justify-content: flex-start;
             margin-left: 0;
+        }
+
+        .footer-width {
+            width: 100%;
         }
     }
 
@@ -1820,7 +1833,14 @@
         }
 
         .history__left {
+            margin-top: 20px;
             padding: 10px;
+        }
+
+        .uk-slider-items {
+            .uk-panel {
+                height: 200px;
+            }
         }
     }
 
@@ -1911,7 +1931,6 @@
         .home__content {
             flex-direction: column;
             justify-content: flex-start;
-            min-height: 1030px;
             padding: 15px;
             margin-bottom: 0;
 
@@ -2372,24 +2391,32 @@
             margin-right: 10px;
         }
 
+        .uk-card-default {
+            width: 100%;
+        }
+
         .uk-card-media-top {
-            height: 120px;
+            height: 220px;
+            padding: 10px;
         }
 
         .page__products__card-title {
-            font-size: 12px;
-            line-height: 1.1;
+            max-width: 100%;
+            font-size: 18px;
+            line-height: 1.4;
+            text-align: center;
             margin-bottom: 5px;
         }
 
         .page__products__card-subtitle {
-            font-size: 12px;
-            line-height: 1.1;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.4;
         }
 
         .page__products__footer {
             .btn-orange {
-                padding: 8px 15px;
+                padding: 12px 24px;
             }
         }
 
@@ -2464,7 +2491,6 @@
     /* home */
     .home {
         .home__content {
-            min-height: 1200px;
         }
 
         .home__title {

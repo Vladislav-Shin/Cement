@@ -7,11 +7,16 @@
 
 .home__content-row {
 	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .home__content {
 	position: relative;
-	min-height: 1200px;
+	min-height: 100vh;
 	background: url("../images/home-bg.png") center no-repeat;
 	background-size: cover;
 	border-radius: 45px;
@@ -32,14 +37,15 @@
 }
 
 .home__left {
-	padding-top: 130px;
-	width: 58%;
+	width: 49%;
 	color: #fff;
 }
 
 .home__right {
-	width: 40%;
+	width: 49%;
 	overflow: hidden;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .home__title {
@@ -54,20 +60,6 @@
 	font-size: 25px;
 	font-weight: 500;
 	line-height: 1.4;
-	padding-left: 60px;
-
-	&::before {
-		padding-left: 6px;
-		content: "\2713";
-		color: #000;
-		position: absolute;
-		top: 10px;
-		left: 0;
-		width: 31px;
-		height: 31px;
-		background: #F9B816;
-		border-radius: 50%;
-	}
 }
 
 /* home__footer */

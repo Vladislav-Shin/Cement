@@ -29,7 +29,7 @@
 }
 
 .header__footer-title {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -46,7 +46,6 @@
 }
 
 .calculator {
-
     .header__footer {
         margin-top: 60px;
         transform: translatey(-70px);
@@ -109,17 +108,24 @@
         .uk-dropdown {
             left: 0 !important;
             top: 42px !important;
-            
+
             margin-top: 0;
             padding: 10px 0;
             min-width: auto;
             border-radius: 5px;
 
             a {
-                margin: 0 20px;
+                margin: 0 14px;
             }
         }
     }
+}
+
+
+.header__lang .uk-inline .lang-ru span img,
+.header__lang .uk-inline .lang-en span img,
+.header__lang .uk-inline .lang-uz span img {
+    margin-top: -5px;
 }
 
 /* uikit */
@@ -133,7 +139,7 @@
         span {
             display: inline-block;
             width: 30px;
-            
+
             img {
                 width: 100%;
                 height: 100%;
@@ -141,17 +147,15 @@
         }
 
         .lang-ru {
-
             span {
                 display: inline-block;
                 width: 30px;
-                
+
                 img {
                     width: 100%;
                     height: 100%;
                 }
             }
         }
-
     }
 }

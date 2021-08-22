@@ -19,6 +19,10 @@
     border-bottom: 1px solid rgba(105, 120, 131, 0.4);
     padding-bottom: 40px;
 
+    &:first-child {
+        border: none;
+    }
+
     .footer__accordion {
         display: flex;
     }
@@ -118,7 +122,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 0;
     text-align: center;
 }
 
@@ -129,6 +132,8 @@
     line-height: 1.6;
     letter-spacing: 0.004em;
     color: rgba(46, 46, 70, 0.8);
+    margin-bottom: 0;
+    
 }
 
 .footer__form-inner {
