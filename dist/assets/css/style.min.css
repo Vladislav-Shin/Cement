@@ -14000,14 +14000,14 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   border-radius: 50%;
   border: 1px solid #ff7468;
   margin-right: 25px;
-  transition: background-color 0.3s linear; }
+  transition: all 0.3s linear; }
+  .footer__app-social i {
+    transition: all 0.3s linear;
+    color: #ff7468; }
   .footer__app-social:hover {
     background: #ff7468; }
-  .footer__app-social img {
-    width: 22px;
-    height: 22px; }
-    .footer__app-social img:hover {
-      fill: #fff; }
+  .footer__app-social:hover > i {
+    color: #fff; }
 
 .footer__bottom {
   display: flex;

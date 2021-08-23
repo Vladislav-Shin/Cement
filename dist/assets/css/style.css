@@ -15281,8 +15281,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 70px;
+    padding-bottom: 200px;
 }
 
 .home__content {
@@ -15347,6 +15347,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .home__footer-left {
@@ -15488,10 +15490,16 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     object-fit: cover;
 }
 
+.products .products__left img {
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
 .products .products__left {
     max-height: 670px;
     border-radius: 19px;
     overflow: hidden;
+    box-shadow: 0px 3.06759px 30.6759px rgba(43, 89, 255, 0.08), 24.5297px 57.2359px 98.1188px rgba(27, 49, 66, 0.13);
 }
 
 .products .products__right {
@@ -15533,13 +15541,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     margin-top: -175px;
 }
 
-.products__left,
 .products__right-items {
     position: relative;
+    box-shadow: 0px 3.06759px 30.6759px rgba(43, 89, 255, 0.08), 24.5297px 57.2359px 98.1188px rgba(27, 49, 66, 0.13);
 }
 
-.products__left::after,
-  .products__right-items::after {
+.products__right-items::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -15956,6 +15963,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .news .uk-slider-container {
+    padding-left: 10px;
     overflow: hidden;
 }
 
@@ -16218,25 +16226,41 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .nav .uk-dropdown.uk-open {
-    border-radius: 5px;
+    left: -25px !important;
     padding: 10px;
     padding-left: 15px;
+    box-shadow: 0 6px 20px rgba(51, 51, 51, 0.2);
+    background: rgba(242, 62, 96, 0.9);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.nav .uk-dropdown.uk-open::after {
+    content: "";
+    position: absolute;
+    top: -19px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-bottom: 10px solid rgba(242, 62, 96, 0.9);
 }
 
 .nav .nav__dropdown {
-    border-radius: 5px;
     list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 0;
 }
 
 .nav .nav__dropdown a {
     display: inline-block;
-    color: #000;
+    color: #fff;
     margin-bottom: 5px;
 }
 
 .nav .nav__dropdown a:hover {
-    color: #f23e60;
+    color: #000;
 }
 
 .nav__list [hidden], .nav__list .uk-hidden {
@@ -19648,6 +19672,17 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .home__container {
         padding: 0;
     }
+
+    .home__content-row {
+        padding-bottom: 0;
+    }
+
+    .home__left {
+        max-width: 586px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
   /* header */
     .header .uk-offcanvas-bar .nav__link {
         font-size: 20px;
@@ -19727,7 +19762,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .home .home__footer-right {
-        max-width: 360px;
+        max-width: 90%;
         height: auto;
     }
 
@@ -19843,6 +19878,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .calculator__footer {
         text-align: center;
+    }
+
+    .calculator {
+        margin-bottom: 0;
     }
   /* advantage */
     .advantage {
@@ -20330,12 +20369,13 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .news .news__item {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        margin-left: 7.5px;
+        margin-left: 10px;
     }
 
     .news .uk-card {
         width: 100%;
         margin-bottom: 5px;
+        margin-right: 0;
     }
 
     .news .uk-card-media-top {
@@ -20409,12 +20449,16 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .home .home__content .home__left {
-        margin-bottom: 55px;
+        margin-bottom: 30px;
     }
 
     .home .home__content .home__left,
     .home .home__content .home__right {
         width: 100%;
+    }
+
+    .home .home__content-row {
+        padding-bottom: 0;
     }
 
     .home .home__subtitle {
@@ -20509,6 +20553,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .products .products__right-items {
         max-height: 191px;
     }
+
+    .news .news__item .uk-card {
+        margin-right: 0;
+    }
   /* scheme */
     .scheme .scheme__title {
         font-size: 26px;
@@ -20569,6 +20617,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         font-size: 20px;
     }
   /* calculator */
+    .calculator {
+        padding-bottom: 20px;
+    }
+
     .calculator .calculator__footer-price {
         text-align: center;
     }
@@ -20588,17 +20640,30 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         width: 100%;
     }
 
+    .calculator .calculator__row {
+        margin-top: 25px;
+    }
+
     .calculator .calculator__title {
         font-size: 26px;
+        line-height: 1.3;
+        margin-bottom: 5px;
     }
 
     .calculator .calculator__subtitle {
         font-size: 18px;
     }
+
+    .calculator .calculator__inner {
+        padding-top: 30px;
+    }
   /* partners */
     .partners .uk-slider-items li {
-        height: 140px;
-        max-width: 140px;
+        height: 100px;
+        max-width: 100px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 15px;
     }
 
     .partners .partners__title {
@@ -20613,6 +20678,15 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .partners .partners__inner {
         padding: 30px 0;
         min-height: 300px;
+    }
+
+    .partners .partners__wrapper {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .partners .partners__sliders {
+        margin: 0 10px;
     }
   /* questions */
     .questions .questions__inner {

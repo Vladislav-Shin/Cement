@@ -91,6 +91,7 @@
 .footer__app-socials {
     display: flex;
     margin-top: 20px;
+
 }
 
 .footer__app-social {
@@ -102,19 +103,19 @@
     border-radius: 50%;
     border: 1px solid #ff7468;
     margin-right: 25px;
-    transition: background-color 0.3s linear;
+    transition: all 0.3s linear;
+
+    i {
+        transition: all 0.3s linear;
+        color: #ff7468;
+    }
 
     &:hover {
         background: #ff7468;
     }
 
-    img {
-        width: 22px;
-        height: 22px;
-
-        &:hover {
-            fill: #fff;
-        }
+    &:hover>i {
+        color: #fff;
     }
 }
 
