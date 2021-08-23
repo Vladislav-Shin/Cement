@@ -15279,6 +15279,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .home__content {
@@ -15306,13 +15310,17 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 .home__left {
-    width: 58%;
+    width: 49%;
     color: #fff;
 }
 
 .home__right {
-    width: 40%;
+    width: 49%;
     overflow: hidden;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
 
 .home__title {
@@ -15951,11 +15959,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     overflow: hidden;
 }
 
-.news .uk-slider-items {
-    -webkit-transform: translate3d(1200px, 0, 0);
-    transform: translate3d(1200px, 0, 0);
-}
-
 @media (min-width: 1200px) {
     .uk-grid > * {
         padding-left: 0;
@@ -16411,7 +16414,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     padding: 12px 25px;
     font-size: 16px;
     outline: none;
-    border: 1px solid rgba(28, 56, 99, 0.8);
+    border: 1px solid #D3D3D3;
+    box-shadow: 0px 17px 36px rgba(0, 0, 0, 0.03);
 }
 
 .form__modal-input::-webkit-input-placeholder, .form__modal-textarea::-webkit-input-placeholder {
@@ -16437,7 +16441,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .form__modal-input:focus,
   .form__modal-textarea:focus {
-    border: 1px solid #000;
+    border: 1px solid #1e88e5;
+    box-shadow: inset 0 2px 1px rgba(51, 51, 51, 0.2);
 }
 
 .form__modal-textarea {
@@ -16445,6 +16450,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     resize: none;
     height: 134px;
     margin-bottom: 25px;
+    box-shadow: 0px 17px 36px rgba(0, 0, 0, 0.03);
 }
 
 .form__wrapper-input {
@@ -16461,10 +16467,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     border-radius: 20px;
 }
 
-/* 
-.form-error {
-	&::placeholder
-} */
+#modal-center .form__modal-input {
+    margin-bottom: 5px;
+}
+
 .footer {
     margin-top: 290px;
     padding-top: 100px;
@@ -17743,8 +17749,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .calculator__item-img img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
 }
 
 .calculator__list {
@@ -18073,8 +18077,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: 20px;
@@ -18099,6 +18101,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .page__products .uk-card-body {
     padding: 24px;
+    padding-bottom: 50px;
 }
 
 .page__products .uk-slider-container-offset {
@@ -18107,7 +18110,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .page__products .page__products__footer {
     text-align: center;
-    margin-bottom: -20px;
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .page__products .page__products__item {
@@ -18121,7 +18128,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     font-weight: 600;
     font-size: 22px;
     line-height: 30px;
-    color: #3B3A40;
+    color: #3b3a40;
     margin-bottom: 15px;
 }
 
@@ -18130,7 +18137,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.4;
-    color: #64626A;
+    color: #64626a;
 }
 
 .page__products .page__products__arrows {
@@ -18151,7 +18158,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     height: 45px;
     background: #fff;
     border-radius: 50%;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 10px 10px 20px 10px rgba(34, 60, 80, 0.2);
 }
 
@@ -18161,7 +18168,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     border-radius: 5px;
 }
 
-.page__products .uk-pagination li a, .page__products .uk-pagination li span {
+.page__products .uk-pagination li a,
+  .page__products .uk-pagination li span {
     font-family: "Nunito";
     font-style: normal;
     font-weight: 800;
@@ -18838,6 +18846,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 /* Landscape tablets and medium desktops - 1199px */
 @media (max-width: 1199px) {
+    .home .home__title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
   /* scheme */
     .scheme .scheme__list-items {
         padding: 0 15px;
@@ -18987,11 +18999,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .page__products .uk-card-body {
         padding: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     .page__products .uk-card-default {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 
     .page__products .page__products__footer .btn-orange {
@@ -19027,6 +19039,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .history .history__left {
         margin-top: 50px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .history .history__right {
@@ -19036,6 +19050,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .history .order {
         -ms-flex-order: 2;
         order: 2;
+        width: 80%;
     }
 
     .history .history__right-title {
@@ -19079,14 +19094,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         display: none;
     }
   /* home */
-    .home {
-        margin-bottom: 380px;
-    }
-
     .home .home__content {
-        min-height: 920px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0 80px;
     }
 
     .home .home__title {
@@ -19279,6 +19288,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .calculator .calculator__item {
         width: 100%;
+        margin-bottom: 30px;
     }
   /* contact */
     .contact .contact__inner {
@@ -19611,6 +19621,14 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .history .history__right-float {
         margin-bottom: 20px;
     }
+
+    .footer .footer-width {
+        width: 35%;
+    }
+
+    .footer .contact__footer {
+        max-width: 90%;
+    }
 }
 
 /* Landscape phones and portrait tablets - 767px*/
@@ -19667,7 +19685,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         flex-wrap: wrap;
         -ms-flex-pack: center;
         justify-content: center;
-        min-height: 880px;
         padding: 10px;
         margin-bottom: 90px;
     }
@@ -19679,10 +19696,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .home .home__left,
     .home .home__right {
         width: 100%;
-    }
-
-    .home .home__left {
-        padding-top: 70px;
     }
 
     .home .home__subtitle {
@@ -19938,6 +19951,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         -ms-flex-pack: start;
         justify-content: flex-start;
         margin-left: 0;
+    }
+
+    .footer .footer-width {
+        width: 100%;
     }
   /* goods */
     .goods .goods__header {
@@ -20302,7 +20319,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .history .history__left {
+        margin-top: 20px;
         padding: 10px;
+    }
+
+    .history .uk-slider-items .uk-panel {
+        height: 200px;
     }
   /* news */
     .news .news__item {
@@ -20382,7 +20404,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         flex-direction: column;
         -ms-flex-pack: start;
         justify-content: flex-start;
-        min-height: 1030px;
         padding: 15px;
         margin-bottom: 0;
     }
@@ -20801,23 +20822,31 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         margin-right: 10px;
     }
 
+    .page__products .uk-card-default {
+        width: 100%;
+    }
+
     .page__products .uk-card-media-top {
-        height: 120px;
+        height: 220px;
+        padding: 10px;
     }
 
     .page__products .page__products__card-title {
-        font-size: 12px;
-        line-height: 1.1;
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 1.4;
+        text-align: center;
         margin-bottom: 5px;
     }
 
     .page__products .page__products__card-subtitle {
-        font-size: 12px;
-        line-height: 1.1;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.4;
     }
 
     .page__products .page__products__footer .btn-orange {
-        padding: 8px 15px;
+        padding: 12px 24px;
     }
 
     .page__products .uk-slider-nav li {
@@ -20874,10 +20903,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         padding: 0 12px;
     }
   /* home */
-    .home .home__content {
-        min-height: 1200px;
-    }
-
     .home .home__title {
         font-size: 24px;
     }

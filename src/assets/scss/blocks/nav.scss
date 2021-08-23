@@ -36,23 +36,37 @@
 	}
 
 	.uk-dropdown.uk-open {
-		border-radius: 5px;
+		left: -25px !important; 
 		padding: 10px;
 		padding-left: 15px;
+		box-shadow: 0 6px 20px rgba(51, 51, 51, 0.2);
+		background: rgba(242, 62, 96, 0.9);
+		border-radius: 5px;
+		color: #fff;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: -19px;
+			left: 50%;
+			transform: translateX(-50%);
+			border: 10px solid transparent; border-bottom: 10px solid rgba(242, 62, 96, 0.9);
+		}
 	}
 
 	.nav__dropdown {
-		border-radius: 5px;
 		list-style: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		padding-left: 0;
 		
 		a {
 			display: inline-block;
-			color: #000;
+			color: #fff;
 			margin-bottom: 5px;
 
 			&:hover {
-				color: #f23e60;
+				color: #000;
 			}
 		}
 	}
