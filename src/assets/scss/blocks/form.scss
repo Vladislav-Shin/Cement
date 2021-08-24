@@ -76,7 +76,10 @@
 }
 
 #modal-center {
-	.form__modal-input {
-		margin-bottom: 5px;
+	.form__modal-input,
+	.form__modal-textarea {
+		margin-bottom: 10px;
 	}
+
+	
 }

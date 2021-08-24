@@ -87,20 +87,38 @@
         }
     }
 
-    .uk-pagination li {
-        background: #ffffff;
-        border: 1px solid #eae9f2;
-        border-radius: 5px;
+    .uk-pagination {
+        li {
+            background: #ffffff;
+            border: 1px solid #eae9f2;
+            border-radius: 5px;
 
-        a,
-        span {
-            font-family: "Nunito";
-            font-style: normal;
-            font-weight: 800;
-            font-size: 21px;
-            line-height: 29px;
-            text-align: center;
-            color: #19191b;
+            a,
+            span {
+                font-family: "Nunito";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 21px;
+                line-height: 1.2;
+                text-align: center;
+                color: #19191b;
+
+            }
+        }
+
+        .uk-active {
+            background: linear-gradient(306.64deg, rgba(255, 41, 105, 0.45) 27.07%, rgba(247, 122, 28, 0.45) 71.29%),
+                #fbb040;
+
+            span {
+                color: #fff;
+            }
+        }
+
+        .uk-disabled{
+            span {
+                color: #eae9f2;
+            }
         }
     }
 }

@@ -467,7 +467,9 @@
         }
     }
 
-    
+    .partners__sliders {
+        margin: 0 20px;
+    }
 }
 
 /* Portrait tablets and small desktops - 991px */
@@ -708,7 +710,7 @@
         }
 
         .btn-orange {
-            font-size: 22px;
+            font-size: 20px;
             padding: 20px;
         }
     }
@@ -1324,6 +1326,7 @@
     }
 
     .calculator__footer {
+        justify-content: center;
         text-align: center;
     }
 
@@ -1388,6 +1391,14 @@
     .footer {
         margin-top: 200px;
 
+        .footer__row {
+            padding-bottom: 20px;
+
+            &:first-child {
+                padding-bottom: 0;
+            }
+        }
+
         .footer__inner {
             margin-top: -140px;
         }
@@ -1405,7 +1416,8 @@
             flex-direction: column;
 
             &:first-child {
-                width: 55%;
+                width: 100%;
+                margin: 0;
             }
         }
 
@@ -1863,13 +1875,25 @@
     .news {
         .news__item {
             flex-wrap: wrap;
-            margin-left: 10px;
+            padding: 0 10px;
         }
 
         .uk-card {
             width: 100%;
-            margin-bottom: 5px;
+            margin-bottom: 20px;
             margin-right: 0;
+
+            &::after {
+                display: none;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .uk-card-default {
+            padding-bottom: 25px;
         }
 
         .uk-card-media-top {
@@ -1881,12 +1905,44 @@
                 object-fit: cover;
             }
         }
+
+        .uk-slider-container {
+            padding-left: 0;
+        }
         
     }
 
     .calculator {
+        padding-bottom: 30px;
+
         .calculator__item-img {
             height: 280px;
+        }
+        
+        .calculator__box {
+            margin-bottom: 10px;
+
+            label {
+                text-align: center;
+            }
+            
+            .calculator-select {
+                padding: 10px;
+            }
+
+            .calculator__price {
+                min-height: 100%;
+                padding: 13px 10px;
+                text-align: center;
+            }
+
+            .calculator__wrapper-input {
+                padding: 13px 10px;
+            }
+
+            .calculator__footer {
+                margin-top: 0;
+            }
         }
     }
 
@@ -2018,6 +2074,13 @@
 
     /* products */
     .products {
+
+        .products__content {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+
         .products__row {
             flex-wrap: wrap;
 
@@ -2029,6 +2092,11 @@
             .products__left {
                 max-height: 300px;
                 margin-bottom: 15px;
+                border-radius: 10px;
+            }
+
+            .products__right {
+                margin-bottom: 0;
             }
         }
 
@@ -2059,14 +2127,22 @@
 
         .products__right-items {
             max-height: 191px;
+            margin-bottom: 10px;
+            border-radius: 10px;
         }
     }
 
     .news {
+        padding-bottom: 50px;
+        
         .news__item {
             .uk-card {
                 margin-right: 0;
             }
+        }
+
+        .uk-slider-nav {
+            margin-top: -50px !important;
         }
     }
 
@@ -2335,6 +2411,12 @@
             margin-top: -200px;
         }
 
+        .uk-child-width-1-2 {
+            .footer__item {
+                text-align: center;
+            }
+        }
+
         .footer__item {
             width: 100%;
 
@@ -2363,11 +2445,23 @@
         .footer__bottom {
             justify-content: center;
             flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .footer__logo a {
+            margin-bottom: 10px;
+        }
+
+        .footer__app-socials {
+            justify-content: center;
+        }
+
+        .footer__app-social:last-child {
+            margin-right: 0;
         }
 
         .copyright {
             width: 100%;
-            margin-bottom: 15px;
         }
     }
 
@@ -2532,6 +2626,10 @@
     .burger {
         width: 25px;
         height: 20px;
+    }
+
+    .uk-offcanvas-bar .uk-accordion, .nav__list .uk-accordion {
+        padding-bottom: 5px;
     }
 }
 

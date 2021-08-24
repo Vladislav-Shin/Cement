@@ -13161,6 +13161,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     border-radius: 19px;
     overflow: hidden;
     box-shadow: 0px 3.06759px 30.6759px rgba(43, 89, 255, 0.08), 24.5297px 57.2359px 98.1188px rgba(27, 49, 66, 0.13); }
+    .products .products__left .product__descr {
+      color: #000; }
   .products .products__right {
     max-height: 670px; }
   .products .products__left-img {
@@ -13407,10 +13409,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+  .news .uk-slider-items {
+    padding-top: 20px; }
 
 .news__header {
   text-align: center;
-  margin-bottom: 48px; }
+  margin-bottom: 20px; }
 
 .news__title {
   font-family: "Nunito";
@@ -13621,7 +13625,18 @@ p, ul, ol, dl, pre, address, fieldset, figure {
       box-shadow: 0px 66.5407px 94.6125px rgba(0, 0, 0, 0.08); }
 
 .map {
-  padding: 130px 0; }
+  padding: 130px 0;
+  /*     ymaps {
+        left: 0;
+        top: 0;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        padding: 24px;
+        border-radius: 50px;
+        overflow: hidden;
+    } */ }
 
 .map__inner {
   position: relative; }
@@ -13915,8 +13930,9 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   padding: 5px;
   border-radius: 20px; }
 
-#modal-center .form__modal-input {
-  margin-bottom: 5px; }
+#modal-center .form__modal-input,
+#modal-center .form__modal-textarea {
+  margin-bottom: 10px; }
 
 .footer {
   margin-top: 290px;
@@ -15175,9 +15191,17 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     font-style: normal;
     font-weight: 800;
     font-size: 21px;
-    line-height: 29px;
+    line-height: 1.2;
     text-align: center;
     color: #19191b; }
+
+.page__products .uk-pagination .uk-active {
+  background: linear-gradient(306.64deg, rgba(255, 41, 105, 0.45) 27.07%, rgba(247, 122, 28, 0.45) 71.29%), #fbb040; }
+  .page__products .uk-pagination .uk-active span {
+    color: #fff; }
+
+.page__products .uk-pagination .uk-disabled span {
+  color: #eae9f2; }
 
 .newsPage .uk-card-media-top {
   height: 360px; }
@@ -15781,7 +15805,9 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     border-radius: 0; }
   /* newsPage */
   .newsPage .uk-card-media-top {
-    height: 290px; } }
+    height: 290px; }
+  .partners__sliders {
+    margin: 0 20px; } }
 
 /* Portrait tablets and small desktops - 991px */
 @media (max-width: 991px) {
@@ -15911,7 +15937,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   .contact .contact__inner {
     padding: 45px; }
   .contact .btn-orange {
-    font-size: 22px;
+    font-size: 20px;
     padding: 20px; }
   .footer .footer__logo {
     margin-top: 0; }
@@ -16233,6 +16259,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     padding: 16px 22px;
     font-size: 18px; }
   .calculator__footer {
+    justify-content: center;
     text-align: center; }
   .calculator {
     margin-bottom: 0; }
@@ -16270,6 +16297,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   /* footer */
   .footer {
     margin-top: 200px; }
+    .footer .footer__row {
+      padding-bottom: 20px; }
+      .footer .footer__row:first-child {
+        padding-bottom: 0; }
     .footer .footer__inner {
       margin-top: -140px; }
     .footer .contact {
@@ -16280,7 +16311,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .footer .footer__item {
       flex-direction: column; }
       .footer .footer__item:first-child {
-        width: 55%; }
+        width: 100%;
+        margin: 0; }
     .footer [hidden],
     .footer .uk-hidden {
       display: none !important; }
@@ -16526,19 +16558,43 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   /* news */
   .news .news__item {
     flex-wrap: wrap;
-    margin-left: 10px; }
+    padding: 0 10px; }
   .news .uk-card {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     margin-right: 0; }
+    .news .uk-card::after {
+      display: none; }
+    .news .uk-card::before {
+      display: none; }
+  .news .uk-card-default {
+    padding-bottom: 25px; }
   .news .uk-card-media-top {
     height: 250px; }
     .news .uk-card-media-top img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-  .calculator .calculator__item-img {
-    height: 280px; }
+  .news .uk-slider-container {
+    padding-left: 0; }
+  .calculator {
+    padding-bottom: 30px; }
+    .calculator .calculator__item-img {
+      height: 280px; }
+    .calculator .calculator__box {
+      margin-bottom: 10px; }
+      .calculator .calculator__box label {
+        text-align: center; }
+      .calculator .calculator__box .calculator-select {
+        padding: 10px; }
+      .calculator .calculator__box .calculator__price {
+        min-height: 100%;
+        padding: 13px 10px;
+        text-align: center; }
+      .calculator .calculator__box .calculator__wrapper-input {
+        padding: 13px 10px; }
+      .calculator .calculator__box .calculator__footer {
+        margin-top: 0; }
   .footer .footer__item {
     width: 100%; }
   .footer .footer__item:first-child {
@@ -16606,6 +16662,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   .form__modal .btn {
     margin: 0 auto; }
   /* products */
+  .products .products__content {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px; }
   .products .products__row {
     flex-wrap: wrap; }
     .products .products__row .products__left,
@@ -16613,7 +16673,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
       width: 100%; }
     .products .products__row .products__left {
       max-height: 300px;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      border-radius: 10px; }
+    .products .products__row .products__right {
+      margin-bottom: 0; }
   .products .products__title {
     font-size: 26px;
     line-height: 1.2;
@@ -16630,9 +16693,15 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     font-size: 14px;
     padding: 10px; }
   .products .products__right-items {
-    max-height: 191px; }
-  .news .news__item .uk-card {
-    margin-right: 0; }
+    max-height: 191px;
+    margin-bottom: 10px;
+    border-radius: 10px; }
+  .news {
+    padding-bottom: 50px; }
+    .news .news__item .uk-card {
+      margin-right: 0; }
+    .news .uk-slider-nav {
+      margin-top: -50px !important; }
   /* scheme */
   .scheme .scheme__title {
     font-size: 26px; }
@@ -16775,6 +16844,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
       padding: 11px 15px; }
     .footer .footer__inner {
       margin-top: -200px; }
+    .footer .uk-child-width-1-2 .footer__item {
+      text-align: center; }
     .footer .footer__item {
       width: 100%; }
       .footer .footer__item:first-child {
@@ -16790,10 +16861,16 @@ p, ul, ol, dl, pre, address, fieldset, figure {
       margin-bottom: 25px; }
     .footer .footer__bottom {
       justify-content: center;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin-top: 10px; }
+    .footer .footer__logo a {
+      margin-bottom: 10px; }
+    .footer .footer__app-socials {
+      justify-content: center; }
+    .footer .footer__app-social:last-child {
+      margin-right: 0; }
     .footer .copyright {
-      width: 100%;
-      margin-bottom: 15px; }
+      width: 100%; }
   /* advantage */
   .advantage .advantage__row {
     justify-content: center; }
@@ -16873,7 +16950,9 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         line-height: 16px; }
   .burger {
     width: 25px;
-    height: 20px; } }
+    height: 20px; }
+  .uk-offcanvas-bar .uk-accordion, .nav__list .uk-accordion {
+    padding-bottom: 5px; } }
 
 /* Iphone 5 - 320px*/
 @media (max-width: 320px) {
