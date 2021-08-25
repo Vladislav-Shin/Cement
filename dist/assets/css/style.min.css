@@ -13061,7 +13061,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     border-radius: 20px;
     height: 450px;
     width: 100%;
-    box-shadow: 0px 10px 31px #3b3a40;
+    box-shadow: 0 0 10px rgba(59, 58, 64, 0.8);
     border-radius: 22px;
     overflow: hidden; }
     .home__footer-right .home__footer-img img {
@@ -16300,7 +16300,9 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .footer .footer__row {
       padding-bottom: 20px; }
       .footer .footer__row:first-child {
-        padding-bottom: 0; }
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+        border-bottom: 1px solid rgba(105, 120, 131, 0.4); }
     .footer .footer__inner {
       margin-top: -140px; }
     .footer .contact {
@@ -16448,7 +16450,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     margin: 10px 0; }
   .news .news__item p {
     font-size: 15px;
-    line-height: 1.2; }
+    line-height: 1.6; }
   .news .uk-card-media-top {
     height: 170px; } }
 
@@ -16555,6 +16557,14 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     padding: 10px; }
   .history .uk-slider-items .uk-panel {
     height: 200px; }
+  .contact .contact__inner {
+    border-radius: 20px; }
+    .contact .contact__inner::before {
+      bottom: -40px;
+      height: 20px; }
+    .contact .contact__inner::after {
+      bottom: -20px;
+      height: 20px; }
   /* news */
   .news .news__item {
     flex-wrap: wrap;
@@ -16582,9 +16592,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .calculator .calculator__item-img {
       height: 280px; }
     .calculator .calculator__box {
-      margin-bottom: 10px; }
+      margin-bottom: 20px; }
       .calculator .calculator__box label {
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 10px; }
       .calculator .calculator__box .calculator-select {
         padding: 10px; }
       .calculator .calculator__box .calculator__price {
@@ -16593,8 +16604,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         text-align: center; }
       .calculator .calculator__box .calculator__wrapper-input {
         padding: 13px 10px; }
-      .calculator .calculator__box .calculator__footer {
-        margin-top: 0; }
+  .calculator__footer {
+    margin-top: 0; }
+  .map .map__wrapper {
+    border-radius: 20px; }
   .footer .footer__item {
     width: 100%; }
   .footer .footer__item:first-child {
@@ -16607,6 +16620,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   .container {
     padding: 0 10px; }
   /* header */
+  .header .header__inner {
+    min-height: 90px; }
   .header .uk-offcanvas-bar .nav__link {
     font-size: 18px;
     margin-bottom: 10px; }
@@ -16662,44 +16677,51 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   .form__modal .btn {
     margin: 0 auto; }
   /* products */
-  .products .products__content {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px; }
-  .products .products__row {
-    flex-wrap: wrap; }
-    .products .products__row .products__left,
-    .products .products__row .products__right {
-      width: 100%; }
-    .products .products__row .products__left {
-      max-height: 300px;
-      margin-bottom: 15px;
+  .products {
+    padding-top: 50px; }
+    .products .products__content {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px; }
+    .products .products__row {
+      flex-wrap: wrap; }
+      .products .products__row .products__left,
+      .products .products__row .products__right {
+        width: 100%; }
+      .products .products__row .products__left {
+        max-height: 300px;
+        margin-bottom: 15px;
+        border-radius: 10px; }
+      .products .products__row .products__right {
+        margin-bottom: 0; }
+    .products .products__title {
+      font-size: 26px;
+      line-height: 1.2;
+      margin-bottom: 15px; }
+    .products .products__content::after {
+      height: 15px;
+      bottom: -15px; }
+    .products .products__content::before {
+      height: 15px;
+      bottom: -30px; }
+    .products .products__footer {
+      margin-top: 0; }
+    .products .product__descr {
+      font-size: 14px;
+      padding: 10px; }
+    .products .products__right-items {
+      max-height: 191px;
+      margin-bottom: 10px;
       border-radius: 10px; }
-    .products .products__row .products__right {
-      margin-bottom: 0; }
-  .products .products__title {
-    font-size: 26px;
-    line-height: 1.2;
-    margin-bottom: 15px; }
-  .products .products__content::after {
-    height: 15px;
-    bottom: -15px; }
-  .products .products__content::before {
-    height: 15px;
-    bottom: -30px; }
-  .products .products__footer {
-    margin-top: 0; }
-  .products .product__descr {
-    font-size: 14px;
-    padding: 10px; }
-  .products .products__right-items {
-    max-height: 191px;
-    margin-bottom: 10px;
-    border-radius: 10px; }
   .news {
     padding-bottom: 50px; }
+    .news .news__container {
+      padding-left: 10px;
+      padding-right: 10px; }
     .news .news__item .uk-card {
       margin-right: 0; }
+    .news .news__item .uk-card-media-top {
+      height: 220px; }
     .news .uk-slider-nav {
       margin-top: -50px !important; }
   /* scheme */
@@ -16754,7 +16776,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .calculator .calculator__subtitle {
       font-size: 18px; }
     .calculator .calculator__inner {
-      padding-top: 30px; }
+      padding-top: 50px; }
   /* partners */
   .partners .uk-slider-items li {
     height: 100px;
@@ -16855,7 +16877,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .footer .uk-accordion-title {
       font-size: 20px; }
     .footer .footer__descr {
-      max-width: 100%;
+      max-width: 80%;
       font-size: 18px; }
     .footer .footer-flex {
       margin-bottom: 25px; }

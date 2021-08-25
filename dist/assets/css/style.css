@@ -15831,9 +15831,13 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     object-fit: cover;
 }
 
+.news .uk-slider-items {
+    padding-top: 20px;
+}
+
 .news__header {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
 }
 
 .news__title {
@@ -19129,6 +19133,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .newsPage .uk-card-media-top {
         height: 290px;
     }
+
+    .partners__sliders {
+        margin: 0 20px;
+    }
 }
 
 /* Portrait tablets and small desktops - 991px */
@@ -19348,7 +19356,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .contact .btn-orange {
-        font-size: 22px;
+        font-size: 20px;
         padding: 20px;
     }
 
@@ -19905,6 +19913,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .calculator__footer {
+        -ms-flex-pack: center;
+        justify-content: center;
         text-align: center;
     }
 
@@ -19968,6 +19978,14 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         margin-top: 200px;
     }
 
+    .footer .footer__row {
+        padding-bottom: 20px;
+    }
+
+    .footer .footer__row:first-child {
+        padding-bottom: 0;
+    }
+
     .footer .footer__inner {
         margin-top: -140px;
     }
@@ -19988,7 +20006,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .footer .footer__item:first-child {
-        width: 55%;
+        width: 100%;
+        margin: 0;
     }
 
     .footer [hidden],
@@ -20397,13 +20416,25 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .news .news__item {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        margin-left: 10px;
+        padding: 0 10px;
     }
 
     .news .uk-card {
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
         margin-right: 0;
+    }
+
+    .news .uk-card::after {
+        display: none;
+    }
+
+    .news .uk-card::before {
+        display: none;
+    }
+
+    .news .uk-card-default {
+        padding-bottom: 25px;
     }
 
     .news .uk-card-media-top {
@@ -20417,8 +20448,42 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         object-fit: cover;
     }
 
+    .news .uk-slider-container {
+        padding-left: 0;
+    }
+
+    .calculator {
+        padding-bottom: 30px;
+    }
+
     .calculator .calculator__item-img {
         height: 280px;
+    }
+
+    .calculator .calculator__box {
+        margin-bottom: 10px;
+    }
+
+    .calculator .calculator__box label {
+        text-align: center;
+    }
+
+    .calculator .calculator__box .calculator-select {
+        padding: 10px;
+    }
+
+    .calculator .calculator__box .calculator__price {
+        min-height: 100%;
+        padding: 13px 10px;
+        text-align: center;
+    }
+
+    .calculator .calculator__box .calculator__wrapper-input {
+        padding: 13px 10px;
+    }
+
+    .calculator .calculator__box .calculator__footer {
+        margin-top: 0;
     }
 
     .footer .footer__item {
@@ -20538,6 +20603,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         margin: 0 auto;
     }
   /* products */
+    .products .products__content {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
     .products .products__row {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -20551,6 +20622,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .products .products__row .products__left {
         max-height: 300px;
         margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    .products .products__row .products__right {
+        margin-bottom: 0;
     }
 
     .products .products__title {
@@ -20580,10 +20656,20 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .products .products__right-items {
         max-height: 191px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .news {
+        padding-bottom: 50px;
     }
 
     .news .news__item .uk-card {
         margin-right: 0;
+    }
+
+    .news .uk-slider-nav {
+        margin-top: -50px !important;
     }
   /* scheme */
     .scheme .scheme__title {
@@ -20832,6 +20918,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         margin-top: -200px;
     }
 
+    .footer .uk-child-width-1-2 .footer__item {
+        text-align: center;
+    }
+
     .footer .footer__item {
         width: 100%;
     }
@@ -20862,11 +20952,24 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         justify-content: center;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .footer .footer__logo a {
+        margin-bottom: 10px;
+    }
+
+    .footer .footer__app-socials {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .footer .footer__app-social:last-child {
+        margin-right: 0;
     }
 
     .footer .copyright {
         width: 100%;
-        margin-bottom: 15px;
     }
   /* advantage */
     .advantage .advantage__row {
@@ -20996,6 +21099,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .burger {
         width: 25px;
         height: 20px;
+    }
+
+    .uk-offcanvas-bar .uk-accordion, .nav__list .uk-accordion {
+        padding-bottom: 5px;
     }
 }
 
