@@ -20856,6 +20856,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .questions .questions__left-item label {
         font-size: 18px;
+        margin-bottom: 5px;
     }
 
     .questions .questions__left,
@@ -20899,6 +20900,26 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .map .map__iframe {
         padding: 10px;
+    }
+
+    .page__address .map {
+        padding-top: 30px;
+    }
+
+    .page__address .questions__row {
+        margin-bottom: 25px;
+    }
+
+    .page__address .questions__inner {
+        border-radius: 20px;
+    }
+
+    .history {
+        padding-bottom: 60px;
+    }
+
+    .history p {
+        text-align: center;
     }
   /* goods */
     .goods .goods__item {
@@ -20966,6 +20987,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
     .footer .footer__item:first-child {
         width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .footer .footer__accordion {
