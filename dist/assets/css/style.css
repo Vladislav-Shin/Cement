@@ -15062,11 +15062,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .header__footer {
     text-align: center;
     max-width: 1900px;
-    background: url("../images/home-page.png") center no-repeat;
+    background: url("../images/home-page.png") center top no-repeat;
     background-size: cover;
-    height: 557px;
+    min-height: 275px;
     padding-top: 50px;
-    margin-bottom: -140px;
 }
 
 .header__footer-title {
@@ -16878,14 +16877,20 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     padding-bottom: 90px;
 }
 
-.advantage__row {
-    display: -ms-flexbox;
-    display: flex;
+.advantage__header .advantage__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     margin-bottom: 77px;
+    padding-top: 20px;
+}
+
+.advantage__footer .advantage__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .advantage__title {
@@ -16906,13 +16911,13 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
-    width: 24%;
     background: #ffffff;
     border: 1.27824px solid #ffffff;
     box-sizing: border-box;
     box-shadow: 38px 89px 153px rgba(27, 49, 66, 0.1);
     border-radius: 37px;
     padding: 20px 16px 50px;
+    margin-bottom: 20px;
 }
 
 .advantage__item::after {
@@ -16989,7 +16994,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .advantage__footer-item {
     position: relative;
-    width: 49%;
     background: #ffffff;
     border: 1.27824px solid #ffffff;
     box-sizing: border-box;
@@ -19153,6 +19157,14 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .partners__sliders {
         margin: 0 20px;
     }
+
+    .advantage .advantage__row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .advantage .advantage__footer .advantage__row {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Portrait tablets and small desktops - 991px */
@@ -19418,8 +19430,14 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         margin-bottom: 15px;
     }
   /* adventage */
+    .advantage .advantage__item-header {
+        padding: 5px;
+    }
+
     .advantage .advantage__item {
+        border-radius: 20px;
         padding: 0px 0px 50px;
+        margin-bottom: 5px;
     }
 
     .advantage .advantage__item::after {
@@ -19717,10 +19735,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         width: 49%;
     }
 
-    .header__footer {
-        margin-bottom: -180px;
-    }
-
     .home__container {
         padding: 0;
     }
@@ -19947,16 +19961,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .advantage .advantage__row {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(2, 1fr);
         margin-bottom: 20px;
     }
 
     .advantage .advantage__item {
         border-radius: 30px;
-        width: 49%;
         margin-bottom: 20px;
         padding-top: 10px;
         padding-left: 10px;
@@ -20267,12 +20277,16 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .header__footer {
-        height: 450px;
+        min-height: 230px;
     }
 
     .header__footer-title {
         margin-top: 30px;
         font-size: 28px;
+    }
+
+    .header__footer-title {
+        margin-top: 20px;
     }
 
     .page__address .address__row {
@@ -20534,6 +20548,14 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .footer .footer-flex {
         margin-top: 0;
     }
+
+    .advantage .advantage__footer .advantage__row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .advantage .advantage__footer .advantage__footer-item-header {
+        height: 230px;
+    }
 }
 
 /* Portrait phones and smaller - 480px */
@@ -20560,8 +20582,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     }
 
     .header__footer {
-        margin-bottom: -130px;
-        height: 400px;
         padding-top: 20px;
     }
 
@@ -21052,6 +21072,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .advantage .advantage__row {
         -ms-flex-pack: center;
         justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .advantage .advantage__item {
@@ -21071,8 +21092,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         margin-bottom: 25px;
     }
 
-    .advantage .advantage__footer-item {
-        width: 90%;
+    .advantage .advantage__footer-item-header {
+        height: 210px;
     }
   /* company */
     .company .company__list .company__item {

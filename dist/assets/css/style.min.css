@@ -12853,7 +12853,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   max-width: 1900px;
   background: url("../images/home-page.png") center top no-repeat;
   background-size: cover;
-  min-height: 275px;
+  min-height: 320px;
   padding-top: 50px; }
 
 .header__footer-title {
