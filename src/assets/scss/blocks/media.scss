@@ -470,6 +470,18 @@
     .partners__sliders {
         margin: 0 20px;
     }
+
+    .advantage {
+        .advantage__row {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .advantage__footer {
+            .advantage__row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
 }
 
 /* Portrait tablets and small desktops - 991px */
@@ -765,8 +777,15 @@
 
     /* adventage */
     .advantage {
+
+        .advantage__item-header {
+            padding: 5px;
+        }
+
         .advantage__item {
+            border-radius: 20px;
             padding: 0px 0px 50px;
+            margin-bottom: 5px;
 
             &::after {
                 bottom: -15px;
@@ -1103,10 +1122,6 @@
         }
     }
 
-    .header__footer {
-        margin-bottom: -180px;
-    }
-
     .home__container {
         padding: 0;
     }
@@ -1343,14 +1358,12 @@
         }
 
         .advantage__row {
-            display: flex;
-            flex-wrap: wrap;
+            grid-template-columns: repeat(2, 1fr);
             margin-bottom: 20px;
         }
 
         .advantage__item {
             border-radius: 30px;
-            width: 49%;
             margin-bottom: 20px;
             padding-top: 10px;
             padding-left: 10px;
@@ -1696,12 +1709,16 @@
     }
 
     .header__footer {
-        height: 450px;
+        min-height: 230px;
     }
 
     .header__footer-title {
         margin-top: 30px;
         font-size: 28px;
+    }
+    
+    .header__footer-title {
+        margin-top: 20px;
     }
 
     .page__address {
@@ -1985,6 +2002,18 @@
             margin-top: 0;
         }
     }
+
+    .advantage {
+        .advantage__footer {
+            .advantage__row {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .advantage__footer-item-header {
+                height: 230px;
+            }
+        }
+    }
 }
 
 /* Portrait phones and smaller - 480px */
@@ -2016,8 +2045,6 @@
     }
 
     .header__footer {
-        margin-bottom: -130px;
-        height: 400px;
         padding-top: 20px;
     }
 
@@ -2534,6 +2561,7 @@
     .advantage {
         .advantage__row {
             justify-content: center;
+            grid-template-columns: repeat(1, 1fr);
         }
 
         .advantage__item {
@@ -2553,9 +2581,10 @@
             margin-bottom: 25px;
         }
 
-        .advantage__footer-item {
-            width: 90%;
+        .advantage__footer-item-header {
+            height: 210px;
         }
+
     }
 
     /* company */

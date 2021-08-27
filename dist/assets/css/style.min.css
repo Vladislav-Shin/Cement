@@ -12851,11 +12851,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .header__footer {
   text-align: center;
   max-width: 1900px;
-  background: url("../images/home-page.png") center no-repeat;
+  background: url("../images/home-page.png") center top no-repeat;
   background-size: cover;
-  height: 557px;
-  padding-top: 50px;
-  margin-bottom: -140px; }
+  min-height: 275px;
+  padding-top: 50px; }
 
 .header__footer-title {
   font-family: "Montserrat", sans-serif;
@@ -14181,10 +14180,18 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 .advantage {
   padding-bottom: 90px; }
 
-.advantage__row {
-  display: flex;
+.advantage__header .advantage__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   justify-content: space-between;
-  margin-bottom: 77px; }
+  margin-bottom: 77px;
+  padding-top: 20px; }
+
+.advantage__footer .advantage__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; }
 
 .advantage__title {
   font-family: "Nunito";
@@ -14201,13 +14208,13 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 24%;
   background: #ffffff;
   border: 1.27824px solid #ffffff;
   box-sizing: border-box;
   box-shadow: 38px 89px 153px rgba(27, 49, 66, 0.1);
   border-radius: 37px;
-  padding: 20px 16px 50px; }
+  padding: 20px 16px 50px;
+  margin-bottom: 20px; }
   .advantage__item::after {
     content: "";
     position: absolute;
@@ -14266,7 +14273,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 .advantage__footer-item {
   position: relative;
-  width: 49%;
   background: #ffffff;
   border: 1.27824px solid #ffffff;
   box-sizing: border-box;
@@ -15816,7 +15822,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   .newsPage .uk-card-media-top {
     height: 290px; }
   .partners__sliders {
-    margin: 0 20px; } }
+    margin: 0 20px; }
+  .advantage .advantage__row {
+    grid-template-columns: repeat(3, 1fr); }
+  .advantage .advantage__footer .advantage__row {
+    grid-template-columns: repeat(2, 1fr); } }
 
 /* Portrait tablets and small desktops - 991px */
 @media (max-width: 991px) {
@@ -15973,8 +15983,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   .questions .questions__left {
     margin-bottom: 15px; }
   /* adventage */
+  .advantage .advantage__item-header {
+    padding: 5px; }
   .advantage .advantage__item {
-    padding: 0px 0px 50px; }
+    border-radius: 20px;
+    padding: 0px 0px 50px;
+    margin-bottom: 5px; }
     .advantage .advantage__item::after {
       bottom: -15px; }
   .advantage .advantage__item-img {
@@ -16148,8 +16162,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     padding: 0 20px; }
   .header .header__logo {
     width: 49%; }
-  .header__footer {
-    margin-bottom: -180px; }
   .home__container {
     padding: 0; }
   .home__content-row {
@@ -16278,12 +16290,10 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     .advantage .advantage__inner {
       padding-bottom: 60px; }
     .advantage .advantage__row {
-      display: flex;
-      flex-wrap: wrap;
+      grid-template-columns: repeat(2, 1fr);
       margin-bottom: 20px; }
     .advantage .advantage__item {
       border-radius: 30px;
-      width: 49%;
       margin-bottom: 20px;
       padding-top: 10px;
       padding-left: 10px;
@@ -16468,10 +16478,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   .container {
     padding: 0 15px; }
   .header__footer {
-    height: 450px; }
+    min-height: 230px; }
   .header__footer-title {
     margin-top: 30px;
     font-size: 28px; }
+  .header__footer-title {
+    margin-top: 20px; }
   .page__address .address__row {
     flex-wrap: wrap; }
     .page__address .address__row .address__item-header {
@@ -16622,7 +16634,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   .footer .footer__item:first-child {
     width: 100%; }
   .footer .footer-flex {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .advantage .advantage__footer .advantage__row {
+    grid-template-columns: repeat(1, 1fr); }
+  .advantage .advantage__footer .advantage__footer-item-header {
+    height: 230px; } }
 
 /* Portrait phones and smaller - 480px */
 @media (max-width: 480px) {
@@ -16639,8 +16655,6 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   .header .header__telephone {
     padding: 12px 10px; }
   .header__footer {
-    margin-bottom: -130px;
-    height: 400px;
     padding-top: 20px; }
   .uk-breadcrumb {
     margin-bottom: 0; }
@@ -16917,7 +16931,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
       width: 100%; }
   /* advantage */
   .advantage .advantage__row {
-    justify-content: center; }
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr); }
   .advantage .advantage__item {
     width: 100%; }
   .advantage .advantage__title {
@@ -16927,8 +16942,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
   .advantage .advantage__footer-item {
     width: 100%;
     margin-bottom: 25px; }
-  .advantage .advantage__footer-item {
-    width: 90%; }
+  .advantage .advantage__footer-item-header {
+    height: 210px; }
   /* company */
   .company .company__list .company__item {
     width: 100%;

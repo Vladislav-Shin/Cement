@@ -21,11 +21,10 @@
 .header__footer {
     text-align: center;
     max-width: 1900px;
-    background: url("../images/home-page.png") center no-repeat;
+    background: url("../images/home-page.png") center top no-repeat;
     background-size: cover;
-    height: 557px;
+    min-height: 275px;
     padding-top: 50px;
-    margin-bottom: -140px;
 }
 
 .header__footer-title {
