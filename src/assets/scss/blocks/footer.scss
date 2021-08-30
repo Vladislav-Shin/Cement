@@ -2,11 +2,9 @@
     margin-top: 290px;
     padding-top: 100px;
     background: rgba(43, 89, 255, 0.05);
-
     ul {
         margin-top: 0;
     }
-
     .submenu__accordion {
         list-style: none;
         padding-left: 0;
@@ -18,11 +16,9 @@
     justify-content: space-between;
     border-bottom: 1px solid rgba(105, 120, 131, 0.4);
     padding-bottom: 40px;
-
     &:first-child {
         border: none;
     }
-
     .footer__accordion {
         display: flex;
     }
@@ -50,7 +46,6 @@
     line-height: 1.2;
     color: #222831;
     margin-bottom: 20px;
-
     &:hover {
         color: #222831;
     }
@@ -91,7 +86,6 @@
 .footer__app-socials {
     display: flex;
     margin-top: 20px;
-
 }
 
 .footer__app-social {
@@ -104,16 +98,13 @@
     border: 1px solid #ff7468;
     margin-right: 25px;
     transition: all 0.3s linear;
-
     i {
         transition: all 0.3s linear;
         color: #ff7468;
     }
-
     &:hover {
         background: #ff7468;
     }
-
     &:hover>i {
         color: #fff;
     }
@@ -134,13 +125,11 @@
     letter-spacing: 0.004em;
     color: rgba(46, 46, 70, 0.8);
     margin-bottom: 0;
-    
 }
 
 .footer__form-inner {
     display: flex;
     flex-direction: column;
-
     input {
         max-width: 240px;
         background: #FFFFFF;
@@ -149,7 +138,6 @@
         border-radius: 8.23393px;
         padding: 9px 15px;
         margin-bottom: 10px;
-
         &::placeholder {
             font-family: "Manrope";
             font-style: normal;
@@ -171,7 +159,6 @@
         transition: 1s ease-in-out;
         border-radius: 5px;
     }
-
     svg {
         position: absolute;
         left: 0;
@@ -183,25 +170,29 @@
         transition: 1s ease-in-out;
         border-radius: 5px;
     }
-
     .btn:hover {
         transition: 1s ease-in-out;
     }
-
     .btn:hover svg {
         stroke-dashoffset: -480;
     }
-
     .btn a {
         color: white;
         font-size: 18px;
     }
 }
 
+
 /* uikit */
+
+
 /* показывает аккардион по дефолту */
-[hidden], .uk-hidden {
-    display: block !important;
+
+.footer {
+    [hidden],
+    .uk-hidden {
+        display: block !important;
+    }
 }
 
 .footer {

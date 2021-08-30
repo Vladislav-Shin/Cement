@@ -1,23 +1,28 @@
+.header {
+    background: #fff;
+    top: 0 !important;
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 170px;
+    min-height: 130px;
 }
 
 .header__logo {
     width: 22%;
-
     a {
         width: 100%;
-
         img {
             width: 100%;
         }
     }
 }
 
+
 /* Фон для других страниц */
+
 .header__footer {
     text-align: center;
     max-width: 1900px;
@@ -59,29 +64,23 @@
 .header__wrap-btns {
     display: flex;
     align-content: center;
-
     .header__lang {
         margin-right: 10px;
     }
-
     .uk-button {
         padding: 0;
         font-weight: 600;
     }
-
     .nav__dropdown {
         left: 0;
         list-style: none;
         padding-left: 0;
-
         li {
             margin-bottom: 5px;
-
             &:last-child {
                 margin-bottom: 0;
             }
         }
-
         a {
             display: inline-block;
             font-weight: 600;
@@ -89,30 +88,24 @@
             font-size: 18px;
             margin-bottom: 5px;
             transition: color 0.3s ease;
-
             &:hover {
                 color: #f23e60;
             }
-
             &:last-child {
                 margin-bottom: 0;
             }
         }
     }
-
     .header__lang {
         display: flex;
         align-items: center;
-
         .uk-dropdown {
             left: 0 !important;
             top: 42px !important;
-
             margin-top: 0;
             padding: 10px 0;
             min-width: auto;
             border-radius: 5px;
-
             a {
                 margin: 0 14px;
             }
@@ -120,36 +113,33 @@
     }
 }
 
-
 .header__lang .uk-inline .lang-ru span img,
 .header__lang .uk-inline .lang-en span img,
 .header__lang .uk-inline .lang-uz span img {
     margin-top: -5px;
 }
 
+
 /* uikit */
+
 .header__lang {
     .uk-inline {
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
         border-radius: 3px;
         margin-right: 10px;
         min-width: 75px;
-
         span {
             display: inline-block;
             width: 30px;
-
             img {
                 width: 100%;
                 height: 100%;
             }
         }
-
         .lang-ru {
             span {
                 display: inline-block;
                 width: 30px;
-
                 img {
                     width: 100%;
                     height: 100%;

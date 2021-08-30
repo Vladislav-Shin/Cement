@@ -15010,7 +15010,14 @@ input:focus {
     color: #f23e60;
 }
 
-p, ul, ol, dl, pre, address, fieldset, figure {
+p,
+ul,
+ol,
+dl,
+pre,
+address,
+fieldset,
+figure {
     margin: 0;
 }
 
@@ -15036,6 +15043,11 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 }
 
 /* Blocks */
+.header {
+    background: #fff;
+    top: 0 !important;
+}
+
 .header__inner {
     display: -ms-flexbox;
     display: flex;
@@ -15043,7 +15055,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    min-height: 170px;
+    min-height: 130px;
 }
 
 .header__logo {
@@ -16777,7 +16789,8 @@ p, ul, ol, dl, pre, address, fieldset, figure {
 
 /* uikit */
 /* показывает аккардион по дефолту */
-[hidden], .uk-hidden {
+.footer [hidden],
+.footer .uk-hidden {
     display: block !important;
 }
 

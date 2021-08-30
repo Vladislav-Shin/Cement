@@ -1,7 +1,6 @@
 @import "vars";
 @import "vendor/reset";
 @import "blocks/uikit";
-
 *,
 *::after,
 *::before {
@@ -26,7 +25,6 @@ body {
 
 a {
     text-decoration: none;
-
     &:hover {
         text-decoration: none;
     }
@@ -39,6 +37,7 @@ input:focus {
     border: none;
 }
 
+
 /* ui-kit сброс некоторых настроек */
 
 .uk-slider-container-offset {
@@ -50,9 +49,9 @@ input:focus {
     margin-left: 0;
 }
 
-.uk-grid + .uk-grid,
-.uk-grid > .uk-grid-margin,
-* + .uk-grid-margin {
+.uk-grid+.uk-grid,
+.uk-grid>.uk-grid-margin,
+*+.uk-grid-margin {
     margin-top: 0;
 }
 
@@ -74,7 +73,7 @@ input:focus {
     padding-right: 15px;
 }
 
-.uk-search-default .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
+.uk-search-default .uk-search-icon:not(.uk-search-icon-flip)~.uk-search-input {
     padding-left: 0;
 }
 
@@ -94,7 +93,6 @@ input:focus {
     padding: 0;
     padding-top: 5px;
     padding-bottom: 5px;
-
     .uk-nav {
         text-align: center;
     }
@@ -106,12 +104,10 @@ input:focus {
     }
 }
 
-
-
 @media (min-width: 1200px) {
-    .uk-grid + .uk-grid,
-    .uk-grid > .uk-grid-margin,
-    * + .uk-grid-margin {
+    .uk-grid+.uk-grid,
+    .uk-grid>.uk-grid-margin,
+    *+.uk-grid-margin {
         margin-top: 0;
     }
 }
@@ -129,7 +125,6 @@ input:focus {
     align-items: center;
     margin-bottom: 18px;
     padding: 0 10px;
-
     a {
         font-family: "Nunito";
         font-style: normal;
@@ -138,19 +133,25 @@ input:focus {
         line-height: 30px;
         text-align: center;
         color: #ffffff;
-
         &:hover {
             color: #f23e60;
         }
     }
 }
 
-.uk-breadcrumb > :last-child > span,
-.uk-breadcrumb > :last-child > a:not([href]) {
+.uk-breadcrumb> :last-child>span,
+.uk-breadcrumb> :last-child>a:not([href]) {
     color: #f23e60;
 }
 
-p, ul, ol, dl, pre, address, fieldset, figure {
+p,
+ul,
+ol,
+dl,
+pre,
+address,
+fieldset,
+figure {
     margin: 0;
 }
 
@@ -160,13 +161,12 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         align-items: center;
         max-width: 450px;
         height: 220px;
-        background: rgba(31,179,122,.88);
+        background: rgba(31, 179, 122, .88);
         border-radius: 5px;
         padding: 20px;
         color: #fff;
         text-align: center;
     }
-
     .uk-close {
         background: #fff;
         border-radius: 50%;
@@ -174,6 +174,7 @@ p, ul, ol, dl, pre, address, fieldset, figure {
         padding: 10px
     }
 }
+
 
 /* Blocks */
 

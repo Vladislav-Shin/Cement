@@ -22,461 +22,460 @@
 
 <body>
 
-        <!--  Header -->
-        <header class="header">
-        	<div class="container">
-        		<div class="header__inner">
-        			<div class="header__logo">
-        				<a href="#">
-        					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
-        				</a>
-        			</div>
-        
-        			<nav class="nav">
-        				<ul class="nav__list">
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Главная</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Продукция</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Калькулятор</a>
-        					</li>
-        					<li class="nav__item">
-        						<div class="uk-inline">
-        							<button class="uk-button uk-button-default  nav__link" type="button">О компании</button>
-        							<div uk-dropdown="mode: click">
-        								<ul class="nav__dropdown">
-        									<li>
-        										<a href="">История</a>
-        									</li>
-        									<li>
-        										<a href="">Проекты</a>
-        									</li>
-        									<li>
-        										<a href="">Преимущества</a>
-        									</li>
-        								</ul>
-        							</div>
-        						</div>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Новости</a>
-        					</li>
-        					<li class="nav__item">
-        						<a class="nav__link" href="#">Контакты</a>
-        					</li>
-        				</ul>
-        			</nav>
-        
-        			<div class="header__wrap-btns">
-        
-        				<div class="header__lang">
-        					<div class="uk-inline">
-        						<button class="uk-button uk-button-default  nav__link lang-ru" type="button">
-        							<span><img src="assets/images/ru.png" alt=""></span>Ru</button>
-        						<div uk-dropdown="mode: click">
-        							<ul class="nav__dropdown">
-        								<li>
-        									<a class="lang-en" href="">
-        										<span>
-        											<img src="assets/images/en.png" alt="">
-        										</span>En
-        									</a>
-        								</li>
-        								<li>
-        									<a class="lang-uz" href="">
-        										<span>
-        											<img src="assets/images/uz.png" alt="">
-        										</span>Uz</a>
-        								</li>
-        							</ul>
-        						</div>
-        					</div>
-        				</div>
-        
-        				<div class="header__tel">
-        					<a class="header__telephone  btn  btn-blue" href="tel:+998999366888">+99899 936-68-88</a>
-        				</div>
-        
-        				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
-        					uk-toggle="target: #offcanvas-overlay">
-        					<span>Открыть навигацию</span>
-        				</button>
-        
-        				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-        					<div class="uk-offcanvas-bar">
-        
-        						<button class="uk-offcanvas-close" type="button" uk-close></button>
-        
-        						<ul class="nav__list">
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Главная</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Продукция</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Калькулятор</a>
-        							</li>
-        							<li class="nav__item">
-        								<ul uk-accordion>
-        									<li class="">
-        										<a class="uk-accordion-title" href="#">О компании</a>
-        										<div class="uk-accordion-content">
-        											<a href="#">История</a>
-        											<a href="#">Проекты</a>
-        											<a href="#">Преимущества</a>
-        										</div>
-        									</li>
-        								</ul>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Новости</a>
-        							</li>
-        							<li class="nav__item">
-        								<a class="nav__link" href="#">Контакты</a>
-        							</li>
-        						</ul>
-        
-        						<div class="header__burder-tel">
-        							<a class="header__telephone  btn  btn-blue" href="tel:+998999366888">+99899 936-68-88</a>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        </header>
-        
-        <main class="newsPage">
-        
-            <div class="home__container">
-                <div class="header__footer">
-                    <ul class="uk-breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Linked Category</a></li>
-                        <li class="uk-disabled"><a>Disabled Category</a></li>
-                    </ul>
-        
-                    <h1 class="header__footer-title">Новости</h1>
-                </div>
+    <!--  Header -->
+    <header class=" header" style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="#">
+                    <img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
+                </a>
             </div>
-        
-            <div class="container">
-                <div class="newsPage__inner">
-                    <div class="newsPage__row">
-                        <div class="newsPage__left">
-                            <div class="uk-child-width-1@m  newsPage__item" uk-grid>
-                                <div>
-                                    <div class="uk-card uk-card-default">
-                                        <div class="uk-card-media-top">
-                                            <img src="assets/images/newsPage-1.jpg" alt="">
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <div class="newsPage__supDate">Jan 14, 2020</div>
-                                            <h3 class="uk-card-title">How did we get 1M+ visitors in 30 days without anything!</h3>
-                                            <p>Throwing consider dwelling bachelor joy her proposal laughter. Raptures returned disposed one entirely her men ham. </p>
-                                            <a class="newsPage__link" href="">Продолжить чтение</a>
-                                        </div>
-                                    </div>
-                                </div>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Продукция</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Калькулятор</a>
+                    </li>
+                    <li class="nav__item">
+                        <div class="uk-inline">
+                            <button class="uk-button uk-button-default  nav__link" type="button">О компании</button>
+                            <div uk-dropdown="mode: click">
+                                <ul class="nav__dropdown">
+                                    <li>
+                                        <a href="">История</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Проекты</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Преимущества</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="uk-child-width-1@m  newsPage__item" uk-grid>
-                                <div>
-                                    <div class="uk-card uk-card-default">
-                                        <div class="uk-card-media-top">
-                                            <img src="assets/images/newsPage-2.jpg" alt="">
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <div class="newsPage__supDate">Jan 14, 2020</div>
-                                            <h3 class="uk-card-title">How did we get 1M+ visitors in 30 days without anything!</h3>
-                                            <p>Throwing consider dwelling bachelor joy her proposal laughter. Raptures returned disposed one entirely her men ham. </p>
-                                            <a class="newsPage__link" href="">Продолжить чтение</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-child-width-1@m  newsPage__item" uk-grid>
-                                <div>
-                                    <div class="uk-card uk-card-default">
-                                        <div class="uk-card-media-top">
-                                            <img src="assets/images/newsPage-3.jpg" alt="">
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <div class="newsPage__supDate">Jan 14, 2020</div>
-                                            <h3 class="uk-card-title">How did we get 1M+ visitors in 30 days without anything!</h3>
-                                            <p>Throwing consider dwelling bachelor joy her proposal laughter. Raptures returned disposed one entirely her men ham. </p>
-                                            <a class="newsPage__link" href="">Продолжить чтение</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-child-width-1@m  newsPage__item" uk-grid>
-                                <div>
-                                    <div class="uk-card uk-card-default">
-                                        <div class="uk-card-media-top">
-                                            <img src="assets/images/newsPage-4.jpg" alt="">
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <div class="newsPage__supDate">Jan 14, 2020</div>
-                                            <h3 class="uk-card-title">How did we get 1M+ visitors in 30 days without anything!</h3>
-                                            <p>Throwing consider dwelling bachelor joy her proposal laughter. Raptures returned disposed one entirely her men ham. </p>
-                                            <a class="newsPage__link" href="">Продолжить чтение</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-child-width-1@m  newsPage__item" uk-grid>
-                                <div>
-                                    <div class="uk-card uk-card-default">
-                                        <div class="uk-card-media-top">
-                                            <img src="assets/images/newsPage-5.jpg" alt="">
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <div class="newsPage__supDate">Jan 14, 2020</div>
-                                            <h3 class="uk-card-title">How did we get 1M+ visitors in 30 days without anything!</h3>
-                                            <p>Throwing consider dwelling bachelor joy her proposal laughter. Raptures returned disposed one entirely her men ham. </p>
-                                            <a class="newsPage__link" href="">Продолжить чтение</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <ul class="uk-pagination" uk-margin>
-                                <li><a href="#"><span uk-pagination-previous></span></a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li class="uk-active"><span>3</span></li>
-                                <li class="uk-disabled"><span>...</span></li>
-                                <li><a href="#">9</a></li>
-                                <li><a href="#"><span uk-pagination-next></span></a></li>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Новости</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__wrap-btns">
+
+                <div class="header__lang">
+                    <div class="uk-inline">
+                        <button class="uk-button uk-button-default  nav__link lang-ru" type="button">
+							<span><img src="assets/images/ru.png" alt=""></span>Ru</button>
+                        <div uk-dropdown="mode: click">
+                            <ul class="nav__dropdown">
+                                <li>
+                                    <a class="lang-en" href="">
+                                        <span>
+											<img src="assets/images/en.png" alt="">
+										</span>En
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="lang-uz" href="">
+                                        <span>
+											<img src="assets/images/uz.png" alt="">
+										</span>Uz</a>
+                                </li>
                             </ul>
-                        </div>  <!-- newsPage__left -->
-                        <div class="newsPage__right">
-                            <div class="newsPage__right-item">
-                                <div class="uk-margin newsPage-margin">
-                                    <form class="uk-search uk-search-default">
-                                        <span uk-search-icon></span>
-                                        <input class="uk-search-input  newsPage__input" type="search" placeholder="Поиск по новостям">
-                                    </form>
-                                </div>
-                            </div>
-        
-                            <div class="newsPage__right-item">
-                                <ul class="newsPage__list">
-                                    <h3 class="newsPage__list-title">Не давние посты</h3>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">How To Blow Through Capital At An Incredible Rate</div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Design Studios That Everyone Should Know About? </div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">How did we get 1M+ visitors in 30 days without anything!</div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Figma On Figma: How We Built Our Website Design System</div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                </ul>
-                            </div>
-        
-                            <div class="newsPage__right-item">
-                                <ul class="newsPage__list">
-                                    <h3 class="newsPage__list-title">Популярные посты</h3>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">How To Blow Through Capital At An Incredible Rate</div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Design Studios That Everyone Should Know About? </div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">How did we get 1M+ visitors in 30 days without anything!</div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Figma On Figma: How We Built Our Website Design System</div>
-                                        <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__tel">
+                    <a class="header__telephone  btn  btn-blue" href="tel:+998999366888">+99899 936-68-88</a>
+                </div>
+
+                <button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button" uk-toggle="target: #offcanvas-overlay">
+					<span>Открыть навигацию</span>
+				</button>
+
+                <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+                    <div class="uk-offcanvas-bar">
+
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Главная</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Продукция</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Калькулятор</a>
+                            </li>
+                            <li class="nav__item">
+                                <ul uk-accordion>
+                                    <li class="">
+                                        <a class="uk-accordion-title" href="#">О компании</a>
+                                        <div class="uk-accordion-content">
+                                            <a href="#">История</a>
+                                            <a href="#">Проекты</a>
+                                            <a href="#">Преимущества</a>
+                                        </div>
                                     </li>
                                 </ul>
-                            </div>
-        
-                            <div class="newsPage__right-item  newsPage__right-category">
-                                <ul class="newsPage__list">
-                                    <h3 class="newsPage__list-title">Категория</h3>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Technology - <span class="newsPage__item-post">20 Posts</span> </div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Freelancing - <span class="newsPage__item-post">07 Posts</span> </div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Writing - <span class="newsPage__item-post">16 Posts</span> </div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Marketing - <span class="newsPage__item-post">1 Posts</span> </div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Business - <span class="newsPage__item-post">35 Posts</span> </div>
-                                    </li>
-                                    <li class="newsPage__box">
-                                        <div class="newsPage__item-text">Business - <span class="newsPage__item-post">14 Posts</span> </div>
-                                    </li>
-        
-                                </ul>
-                            </div>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Новости</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+
+                        <div class="header__burder-tel">
+                            <a class="header__telephone  btn  btn-blue" href="tel:+998999366888">+99899 936-68-88</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-        
-        
-        <!-- Footer -->
-        <footer class="footer">
-        	<div class="contact">
-        		<div class="container">
-        			<div class="contact__inner">
-        				<div class="contct__box">
-        					<div class="contact__content">
-        						<h5 class="contact__title">Позвоните нам</h5>
-        						<p class="contact__subtitle">Если у вас остались вопросы, мы ответим на любой из них </p>
-        					</div>
-        					<div class="contact__footer uk-flex uk-flex-wrap uk-child-width-1-1 uk-child-width-1-2@s">
-        						<div class="contact__footer-btn">
-        							<a class="btn  btn-orange  btn-contact" href="tel:+998997630333">+99899 763-03-33</a>
-        						</div>
-        						<div class="contact__footer-btn">
-        							<a class="btn  btn-orange  btn-contact" href="tel:+998997860444">+99899 786-04-44</a>
-        						</div>
-        						<div class="contact__footer-btn">
-        							<a class="btn  btn-orange  btn-contact" href="tel:+998997980555">+99899 798-05-55</a>
-        						</div>
-        						<div class="contact__footer-btn">
-        							<a class="btn  btn-orange  btn-contact" href="tel:+998999366888">+99899 936-68-88</a>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        
-        	<div class="container">
-        		<div class="footer__inner">
-        			<div class="footer__row">
-        				<div class="footer__item uk-flex uk-width-1 uk-child-width-1-3">
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">О компании
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">История</a></li>
-        									<li><a class="footer__list-link" href="#">Руководство</a></li>
-        									<li><a class="footer__list-link" href="#">Проекты</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Продукция
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li>
-        										<a class="footer__list-link" href="#">
-        											B5 M75
-        										</a>
-        									</li>
-        									<li>
-        										<a class="footer__list-link" href="#">
-        											В7.5 М100 С10
-        										</a>
-        									</li>
-        									<li>
-        										<a class="footer__list-link" href="#">
-        											В10 М150 С10
-        										</a>
-        									</li>
-        									<li>
-        										<a class="footer__list-link" href="#">
-        											В10 М150 С10
-        										</a>
-        									</li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        
-        					<ul uk-accordion class="footer__accordion">
-        						<li>
-        							<a class="uk-accordion-title accordion__item-title" href="#">Новости
-        							</a>
-        							<div class="uk-accordion-content footer__accordion-content">
-        								<ul class="submenu__accordion">
-        									<li><a class="footer__list-link" href="#">Как расшифровать маркировку цемента</a>
-        									</li>
-        									<li><a class="footer__list-link" href="#">Технология создания бетонной смеси</a>
-        									</li>
-        									<li><a class="footer__list-link" href="#">
-        											Разница между бетоном и цементом: по назначению и составу, по дополнительным
-        											примесям
-        										</a></li>
-        								</ul>
-        							</div>
-        						</li>
-        					</ul>
-        				</div>
-        			</div>
-        
-        
-        			<div class="footer__row  uk-child-width-1-2">
-        				<div class="footer__item">
-        					<div class="footer__logo">
-        						<a href="#">
-        							<img class="header__logo-img" src="assets/images/logo-footer-png.png" alt="Logo">
-        						</a>
-        						<p class="footer__descr">ООО GREEN BASIC MATERIALS, высокотехнологичное предприятие по
-        							производству бетона в Узбекистане, опирающееся на свои многолетние исследования и опыт
-        							использования бетонных материалов в Китае и Центральной Азии</p>
-        					</div>
-        				</div>
-        
-        				<div class="footer__item  footer-width uk-width-1-4">
-        					<div class="footer__app-socials">
-        						<a class="footer__app-social" href="http://%E7%BD%91%E7%AB%99%E9%82%AE%E7%AE%B1%E7%95%99greenmaterials@yandex.com" target="_blanck">
-        							<i class="fa fa-envelope" aria-hidden="true"></i>
-        						</a>
-        						<a class="footer__app-social" href="" target="_blank">
-        							<i class="fa fa-paper-plane" aria-hidden="true"></i>
-        						</a>
-        						<a class="footer__app-social" href="" target="_blank">
-        							<i class="fab fa-facebook" aria-hidden="true"></i>
-        						</a>
-        					</div>
-        				</div>
-        			</div>
-        
-        			<div class="footer__bottom">
-        				<div class="copyright">
-        					<h6 class="footer__buttom-text">All rights reserved</h6>
-        				</div>
-        				<div class="logo__panda">
-        					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
-        						<img src="assets/images/logo-panda-png.png" alt="https://digitalpanda.uz/">
-        					</a>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
+</header> 
+<main class="newsPage">
+
+    <div class="home__container">
+        <div class="header__footer">
+            <ul class="uk-breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Linked Category</a></li>
+                <li class="uk-disabled"><a>Disabled Category</a></li>
+            </ul>
+
+            <h1 class="header__footer-title">Новости</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="newsPage__inner">
+            <div class="newsPage__row">
+                <div class="newsPage__left">
+                    <div class="uk-child-width-1@m  newsPage__item" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/newsPage-1.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <div class="newsPage__supDate">Jan 14, 2020</div>
+                                    <h3 class="uk-card-title">How did we get 1M+ visitors in 30 days without anything!</h3>
+                                    <p>Throwing consider dwelling bachelor joy her proposal laughter. Raptures returned disposed one entirely her men ham. </p>
+                                    <a class="newsPage__link" href="">Продолжить чтение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-child-width-1@m  newsPage__item" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/newsPage-2.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <div class="newsPage__supDate">Jan 14, 2020</div>
+                                    <h3 class="uk-card-title">How did we get 1M+ visitors in 30 days without anything!</h3>
+                                    <p>Throwing consider dwelling bachelor joy her proposal laughter. Raptures returned disposed one entirely her men ham. </p>
+                                    <a class="newsPage__link" href="">Продолжить чтение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-child-width-1@m  newsPage__item" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/newsPage-3.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <div class="newsPage__supDate">Jan 14, 2020</div>
+                                    <h3 class="uk-card-title">How did we get 1M+ visitors in 30 days without anything!</h3>
+                                    <p>Throwing consider dwelling bachelor joy her proposal laughter. Raptures returned disposed one entirely her men ham. </p>
+                                    <a class="newsPage__link" href="">Продолжить чтение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-child-width-1@m  newsPage__item" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/newsPage-4.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <div class="newsPage__supDate">Jan 14, 2020</div>
+                                    <h3 class="uk-card-title">How did we get 1M+ visitors in 30 days without anything!</h3>
+                                    <p>Throwing consider dwelling bachelor joy her proposal laughter. Raptures returned disposed one entirely her men ham. </p>
+                                    <a class="newsPage__link" href="">Продолжить чтение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-child-width-1@m  newsPage__item" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/newsPage-5.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <div class="newsPage__supDate">Jan 14, 2020</div>
+                                    <h3 class="uk-card-title">How did we get 1M+ visitors in 30 days without anything!</h3>
+                                    <p>Throwing consider dwelling bachelor joy her proposal laughter. Raptures returned disposed one entirely her men ham. </p>
+                                    <a class="newsPage__link" href="">Продолжить чтение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="uk-pagination" uk-margin>
+                        <li><a href="#"><span uk-pagination-previous></span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li class="uk-active"><span>3</span></li>
+                        <li class="uk-disabled"><span>...</span></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#"><span uk-pagination-next></span></a></li>
+                    </ul>
+                </div>  <!-- newsPage__left -->
+                <div class="newsPage__right">
+                    <div class="newsPage__right-item">
+                        <div class="uk-margin newsPage-margin">
+                            <form class="uk-search uk-search-default">
+                                <span uk-search-icon></span>
+                                <input class="uk-search-input  newsPage__input" type="search" placeholder="Поиск по новостям">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="newsPage__right-item">
+                        <ul class="newsPage__list">
+                            <h3 class="newsPage__list-title">Не давние посты</h3>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">How To Blow Through Capital At An Incredible Rate</div>
+                                <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                            </li>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">Design Studios That Everyone Should Know About? </div>
+                                <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                            </li>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">How did we get 1M+ visitors in 30 days without anything!</div>
+                                <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                            </li>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">Figma On Figma: How We Built Our Website Design System</div>
+                                <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="newsPage__right-item">
+                        <ul class="newsPage__list">
+                            <h3 class="newsPage__list-title">Популярные посты</h3>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">How To Blow Through Capital At An Incredible Rate</div>
+                                <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                            </li>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">Design Studios That Everyone Should Know About? </div>
+                                <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                            </li>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">How did we get 1M+ visitors in 30 days without anything!</div>
+                                <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                            </li>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">Figma On Figma: How We Built Our Website Design System</div>
+                                <div class="newsPage__item-subDate">Jan 14, 2020</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="newsPage__right-item  newsPage__right-category">
+                        <ul class="newsPage__list">
+                            <h3 class="newsPage__list-title">Категория</h3>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">Technology - <span class="newsPage__item-post">20 Posts</span> </div>
+                            </li>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">Freelancing - <span class="newsPage__item-post">07 Posts</span> </div>
+                            </li>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">Writing - <span class="newsPage__item-post">16 Posts</span> </div>
+                            </li>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">Marketing - <span class="newsPage__item-post">1 Posts</span> </div>
+                            </li>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">Business - <span class="newsPage__item-post">35 Posts</span> </div>
+                            </li>
+                            <li class="newsPage__box">
+                                <div class="newsPage__item-text">Business - <span class="newsPage__item-post">14 Posts</span> </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+    	<div class="contact">
+    		<div class="container">
+    			<div class="contact__inner">
+    				<div class="contct__box">
+    					<div class="contact__content">
+    						<h5 class="contact__title">Позвоните нам</h5>
+    						<p class="contact__subtitle">Если у вас остались вопросы, мы ответим на любой из них </p>
+    					</div>
+    					<div class="contact__footer uk-flex uk-flex-wrap uk-child-width-1-1 uk-child-width-1-2@s">
+    						<div class="contact__footer-btn">
+    							<a class="btn  btn-orange  btn-contact" href="tel:+998997630333">+99899 763-03-33</a>
+    						</div>
+    						<div class="contact__footer-btn">
+    							<a class="btn  btn-orange  btn-contact" href="tel:+998997860444">+99899 786-04-44</a>
+    						</div>
+    						<div class="contact__footer-btn">
+    							<a class="btn  btn-orange  btn-contact" href="tel:+998997980555">+99899 798-05-55</a>
+    						</div>
+    						<div class="contact__footer-btn">
+    							<a class="btn  btn-orange  btn-contact" href="tel:+998999366888">+99899 936-68-88</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    
+    	<div class="container">
+    		<div class="footer__inner">
+    			<div class="footer__row">
+    				<div class="footer__item uk-flex uk-width-1 uk-child-width-1-3">
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">О компании
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">История</a></li>
+    									<li><a class="footer__list-link" href="#">Руководство</a></li>
+    									<li><a class="footer__list-link" href="#">Проекты</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Продукция
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li>
+    										<a class="footer__list-link" href="#">
+    											B5 M75
+    										</a>
+    									</li>
+    									<li>
+    										<a class="footer__list-link" href="#">
+    											В7.5 М100 С10
+    										</a>
+    									</li>
+    									<li>
+    										<a class="footer__list-link" href="#">
+    											В10 М150 С10
+    										</a>
+    									</li>
+    									<li>
+    										<a class="footer__list-link" href="#">
+    											В10 М150 С10
+    										</a>
+    									</li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    
+    					<ul uk-accordion class="footer__accordion">
+    						<li>
+    							<a class="uk-accordion-title accordion__item-title" href="#">Новости
+    							</a>
+    							<div class="uk-accordion-content footer__accordion-content">
+    								<ul class="submenu__accordion">
+    									<li><a class="footer__list-link" href="#">Как расшифровать маркировку цемента</a>
+    									</li>
+    									<li><a class="footer__list-link" href="#">Технология создания бетонной смеси</a>
+    									</li>
+    									<li><a class="footer__list-link" href="#">
+    											Разница между бетоном и цементом: по назначению и составу, по дополнительным
+    											примесям
+    										</a></li>
+    								</ul>
+    							</div>
+    						</li>
+    					</ul>
+    				</div>
+    			</div>
+    
+    
+    			<div class="footer__row  uk-child-width-1-2">
+    				<div class="footer__item">
+    					<div class="footer__logo">
+    						<a href="#">
+    							<img class="header__logo-img" src="assets/images/logo-footer-png.png" alt="Logo">
+    						</a>
+    						<p class="footer__descr">ООО GREEN BASIC MATERIALS, высокотехнологичное предприятие по
+    							производству бетона в Узбекистане, опирающееся на свои многолетние исследования и опыт
+    							использования бетонных материалов в Китае и Центральной Азии</p>
+    					</div>
+    				</div>
+    
+    				<div class="footer__item  footer-width uk-width-1-4">
+    					<div class="footer__app-socials">
+    						<a class="footer__app-social" href="http://%E7%BD%91%E7%AB%99%E9%82%AE%E7%AE%B1%E7%95%99greenmaterials@yandex.com" target="_blanck">
+    							<i class="fa fa-envelope" aria-hidden="true"></i>
+    						</a>
+    						<a class="footer__app-social" href="" target="_blank">
+    							<i class="fa fa-paper-plane" aria-hidden="true"></i>
+    						</a>
+    						<a class="footer__app-social" href="" target="_blank">
+    							<i class="fab fa-facebook" aria-hidden="true"></i>
+    						</a>
+    					</div>
+    				</div>
+    			</div>
+    
+    			<div class="footer__bottom">
+    				<div class="copyright">
+    					<h6 class="footer__buttom-text">All rights reserved</h6>
+    				</div>
+    				<div class="logo__panda">
+    					<a class="btn" href="https://digitalpanda.uz/" target="_blank">
+    						<img src="assets/images/logo-panda-png.png" alt="https://digitalpanda.uz/">
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
     <!-- JS -->
     <script src="assets/js/app.js"></script>
 </body>

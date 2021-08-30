@@ -1,124 +1,123 @@
-<header class="header">
-	<div class="container">
-		<div class="header__inner">
-			<div class="header__logo">
-				<a href="#">
-					<img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
-				</a>
-			</div>
+<header class=" header" style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="#">
+                    <img class="header__logo-img" src="assets/images/header-logo.png" alt="Logo">
+                </a>
+            </div>
 
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item">
-						<a class="nav__link" href="#">Главная</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#">Продукция</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#">Калькулятор</a>
-					</li>
-					<li class="nav__item">
-						<div class="uk-inline">
-							<button class="uk-button uk-button-default  nav__link" type="button">О компании</button>
-							<div uk-dropdown="mode: click">
-								<ul class="nav__dropdown">
-									<li>
-										<a href="">История</a>
-									</li>
-									<li>
-										<a href="">Проекты</a>
-									</li>
-									<li>
-										<a href="">Преимущества</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#">Новости</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Продукция</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Калькулятор</a>
+                    </li>
+                    <li class="nav__item">
+                        <div class="uk-inline">
+                            <button class="uk-button uk-button-default  nav__link" type="button">О компании</button>
+                            <div uk-dropdown="mode: click">
+                                <ul class="nav__dropdown">
+                                    <li>
+                                        <a href="">История</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Проекты</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Преимущества</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Новости</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
 
-			<div class="header__wrap-btns">
+            <div class="header__wrap-btns">
 
-				<div class="header__lang">
-					<div class="uk-inline">
-						<button class="uk-button uk-button-default  nav__link lang-ru" type="button">
+                <div class="header__lang">
+                    <div class="uk-inline">
+                        <button class="uk-button uk-button-default  nav__link lang-ru" type="button">
 							<span><img src="assets/images/ru.png" alt=""></span>Ru</button>
-						<div uk-dropdown="mode: click">
-							<ul class="nav__dropdown">
-								<li>
-									<a class="lang-en" href="">
-										<span>
+                        <div uk-dropdown="mode: click">
+                            <ul class="nav__dropdown">
+                                <li>
+                                    <a class="lang-en" href="">
+                                        <span>
 											<img src="assets/images/en.png" alt="">
 										</span>En
-									</a>
-								</li>
-								<li>
-									<a class="lang-uz" href="">
-										<span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="lang-uz" href="">
+                                        <span>
 											<img src="assets/images/uz.png" alt="">
 										</span>Uz</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="header__tel">
-					<a class="header__telephone  btn  btn-blue" href="tel:+998999366888">+99899 936-68-88</a>
-				</div>
+                <div class="header__tel">
+                    <a class="header__telephone  btn  btn-blue" href="tel:+998999366888">+99899 936-68-88</a>
+                </div>
 
-				<button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button"
-					uk-toggle="target: #offcanvas-overlay">
+                <button class="uk-button uk-button-default  burger" id="sidebarToggle" type="button" uk-toggle="target: #offcanvas-overlay">
 					<span>Открыть навигацию</span>
 				</button>
 
-				<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-					<div class="uk-offcanvas-bar">
+                <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+                    <div class="uk-offcanvas-bar">
 
-						<button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-						<ul class="nav__list">
-							<li class="nav__item">
-								<a class="nav__link" href="#">Главная</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#">Продукция</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#">Калькулятор</a>
-							</li>
-							<li class="nav__item">
-								<ul uk-accordion>
-									<li class="">
-										<a class="uk-accordion-title" href="#">О компании</a>
-										<div class="uk-accordion-content">
-											<a href="#">История</a>
-											<a href="#">Проекты</a>
-											<a href="#">Преимущества</a>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#">Новости</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#">Контакты</a>
-							</li>
-						</ul>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Главная</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Продукция</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Калькулятор</a>
+                            </li>
+                            <li class="nav__item">
+                                <ul uk-accordion>
+                                    <li class="">
+                                        <a class="uk-accordion-title" href="#">О компании</a>
+                                        <div class="uk-accordion-content">
+                                            <a href="#">История</a>
+                                            <a href="#">Проекты</a>
+                                            <a href="#">Преимущества</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Новости</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
 
-						<div class="header__burder-tel">
-							<a class="header__telephone  btn  btn-blue" href="tel:+998999366888">+99899 936-68-88</a>
-						</div>
-					</div>
-				</div>
-			</div>
+                        <div class="header__burder-tel">
+                            <a class="header__telephone  btn  btn-blue" href="tel:+998999366888">+99899 936-68-88</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </header>
