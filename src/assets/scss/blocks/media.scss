@@ -97,7 +97,12 @@
     /* .newsDayPage */
     .newsDayPage {
         .header__footer {
-            height: 650px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .newsDay__row {
+            padding-top: 15px;
         }
     }
 }
@@ -426,7 +431,33 @@
     }
 }
 
+/* 1025px */
+@media (max-width: 1025px) {
+    .newsPage {
+        .container {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
 
+        .newsPage__left {
+            margin-right: 20px;
+
+            .uk-card-title {
+                margin-top: 0;
+            }
+        }
+
+        .newsPage__supDate {
+            margin-bottom: 10px;
+        }
+
+        .uk-card-body {
+            padding: 15px;
+        }
+    }
+}
+
+ 
 /* Portrait tablets and small desktops - 991px */
 
 @media (max-width: 991px) {
@@ -1516,10 +1547,6 @@
     }
     /* history */
     .history {
-        .history__left-img,
-        .history__right-img {
-            display: none;
-        }
         .history__right-descr,
         .history__right-title,
         .history__left-title {

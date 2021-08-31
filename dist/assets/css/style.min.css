@@ -13533,7 +13533,8 @@ figure {
 
 .news .uk-slider-container {
   padding-left: 10px;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 10px; }
 
 @media (min-width: 1200px) {
   .uk-grid > * {
@@ -14343,7 +14344,8 @@ figure {
 .projects .projects__row {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-top: 15px; }
 
 .projects .projects__item {
   position: relative;
@@ -14379,7 +14381,6 @@ figure {
     object-fit: cover; }
 
 .projects .projects__content-title {
-  font-family: "Poppins";
   font-weight: 600;
   font-size: 21px;
   line-height: 23px;
@@ -14409,7 +14410,8 @@ figure {
   /* questions */ }
   .page__address .address__row {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-top: 15px; }
   .page__address .address__item-header {
     display: flex;
     flex-direction: column;
@@ -14589,6 +14591,9 @@ figure {
     background: #f23e60; }
   .history .history__left {
     padding: 0 20px; }
+  .history .history__left-img img {
+    width: 100%;
+    height: 100%; }
 
 .history__title {
   font-family: "Nunito";
@@ -14794,6 +14799,9 @@ figure {
 @media (min-width: 1200px) {
   .company .uk-card-body {
     padding: 12px 32px 32px 32px; } }
+
+.goods {
+  background: #fff; }
 
 .goods__text {
   font-family: "Nunito";
@@ -15138,6 +15146,7 @@ figure {
   line-height: 1.2; }
 
 .page__products .uk-slider-items {
+  padding-top: 15px;
   margin-left: 10px;
   margin-right: 10px; }
 
@@ -15240,7 +15249,8 @@ figure {
 
 .newsPage__row {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-top: 15px; }
 
 .newsPage__list {
   list-style: none;
@@ -15653,7 +15663,10 @@ figure {
     font-size: 18px; }
   /* .newsDayPage */
   .newsDayPage .header__footer {
-    height: 650px; } }
+    padding-left: 10px;
+    padding-right: 10px; }
+  .newsDayPage .newsDay__row {
+    padding-top: 15px; } }
 
 /* Breakpoint 1300 */
 @media (max-width: 1300px) {
@@ -15851,6 +15864,20 @@ figure {
 @media (max-width: 1025px) {
   .news .uk-card-media-top {
     height: 250px; } }
+
+/* 1025px */
+@media (max-width: 1025px) {
+  .newsPage .container {
+    padding-left: 40px;
+    padding-right: 40px; }
+  .newsPage .newsPage__left {
+    margin-right: 20px; }
+    .newsPage .newsPage__left .uk-card-title {
+      margin-top: 0; }
+  .newsPage .newsPage__supDate {
+    margin-bottom: 10px; }
+  .newsPage .uk-card-body {
+    padding: 15px; } }
 
 /* Portrait tablets and small desktops - 991px */
 @media (max-width: 991px) {
@@ -16564,9 +16591,6 @@ figure {
   .newsPage .newsPage__left {
     margin-bottom: 10px; }
   /* history */
-  .history .history__left-img,
-  .history .history__right-img {
-    display: none; }
   .history .history__right-descr,
   .history .history__right-title,
   .history .history__left-title {

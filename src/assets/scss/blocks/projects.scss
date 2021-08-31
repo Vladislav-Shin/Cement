@@ -14,6 +14,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-top: 15px;
     }
 
     .projects__item {
@@ -56,7 +57,6 @@
     }
 
     .projects__content-title {
-        font-family: "Poppins";
         font-weight: 600;
         font-size: 21px;
         line-height: 23px;

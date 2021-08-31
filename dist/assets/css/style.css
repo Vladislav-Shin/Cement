@@ -20109,6 +20109,11 @@ figure {
     .footer .footer-width {
         width: 100%;
     }
+
+    .footer .footer__app-socials {
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
   /* goods */
     .goods .goods__header {
         height: 200px;
