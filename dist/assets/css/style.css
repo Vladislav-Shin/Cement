@@ -15346,6 +15346,7 @@ figure {
     font-size: 25px;
     font-weight: 500;
     line-height: 1.4;
+    margin-bottom: 20px;
 }
 
 /* home__footer */
@@ -15797,7 +15798,7 @@ figure {
 }
 
 .offer__item-header {
-    height: 217px;
+    height: 260px;
     border-radius: 4px 4px 0 0;
     overflow: hidden;
     margin-bottom: 40px;
@@ -16639,6 +16640,8 @@ figure {
 .footer__app-socials {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     margin-top: 20px;
 }
 
@@ -18819,7 +18822,8 @@ figure {
     }
   /* home */
     .home__content {
-        padding: 100px 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .scheme__list-items {
@@ -18939,6 +18943,11 @@ figure {
         font-size: 36px;
         margin-bottom: 30px;
     }
+
+    .home .home__left-btn .btn {
+        font-size: 18px;
+        padding: 14px 18px;
+    }
   /* scheme */
     .scheme .scheme__list-items {
         padding: 0 15px;
@@ -18964,6 +18973,10 @@ figure {
     .offer .offer__inner {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .offer .offer__item-header {
+        height: 220px;
     }
   /* home */
     .home .home__footer-right {
@@ -19180,6 +19193,12 @@ figure {
     }
 }
 
+@media (max-width: 1025px) {
+    .news .uk-card-media-top {
+        height: 250px;
+    }
+}
+
 /* Portrait tablets and small desktops - 991px */
 @media (max-width: 991px) {
   /* header */
@@ -19343,6 +19362,8 @@ figure {
     .offer .offer__row {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
     }
 
     .offer .offer__title {
@@ -19382,6 +19403,11 @@ figure {
         height: 150px;
     }
   /* calculator */
+    .calculator {
+        padding: 0 0 40px 0;
+        margin-bottom: 20px;
+    }
+
     .calculator .calculator__row {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -19738,8 +19764,8 @@ figure {
     }
 }
 
-/* Landscape phones and portrait tablets - 767px*/
-@media (max-width: 767px) {
+/* Landscape phones and portrait tablets - 769px*/
+@media (max-width: 769px) {
     .container {
         padding: 0 20px;
     }
@@ -19760,7 +19786,6 @@ figure {
         max-width: 586px;
         margin: 0 auto;
         text-align: center;
-        margin-bottom: 20px;
     }
   /* header */
     .header .uk-offcanvas-bar .nav__link {
@@ -19825,7 +19850,8 @@ figure {
     }
 
     .home .home__footer-descr {
-        font-size: 16px;
+        font-size: 20px;
+        margin-bottom: 5px;
     }
 
     .home .home__content {
@@ -20747,6 +20773,10 @@ figure {
         padding-right: 10px;
     }
 
+    .news .news__title {
+        font-size: 28px;
+    }
+
     .news .news__item .uk-card {
         margin-right: 0;
     }
@@ -21212,8 +21242,15 @@ figure {
         height: 20px;
     }
 
-    .uk-offcanvas-bar .uk-accordion, .nav__list .uk-accordion {
+    .uk-offcanvas-bar .uk-accordion,
+  .nav__list .uk-accordion {
         padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 376px) {
+    .footer .footer__descr {
+        max-width: 100%;
     }
 }
 
@@ -21223,6 +21260,14 @@ figure {
         padding: 0 12px;
     }
   /* home */
+    .home {
+        margin-bottom: 0;
+    }
+
+    .home .home__content-row {
+        padding-top: 20px;
+    }
+
     .home .home__title {
         font-size: 24px;
     }
@@ -21234,10 +21279,6 @@ figure {
 
     .home .home__subtitle::before {
         display: none;
-    }
-
-    .home .home__footer {
-        margin-top: -125px;
     }
 
     .home .home__footer-btn .btn {
@@ -21257,6 +21298,10 @@ figure {
         font-size: 18px;
         font-weight: 600;
     }
+
+    .home .home__footer-img {
+        height: 220px;
+    }
   /* form */
     .form__modal .form__title {
         font-size: 24px;
@@ -21271,6 +21316,10 @@ figure {
         padding: 12px 12px;
     }
   /* products */
+    .products {
+        padding-top: 20px;
+    }
+
     .products .products__title {
         font-size: 20px;
     }
@@ -21290,7 +21339,11 @@ figure {
     }
 
     .products .products__content {
-        margin-bottom: 70px;
+        margin-bottom: 40px;
+    }
+
+    .products .products__row .products__left {
+        max-height: 220px;
     }
   /* scheme */
     .scheme .scheme__header {
@@ -21337,6 +21390,7 @@ figure {
   /* offer */
     .offer .offer__items {
         width: 100%;
+        padding-bottom: 25px;
     }
 
     .offer .offer__title {
@@ -21345,6 +21399,10 @@ figure {
 
     .offer .offer__subtitle {
         font-size: 15px;
+    }
+
+    .calculator .calculator__inner {
+        padding-top: 20px;
     }
 
     .calculator .calculator__title {
@@ -21383,6 +21441,10 @@ figure {
     .calculator .calculator__footer-price {
         text-align: center;
     }
+
+    .calculator .calculator__item-img {
+        height: 220px;
+    }
   /* partners */
     .partners .partners__title {
         font-size: 24px;
@@ -21390,5 +21452,9 @@ figure {
 
     .partners .partners__subtitle {
         font-size: 22px;
+    }
+
+    .footer .footer__descr {
+        max-width: 100%;
     }
 }
