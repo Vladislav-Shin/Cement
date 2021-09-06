@@ -15761,18 +15761,20 @@ figure {
 .offer__row {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    gap: 15px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .offer__items {
     position: relative;
-    width: 31%;
+    width: 24%;
     background: #fff;
     border: 0.817656px solid #FFFFFF;
     box-shadow: 0px 3.06759px 30.6759px rgba(43, 89, 255, 0.08), 24.5297px 57.2359px 98.1188px rgba(27, 49, 66, 0.13);
     border-radius: 24.0906px;
     padding: 18px 15px 45px;
+    margin-bottom: 30px;
 }
 
 .offer__items::before {
@@ -15794,7 +15796,7 @@ figure {
     height: 260px;
     border-radius: 4px 4px 0 0;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .offer__item-img {
@@ -16603,6 +16605,7 @@ figure {
 
 .footer__logo a {
     display: inline-block;
+    max-width: 350px;
     margin-bottom: 20px;
 }
 
@@ -16883,17 +16886,12 @@ figure {
     padding-bottom: 30px;
 }
 
-.advantage {
-    padding-bottom: 90px;
-}
-
 .advantage__header .advantage__row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 77px;
     padding-top: 20px;
 }
 
@@ -17054,6 +17052,35 @@ figure {
     font-size: 18px;
     line-height: 31px;
     color: #64626a;
+}
+
+.services__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.services__item {
+    width: 24%;
+    margin-bottom: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    background: #ffffff;
+    border: 1.27824px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 38px 89px 153px rgba(27, 49, 66, 0.1);
+    border-radius: 37px;
+    padding: 20px 16px 50px;
+}
+
+.services__img {
+    margin-bottom: 10px;
 }
 
 .projects .projects__title {
@@ -17770,235 +17797,6 @@ figure {
     -webkit-transform: translate(-50%, 50%);
     transform: translate(-50%, 50%);
     text-align: center;
-}
-
-.calculator {
-    background: #F3F9FF;
-    padding: 0 0 90px 0;
-    margin-bottom: 60px;
-}
-
-.calculator__inner {
-    padding-top: 60px;
-}
-
-.calculator__title {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 58px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #092853;
-}
-
-.calculator__subtitle {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #000000;
-}
-
-.calculator__row {
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-
-.calculator__item {
-    width: 48%;
-}
-
-.calculator__item-title {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    color: #000000;
-    margin-bottom: 20px;
-}
-
-.calculator__item-img {
-    background: #FFFFFF;
-    height: 460px;
-    border-radius: 24px;
-    overflow: hidden;
-}
-
-.calculator__item-img img {
-    width: 100%;
-    height: 100%;
-}
-
-.calculator__list {
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 35px;
-}
-
-.calculator__list-item {
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 45px;
-}
-
-.calculator__list input {
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-}
-
-.calculator__list label {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 31px;
-    text-align: center;
-    color: #000000;
-}
-
-.calculator__box {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-bottom: 25px;
-}
-
-.calculator__box label {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 30px;
-    color: #000000;
-    margin-bottom: 15px;
-}
-
-.calculator__box input {
-    width: 100%;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.16);
-    box-sizing: border-box;
-    box-shadow: 0px 28px 30px rgba(0, 0, 0, 0.01);
-    border-radius: 44px;
-}
-
-.calculator__box .input,
-    .calculator__box .calculator__price,
-    .calculator__box .calculator-select {
-    width: 100%;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.16);
-    box-sizing: border-box;
-    box-shadow: 0px 28px 30px rgba(0, 0, 0, 0.01);
-    border-radius: 44px;
-    padding: 19px;
-}
-
-.calculator__box .calculator__price {
-    font-weight: 600;
-    min-height: 62px;
-}
-
-.calculator__box .calculator-option,
-    .calculator__box .calculator-select {
-    font-weight: 500;
-}
-
-.calculator__box .calculator-select {
-    padding: 15px;
-    border-radius: 0;
-}
-
-.calculator__wrapper-input {
-    display: -ms-flexbox;
-    display: flex;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.16);
-    box-sizing: border-box;
-    box-shadow: 0px 28px 30px rgba(0, 0, 0, 0.01);
-    border-radius: 44px;
-    padding: 15px;
-}
-
-.calculator__wrapper-input input {
-    cursor: pointer;
-}
-
-.calculator__wrapper-input span {
-    margin: 0 10px;
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    color: #000;
-}
-
-.calculator__footer {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: 35px;
-}
-
-.calculator__footer-price {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    color: #000000;
-}
-
-.calculator__footer-price span {
-    color: #377cfd;
-}
-
-/* Перебивка стилей */
-.calculator .boundary {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    border-radius: 44px;
-}
-
-.calculator .uk-button {
-    width: 100%;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.16);
-    border-radius: 44px;
-    padding: 8px;
-}
-
-.calculator .calc-dropdown {
-    width: 100%;
-}
-
-.calculator .uk-nav .calc__dropdown-item {
-    border-bottom: 1px solid #000;
-    padding: 15px 0;
-}
-
-.calculator .uk-nav .calc__dropdown-item a {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 23px;
-    line-height: 31px;
-    text-align: center;
-    color: #000000;
-    cursor: pointer;
 }
 
 /* orders */
@@ -18946,6 +18744,10 @@ figure {
         color: #fff;
         padding: 5px;
     }
+
+    .offer .offer__row {
+        gap: 13px;
+    }
 }
 
 /* Landscape tablets and medium desktops - 1199px */
@@ -18967,19 +18769,6 @@ figure {
     .scheme .scheme__list-items span {
         font-size: 17px;
     }
-  /* calculator */
-    .calculator .calculator__list-item {
-        margin-right: 20px;
-    }
-
-    .calculator .calculator__list {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
-
-    .calculator .calculator__list-item {
-        margin-bottom: 10px;
-    }
   /* offer */
     .offer .offer__inner {
         padding-left: 0;
@@ -18988,6 +18777,10 @@ figure {
 
     .offer .offer__item-header {
         height: 220px;
+    }
+
+    .offer .offer__items {
+        width: 32%;
     }
   /* home */
     .home .home__footer-right {
@@ -19399,6 +19192,7 @@ figure {
         flex-wrap: wrap;
         -ms-flex-pack: distribute;
         justify-content: space-around;
+        gap: 0;
     }
 
     .offer .offer__title {

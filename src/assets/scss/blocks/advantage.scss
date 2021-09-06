@@ -1,13 +1,10 @@
-.advantage {
-    padding-bottom: 90px;
-}
+
 .advantage__header {
     .advantage__row {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         justify-content: space-between;
-        margin-bottom: 77px;
         padding-top: 20px;
     }
 }

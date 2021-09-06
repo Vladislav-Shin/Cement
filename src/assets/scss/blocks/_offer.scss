@@ -28,17 +28,19 @@
 
 .offer__row {
     display: flex;
-    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .offer__items {
     position: relative;
-    width: 31%;
+    width: 24%;
     background: #fff;
     border: 0.817656px solid #FFFFFF;
     box-shadow: 0px 3.06759px 30.6759px rgba(43, 89, 255, 0.08), 24.5297px 57.2359px 98.1188px rgba(27, 49, 66, 0.13);
     border-radius: 24.0906px;
     padding: 18px 15px 45px;
+    margin-bottom: 30px;
     &::before {
         content: "";
         position: absolute;
@@ -58,7 +60,7 @@
     height: 260px;
     border-radius: 4px 4px 0 0;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .offer__item-img {

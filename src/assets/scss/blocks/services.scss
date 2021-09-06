@@ -1,0 +1,24 @@
+.services__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services__item {
+  width: 24%;
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #ffffff;
+  border: 1.27824px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 38px 89px 153px rgba(27, 49, 66, 0.1);
+  border-radius: 37px;
+  padding: 20px 16px 50px;
+}
+
+.services__img {
+    margin-bottom: 10px;
+}

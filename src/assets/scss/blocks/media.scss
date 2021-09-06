@@ -168,6 +168,12 @@
             }
         }
     }
+    
+    .offer {
+        .offer__row {
+            gap: 13px;
+        }
+    }
 }
 
 
@@ -195,18 +201,7 @@
             }
         }
     }
-    /* calculator */
-    .calculator {
-        .calculator__list-item {
-            margin-right: 20px;
-        }
-        .calculator__list {
-            flex-wrap: wrap;
-        }
-        .calculator__list-item {
-            margin-bottom: 10px;
-        }
-    }
+
     /* offer */
     .offer {
         .offer__inner {
@@ -215,6 +210,9 @@
         }
         .offer__item-header {
             height: 220px;
+        }
+        .offer__items {
+            width: 32%;
         }
     }
     /* home */
@@ -602,6 +600,7 @@
         .offer__row {
             flex-wrap: wrap;
             justify-content: space-around;
+            gap: 0;
         }
         .offer__title {
             font-size: 30px;
@@ -2113,7 +2112,6 @@
             font-size: 20px;
         }
         .footer__descr {
-            max-width: 80%;
             font-size: 18px;
         }
         .footer-flex {
@@ -2158,6 +2156,9 @@
         }
         .advantage__footer-item-header {
             height: 210px;
+        }
+        .advantage__content-descr {
+            text-align: center;
         }
     }
     /* company */
