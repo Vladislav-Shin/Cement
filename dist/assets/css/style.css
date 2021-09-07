@@ -15508,7 +15508,7 @@ figure {
 }
 
 .products .products__left .product__descr {
-    color: #000;
+    color: #fff;
 }
 
 .products .products__right {
@@ -15518,6 +15518,8 @@ figure {
 .products .products__left-img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .products .products__right {
@@ -15793,7 +15795,7 @@ figure {
 }
 
 .offer__item-header {
-    height: 260px;
+    height: 200px;
     border-radius: 4px 4px 0 0;
     overflow: hidden;
     margin-bottom: 15px;
