@@ -19615,6 +19615,7 @@ figure {
         max-width: 586px;
         margin: 0 auto;
         text-align: center;
+        margin-bottom: 25px;
     }
   /* header */
     .header .uk-offcanvas-bar .nav__link {
@@ -20908,7 +20909,6 @@ figure {
     }
 
     .footer .footer__descr {
-        max-width: 80%;
         font-size: 18px;
     }
 
@@ -20966,6 +20966,10 @@ figure {
 
     .advantage .advantage__footer-item-header {
         height: 210px;
+    }
+
+    .advantage .advantage__content-descr {
+        text-align: center;
     }
   /* company */
     .company .company__list .company__item {

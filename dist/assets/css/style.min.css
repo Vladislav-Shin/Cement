@@ -13386,7 +13386,7 @@ figure {
     box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05); }
 
 .offer__item-header {
-  height: 260px;
+  height: 200px;
   border-radius: 4px 4px 0 0;
   overflow: hidden;
   margin-bottom: 15px; }
@@ -16073,7 +16073,8 @@ figure {
   .home__left {
     max-width: 586px;
     margin: 0 auto;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 25px; }
   /* header */
   .header .uk-offcanvas-bar .nav__link {
     font-size: 20px;
