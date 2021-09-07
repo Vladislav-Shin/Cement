@@ -6,11 +6,13 @@
         margin-right: 10px;
     }
 
-    li {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-right: 20px;
+    .uk-slider-items  {
+        li {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-right: 20px;
+        }
     }
 
     .uk-card-media-top {
@@ -21,6 +23,7 @@
         img {
             width: 100%;
             height: 100%;
+            border-radius: 10px 10px 0 0;
         }
     }
 
@@ -94,6 +97,7 @@
             background: #ffffff;
             border: 1px solid #eae9f2;
             border-radius: 5px;
+            margin-right: 12px;
 
             a,
             span {
