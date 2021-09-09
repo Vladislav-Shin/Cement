@@ -15416,7 +15416,7 @@ figure {
 .products {
     background: rgba(43, 153, 255, 0.1);
     padding-top: 70px;
-    padding-bottom: 165px;
+    padding-bottom: 140px;
 }
 
 .products .products__content {
@@ -17965,11 +17965,10 @@ figure {
 .page__products .uk-slider-items li {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: 20px;
+    gap: 15px;
 }
 
 .page__products .uk-card-media-top {
@@ -18053,6 +18052,21 @@ figure {
     box-shadow: 10px 10px 20px 10px rgba(34, 60, 80, 0.2);
 }
 
+.page__products .advantage__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.page__products .advantage__footer-item {
+    width: 49%;
+}
+
+.page__products .advantage__footer-item-title {
+    font-size: 28px;
+}
+
 .page__products .uk-pagination li {
     background: #ffffff;
     border: 1px solid #eae9f2;
@@ -18088,7 +18102,7 @@ figure {
 }
 
 .newsPage__inner {
-    padding-bottom: 125px;
+    padding-bottom: 30pxd;
 }
 
 .newsPage__row {
@@ -18756,6 +18770,10 @@ figure {
 
     .offer .offer__row {
         gap: 13px;
+    }
+
+    .page__products .uk-card {
+        width: 32%;
     }
 }
 
@@ -19461,6 +19479,12 @@ figure {
     .page__products .uk-card-default {
         width: 49%;
     }
+
+    .page__products .uk-slider-items li {
+        gap: 0;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
   /* order */
     .orders .orders__left {
         height: 350px;
@@ -19831,7 +19855,7 @@ figure {
     }
   /* advantage */
     .advantage {
-        padding-bottom: 0;
+        padding-bottom: 30px;
     }
 
     .advantage .advantage__inner {

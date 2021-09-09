@@ -174,6 +174,12 @@
             gap: 13px;
         }
     }
+
+    .page__products {
+        .uk-card {
+            width: 32%;
+        }
+    }
 }
 
 
@@ -452,6 +458,10 @@
         .uk-card-body {
             padding: 15px;
         }
+    }
+
+    .advantage__footer-item-header {
+        height: 300px;
     }
 }
 
@@ -743,6 +753,16 @@
             line-height: 1.2;
         }
     }
+    
+    .advantage__footer-item-header {
+        height: 260px;
+        margin-bottom: 10px;
+    }
+
+    .advantage__footer-item-descr {
+        line-height: 1.4;
+    }
+
     /* company */
     .company {
         .container {
@@ -837,6 +857,17 @@
     .page__products {
         .uk-card-default {
             width: 49%;
+        }
+
+        .uk-slider-items li {
+            gap: 0;
+            justify-content: space-between;
+        }
+
+        .advantage__footer-item-title {
+            font-size: 22px;
+            line-height: 1.2;
+            
         }
     }
     /* order */
@@ -1163,7 +1194,7 @@
     }
     /* advantage */
     .advantage {
-        padding-bottom: 0;
+        padding-bottom: 30px;
         .advantage__inner {
             padding-bottom: 60px;
         }
@@ -1315,6 +1346,19 @@
         .page__products__card-subtitle {
             font-size: 14px;
         }
+
+        .advantage__footer-item-header {
+            height: 220px;
+        }
+
+        .advantage__footer-item-title {
+            font-size: 19px;
+        }
+
+        .advantage__row {
+            padding-bottom: 50px;
+        }
+
     }
     /* Хлебные крошки */
     .home__container {
@@ -1698,6 +1742,17 @@
             .advantage__footer-item-header {
                 height: 230px;
             }
+        }
+    }
+
+    .page__products {
+        .advantage__row {
+            flex-wrap: wrap;
+        }
+
+        .advantage__footer-item {
+            width: 100%;
+            margin-bottom: 15px;
         }
     }
 }

@@ -9,9 +9,9 @@
     .uk-slider-items  {
         li {
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
             margin-right: 20px;
+            gap: 15px;
         }
     }
 
@@ -91,6 +91,19 @@
             box-shadow: 10px 10px 20px 10px rgba(34, 60, 80, 0.2);
         }
     }
+
+    .advantage__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.advantage__footer-item {
+		width: 49%;
+	}
+
+	.advantage__footer-item-title {
+		font-size: 28px;
+	}
 
     .uk-pagination {
         li {
