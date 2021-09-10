@@ -15468,7 +15468,8 @@ figure {
     font-weight: 600;
     line-height: 1.4;
     text-transform: uppercase;
-    padding: 30px;
+    margin: 30px;
+    transition: color 0.3s ease;
 }
 
 .products .product__descr-mod {
@@ -15504,6 +15505,12 @@ figure {
 
 .products .products__left .product__descr {
     color: #fff;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.products .products__left .product__descr:hover {
+    opacity: 1;
 }
 
 .products .products__left::after {
@@ -18102,8 +18109,16 @@ figure {
     height: 360px;
 }
 
+.newsPage .uk-pagination .uk-active {
+    background: linear-gradient(306.64deg, rgba(255, 41, 105, 0.45) 27.07%, rgba(247, 122, 28, 0.45) 71.29%), #fbb040;
+}
+
+.newsPage .uk-pagination .uk-disabled span {
+    color: #eae9f2;
+}
+
 .newsPage__inner {
-    padding-bottom: 30pxd;
+    padding-bottom: 30px;
 }
 
 .newsPage__row {
@@ -18120,14 +18135,19 @@ figure {
 }
 
 .newsPage__left {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     width: 64%;
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-right: 50px;
+}
+
+.newsPage__left-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .newsPage__right {
@@ -18231,26 +18251,10 @@ figure {
     padding-left: 40px;
 }
 
-.newsPage .uk-search-default .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
+.newsPage .uk-search-default
+.uk-search-icon:not(.uk-search-icon-flip)
+~ .uk-search-input {
     padding-left: 0;
-}
-
-.newsPage__item:nth-child(3n) {
-    width: 100%;
-}
-
-.newsPage__item:nth-child(3n) .uk-card {
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.newsPage__item:nth-child(3n) .uk-card .uk-card-body,
-    .newsPage__item:nth-child(3n) .uk-card .uk-card-media-top {
-    width: 49%;
-}
-
-.newsPage__item:nth-child(3n) .uk-card .uk-card-media-top {
-    height: auto;
 }
 
 .newsPage__right-item {
@@ -18867,10 +18871,6 @@ figure {
         margin-bottom: 15px;
     }
 
-    .footer .footer__item:first-child {
-        margin-right: 20px;
-    }
-
     .footer .footer__accordion {
         -ms-flex-pack: start;
         justify-content: start;
@@ -19160,7 +19160,7 @@ figure {
 
     .products .product__descr {
         font-size: 14px;
-        padding: 10px;
+        margin: 10px;
     }
 
     .news .uk-card-default {
@@ -20659,7 +20659,7 @@ figure {
 
     .products .product__descr {
         font-size: 14px;
-        padding: 10px;
+        margin: 10px;
     }
 
     .products .products__right-items {
@@ -21233,7 +21233,7 @@ figure {
 
     .products .products__left .product__descr {
         font-size: 16px;
-        padding: 14px;
+        margin: 14px;
     }
 
     .products .product__descr {
