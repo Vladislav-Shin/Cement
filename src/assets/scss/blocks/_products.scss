@@ -69,6 +69,7 @@
 	.products__row {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	.products__left,
@@ -79,6 +80,8 @@
 		img {
 			object-fit: cover;
 		}
+
+		margin-bottom: 15px;
 	}
 
 	.products__left {
