@@ -17045,6 +17045,7 @@ figure {
 }
 
 .advantage__footer-item-title {
+    display: inline-block;
     font-family: "Nunito";
     font-weight: 600;
     font-size: 36px;
@@ -19052,6 +19053,10 @@ figure {
     .newsPage .uk-card-body {
         padding: 15px;
     }
+
+    .advantage__footer-item-header {
+        height: 300px;
+    }
 }
 
 /* Portrait tablets and small desktops - 991px */
@@ -19378,6 +19383,15 @@ figure {
         font-size: 30px;
         line-height: 1.2;
     }
+
+    .advantage__footer-item-header {
+        height: 260px;
+        margin-bottom: 10px;
+    }
+
+    .advantage__footer-item-descr {
+        line-height: 1.4;
+    }
   /* company */
     .company .container {
         padding: 0 10px;
@@ -19484,6 +19498,11 @@ figure {
         gap: 0;
         -ms-flex-pack: justify;
         justify-content: space-between;
+    }
+
+    .page__products .advantage__footer-item-title {
+        font-size: 22px;
+        line-height: 1.2;
     }
   /* order */
     .orders .orders__left {
@@ -20038,6 +20057,18 @@ figure {
     .page__products .page__products__card-subtitle {
         font-size: 14px;
     }
+
+    .page__products .advantage__footer-item-header {
+        height: 220px;
+    }
+
+    .page__products .advantage__footer-item-title {
+        font-size: 19px;
+    }
+
+    .page__products .advantage__row {
+        padding-bottom: 50px;
+    }
   /* Хлебные крошки */
     .home__container .uk-breadcrumb a {
         font-size: 18px;
@@ -20457,6 +20488,16 @@ figure {
 
     .advantage .advantage__footer .advantage__footer-item-header {
         height: 230px;
+    }
+
+    .page__products .advantage__row {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .page__products .advantage__footer-item {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
 

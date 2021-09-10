@@ -1,349 +1,329 @@
 .newsPage {
-    .uk-card-media-top {
-        height: 360px;
+  .uk-card-media-top {
+    height: 360px;
+  }
+  .uk-pagination {
+    .uk-active {
+      background: linear-gradient(
+          306.64deg,
+          rgba(255, 41, 105, 0.45) 27.07%,
+          rgba(247, 122, 28, 0.45) 71.29%
+        ),
+        #fbb040;
     }
+
+    .uk-disabled span {
+        color: #eae9f2;
+    }
+  }
+
+  
 }
 
 .newsPage__inner {
-    padding-bottom: 30pxd;
+  padding-bottom: 30px;
 }
 
 .newsPage__row {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
 }
 
 .newsPage__list {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .newsPage__left {
+  width: 64%;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.newsPage__left-wrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 64%;
     justify-content: space-between;
-    margin-right: 50px;
 }
 
 .newsPage__right {
-    flex: 1;
-    padding: 10px;
-    overflow-y: auto;
-    height: 100%;
-    box-shadow: 45.8202px 43px 183.281px rgba(27, 49, 66, 0.3);
-    border-radius: 10px;
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  height: 100%;
+  box-shadow: 45.8202px 43px 183.281px rgba(27, 49, 66, 0.3);
+  border-radius: 10px;
 }
 
 .newsPage {
-    .newsPage__right {
-        height: 100%;
-        overflow: auto;
-    }
+  .newsPage__right {
+    height: 100%;
+    overflow: auto;
+  }
 }
 
 .newsDayPage__descr {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: -0.500211px;
-    color: #696871;
-    margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.500211px;
+  color: #696871;
+  margin-bottom: 15px;
 }
 
 /* перебивание стилей ui-kit */
 
 .newsPage {
-    .uk-card-media-top {
-        border-radius: 8px 8px 0 0;
-        overflow: hidden;
-
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-    }
-
-    .newsPage__item {
-        width: 49%;
-        margin-bottom: 42px;
-    }
-
-    .uk-card-body {
-        padding: 32px;
-    }
-
-    .uk-card {
-        background: #ffffff;
-        border: 1px solid #eae9f2;
-        box-sizing: border-box;
-        border-radius: 8px;
-        height: 100%;
-    }
-
-    .newsPage__supDate {
-        font-style: normal;
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 26px;
-        letter-spacing: -0.500211px;
-        color: #767581;
-        margin-bottom: 20px;
-    }
-
-    .uk-card-title {
-        font-weight: 600;
-        font-size: 21px;
-        line-height: 32px;
-        letter-spacing: -0.656526px;
-        color: #19191b;
-        margin-bottom: 12px;
-    }
-
-    p {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        color: #767581;
-        line-height: 1.6;
-        margin-bottom: 20px;
-    }
-
-    .newsPage__link {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 28px;
-        color: #f04037;
-    }
-
-    /* перебивание стилей uikit */
-    .uk-search-default {
-        width: 100%;
-        padding-left: 40px;
-    }
-
-    .uk-search-default .uk-search-icon:not(.uk-search-icon-flip)~.uk-search-input {
-        padding-left: 0;
-    }
-}
-
-.newsPage__item:nth-child(3n) {
-    width: 100%;
-
-    .uk-card {
-        display: flex;
-
-        .uk-card-body,
-        .uk-card-media-top {
-            width: 49%;
-        }
-
-        .uk-card-media-top {
-            height: auto;
-        }
-    }
-}
-
-.newsPage__right-item {
-    background: #2a477c;
-    border: 1px solid #eae9f2;
-    box-sizing: border-box;
-    border-radius: 10px;
-    color: #fff;
-    margin-bottom: 20px;
+  .uk-card-media-top {
+    border-radius: 8px 8px 0 0;
     overflow: hidden;
 
-    &:last-child {
-        margin-bottom: 0;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
+  }
 
-    .newsPage__input {
-        border: none;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        color: #fff;
-        font-family: "Nunito";
+  .newsPage__item {
+    width: 49%;
+    margin-bottom: 42px;
+  }
 
-        &::placeholder {
-            color: #fff;
-        }
-    }
+  .uk-card-body {
+    padding: 32px;
+  }
 
-    .newsPage-margin {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+  .uk-card {
+    background: #ffffff;
+    border: 1px solid #eae9f2;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 100%;
+  }
 
-    .uk-search .uk-search-icon {
-        color: #fff;
-    }
-}
-
-.newsPage__list {
-    padding-bottom: 36px;
-}
-
-.newsPage__list-title {
+  .newsPage__supDate {
     font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    color: #ffffff;
-    padding: 15px 33px;
-    background: #1b3566;
-}
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.500211px;
+    color: #767581;
+    margin-bottom: 20px;
+  }
 
-.newsPage__item-text {
+  .uk-card-title {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: -0.656526px;
+    color: #19191b;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #767581;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .newsPage__link {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    line-height: 26px;
-    color: #ffffff;
-    margin-bottom: 10px;
+    line-height: 28px;
+    color: #f04037;
+  }
+
+  /* перебивание стилей uikit */
+  .uk-search-default {
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  .uk-search-default
+    .uk-search-icon:not(.uk-search-icon-flip)
+    ~ .uk-search-input {
+    padding-left: 0;
+  }
+}
+
+.newsPage__right-item {
+  background: #2a477c;
+  border: 1px solid #eae9f2;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .newsPage__input {
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    font-family: "Nunito";
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  .newsPage-margin {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .uk-search .uk-search-icon {
+    color: #fff;
+  }
+}
+
+.newsPage__list {
+  padding-bottom: 36px;
+}
+
+.newsPage__list-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  padding: 15px 33px;
+  background: #1b3566;
+}
+
+.newsPage__item-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .newsPage__item-subDate {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 26px;
-    color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .newsPage__box {
-    position: relative;
-    padding: 15px 33px;
+  position: relative;
+  padding: 15px 33px;
 
-    &::before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        height: 1px;
-        width: 80%;
-        transform: translate(-50%, -50%);
-        background: rgba(234, 233, 242, 0.1);
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 1px;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    background: rgba(234, 233, 242, 0.1);
+  }
 
-    &:last-child {
-        padding-bottom: 0;
-    }
+  &:last-child {
+    padding-bottom: 0;
+  }
 
-    &:last-child::before {
-        background: transparent;
-    }
+  &:last-child::before {
+    background: transparent;
+  }
 }
 
 .newsPage__item-post {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 26px;
-    color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .newsPage__right-category {
-    .newsPage__list-title {
-        margin-bottom: 16px;
-    }
+  .newsPage__list-title {
+    margin-bottom: 16px;
+  }
 
-    .newsPage__box::before {
-        background: transparent;
-    }
+  .newsPage__box::before {
+    background: transparent;
+  }
 
-    .newsPage__box {
-        padding-top: 0;
-        padding-bottom: 0;
+  .newsPage__box {
+    padding-top: 0;
+    padding-bottom: 0;
 
-        &:first-child {
-            padding-top: 10px;
-        }
+    &:first-child {
+      padding-top: 10px;
     }
+  }
 
-    .newsPage__list {
-        padding-bottom: 20px;
-    }
+  .newsPage__list {
+    padding-bottom: 20px;
+  }
 }
 
 /* uk-pagination */
 
 .newsPage {
-    .uk-pagination {
-        li {
-            background: #ffffff;
-            border: 1px solid #eae9f2;
-            border-radius: 5px;
-            margin-left: 12px;
+  .uk-pagination {
+    li {
+      background: #ffffff;
+      border: 1px solid #eae9f2;
+      border-radius: 5px;
+      margin-left: 12px;
 
-            a {
-                font-family: "Nunito";
-                font-style: normal;
-                font-weight: 800;
-                font-size: 21px;
-                line-height: 29px;
-                text-align: center;
-                color: #19191b;
-            }
+      a {
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 21px;
+        line-height: 29px;
+        text-align: center;
+        color: #19191b;
+      }
 
-            span {
-                font-style: normal;
-                font-weight: 800;
-                font-size: 21px;
-                line-height: 29px;
-                text-align: center;
-                color: #19191b;
-            }
-        }
+      span {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 21px;
+        line-height: 29px;
+        text-align: center;
+        color: #19191b;
+      }
     }
+  }
 }
 
 .newsDayPage {
+  .uk-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    border-top: 5px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-collapse: collapse;
+    outline: 3px solid #ffd300;
+    background: #fff !important;
 
-    .uk-table {
-        width: 100%;
-        margin-bottom: 20px;
-        border: 5px solid #fff;
-        border-top: 5px solid #fff;
-        border-bottom: 3px solid #fff;
-        border-collapse: collapse;
-        outline: 3px solid #ffd300;
-        background: #fff !important;
+    tbody {
+      tr:nth-child(even) {
+        background: #f8f8f8 !important;
+      }
 
-        tbody {
-            
-            tr:nth-child(even) {
-                background: #f8f8f8 !important;
-            }
-
-            th {
-                font-weight: 600;
-                padding: 7px;
-                background: #ffd300;
-                border: none;
-                text-align: left;
-                font-size: 15px;
-                border-top: 3px solid #fff;
-                border-bottom: 3px solid #ffd300;
-            }
-    
-            td {
-                padding: 7px;
-                border: none;
-                border-top: 3px solid #fff;
-                border-bottom: 3px solid #fff;
-                font-size: 15px;
-            }
-        }
-
-     
-    }
-
-    .table th {
+      th {
         font-weight: 600;
         padding: 7px;
         background: #ffd300;
@@ -352,18 +332,38 @@
         font-size: 15px;
         border-top: 3px solid #fff;
         border-bottom: 3px solid #ffd300;
-    }
+      }
 
-    .table td {
+      td {
         padding: 7px;
         border: none;
         border-top: 3px solid #fff;
         border-bottom: 3px solid #fff;
         font-size: 15px;
+      }
     }
+  }
 
-    .table tbody tr:nth-child(even) {
-        background: #f8f8f8 !important;
-    }
+  .table th {
+    font-weight: 600;
+    padding: 7px;
+    background: #ffd300;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #ffd300;
+  }
 
+  .table td {
+    padding: 7px;
+    border: none;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 15px;
+  }
+
+  .table tbody tr:nth-child(even) {
+    background: #f8f8f8 !important;
+  }
 }

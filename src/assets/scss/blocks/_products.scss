@@ -57,7 +57,8 @@
 		font-weight: 600;
 		line-height: 1.4;
 		text-transform: uppercase;
-		padding: 30px;
+		margin: 30px;
+		transition: color 0.3s ease;
 	}
 
 	.product__descr-mod {
@@ -88,6 +89,12 @@
 	
 		.product__descr {
 			color: #fff;
+			opacity: 0.7;
+			transition: all 0.2s ease;
+
+			&:hover {
+				opacity: 1;
+			}
 		}
 
 		&::after {

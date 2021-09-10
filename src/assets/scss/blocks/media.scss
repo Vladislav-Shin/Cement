@@ -280,9 +280,7 @@
         }
         .footer__item {
             margin-bottom: 15px;
-            &:first-child {
-                margin-right: 20px;
-            }
+
         }
         .footer__accordion {
             justify-content: start;
@@ -553,7 +551,7 @@
         }
         .product__descr {
             font-size: 14px;
-            padding: 10px;
+            margin: 10px;
         }
     }
     .news {
@@ -1890,7 +1888,7 @@
         }
         .product__descr {
             font-size: 14px;
-            padding: 10px;
+            margin: 10px;
         }
         .products__right-items {
             max-height: 191px;
@@ -2408,7 +2406,7 @@
         .products__left {
             .product__descr {
                 font-size: 16px;
-                padding: 14px;
+                margin: 14px;
             }
         }
         .product__descr {
