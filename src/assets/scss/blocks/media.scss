@@ -273,6 +273,15 @@
             width: 100%;
         }
     }
+
+    /* services */
+    .services {
+        .advantage__item-header {
+            .advantage__item-img {
+              height: 200px;
+            }
+          }
+    }
     /* footer */
     .footer {
         .footer__row {
@@ -421,6 +430,9 @@
             .advantage__row {
                 grid-template-columns: repeat(2, 1fr);
             }
+        }
+        .advantage__item-img {
+            height: 220px;
         }
     }
 }
