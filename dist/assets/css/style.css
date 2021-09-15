@@ -15810,7 +15810,7 @@ figure {
 }
 
 .offer__item-header {
-    height: 200px;
+    height: 240px;
     border-radius: 4px 4px 0 0;
     overflow: hidden;
     margin-bottom: 15px;
@@ -18812,7 +18812,7 @@ figure {
     }
 
     .offer .offer__item-header {
-        height: 220px;
+        height: 180px;
     }
 
     .offer .offer__items {
