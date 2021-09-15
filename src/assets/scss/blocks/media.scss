@@ -215,7 +215,7 @@
             padding-right: 0;
         }
         .offer__item-header {
-            height: 220px;
+            height: 180px;
         }
         .offer__items {
             width: 32%;
@@ -1264,6 +1264,7 @@
             display: none !important;
         }
         .uk-accordion-title {
+            display: inline-block;
             pointer-events: auto;
             margin-bottom: 10px;
             &::before {
@@ -2075,7 +2076,7 @@
             }
         }
         .map__wrapper {
-            height: 320px;
+            height: 460px;
         }
         .map__iframe {
             padding: 10px;

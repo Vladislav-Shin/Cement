@@ -15482,12 +15482,15 @@ figure {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .products .products__left,
   .products .products__right {
     width: 49%;
     position: relative;
+    margin-bottom: 15px;
 }
 
 .products .products__left img,
@@ -15782,7 +15785,7 @@ figure {
 
 .offer__items {
     position: relative;
-    width: 24%;
+    width: 32%;
     background: #fff;
     border: 0.817656px solid #FFFFFF;
     box-shadow: 0px 3.06759px 30.6759px rgba(43, 89, 255, 0.08), 24.5297px 57.2359px 98.1188px rgba(27, 49, 66, 0.13);
@@ -15843,6 +15846,7 @@ figure {
 
 .news .uk-card-media-top {
     height: 330px;
+    margin-bottom: 20px;
 }
 
 .news .uk-card-media-top img {
@@ -19965,6 +19969,7 @@ figure {
     }
 
     .footer .uk-accordion-title {
+        display: inline-block;
         pointer-events: auto;
         margin-bottom: 10px;
     }
@@ -20878,7 +20883,7 @@ figure {
     }
 
     .map .map__wrapper {
-        height: 320px;
+        height: 460px;
     }
 
     .map .map__iframe {
