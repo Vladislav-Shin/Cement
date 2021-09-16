@@ -15905,7 +15905,6 @@ figure {
 .news__item {
     display: -ms-flexbox;
     display: flex;
-    opacity: 0.5;
     max-width: 1251px;
 }
 
@@ -17100,6 +17099,10 @@ figure {
 
 .services__img {
     margin-bottom: 10px;
+}
+
+.services .advantage__item-header .advantage__item-img {
+    height: 250px;
 }
 
 .projects .projects__title {
@@ -18864,6 +18867,10 @@ figure {
 
     .contact .contact__inner {
         width: 100%;
+    }
+  /* services */
+    .services .advantage__item-header .advantage__item-img {
+        height: 200px;
     }
   /* footer */
     .footer .footer__row {

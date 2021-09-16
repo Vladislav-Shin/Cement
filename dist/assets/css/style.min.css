@@ -13473,7 +13473,6 @@ figure {
 
 .news__item {
   display: flex;
-  opacity: 0.5;
   max-width: 1251px; }
   .news__item .uk-card {
     position: relative;
@@ -13550,9 +13549,7 @@ figure {
 
 @media (min-width: 1200px) {
   .uk-grid > * {
-    padding-left: 0; }
-  .news__item.uk-active {
-    opacity: 1; } }
+    padding-left: 0; } }
 
 .partners__container {
   max-width: 1900px;

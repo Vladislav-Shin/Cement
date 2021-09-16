@@ -69,7 +69,6 @@
 
 .news__item {
 	display: flex;
-	opacity: 0.5;
 	max-width: 1251px;
 
 	.uk-card {
@@ -169,8 +168,5 @@
 @media (min-width: 1200px) {
 	.uk-grid > * {
 		padding-left: 0;
-	}
-	.news__item.uk-active {
-		opacity: 1;
 	}
 }
