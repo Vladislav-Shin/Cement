@@ -48,12 +48,30 @@
     box-shadow: 45.8202px 106.914px 183.281px rgba(27, 49, 66, 0.05);
     border-radius: 76px;
 
+    .uk-slider-items {
+        column-gap: 80px;
+    }
+
     .partners__list {
         padding: 50px 15px;
     }
 
     .uk-position-relative {
         border-radius: 76px;
+        padding-left: 35px;
+    }
+
+    .partners__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;   
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
 
@@ -87,13 +105,13 @@
 
     li {
         position: relative;
-        max-width: 190px;
+        /* max-width: 190px; */
         height: 190px;
         display: flex;
         border-radius: 50%;
         justify-content: center;
         align-items: center;
-        margin: 26px;
+        margin: 26px 0;
 
         background: #FFFFFF;
         box-shadow: 0px 66.5407px 94.6125px rgba(0, 0, 0, 0.08);
@@ -122,6 +140,7 @@
                 width: 100%;
                 height: 100%;
                 transform: scale(0.8);
+                object-fit: contain;
             }
         }
     }

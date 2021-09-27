@@ -102,6 +102,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     height: 100%;
+    position: relative;
   }
 
   .newsPage__supDate {
@@ -130,15 +131,20 @@
     line-height: 26px;
     color: #767581;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .newsPage__link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
     color: #f04037;
+    padding-left: 32px;
+    padding-bottom: 20px;
   }
 
   /* перебивание стилей uikit */

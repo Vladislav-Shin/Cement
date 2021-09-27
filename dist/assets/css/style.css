@@ -16004,10 +16004,6 @@ figure {
     .uk-grid > * {
         padding-left: 0;
     }
-
-    .news__item.uk-active {
-        opacity: 1;
-    }
 }
 
 .partners__container {
@@ -16296,7 +16292,7 @@ figure {
 .nav .uk-dropdown.uk-open::after {
     content: "";
     position: absolute;
-    top: -19px;
+    top: 20px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);

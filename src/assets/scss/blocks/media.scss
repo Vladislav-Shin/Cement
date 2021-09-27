@@ -105,6 +105,10 @@
             padding-top: 15px;
         }
     }
+
+    .partners__sliders .uk-slider-items {
+        column-gap: 70px;
+    }
 }
 
 
@@ -362,7 +366,7 @@
         .orders__row {
             align-items: flex-start;
         }
-        .orders__left {
+        .orders__left-img {
             height: 450px;
         }
     }
@@ -421,6 +425,10 @@
     }
     .partners__sliders {
         margin: 0 20px;
+
+        .uk-slider-items {
+            column-gap: 50px;
+        }
     }
     .advantage {
         .advantage__row {
@@ -882,7 +890,7 @@
     }
     /* order */
     .orders {
-        .orders__left {
+        .orders__left-img {
             height: 350px;
             margin-bottom: 25px;
         }
@@ -1381,12 +1389,25 @@
     }
     /* orders */
     .orders {
-        .orders__left {
+        .orders__left-img {
             height: 250px;
             margin-bottom: 20px;
         }
         .orders__right-descr {
             margin-bottom: 0;
+        }
+
+        .orders__row {
+            grid-template-columns: 1fr;
+        }
+
+        .orders__left {
+            order: -1;
+        }
+
+        .orders__title,
+        .orders__btn {
+            text-align: center;
         }
     }
     /* newsDayPage */
@@ -1501,6 +1522,17 @@
         }
         .uk-card-media-top {
             height: 170px;
+        }
+    }
+
+    .partners__sliders {
+        .uk-slider-items {
+            column-gap: 65px;
+        }
+
+        .uk-position-relative {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
 }
@@ -1753,6 +1785,15 @@
             .advantage__footer-item-header {
                 height: 230px;
             }
+        }
+
+        .advantage__content-title {
+            min-height: 63px;
+        }
+
+        .advantage__content {
+            padding-left: 5px;
+            padding-right: 5px;
         }
     }
 
@@ -2014,7 +2055,7 @@
     .partners {
         .uk-slider-items li {
             height: 100px;
-            max-width: 100px;
+            max-width: 140px;
             padding-left: 5px;
             padding-right: 5px;
             margin: 15px;
@@ -2036,6 +2077,14 @@
         }
         .partners__sliders {
             margin: 0 10px;
+
+            .uk-position-relative {
+                padding-left: 15px;
+            }
+
+            .uk-slider-items {
+                column-gap: 15px;
+            }
         }
     }
     /* questions */
@@ -2226,6 +2275,10 @@
         }
         .advantage__content-descr {
             text-align: center;
+        }
+
+        .advantage__content-title {
+            min-height: auto;
         }
     }
     /* company */
