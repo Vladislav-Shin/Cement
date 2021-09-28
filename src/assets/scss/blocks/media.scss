@@ -2072,7 +2072,7 @@
     }
     /* partners */
     .partners {
-        .uk-slider-items li {
+        .partners__list .partners__img {
             height: 100px;
             max-width: 140px;
             padding-left: 5px;
@@ -2105,6 +2105,7 @@
                 column-gap: 15px;
             }
         }
+        
     }
     /* questions */
     .questions {
