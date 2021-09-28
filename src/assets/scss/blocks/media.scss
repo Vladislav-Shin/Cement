@@ -106,8 +106,14 @@
         }
     }
 
-    .partners__sliders .uk-slider-items {
-        column-gap: 70px;
+    .partners__sliders  {
+
+        li {
+            max-width: 250px;
+        }
+        .uk-slider-items {
+            column-gap: 39px;
+        }
     }
 }
 
@@ -426,8 +432,15 @@
     .partners__sliders {
         margin: 0 20px;
 
+        .partners__list {
+            li {
+                max-width: 190px;
+                height: 190px;
+            }
+        }
+
         .uk-slider-items {
-            column-gap: 50px;
+            column-gap: 15px;
         }
     }
     .advantage {
@@ -1527,7 +1540,13 @@
 
     .partners__sliders {
         .uk-slider-items {
-            column-gap: 65px;
+            column-gap: 42px;
+        }
+
+        .partners__list {
+            li {
+                border: 10px solid rgba(128, 128, 128, 0.3);
+            }
         }
 
         .uk-position-relative {
@@ -2403,6 +2422,16 @@
     .footer {
         .footer__descr {
             max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .partners .partners__sliders .uk-slider-items {
+        column-gap: 0;
+
+        li {
+            max-width: 123px;
         }
     }
 }

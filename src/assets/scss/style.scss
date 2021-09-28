@@ -4,144 +4,158 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 body {
-    background-color: #fff;
-    font-size: 21px;
-    color: #000;
-    font-family: "Nunito", sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #fff;
+  font-size: 21px;
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 1920px;
-    width: 100%;
-    padding: 0 190px;
-    margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 190px;
+  margin: 0 auto;
 }
 
 a {
+  text-decoration: none;
+  &:hover {
     text-decoration: none;
-    &:hover {
-        text-decoration: none;
-    }
+  }
 }
 
 a:focus,
 textarea:focus-visible,
 input:focus {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
-
 
 /* ui-kit сброс некоторых настроек */
 
+.uk-dropdown {
+  box-shadow: none;
+}
+
 .uk-slider-container-offset {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .uk-grid {
-    margin-left: 0;
+  margin-left: 0;
 }
 
-.uk-grid+.uk-grid,
-.uk-grid>.uk-grid-margin,
-*+.uk-grid-margin {
-    margin-top: 0;
+.uk-grid + .uk-grid,
+.uk-grid > .uk-grid-margin,
+* + .uk-grid-margin {
+  margin-top: 0;
 }
 
 .uk-margin {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .uk-offcanvas-bar {
-    background: #1a4375;
+  background: #1a4375;
 }
 
 .uk-dotnav {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .uk-search-default {
-    width: 100%;
-    padding-left: 45px;
-    padding-right: 15px;
+  width: 100%;
+  padding-left: 45px;
+  padding-right: 15px;
 }
 
-.uk-search-default .uk-search-icon:not(.uk-search-icon-flip)~.uk-search-input {
-    padding-left: 0;
+.uk-search-default
+  .uk-search-icon:not(.uk-search-icon-flip)
+  ~ .uk-search-input {
+  padding-left: 0;
 }
 
 .uk-modal-dialog {
-    max-width: 450px !important;
-    overflow: hidden;
-    border-radius: 20px;
+  max-width: 450px !important;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .uk-modal-body {
-    padding: 0;
+  padding: 0;
 }
 
 .uk-width-large {
-    max-width: 60px;
-    min-width: auto;
-    padding: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    .uk-nav {
-        text-align: center;
-    }
+  max-width: 60px;
+  min-width: auto;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  .uk-nav {
+    text-align: center;
+  }
 }
 
 .uk-offcanvas-bar {
-    .nav__list {
-        padding-left: 0;
-    }
+  .nav__list {
+    padding-left: 0;
+  }
 }
 
 @media (min-width: 1200px) {
-    .uk-grid+.uk-grid,
-    .uk-grid>.uk-grid-margin,
-    *+.uk-grid-margin {
-        margin-top: 0;
-    }
+  .uk-grid + .uk-grid,
+  .uk-grid > .uk-grid-margin,
+  * + .uk-grid-margin {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1200px) {
-    .uk-card-body {
-        padding: 0;
-    }
+  .uk-card-body {
+    padding: 0;
+  }
 }
 
 .uk-breadcrumb {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 18px;
-    padding: 0 10px;
-    a {
-        font-family: "Nunito";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
-        text-align: center;
-        color: #ffffff;
-        &:hover {
-            color: #f23e60;
-        }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 0 10px;
+  a {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    &:hover {
+      color: #f23e60;
     }
+  }
 }
 
-.uk-breadcrumb> :last-child>span,
-.uk-breadcrumb> :last-child>a:not([href]) {
-    color: #f23e60;
+.uk-breadcrumb > :last-child > span,
+.uk-breadcrumb > :last-child > a:not([href]) {
+  color: #f23e60;
 }
 
 p,
@@ -152,29 +166,28 @@ pre,
 address,
 fieldset,
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 #modal-successfully {
-    p {
-        display: flex;
-        align-items: center;
-        max-width: 450px;
-        height: 220px;
-        background: rgba(31, 179, 122, .88);
-        border-radius: 5px;
-        padding: 20px;
-        color: #fff;
-        text-align: center;
-    }
-    .uk-close {
-        background: #fff;
-        border-radius: 50%;
-        box-shadow: 0 0 10px #fe5e796c;
-        padding: 10px
-    }
+  p {
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+    height: 220px;
+    background: rgba(31, 179, 122, 0.88);
+    border-radius: 5px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  .uk-close {
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fe5e796c;
+    padding: 10px;
+  }
 }
-
 
 /* Blocks */
 
