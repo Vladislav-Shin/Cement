@@ -13196,6 +13196,11 @@ figure {
       transition: all 0.2s ease; }
       .products .products__left .product__descr:hover {
         opacity: 1; }
+    .products .products__left img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(75%); }
   .products .products__right {
     max-height: 670px; }
   .products .products__left-img {
