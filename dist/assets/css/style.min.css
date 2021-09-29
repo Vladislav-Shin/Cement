@@ -12740,7 +12740,7 @@ input:focus {
   border: none; }
 
 /* ui-kit сброс некоторых настроек */
-.uk-dropdown {
+.nav__item .uk-dropdown {
   box-shadow: none; }
 
 .uk-slider-container-offset {
@@ -13484,6 +13484,31 @@ figure {
   width: 100%;
   margin: 0 auto; }
 
+.news__wrapper {
+  position: relative; }
+  .news__wrapper .swiper-button-next {
+    right: -70px !important;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 4px 4px 50px 0px rgba(34, 60, 80, 0.06); }
+    .news__wrapper .swiper-button-next::after {
+      font-size: 24px;
+      font-weight: 900;
+      padding-left: 5px; }
+  .news__wrapper .swiper-button-prev {
+    left: -70px !important;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 4px 4px 50px 0px rgba(34, 60, 80, 0.22); }
+    .news__wrapper .swiper-button-prev::after {
+      font-size: 24px;
+      font-weight: 900;
+      padding-right: 5px; }
+
 .news__arrow a {
   width: 35px;
   height: 6px;
@@ -13499,11 +13524,11 @@ figure {
     margin-top: 10px; }
   .newsSwiper .swiper-slide {
     position: relative;
-    padding: 32px;
+    padding: 10px;
+    height: auto;
     padding-bottom: 65px;
-    border-radius: 43px;
+    border-radius: 10px;
     font-family: "Nunito", sans-serif;
-    width: 402px;
     background: #ffffff;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); }
@@ -13526,6 +13551,7 @@ figure {
     .newsSwiper .news__header img {
       width: 100%;
       height: 100%;
+      border-radius: 10px 10px 0 0;
       object-fit: cover; }
   .newsSwiper .news__slider-title {
     font-family: "Nunito", sans-serif;
@@ -13629,10 +13655,6 @@ figure {
   padding-left: 10px;
   overflow: hidden;
   padding-bottom: 10px; }
-
-@media (min-width: 1200px) {
-  .uk-grid > * {
-    padding-left: 0; } }
 
 .partners__container {
   max-width: 1900px;
@@ -14758,7 +14780,6 @@ figure {
 
 .history__row {
   display: flex;
-  align-items: center;
   position: relative;
   background: #ffffff;
   border: 1.52734px solid #ffffff;
@@ -14992,6 +15013,8 @@ figure {
   line-height: 30px;
   color: #3B3A40;
   margin-bottom: 15px; }
+  .goods__title a {
+    color: #000; }
 
 .goods__subtitle {
   font-family: "Nunito";
@@ -15027,7 +15050,8 @@ figure {
   margin-bottom: 25px; }
   .orders__left-img img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
 
 .clear::after {
   display: block;
@@ -15297,7 +15321,7 @@ figure {
       width: 100%;
       object-fit: cover; }
   .newsPage .newsPage__item {
-    width: 49%;
+    width: 50%;
     margin-bottom: 42px; }
   .newsPage .uk-card-body {
     padding: 32px; }
@@ -15516,6 +15540,9 @@ figure {
 .newsDayPage .header__footer-title {
   font-size: 26px; }
 
+.newsDayPage .uk-grid > * {
+  padding-left: 0; }
+
 .newsDayPage__inner {
   padding-bottom: 40px; }
 
@@ -15599,9 +15626,6 @@ figure {
     border-radius: 5px; }
 
 .newsDayPage__inner .uk-grid > * {
-  padding-left: 0; }
-
-.uk-grid > * {
   padding-left: 0; }
 
 /* Breakponts 1830 */
@@ -16276,8 +16300,7 @@ figure {
     .home .home__content {
       flex-wrap: wrap;
       justify-content: center;
-      padding: 10px;
-      margin-bottom: 90px; }
+      padding: 10px; }
     .home .home__title {
       text-align: center; }
     .home .home__left,
@@ -16320,7 +16343,7 @@ figure {
     padding-top: 20px;
     padding-bottom: 20px; }
     .products .product__descr {
-      font-size: 14px; }
+      font-size: 22px; }
     .products .products__row {
       flex-wrap: wrap; }
     .products .products__left,
@@ -16572,6 +16595,14 @@ figure {
     line-height: 1.6; }
   .news .uk-card-media-top {
     height: 170px; }
+  .news__wrapper .swiper-button-next,
+  .news__wrapper .swiper-button-prev {
+    right: 10px !important;
+    box-shadow: none;
+    background: transparent;
+    transition: all 0.4s ease; }
+  .news__wrapper .swiper-button-prev {
+    left: 10px !important; }
   .partners__sliders .uk-slider-items {
     column-gap: 42px; }
   .partners__sliders .partners__list li {
@@ -16592,6 +16623,8 @@ figure {
 
 /* breakpoint 550 */
 @media (max-width: 550px) {
+  .products .products__left {
+    height: 270px; }
   .container {
     padding: 0 15px; }
   .header__footer {

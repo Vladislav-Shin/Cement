@@ -48,8 +48,10 @@ input:focus {
 
 /* ui-kit сброс некоторых настроек */
 
-.uk-dropdown {
-  box-shadow: none;
+.nav__item {
+  .uk-dropdown {
+    box-shadow: none;
+  }
 }
 
 .uk-slider-container-offset {

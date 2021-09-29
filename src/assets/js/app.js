@@ -39,8 +39,8 @@ var swiper = new Swiper(".newsSwiper", {
   loopFillGroupWithBlank: true,
 
   navigation: {
-    nextEl: ".newsSwiper .swiper-button-next",
-    prevEl: ".newsSwiper .swiper-button-prev",
+    nextEl: ".news__wrapper .swiper-button-next",
+    prevEl: ".news__wrapper .swiper-button-prev",
   },
 
   pagination: {
@@ -58,7 +58,7 @@ var swiper = new Swiper(".newsSwiper", {
       slidesPerView: 2,
       slidesPerGroup: 1,
     },
-    991: {
+    1199: {
       slidesPerView: 3,
       slidesPerGroup: 1,
     },
