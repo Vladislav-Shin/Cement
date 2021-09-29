@@ -587,16 +587,16 @@
             margin: 10px;
         }
     }
-    .news {
-        .uk-card-default {
+    .newsSwiper {
+        .swiper-slide {
             padding: 16px;
             border-radius: 25px;
         }
-        .uk-card-title {
+        .news__slider-title {
             font-size: 20px;
             margin-bottom: 20px;
         }
-        .uk-card-media-top {
+        .news__header {
             height: 250px;
         }
     }

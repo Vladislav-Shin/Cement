@@ -16098,7 +16098,7 @@ figure {
 }
 
 .partners__sliders .partners__list {
-    padding: 20px 0;
+    padding: 45px 0;
 }
 
 .partners__sliders .uk-position-relative {
@@ -16179,6 +16179,34 @@ figure {
 
 .partners .uk-slider-container {
     padding-left: 10px;
+}
+
+.partners__sliders .swiper-button-next {
+    right: -70px !important;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.partners__sliders .swiper-button-next::after {
+    font-size: 24px;
+    font-weight: 900;
+    padding-left: 5px;
+}
+
+.partners__sliders .swiper-button-prev {
+    left: -70px !important;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.partners__sliders .swiper-button-prev::after {
+    font-size: 24px;
+    font-weight: 900;
+    padding-right: 5px;
 }
 
 .map {
@@ -19322,6 +19350,7 @@ figure {
 
     .partners .partners__sliders {
         margin: 0 25px;
+        border-radius: 50px;
     }
 
     .partners .partners__title {
@@ -19714,6 +19743,10 @@ figure {
 
     .footer .contact__footer {
         max-width: 90%;
+    }
+
+    .partners__sliders .partners__list {
+        padding: 15px 0;
     }
 }
 
@@ -20307,6 +20340,20 @@ figure {
     .partners__sliders .uk-position-relative {
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+
+    .partners__sliders .swiper-button-next {
+        right: 10px !important;
+        background: transparent;
+        width: auto;
+        height: 49px;
+    }
+
+    .partners__sliders .swiper-button-prev {
+        left: 10px !important;
+        background: transparent;
+        width: auto;
+        height: 49px;
     }
 }
 
@@ -20905,11 +20952,12 @@ figure {
     }
   /* partners */
     .partners .partners__list .partners__img {
-        height: 100px;
-        max-width: 140px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin: 15px;
+        height: 120px;
+        border: 14px solid rgba(128, 128, 128, 0.3);
+    }
+
+    .partners .partners__list {
+        padding: 0;
     }
 
     .partners .partners__title {
@@ -20927,12 +20975,14 @@ figure {
     }
 
     .partners .partners__wrapper {
+        border-radius: 30px;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
     .partners .partners__sliders {
         margin: 0 10px;
+        border-radius: 30px;
     }
 
     .partners .partners__sliders .uk-position-relative {
