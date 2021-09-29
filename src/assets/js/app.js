@@ -58,7 +58,7 @@ var swiper = new Swiper(".newsSwiper", {
       slidesPerView: 2,
       slidesPerGroup: 1,
     },
-    1199: {
+    1000: {
       slidesPerView: 3,
       slidesPerGroup: 1,
     },
