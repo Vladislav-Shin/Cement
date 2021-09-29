@@ -666,6 +666,7 @@
     .partners {
         .partners__sliders {
             margin: 0 25px;
+            border-radius: 50px;
         }
         .partners__title {
             font-size: 35px;
@@ -1025,6 +1026,12 @@
         }
         .contact__footer {
             max-width: 90%;
+        }
+    }
+
+    .partners__sliders {
+        .partners__list {
+            padding: 15px 0;
         }
     }
 }
@@ -1553,6 +1560,20 @@
             padding-top: 20px;
             padding-bottom: 20px;
         }
+
+        .swiper-button-next {
+            right: 10px !important;
+            background: transparent;
+            width: auto;
+            height: 49px;
+        }
+
+        .swiper-button-prev {
+            left: 10px !important;
+            background: transparent;
+            width: auto;
+            height: 49px;
+        }
     }
 }
 
@@ -2072,12 +2093,13 @@
     }
     /* partners */
     .partners {
+
         .partners__list .partners__img {
-            height: 100px;
-            max-width: 140px;
-            padding-left: 5px;
-            padding-right: 5px;
-            margin: 15px;
+            height: 120px;
+            border: 14px solid rgba(128, 128, 128, 0.3);
+        }
+        .partners__list {
+            padding: 0;
         }
         .partners__title {
             font-size: 26px;
@@ -2091,11 +2113,13 @@
             min-height: 300px;
         }
         .partners__wrapper {
+            border-radius: 30px;
             padding-top: 10px;
             padding-bottom: 10px;
         }
         .partners__sliders {
             margin: 0 10px;
+            border-radius: 30px;
 
             .uk-position-relative {
                 padding-left: 15px;

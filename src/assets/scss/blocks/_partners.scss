@@ -53,7 +53,7 @@
     } */
 
   .partners__list {
-    padding: 20px 0;
+    padding: 45px 0;
   }
 
   .uk-position-relative {
@@ -138,5 +138,35 @@
 
   .uk-slider-container {
     padding-left: 10px;
+  }
+}
+
+.partners__sliders {
+  .swiper-button-next {
+    right: -70px !important;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+
+    &::after {
+      font-size: 24px;
+      font-weight: 900;
+      padding-left: 5px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: -70px !important;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+
+    &::after {
+      font-size: 24px;
+      font-weight: 900;
+      padding-right: 5px;
+    }
   }
 }

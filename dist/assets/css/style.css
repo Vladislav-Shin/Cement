@@ -16080,34 +16080,29 @@ figure {
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 45.8202px 106.914px 183.281px rgba(27, 49, 66, 0.05);
     border-radius: 76px;
-}
+  /*     .uk-slider-items {
+        column-gap: 38px;
+    } */
+  /*     .partners__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
 
-.partners__sliders .uk-slider-items {
-    -webkit-column-gap: 38px;
-    -moz-column-gap: 38px;
-    column-gap: 38px;
+        img {
+            width: 100%;   
+            height: 100%;
+            object-fit: cover;
+        }
+    } */
 }
 
 .partners__sliders .partners__list {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .partners__sliders .uk-position-relative {
     border-radius: 76px;
-}
-
-.partners__sliders .partners__img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.partners__sliders .partners__img img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
 }
 
 .partners__arrows {
@@ -16127,7 +16122,7 @@ figure {
     color: #fff;
     background: red;
     border-radius: 50%;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 18.6636px 17.1706px 41.8066px rgba(27, 49, 66, 0.15);
     border-radius: 67.1891px;
     -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -16145,13 +16140,12 @@ figure {
     justify-content: space-between;
 }
 
-.partners__list li {
+.partners__list .partners__img {
     position: relative;
-    max-width: 225px;
-    height: 225px;
     display: -ms-flexbox;
     display: flex;
     border-radius: 50%;
+    height: 190px;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
@@ -16159,28 +16153,10 @@ figure {
     margin: 26px 0;
     background: #fff;
     border: 23px solid rgba(128, 128, 128, 0.3);
-    /*         &::before {
-            content: "";
-            transform: translate(-50%, -50%);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 120%;
-            height: 120%;
-            background: #FFFFFF;
-            border-radius: 50%;
-            opacity: 0.4;
-        } */
-}
-
-.partners__list li .partners__img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
     overflow: hidden;
 }
 
-.partners__list li .partners__img img {
+.partners__list .partners__img img {
     width: 100%;
     height: 100%;
     -webkit-transform: scale(0.8);
@@ -20928,7 +20904,7 @@ figure {
         padding-top: 50px;
     }
   /* partners */
-    .partners .uk-slider-items li {
+    .partners .partners__list .partners__img {
         height: 100px;
         max-width: 140px;
         padding-left: 5px;
