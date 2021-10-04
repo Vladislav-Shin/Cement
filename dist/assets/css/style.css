@@ -14910,6 +14910,10 @@ input:focus {
 }
 
 /* ui-kit сброс некоторых настроек */
+.uk-first-column {
+    padding-left: 0;
+}
+
 .nav__item .uk-dropdown {
     box-shadow: none;
 }
@@ -15930,7 +15934,7 @@ figure {
     height: 60px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 4px 4px 50px 0px rgba(34, 60, 80, 0.06);
+    box-shadow: 4px 4px 50px 0px rgba(34, 60, 80, 0.22);
 }
 
 .news__wrapper .swiper-button-next::after {
@@ -16028,12 +16032,16 @@ figure {
     opacity: 1;
 }
 
+.newsSwiper .news__content {
+    padding: 0 10px;
+}
+
 .newsSwiper .swiper-button-prev,
 .newsSwiper .swiper-button-next {
     opacity: 0;
     font-weight: 900;
     transition: all 0.5s ease;
-    color: rgba(0, 191, 255, 0.7);
+    color: rgba(0, 191, 255, 0.22);
 }
 
 .newsSwiper .swiper-button-prev:hover,
@@ -20449,10 +20457,19 @@ figure {
         box-shadow: none;
         background: transparent;
         transition: all 0.4s ease;
+        opacity: 0;
     }
 
     .news__wrapper .swiper-button-prev {
         left: 10px !important;
+    }
+
+    .news__wrapper:hover .swiper-button-prev {
+        opacity: 1;
+    }
+
+    .news__wrapper:hover .swiper-button-next {
+        opacity: 1;
     }
 
     .partners__sliders .uk-slider-items {

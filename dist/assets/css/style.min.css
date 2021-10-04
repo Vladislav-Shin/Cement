@@ -12740,6 +12740,9 @@ input:focus {
   border: none; }
 
 /* ui-kit сброс некоторых настроек */
+.uk-first-column {
+  padding-left: 0; }
+
 .nav__item .uk-dropdown {
   box-shadow: none; }
 
@@ -13441,7 +13444,7 @@ figure {
 
 .news {
   background: #fff;
-  padding: 45px 0 65px; }
+  padding: 45px 0 0px; }
   .news .uk-slider-items {
     transform: translate3d(703px, 0px, 0px);
     margin-bottom: 80px; }
@@ -13519,6 +13522,9 @@ figure {
 .newsSwiper {
   padding-left: 8px !important;
   padding-right: 8px !important; }
+  .newsSwiper .news__header {
+    border-radius: 10px;
+    overflow: hidden; }
   .newsSwiper .swiper-wrapper {
     margin-bottom: 45px;
     margin-top: 10px; }
@@ -13526,12 +13532,13 @@ figure {
     position: relative;
     padding: 10px;
     height: auto;
-    padding-bottom: 65px;
+    padding-bottom: 30px;
     border-radius: 10px;
     font-family: "Nunito", sans-serif;
     background: #ffffff;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); }
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 6px 0px rgba(29, 41, 51, 0.2); }
     .newsSwiper .swiper-slide::after, .newsSwiper .swiper-slide::before {
       content: "";
       position: absolute;
@@ -13544,7 +13551,8 @@ figure {
       border: 1px solid rgba(255, 255, 255, 0.5);
       background: rgba(242, 242, 242, 0.8);
       border-radius: 0 0 76px 76px;
-      box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05); }
+      /*       box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05);
+ */ }
   .newsSwiper .news__header {
     height: 330px;
     margin-bottom: 20px; }
@@ -13584,35 +13592,6 @@ figure {
 .news__item {
   display: flex;
   max-width: 1251px; }
-  .news__item .swiper-slide {
-    position: relative;
-    width: 32%;
-    padding: 32px;
-    padding-bottom: 65px;
-    border-radius: 43px;
-    font-family: "Nunito", sans-serif;
-    width: 402px;
-    background: #ffffff;
-    margin-right: 15px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8); }
-    .news__item .swiper-slide::after, .news__item .swiper-slide::before {
-      content: "";
-      position: absolute;
-      bottom: -20px;
-      left: 50%;
-      z-index: -10;
-      transform: translateX(-50%);
-      width: 100%;
-      height: 60px;
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      background: rgba(242, 242, 242, 0.8);
-      border-radius: 0 0 76px 76px;
-      box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05); }
-    .news__item .swiper-slide::after {
-      bottom: -40px;
-      width: 80%;
-      z-index: -20; }
   .news__item .uk-card-media-top {
     border-radius: 15px;
     overflow: hidden; }
@@ -15914,7 +15893,11 @@ figure {
   .newsPage .newsPage__supDate {
     margin-bottom: 10px; }
   .newsPage .uk-card-body {
-    padding: 15px; }
+    padding: 15px;
+    padding-bottom: 30px; }
+  .newsPage .newsPage__link {
+    left: 15px;
+    padding-left: 0; }
   .advantage__footer-item-header {
     height: 300px; } }
 
@@ -16547,7 +16530,8 @@ figure {
   .newsPage .newsPage__left {
     margin-right: 10px; }
   .newsPage .uk-card {
-    padding: 10px; }
+    padding: 10px;
+    padding-bottom: 30px; }
   .newsPage .newsPage__input {
     padding-top: 7px;
     padding-bottom: 7px;
@@ -16569,16 +16553,19 @@ figure {
   .newsPage .uk-card-media-top {
     height: 200px; }
   .newsPage .uk-card-title {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.3;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-weight: 700; }
   .newsPage .newsPage__link {
-    font-size: 14px; }
+    font-size: 14px;
+    bottom: 10px;
+    left: 10px;
+    padding-bottom: 0; }
   .newsPage p {
     font-size: 14px;
     line-height: 1.3;
-    margin-bottom: 5px; }
+    margin-bottom: 15px; }
   /* history */
   .history .container {
     padding: 0 10px; }
@@ -16630,6 +16617,12 @@ figure {
 
 /* breakpoint 550 */
 @media (max-width: 550px) {
+  .home__container .header__footer-title {
+    font-size: 18px; }
+  .home__container .header__footer {
+    min-height: auto;
+    padding-top: 20px;
+    padding-bottom: 100px; }
   .products .products__left {
     height: 270px; }
   .container {
@@ -17126,9 +17119,9 @@ figure {
     height: 200px; }
   /* Стили для хлебной крошки */
   .home__container .header__footer-title {
-    font-size: 26px; }
+    font-size: 18px; }
   .home__container .uk-breadcrumb a {
-    font-size: 20px; }
+    font-size: 18px; }
   /* projects */
   .projects .projects__item {
     width: 100%; }
@@ -17217,7 +17210,7 @@ figure {
     .home .home__footer-btn .btn {
       padding: 12px 50px; }
     .home .home__footer-title {
-      font-size: 26px;
+      font-size: 18px;
       font-weight: 700; }
     .home .home__footer-subtitle {
       font-size: 18px; }

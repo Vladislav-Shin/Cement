@@ -48,6 +48,10 @@ input:focus {
 
 /* ui-kit сброс некоторых настроек */
 
+.uk-first-column {
+  padding-left: 0;
+}
+
 .nav__item {
   .uk-dropdown {
     box-shadow: none;
