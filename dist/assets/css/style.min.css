@@ -15638,8 +15638,6 @@ figure {
 
 /* Breakpoints 1450 */
 @media (max-width: 1450px) {
-  .container {
-    padding: 0 40px; }
   /* home */
   .home__content {
     padding-top: 100px;
