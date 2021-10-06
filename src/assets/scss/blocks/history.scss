@@ -4,8 +4,8 @@
     .uk-slider-items {
     
         .uk-panel {
-            padding: 0 10px;
             overflow: hidden;
+            border-radius: 10px;
             height: 340px;
         }
     
@@ -44,6 +44,12 @@
             height: 100%;
         }
     }
+
+    .uk-slider-items {
+        li {
+            padding: 0 5px;
+        }
+    }
 }
 
 .history__title {
@@ -63,7 +69,7 @@
     position: relative;
     background: #ffffff;
     border: 1.52734px solid #ffffff;
-    box-shadow: 45.8202px 43px 183.281px rgba(27, 49, 66, 0.13);
+    box-shadow: 0.8202px 0px 173.281px rgba(27, 49, 66, 0.20%);
     border-radius: 55px;
     padding: 24px;
 

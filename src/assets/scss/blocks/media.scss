@@ -52,8 +52,6 @@
 /* Breakpoints 1450 */
 
 @media (max-width: 1450px) {
-
-  
   /* home */
   .home__content {
     padding-top: 100px;
@@ -1546,23 +1544,23 @@
   .news__wrapper {
     .swiper-button-next,
     .swiper-button-prev {
-        right: 10px !important;
-        box-shadow: none;
-        background: transparent;
-        transition: all 0.4s ease;
-        opacity: 0;
+      right: 10px !important;
+      box-shadow: none;
+      background: transparent;
+      transition: all 0.4s ease;
+      opacity: 0.6;
     }
 
     .swiper-button-prev {
-        left: 10px !important;
+      left: 10px !important;
     }
 
     &:hover .swiper-button-prev {
-      opacity: 1;
+      opacity: 0.6;
     }
 
     &:hover .swiper-button-next {
-      opacity: 1;
+      opacity: 0.6;
     }
   }
 
@@ -1587,6 +1585,7 @@
       background: transparent;
       width: auto;
       height: 49px;
+      opacity: 0.6;
     }
 
     .swiper-button-prev {
@@ -1594,6 +1593,7 @@
       background: transparent;
       width: auto;
       height: 49px;
+      opacity: 0.6;
     }
   }
 }
@@ -2046,6 +2046,11 @@
       margin-top: -50px !important;
     }
   }
+  .news__wrapper .swiper-button-next,
+  .news__wrapper .swiper-button-prev {
+    opacity: 0.6;
+  }
+
   /* scheme */
   .scheme {
     .scheme__title {
@@ -2129,7 +2134,7 @@
   /* partners */
   .partners {
     .partners__list .partners__img {
-      height: 120px;
+      height: 135px;
       border: 14px solid rgba(128, 128, 128, 0.3);
     }
     .partners__list {
