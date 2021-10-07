@@ -16007,6 +16007,7 @@ figure {
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: rgba(242, 242, 242, 0.8);
     border-radius: 0 0 76px 76px;
+    display: none;
       /*       box-shadow: 45px 106px 183px rgba(27, 49, 66, 0.05);
  */
 }
@@ -16058,7 +16059,7 @@ figure {
 
 .newsSwiper:hover .swiper-button-prev,
 .newsSwiper:hover .swiper-button-next {
-    opacity: 1;
+    opacity: 0.6;
 }
 
 .news__item {
@@ -17602,8 +17603,8 @@ figure {
 }
 
 .history .uk-slider-items .uk-panel {
-    padding: 0 10px;
     overflow: hidden;
+    border-radius: 10px;
     height: 340px;
 }
 
@@ -17635,6 +17636,10 @@ figure {
     height: 100%;
 }
 
+.history .uk-slider-items li {
+    padding: 0 5px;
+}
+
 .history__title {
     font-family: "Nunito";
     font-style: normal;
@@ -17653,7 +17658,7 @@ figure {
     position: relative;
     background: #ffffff;
     border: 1.52734px solid #ffffff;
-    box-shadow: 45.8202px 43px 183.281px rgba(27, 49, 66, 0.13);
+    box-shadow: 0.8202px 0px 173.281px rgba(27, 49, 66, 0.2);
     border-radius: 55px;
     padding: 24px;
 }
@@ -20431,23 +20436,23 @@ figure {
 
     .news__wrapper .swiper-button-next,
   .news__wrapper .swiper-button-prev {
-        right: 10px !important;
+        right: -10px !important;
         box-shadow: none;
         background: transparent;
         transition: all 0.4s ease;
-        opacity: 0;
+        opacity: 0.6;
     }
 
     .news__wrapper .swiper-button-prev {
-        left: 10px !important;
+        left: -10px !important;
     }
 
     .news__wrapper:hover .swiper-button-prev {
-        opacity: 1;
+        opacity: 0.6;
     }
 
     .news__wrapper:hover .swiper-button-next {
-        opacity: 1;
+        opacity: 0.6;
     }
 
     .partners__sliders .uk-slider-items {
@@ -20470,6 +20475,7 @@ figure {
         background: transparent;
         width: auto;
         height: 49px;
+        opacity: 0.6;
     }
 
     .partners__sliders .swiper-button-prev {
@@ -20477,6 +20483,7 @@ figure {
         background: transparent;
         width: auto;
         height: 49px;
+        opacity: 0.6;
     }
 }
 
@@ -20987,6 +20994,11 @@ figure {
     .news .uk-slider-nav {
         margin-top: -50px !important;
     }
+
+    .news__wrapper .swiper-button-next,
+  .news__wrapper .swiper-button-prev {
+        opacity: 0.6;
+    }
   /* scheme */
     .scheme .scheme__title {
         font-size: 26px;
@@ -21089,7 +21101,7 @@ figure {
     }
   /* partners */
     .partners .partners__list .partners__img {
-        height: 120px;
+        height: 135px;
         border: 14px solid rgba(128, 128, 128, 0.3);
     }
 

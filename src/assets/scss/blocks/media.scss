@@ -1544,7 +1544,7 @@
   .news__wrapper {
     .swiper-button-next,
     .swiper-button-prev {
-      right: 10px !important;
+      right: -10px !important;
       box-shadow: none;
       background: transparent;
       transition: all 0.4s ease;
@@ -1552,7 +1552,7 @@
     }
 
     .swiper-button-prev {
-      left: 10px !important;
+      left: -10px !important;
     }
 
     &:hover .swiper-button-prev {
